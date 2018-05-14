@@ -8,11 +8,24 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+
+// Header 
+
 .navbar-laravel {
-  background-color: #000;
+  background-color: #14354C;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-a {
-	color: red;
+.navbar {
+	padding: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+// Footer 
+
+footer {
+	 background-color: #14354C;
 }

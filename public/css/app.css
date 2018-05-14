@@ -10412,12 +10412,20 @@ a.text-dark:focus {
 }
 
 .navbar-laravel {
-  background-color: #000;
+  background-color: #14354C;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-a {
-  color: red;
+.navbar {
+  padding: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+footer {
+  background-color: #14354C;
 }
 
