@@ -10427,6 +10427,24 @@ a.text-dark:focus {
 
 footer {
   background-color: #138496;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: #B2EBF2;
+}
+
+.footerlink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.logofooter {
+  width: 35px;
+  height: 35px;
+  margin: 20px 5px 20px 5px;
 }
 
 #adminform {
