@@ -10412,17 +10412,13 @@ a.text-dark:focus {
 }
 
 .navbar-laravel {
-  background-color: #004D40;
+  background-color: #138496;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.navbar {
-  padding: 0px;
-}
-
 .navbar-light .navbar-nav .nav-link {
-  color: #E0F2F1;
+  color: #B2EBF2;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -10430,6 +10426,36 @@ a.text-dark:focus {
 }
 
 footer {
-  background-color: #004D40;
+  background-color: #138496;
+}
+
+#adminform {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#admininfo {
+  background-color: white;
+  padding: 30px 25px;
+  margin-bottom: 0px;
+}
+
+#adminformup {
+  background-color: #138496;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  height: 55px;
+  line-height: 55px;
+}
+
+.btn-info {
+  background-color: #138496;
+  margin-top: 10px;
+}
+
+.btn-info:hover {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
 }
 
