@@ -11,10 +11,34 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+// Route Frontend
+
+Route::get('/', 'LandingPageController@index');
+
+Route::get('/test', 'TestController@index');
+
+Route::post('/test', 'TestController@store');
+
+Route::get('/results', 'ResultsController@index');
+
+Route::get('/contact', 'ContactController@index');
+
+Route::post('/contact', 'ContactController@store');
+
+// Route Backend
+
+Route::get('/users', 'UsersController@index');
+
+Route::post('/users', 'UsersController@store');
+
+Route::get('/classes', 'ClassesController@index');
+
+Route::post('/classes', 'ClassesController@store');
+
+Route::get('/jobs', 'JobsController@index');
+
+Route::post('/jobs', 'JobsController@store');
