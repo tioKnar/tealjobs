@@ -11,6 +11,9 @@
 @import '~bootstrap/scss/bootstrap';
 
 
+//Fireflies
+
+
 // Header 
 
 .navbar-laravel {
@@ -123,8 +126,8 @@ body {
 .jumbotron {
 	background: transparent;
 	margin-top: 0px;
-	color: white;
-	height: 600px;
+	color: rgba(255,255,255,0.8);
+	height: 500px;
 }
 
 .jumbo-description {
@@ -133,9 +136,9 @@ body {
 }
 
 .btn-lg {
-	margin-top: 50px;
-	width: 400px;
-	padding: 50px;
+	margin-top: 100px;
+	width: 65%;
+	padding: 10%;
 	border-radius: 1.3em;
 	mix-blend-mode: color-dodge;
 }
@@ -244,4 +247,3 @@ label {
   		padding: 10px;
 	}
 }
-
