@@ -117,18 +117,26 @@
 
         <footer>
             
-            <div class="row align-items-center text-center">
-                <div class="col">
-                    <a href="" class="footerlink">Contactez nous</a><br>
+            <div class="container-fluid">
 
-                    <a href=""><img class="logofooter" src="img/facebook.png"></a>
-                    <a href=""><img class="logofooter" src="img/twitter.png"></a>
-                    <a href=""><img class="logofooter" src="img/instagram.png"></a>
-                    <a href=""><img class="logofooter" src="img/linkedin.png"></a>
-                    <a href=""><img class="logofooter" src="img/googleplus.png"></a><br>
+                <div class="row align-items-center text-center">
 
-                    <a href="" class="footerlink">Mentions légales</a>
+                    <div class="col">
+
+                        <a href="" class="footerlink">Contactez nous</a><br>
+
+                        <a href=""><img class="logofooter" src="img/facebook.png"></a>
+                        <a href=""><img class="logofooter" src="img/twitter.png"></a>
+                        <a href=""><img class="logofooter" src="img/instagram.png"></a>
+                        <a href=""><img class="logofooter" src="img/linkedin.png"></a>
+                        <a href=""><img class="logofooter" src="img/googleplus.png"></a><br>
+
+                        <a href="" class="footerlink">Mentions légales</a>
+
+                    </div>
+
                 </div>
+
             </div>
 
         </footer>
