@@ -36,7 +36,7 @@ class ProfilesTableSeeder extends Seeder
         	[
         		'name' => 'Promoteur',
         		'description' => 'Adaptable, charmeur et plein de ressources',
-        	],
+        	]
         ];
 
          Profile::insert($data);
