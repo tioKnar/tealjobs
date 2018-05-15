@@ -55,11 +55,11 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="#" id="register">Inscription</a>
+                            <a class="nav-link" href="#" id="register" data-toggle="modal" data-target="#modalregister">Inscription</a>
                         </li>
 
                         <li class="nav-item linknavbar" id="connect">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Connexion</a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalconnect">Connexion</a>
                         </li>
 
                     </ul>
@@ -141,6 +141,69 @@
 
     </div>
 </body>
+
+<!-- Modal Connexion -->
+
+<div class="modal fade" id="modalconnect" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+        
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
+            
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+      
+            </div>
+      
+            <div class="modal-body">
+
+                <form method="POST" action="{{ route('login') }}" class="form-group">
+                            @csrf
+             
+                    <input id="email" type="email" class="form-group form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus>
+
+                        @if ($errors->has('email'))
+                            <span class="invalid-feedback">
+                               <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                        @endif
+                                  
+                    <input id="password" type="password" class="form-group form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Mot de passe" required>
+
+                        @if ($errors->has('password'))
+                            <span class="invalid-feedback">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
+
+                    <button type="submit" class="btn btn-info form-group form-control">
+                                        {{ __('Login') }}
+                    </button>
+
+                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                              {{ __('Forgot Your Password?') }}
+                    </a>
+                          
+                </form>
+
+            </div>
+          
+            <div class="modal-footer">
+            
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+            </div>
+        
+        </div>
+      
+    </div>
+
+</div>
 
 </html>
 
