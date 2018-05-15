@@ -59,7 +59,7 @@
                         </li>
 
                         <li class="nav-item linknavbar" id="connect">
-                            <a class="nav-link" href="#">Connexion</a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Connexion</a>
                         </li>
 
                     </ul>
@@ -108,8 +108,6 @@
                 </div>
 
             </nav>
-
-            <div id="popupconnect"></div>
         
         <main>
             @yield('content')
@@ -143,29 +141,6 @@
 
     </div>
 </body>
-
-<script>
-    
-$(function() {
-
-    $('#connect').on('click', function() {
-
-        $.get('login', function(data) {
-
-            $('#popupconnect').html(data);
-        })
-    })
-
-    $('#register').on('click', function() {
-
-        $.get('register', function(data) {
-
-            $('#popupconnect').html(data);
-        })
-    })
-});
-
-</script>
 
 </html>
 
