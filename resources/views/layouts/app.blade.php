@@ -25,38 +25,44 @@
 </head>
 <body>
     <div id="app">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-laravel">
 
-        <nav class="navbar navbar-expand-lg navbar-laravel">
+            <div class="container">
   
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        
+                    @guest
                     
                     <ul class="navbar-nav">
-                        
-                        @guest
 
-                        <li class="nav-item" style="width: 100px">
+                        <li class="nav-item linknavbar">
                             <a class="nav-link" href="/">Accueil</a>
                         </li>
 
-                        <li class="nav-item" style="width: 100px">
+                        <li class="nav-item linknavbar">
                             <a class="nav-link" href="contact">Contact</a>
                         </li>
-                        
-                        <li class="nav-item" style="width: 120px">
-                            <a class="navbar-brand" href="/"><img src="img/logo.png" style="width: 120px; height: 60px"></a>
-                        </li>
 
-                        <li class="nav-item" style="width: 100px">
+                    </ul>
+
+                        <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
+ 
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item linknavbar">
                             <a class="nav-link" href="{{ route('register') }}">Inscription</a>
                         </li>
 
-                        <li class="nav-item" style="width: 100px">
+                        <li class="nav-item linknavbar">
                             <a class="nav-link" href="{{ route('login') }}">Connexion</a>
                         </li>
+
+                    </ul>
 
                         @else
 
@@ -79,14 +85,14 @@
                             </li>
 
                         @endguest
-                    
-                    </ul>
             
+                    </div>
+                
                 </div>
-            
+
             </nav>
         
-
+        
         <main>
             @yield('content')
         </main>
