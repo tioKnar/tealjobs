@@ -10537,10 +10537,9 @@ body {
 
 .btn-lg,
 .btn-group-lg > .btn {
-  -webkit-box-shadow: 6px 7px 25px black;
-          box-shadow: 6px 7px 25px black;
   margin-top: 50px;
-  width: 300px;
+  width: 400px;
+  padding: 50px;
   border-radius: 1.3em;
   mix-blend-mode: color-dodge;
 }
@@ -10626,19 +10625,23 @@ label {
   font-family: "Merriweather", serif;
 }
 
-.address {
+#success-message #success-message {
+  color: #00796B;
+}
+
+#success-message .address {
   color: #26A69A;
   font-family: "Merriweather", serif;
   background-color: white;
   height: 30px;
 }
 
-#adress {
+#success-message #adress {
   color: #26A69A;
 }
 
 @media screen and (max-width: 991px) {
-  .navbar-laravel {
+  #success-message .navbar-laravel {
     padding: 10px;
   }
 }
