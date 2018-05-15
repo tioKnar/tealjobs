@@ -25,74 +25,146 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-laravel">
+
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="img/logo.png" style="width: 120px; height: 60px;">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        
+                    @guest
+                    
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="/">Accueil</a>
+                        </li>
+
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
 
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('S\'inscritre') }}</a></li>
-                            <li><a class="nav-link" href="contact">{{ __('Contact') }}</a></li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                        <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
+ 
+                    <ul class="navbar-nav">
 
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="#" id="register">Inscription</a>
+                        </li>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        <li class="nav-item linknavbar" id="connect">
+                            <a class="nav-link" href="#">Connexion</a>
+                        </li>
+
+                    </ul>
+
+                    @else
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="/">Accueil</a>
+                        </li>
+
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                        <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
+ 
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="{{ route('register') }}">Historique</a>
+                        </li>
+
+                        <li class="nav-item dropdown linknavbar">
+                                
+                            <a class="nav-link" href="#"  
+                                onclick="event.preventDefault();document.getElementById('logout-form').submit();"> Déconnexion
+                                    
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                            </form>
 
-        <main class="py-4">
+                        </li>
+
+                    </ul>
+
+                        @endguest
+            
+                    </div>
+                
+                </div>
+
+            </nav>
+
+            <div id="popupconnect"></div>
+        
+        <main>
             @yield('content')
         </main>
 
         <footer>
             
-            <div class="row align-items-center text-center">
-                <div class="col">
-                    <a href="" class="footerlink">Contactez nous</a><br>
+            <div class="container-fluid">
 
-                    <a href=""><img class="logofooter" src="img/facebook.png"></a>
-                    <a href=""><img class="logofooter" src="img/twitter.png"></a>
-                    <a href=""><img class="logofooter" src="img/instagram.png"></a>
-                    <a href=""><img class="logofooter" src="img/linkedin.png"></a>
-                    <a href=""><img class="logofooter" src="img/googleplus.png"></a><br>
+                <div class="row align-items-center text-center">
 
-                    <a href="" class="footerlink">Mentions légales</a>
+                    <div class="col">
+
+                        <a href="" class="footerlink">Contactez nous</a><br>
+
+                        <a href=""><img class="logofooter" src="img/facebook.png"></a>
+                        <a href=""><img class="logofooter" src="img/twitter.png"></a>
+                        <a href=""><img class="logofooter" src="img/instagram.png"></a>
+                        <a href=""><img class="logofooter" src="img/linkedin.png"></a>
+                        <a href=""><img class="logofooter" src="img/googleplus.png"></a><br>
+
+                        <a href="" class="footerlink">Mentions légales</a>
+
+                    </div>
+
                 </div>
+
             </div>
 
         </footer>
 
     </div>
 </body>
+
+<script>
+    
+$(function() {
+
+    $('#connect').on('click', function() {
+
+        $.get('login', function(data) {
+
+            $('#popupconnect').html(data);
+        })
+    })
+
+    $('#register').on('click', function() {
+
+        $.get('register', function(data) {
+
+            $('#popupconnect').html(data);
+        })
+    })
+});
+
+</script>
+
 </html>

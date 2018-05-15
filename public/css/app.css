@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);/*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -32,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Raleway", sans-serif;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -71,7 +71,11 @@ section {
 
 body {
   margin: 0;
+<<<<<<< HEAD
   font-family: "Raleway", sans-serif;
+=======
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+>>>>>>> ef4a243057565c0246686ea9797a8790b7bec5db
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6266,7 +6270,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6391,7 +6395,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Raleway", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10412,6 +10416,7 @@ a.text-dark:focus {
 }
 
 .navbar-laravel {
+<<<<<<< HEAD
   background-color: #138496;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -10419,21 +10424,39 @@ a.text-dark:focus {
 
 .navbar-light .navbar-nav .nav-link {
   color: #B2EBF2;
+=======
+  background-color: #1B4C51;
+  padding: 0px;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #B2DFDB;
+>>>>>>> ef4a243057565c0246686ea9797a8790b7bec5db
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
   color: white;
 }
 
+.linknavbar {
+  text-align: center;
+  width: 120px;
+}
+
+.navbar-brand {
+  width: 140px;
+  margin: 0px;
+}
+
 footer {
-  background-color: #138496;
+  background-color: #1B4C51;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .footerlink {
   text-decoration: none;
-  color: #B2EBF2;
+  color: #B2DFDB;
 }
 
 .footerlink:hover {
@@ -10477,6 +10500,75 @@ footer {
   border-color: #17a2b8;
 }
 
+body {
+  font-family: "Merriweather", serif;
+}
+
+#jumbo-tree {
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  width: 100vw;
+  min-width: 1100px;
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.lead {
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.jumbotron {
+  background: transparent;
+  margin-top: 0px;
+  color: white;
+  height: 600px;
+}
+
+.jumbo-description {
+  font-size: 1.1em;
+  margin-top: 9%;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  -webkit-box-shadow: 6px 7px 25px black;
+          box-shadow: 6px 7px 25px black;
+  margin-top: 50px;
+  width: 300px;
+  border-radius: 1.3em;
+  mix-blend-mode: color-dodge;
+}
+
+.grey {
+  padding: 5em 1em;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+h2,
+.lead-title,
+.lead-subtitle {
+  font-family: "Inconsolata", monospace;
+}
+
+h2 .lead-title,
+.lead-title .lead-title,
+.lead-subtitle .lead-title {
+  font-size: 35px;
+}
+
+h2 .lead-subtitle,
+.lead-title .lead-subtitle,
+.lead-subtitle .lead-subtitle {
+  font-size: 25px;
+}
+
 #pageactive {
   -webkit-box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
           box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
@@ -10508,3 +10600,47 @@ footer {
           transform: scale(1.1);
 }
 
+<<<<<<< HEAD
+=======
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+.formulaire-contact {
+  margin-top: 2em;
+}
+
+.formulaire-contact:hover {
+  -webkit-transform: scale(1.05);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-box-shadow: 4px 4px 15px -20px #00796b;
+}
+
+.etoile {
+  color: red;
+}
+
+label {
+  font-family: "Merriweather", serif;
+}
+
+.address {
+  color: #26A69A;
+  font-family: "Merriweather", serif;
+  background-color: white;
+  height: 30px;
+}
+
+#adress {
+  color: #26A69A;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-laravel {
+    padding: 10px;
+  }
+}
+
+>>>>>>> ef4a243057565c0246686ea9797a8790b7bec5db
