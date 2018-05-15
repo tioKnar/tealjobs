@@ -72,9 +72,15 @@ section {
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+<<<<<<< HEAD
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+=======
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #212529;
   text-align: left;
   background-color: #f5f8fa;
@@ -398,36 +404,64 @@ h6,
 
 h1,
 .h1 {
+<<<<<<< HEAD
+  font-size: 2.25rem;
+=======
   font-size: 2.5rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 h2,
 .h2 {
+<<<<<<< HEAD
+  font-size: 1.8rem;
+=======
   font-size: 2rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 h3,
 .h3 {
+<<<<<<< HEAD
+  font-size: 1.575rem;
+=======
   font-size: 1.75rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 h4,
 .h4 {
+<<<<<<< HEAD
+  font-size: 1.35rem;
+=======
   font-size: 1.5rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 h5,
 .h5 {
+<<<<<<< HEAD
+  font-size: 1.125rem;
+=======
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 h6,
 .h6 {
+<<<<<<< HEAD
+  font-size: 0.9rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+=======
   font-size: 1rem;
 }
 
 .lead {
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   font-weight: 300;
 }
 
@@ -499,7 +533,11 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
+<<<<<<< HEAD
+  font-size: 1.125rem;
+=======
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 .blockquote-footer {
@@ -2221,8 +2259,13 @@ pre code {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
+<<<<<<< HEAD
+  font-size: 0.9rem;
+  line-height: 1.6;
+=======
   font-size: 1rem;
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
@@ -2282,7 +2325,11 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
+<<<<<<< HEAD
+  height: calc(2.19rem + 2px);
+=======
   height: calc(2.25rem + 2px);
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 select.form-control:focus::-ms-value {
@@ -2301,20 +2348,32 @@ select.form-control:focus::-ms-value {
   padding-bottom: calc(0.375rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
+<<<<<<< HEAD
+  line-height: 1.6;
+=======
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
+<<<<<<< HEAD
+  font-size: 1.125rem;
+=======
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1.5;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
+<<<<<<< HEAD
+  font-size: 0.7875rem;
+=======
   font-size: 0.875rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1.5;
 }
 
@@ -2324,7 +2383,11 @@ select.form-control:focus::-ms-value {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   margin-bottom: 0;
+<<<<<<< HEAD
+  line-height: 1.6;
+=======
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #212529;
   background-color: transparent;
   border: solid transparent;
@@ -2354,7 +2417,11 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
+<<<<<<< HEAD
+  font-size: 0.7875rem;
+=======
   font-size: 0.875rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2365,7 +2432,11 @@ select.form-control-sm:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
+<<<<<<< HEAD
+  height: calc(1.68125rem + 2px);
+=======
   height: calc(1.8125rem + 2px);
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 .form-control-lg,
@@ -2375,7 +2446,11 @@ select.form-control-sm:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: 0.5rem 1rem;
+<<<<<<< HEAD
+  font-size: 1.125rem;
+=======
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -2386,7 +2461,11 @@ select.form-control-lg:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]) {
+<<<<<<< HEAD
+  height: calc(2.6875rem + 2px);
+=======
   height: calc(2.875rem + 2px);
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 .form-group {
@@ -2810,8 +2889,13 @@ select.form-control-lg:not([size]):not([multiple]),
           user-select: none;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
+<<<<<<< HEAD
+  font-size: 0.9rem;
+  line-height: 1.6;
+=======
   font-size: 1rem;
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   border-radius: 0.25rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -3527,7 +3611,11 @@ fieldset:disabled a.btn {
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
+<<<<<<< HEAD
+  font-size: 1.125rem;
+=======
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -3535,7 +3623,11 @@ fieldset:disabled a.btn {
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
+<<<<<<< HEAD
+  font-size: 0.7875rem;
+=======
   font-size: 0.875rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3624,7 +3716,11 @@ input[type="button"].btn-block {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
+<<<<<<< HEAD
+  font-size: 0.9rem;
+=======
   font-size: 1rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #212529;
   text-align: left;
   list-style: none;
@@ -3789,7 +3885,11 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
+<<<<<<< HEAD
+  font-size: 0.7875rem;
+=======
   font-size: 0.875rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #6c757d;
   white-space: nowrap;
 }
@@ -4067,9 +4167,15 @@ input[type="button"].btn-block {
           align-items: center;
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
+<<<<<<< HEAD
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+=======
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #495057;
   text-align: center;
   white-space: nowrap;
@@ -4106,7 +4212,11 @@ input[type="button"].btn-block {
 .custom-control {
   position: relative;
   display: block;
+<<<<<<< HEAD
+  min-height: 1.6rem;
+=======
   min-height: 1.5rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   padding-left: 1.5rem;
 }
 
@@ -4153,7 +4263,11 @@ input[type="button"].btn-block {
 
 .custom-control-label::before {
   position: absolute;
+<<<<<<< HEAD
+  top: 0.3rem;
+=======
   top: 0.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   left: -1.5rem;
   display: block;
   width: 1rem;
@@ -4169,7 +4283,11 @@ input[type="button"].btn-block {
 
 .custom-control-label::after {
   position: absolute;
+<<<<<<< HEAD
+  top: 0.3rem;
+=======
   top: 0.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   left: -1.5rem;
   display: block;
   width: 1rem;
@@ -4227,9 +4345,15 @@ input[type="button"].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
+<<<<<<< HEAD
+  height: calc(2.19rem + 2px);
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  line-height: 1.6;
+=======
   height: calc(2.25rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #495057;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
@@ -4270,14 +4394,22 @@ input[type="button"].btn-block {
 }
 
 .custom-select-sm {
+<<<<<<< HEAD
+  height: calc(1.68125rem + 2px);
+=======
   height: calc(1.8125rem + 2px);
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
 }
 
 .custom-select-lg {
+<<<<<<< HEAD
+  height: calc(2.6875rem + 2px);
+=======
   height: calc(2.875rem + 2px);
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 125%;
@@ -4287,7 +4419,11 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
+<<<<<<< HEAD
+  height: calc(2.19rem + 2px);
+=======
   height: calc(2.25rem + 2px);
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   margin-bottom: 0;
 }
 
@@ -4295,7 +4431,11 @@ input[type="button"].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
+<<<<<<< HEAD
+  height: calc(2.19rem + 2px);
+=======
   height: calc(2.25rem + 2px);
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   margin: 0;
   opacity: 0;
 }
@@ -4320,9 +4460,15 @@ input[type="button"].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
+<<<<<<< HEAD
+  height: calc(2.19rem + 2px);
+  padding: 0.375rem 0.75rem;
+  line-height: 1.6;
+=======
   height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #495057;
   background-color: #fff;
   border: 1px solid #ced4da;
@@ -4336,9 +4482,15 @@ input[type="button"].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
+<<<<<<< HEAD
+  height: 2.19rem;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.6;
+=======
   height: 2.25rem;
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: #495057;
   content: "Browse";
   background-color: #e9ecef;
@@ -4592,10 +4744,17 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
+<<<<<<< HEAD
+  padding-top: 0.32rem;
+  padding-bottom: 0.32rem;
+  margin-right: 1rem;
+  font-size: 1.125rem;
+=======
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4647,7 +4806,11 @@ input[type="button"].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
+<<<<<<< HEAD
+  font-size: 1.125rem;
+=======
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -5440,7 +5603,11 @@ input[type="button"].btn-block {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
+<<<<<<< HEAD
+  font-size: 1.125rem;
+=======
   font-size: 1.25rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1.5;
 }
 
@@ -5456,7 +5623,11 @@ input[type="button"].btn-block {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
+<<<<<<< HEAD
+  font-size: 0.7875rem;
+=======
   font-size: 0.875rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   line-height: 1.5;
 }
 
@@ -5629,7 +5800,11 @@ input[type="button"].btn-block {
 }
 
 .alert-dismissible {
+<<<<<<< HEAD
+  padding-right: 3.85rem;
+=======
   padding-right: 4rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 .alert-dismissible .close {
@@ -5778,7 +5953,11 @@ input[type="button"].btn-block {
   display: flex;
   height: 1rem;
   overflow: hidden;
+<<<<<<< HEAD
+  font-size: 0.675rem;
+=======
   font-size: 0.75rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -6055,7 +6234,11 @@ input[type="button"].btn-block {
 
 .close {
   float: right;
+<<<<<<< HEAD
+  font-size: 1.35rem;
+=======
   font-size: 1.5rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -6199,7 +6382,11 @@ button.close {
 
 .modal-title {
   margin-bottom: 0;
+<<<<<<< HEAD
+  line-height: 1.6;
+=======
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
 }
 
 .modal-body {
@@ -6269,7 +6456,11 @@ button.close {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
+<<<<<<< HEAD
+  line-height: 1.6;
+=======
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -6280,7 +6471,11 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
+<<<<<<< HEAD
+  font-size: 0.7875rem;
+=======
   font-size: 0.875rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   word-wrap: break-word;
   opacity: 0;
 }
@@ -6394,7 +6589,11 @@ button.close {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
+<<<<<<< HEAD
+  line-height: 1.6;
+=======
   line-height: 1.5;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -6405,7 +6604,11 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
+<<<<<<< HEAD
+  font-size: 0.7875rem;
+=======
   font-size: 0.875rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -6567,7 +6770,11 @@ button.close {
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
+<<<<<<< HEAD
+  font-size: 0.9rem;
+=======
   font-size: 1rem;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   color: inherit;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -10412,11 +10619,17 @@ a.text-dark:focus {
 }
 
 .navbar-laravel {
+<<<<<<< HEAD
+  background-color: #fff;
+=======
   background-color: #138496;
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+<<<<<<< HEAD
+=======
 .navbar-light .navbar-nav .nav-link {
   color: #B2EBF2;
 }
@@ -10508,3 +10721,4 @@ footer {
           transform: scale(1.1);
 }
 
+>>>>>>> 0013dfa710c5819f4ffabca067174bc917a49f86
