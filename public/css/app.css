@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);/*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10417,11 +10417,11 @@ a.text-dark:focus {
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
   color: #B2EBF2;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-expand-lg .navbar-nav .nav-link:hover {
   color: white;
 }
 
@@ -10541,5 +10541,25 @@ footer {
   color: black;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+.formulaire-contact {
+  margin-top: 2em;
+}
+
+.formulaire-contact:hover {
+  -webkit-transform: scale(1.05);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-box-shadow: 4px 4px 15px -20px #00796b;
+}
+
+label {
+  font-family: "Merriweather", serif;
 }
 

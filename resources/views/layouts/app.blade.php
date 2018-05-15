@@ -46,7 +46,7 @@
                             <a class="nav-link" href="contact">Contact</a>
                         </li>
                         
-                        <li class="nav-item" style="width: 100px">
+                        <li class="nav-item" style="width: 120px">
                             <a class="navbar-brand" href="/"><img src="img/logo.png" style="width: 120px; height: 60px"></a>
                         </li>
 
