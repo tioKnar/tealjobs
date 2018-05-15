@@ -42,7 +42,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('S\'inscritre') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('S\'inscrire') }}</a></li>
                             <li><a class="nav-link" href="contact">{{ __('Contact') }}</a></li>
                         @else
                             <li class="nav-item dropdown">
