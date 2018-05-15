@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FormulaireContact;
+use Mail;
 use Redirect;
 use Request;
 use Validator;
@@ -39,6 +41,20 @@ class ContactController extends Controller
                             ->withErrors($validator)
                             ->withInput();
         }
+
+        $title = 'Formulaire de message';
+        $content = $values['lastname'] . ' - ' . $values['name'] . '<br>' . $values['message'];
+
+        $emails = [
+            [getenv('APP_EMAIL')]
+        ];
+        foreach($emails as $email) {
+            Mail::to($email)
+                ->send(new FormulaireContact($title, $content));
+        }
+
+        return view('contact.index')
+            ->with('successMessage', 'Message envoyé !');
 
     }
 }

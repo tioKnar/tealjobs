@@ -10559,7 +10559,21 @@ footer {
   -webkit-box-shadow: 4px 4px 15px -20px #00796b;
 }
 
+.etoile {
+  color: red;
+}
+
 label {
   font-family: "Merriweather", serif;
+}
+
+.address {
+  color: #26A69A;
+  font-family: "Merriweather", serif;
+  background-color: white;
+}
+
+#adress {
+  color: #26A69A;
 }
 

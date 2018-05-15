@@ -149,9 +149,6 @@ footer {
 	transform: scale(1.1);
 }
 
-<<<<<<< HEAD
-
-
 // Page contact
 
 #map {
@@ -171,8 +168,25 @@ footer {
 
 }
 
+.etoile {
+	color: red;
+}
+
 label {
   font-family: $font;
 }
-=======
->>>>>>> 9715aa89ee109abb66d2da584ef1777984d2526c
+
+#success-message {
+
+}
+.address {
+	color: #26A69A;
+	font-family: $font;
+	background-color: white;
+	height: 30px;
+}
+
+#adress {
+	color: #26A69A;
+
+}
