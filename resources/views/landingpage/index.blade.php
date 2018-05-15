@@ -2,15 +2,15 @@
 
 @section('content')
 	{{-- JUMBOTRON --}}
-	<div class="container-fluid jumbo">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col- col-lg-12">
-				<div class="jumbotron jumbotron-fluid mx-auto">
+				<img src="images/result_page.jpg" alt="tree" class="img-fluid" id="jumbo-tree">
+				<div class="jumbotron jumbotron-fluid">
 				  <div class="container-fluid jumbo-text">
-					<p class="lead">Il n'y a pas d'âge pour apprendre ...à se connaître.</p>
-				  	<hr class="my-4">
-				  	<p>Orientation post bac, reconversion professionnelle ou indécisions de toujours, tealJobs vous oriente vers les métiers d'avenir qui correspondent le mieux à votre personnalité.</p>
-				  	<p class="lead align-items-center">
+					<p class="lead lead-title text-right">Il n'y a pas d'âge pour apprendre <br> <span class="lead-subtitle">...à se connaître.</span> </p>
+				  	<p class="jumbo-description text-center">Orientation post bac, reconversion professionnelle ou indécisions de toujours, <br> tealJobs vous oriente vers les métiers d'avenir qui correspondent le mieux à votre personnalité.</p>
+				  	<p class="lead text-center">
 				    	<a class="btn btn-dark btn-lg" href="/test" role="button">Testez-vous !</a>
 				  	</p>
 				  </div>
@@ -20,21 +20,21 @@
 	</div>
 
 	{{-- EXPLICATIONS --}}
-	<section class="grey container-fluid bg-light">
+	<section class="grey container-fluid">
 
-      <div class="row">
+      <div class="row justify-content-center">
 	        <div class="col-lg-4 context">
-	          <span> <img src="img/landing_icons/network.png" alt="network" height="100" width="100" > </span>
+	          <span> <img src="img/landing_icons/network.png" id="landing-logo" alt="network" height="100" width="100" > </span>
 	          <h2>Contexte</h2>
 	          <p>Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere</p>
 	        </div>
 	        <div class="col-lg-4 potential">
-	          <span> <img src="img/landing_icons/sprout.png" alt="sprout" height="100" width="100" > </span>
+	          <span> <img src="img/landing_icons/sprout.png" id="landing-logo" alt="sprout" height="100" width="100" > </span>
 	          <h2>Potentiel</h2>
 	          <p>Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere</p>
 	        </div>
 	        <div class="col-lg-4 success">
-	          <span> <img src="img/landing_icons/success.png" alt="success" height="100" width="100" > </span>
+	          <span> <img src="img/landing_icons/success.png" id="landing-logo" alt="success" height="100" width="100" > </span>
 	          <h2>Métiers</h2>
 	          <p>Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere</p>
 	        </div>

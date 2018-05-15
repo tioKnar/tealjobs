@@ -32,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Raleway", sans-serif;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -71,7 +71,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6266,7 +6266,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6391,7 +6391,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Raleway", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10477,39 +10477,71 @@ footer {
   border-color: #17a2b8;
 }
 
-#fond {
-  padding: 35% 35% 0 8%;
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
+body {
+  font-family: "Merriweather", serif;
+}
+
+#jumbo-tree {
+  background-size: cover;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
   width: 100%;
-  height: 600px;
+  height: 800px;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-.jumbo {
   margin: 0px;
   padding: 0px;
 }
 
-.jumbo-text {
-  margin: 35% 35% 0% 20%;
+.lead {
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 1;
 }
 
 .jumbotron {
-  -webkit-filter: none !important;
-          filter: none !important;
-  background: url(/images/result_page_pano.jpg?0487819653b740d44fc55a23dfe745f1);
-  background-size: cover;
-  margin-bottom: 0px;
+  background: transparent;
+  margin-top: 25%;
   color: white;
-  text-shadow: black 0.3em 0.3em 0.3em;
+  height: 400px;
 }
 
-.lead {
-  -webkit-filter: none;
-          filter: none;
+.jumbo-description {
+  font-size: 1.1em;
+  margin-top: 9%;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  margin-top: 2%;
+  width: 20em;
+  border-radius: 1.3em;
+}
+
+.grey {
+  padding-top: 40px;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+h2,
+.lead-title,
+.lead-subtitle {
+  font-family: "Inconsolata", monospace;
+}
+
+h2 .lead-title,
+.lead-title .lead-title,
+.lead-subtitle .lead-title {
+  font-size: 2em;
+}
+
+h2 .lead-subtitle,
+.lead-title .lead-subtitle,
+.lead-subtitle .lead-subtitle {
+  font-size: 0.7em;
 }
 
 #pageactive {
