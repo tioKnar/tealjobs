@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(IntersectorsTableSeeder::class);
         $this->call(AnalysesTableSeeder::class);
         $this->call(QuestionsTableSeeder::class);
+        $this->call(AnswersTableSeeder::class);
+        $this->call(InteranswersTableSeeder::class);
     }
 }
