@@ -10,16 +10,24 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12" id="map"></div>
-
         </div>
 
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center address">
+                <strong><p id="adress">66 Rue Abbé de l'Épée, 33000 Bordeaux</p></strong>
+            </div>
+        </div>
+
+        @if(!empty($successMessage) )
+            <strong id="success-message">{{ $successMessage }} </strong>
+        @endif
         <div class="row justify-content-center text-align">
             <div class="col-md-6 formulaire-contact">
                 <form method="POST">
                     @csrf
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="lastname">Votre Nom</label>
+                            <label for="lastname">Votre Nom <span class="etoile" >*</span></label>
                             <input type="text" value="{{ old('lastname') }}" class="form-control {{ $errors->has('lastname') ? ' has-error' : '' }}" name="lastname" >
                         </div>
                         @if ($errors->has('lastname'))
@@ -31,7 +39,7 @@
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="name">Votre Prénom</label>
+                            <label for="name">Votre Prénom <span class="etoile" >*</span></label>
                             <input type="text" value="{{ old('name') }}" class="form-control {{ $errors->has('name') ? ' has-error' : '' }}" name="name" >
                         </div>
                         @if ($errors->has('name'))
@@ -43,7 +51,7 @@
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="email">Votre Email</label>
+                            <label for="email">Votre Email <span class="etoile" >*</span></label>
                             <input type="email" value="{{ old('email') }}" class="form-control {{ $errors->has('email') ? ' has-error' : '' }}" name="email" >
                         </div>
                         @if ($errors->has('email'))
@@ -55,7 +63,7 @@
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="object">Objet de la demande</label>
+                            <label for="object">Objet de la demande <span class="etoile" >*</span></label>
                             <input type="text" value="{{ old('object') }}" class="form-control {{ $errors->has('object') ? ' has-error' : '' }}" name="object" >
                         </div>
                         @if ($errors->has('object'))
@@ -67,7 +75,7 @@
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="message">Votre Message</label>
+                            <label for="message">Votre Message <span class="etoile" >*</span></label>
                             <textarea type="text" value="{{ old('message') }}" class="form-control {{ $errors->has('message') ? ' has-error' : '' }}" name="message" ></textarea>
                         </div>
                         @if ($errors->has('message'))
