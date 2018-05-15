@@ -10413,15 +10413,15 @@ a.text-dark:focus {
 
 .navbar-laravel {
   background-color: #138496;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
   color: #B2EBF2;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-expand-lg .navbar-nav .nav-link:hover {
   color: white;
 }
 
@@ -10475,6 +10475,41 @@ footer {
 .btn-info:hover {
   background-color: #17a2b8;
   border-color: #17a2b8;
+}
+
+#fond {
+  padding: 35% 35% 0 8%;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  width: 100%;
+  height: 600px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.jumbo {
+  margin: 0px;
+  padding: 0px;
+}
+
+.jumbo-text {
+  margin: 35% 35% 0% 20%;
+}
+
+.jumbotron {
+  -webkit-filter: none !important;
+          filter: none !important;
+  background: url(/images/result_page_pano.jpg?0487819653b740d44fc55a23dfe745f1);
+  background-size: cover;
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.lead {
+  -webkit-filter: none;
+          filter: none;
 }
 
 #pageactive {
