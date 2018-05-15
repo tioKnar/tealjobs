@@ -10609,26 +10609,23 @@ label {
   font-family: "Merriweather", serif;
 }
 
-<<<<<<< HEAD
-#success-message {
+#success-message #success-message {
   color: #00796B;
 }
 
-=======
->>>>>>> 28fe8024a860119f04ced567ae4dd30b98eea946
-.address {
+#success-message .address {
   color: #26A69A;
   font-family: "Merriweather", serif;
   background-color: white;
   height: 30px;
 }
 
-#adress {
+#success-message #adress {
   color: #26A69A;
 }
 
 @media screen and (max-width: 991px) {
-  .navbar-laravel {
+  #success-message .navbar-laravel {
     padding: 10px;
   }
 }
