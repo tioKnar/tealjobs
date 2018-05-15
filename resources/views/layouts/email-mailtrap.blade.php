@@ -36,32 +36,13 @@
         }
     }
 
-    .btn {
-        background: #313E4B;
-        line-height: 38px;
-        font-weight: 300;
-        letter-spacing: 1px;
-        padding: 15px;
-        text-decoration: none;
-        text-transform: uppercase;
-        border-radius: 3px;
-        color:#fff;
-        font-size: 1.4rem;
-        float: left;
-    }
 
-    .black-link-dotted
-    {
-        text-decoration: none;
-        color:#474d4b;
-        border-bottom: 1px dotted #474d4b;
-    }
 </style>
 </head>
 <body>
 <table align="center" cellpadding="0" cellspacing="0" border="0" style="width: 100%; background-color: #fff; text-align: center;">
     <tr>
-        <td style="padding:20px 40px 20px; color:#fff; text-align: center; background-color: #313E4B;">
+        <td style="padding:20px 40px 20px; color:#fff; text-align: center; background-color: #FFFFFF;">
             <table align="center" cellpadding="0" cellspacing="0" border="0" style="width: 50%;">
                 <tr>
                     <td colspan="4" style="text-align: center;">
@@ -77,7 +58,7 @@
     <tr>
         <td style="padding:20px 40px 20px; color:#4e5665; text-align: center;">
             <multiline>
-                <p style="text-align: center;">{{'De : ' . $_POST['lastname'] . ' ' . $_POST['name']}} <br> {{ $_POST['message'] }}</p>
+                <p style="text-align: center;">{{'De : ' . $_POST['lastname'] . ' ' . $_POST['name']}} <br> Message :  {{ $_POST['message'] }}</p>
             </multiline>
         </td>
     </tr>
@@ -86,7 +67,7 @@
         <td style="padding:20px 40px 20px; color:#fff; text-align: center; background-color: #313E4B;">
             <table align="center" cellpadding="0" cellspacing="0" border="0" style="width: 50%;">
                 <tr>
-                    <td colspan="4" style="text-align: center;">Envoyé par <a href="#" title="{{ $_POST['email'] }}" style="color: #fff; text-decoration: underline;">{{ $_POST['email'] }}</a></td>
+                    <td colspan="4" style="text-align: center;">Envoyé de <a href="#" title="{{ $_POST['email'] }}" style="color: #fff; text-decoration: underline;">{{ $_POST['email'] }}</a></td>
                 </tr>
             </table>
         </td>

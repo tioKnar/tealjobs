@@ -133,9 +133,9 @@ body {
 }
 
 .btn-lg {
-	box-shadow: 6px 7px 25px black;
 	margin-top: 50px;
-	width: 300px;
+	width: 400px;
+	padding: 50px;
 	border-radius: 1.3em;
 	mix-blend-mode: color-dodge;
 }
@@ -191,6 +191,10 @@ h2, .lead-title, .lead-subtitle {
 }
 
 
+
+
+
+
 // Page contact
 
 #map {
@@ -218,8 +222,12 @@ label {
   font-family: $font;
 }
 
+
 #success-message {
 
+
+#success-message {
+	color:  #00796B;
 }
 
 .address {
@@ -243,5 +251,9 @@ label {
     .navbar-laravel {
   		padding: 10px;
 	}
+
 }
+
+}
+
 
