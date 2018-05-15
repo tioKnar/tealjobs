@@ -191,10 +191,6 @@ h2, .lead-title, .lead-subtitle {
 }
 
 
-
-
-
-
 // Page contact
 
 #map {
@@ -222,10 +218,6 @@ label {
   font-family: $font;
 }
 
-
-#success-message {
-
-
 #success-message {
 	color:  #00796B;
 }
@@ -242,18 +234,15 @@ label {
 }
 
 
-
 // Media-queries
 
+@media screen and (max-width: 991px) {
 
-@media screen and (max-width: 991px)
-{
     .navbar-laravel {
   		padding: 10px;
 	}
 
 }
 
-}
 
 
