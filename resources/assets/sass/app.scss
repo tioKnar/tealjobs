@@ -222,7 +222,7 @@ label {
 }
 
 #success-message {
-
+	color:  #00796B;
 }
 
 .address {
@@ -237,13 +237,12 @@ label {
 }
 
 
-
 // Media-queries
 
+@media screen and (max-width: 991px) {
 
-@media screen and (max-width: 991px)
-{
     .navbar-laravel {
   		padding: 10px;
 	}
+
 }

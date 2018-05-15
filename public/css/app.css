@@ -10609,6 +10609,10 @@ label {
   font-family: "Merriweather", serif;
 }
 
+#success-message {
+  color: #00796B;
+}
+
 .address {
   color: #26A69A;
   font-family: "Merriweather", serif;
