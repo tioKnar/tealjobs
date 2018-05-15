@@ -14,12 +14,12 @@
 // Header 
 
 .navbar-laravel {
-  background-color: #138496;
+  background-color: #1B4C51;
   padding: 0px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-	color: #B2EBF2;
+	color: #B2DFDB;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -28,7 +28,7 @@
 
 .linknavbar {
 	text-align: center;
-	width: 100px;
+	width: 120px;
 }
 
 .navbar-brand {
@@ -40,14 +40,14 @@
 // Footer 
 
 footer {
-	 background-color: #138496;
+	 background-color: #1B4C51;
 	 padding-top: 25px;
 	 padding-bottom: 25px;
 }
 
 .footerlink {
 	text-decoration: none;
-	color: #B2EBF2;
+	color: #B2DFDB;
 }
 
 .footerlink:hover {
@@ -101,14 +101,14 @@ body {
 }
 
 #jumbo-tree {
-  background-size: cover;
+
   filter: blur(15px);
-  width: 100%;
-  height: 800px;
-  position: fixed;
-  top:0;
-  left:0;
+  width: 100vw;
+  min-width:1100px;
   z-index: -1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   margin: 0px; 
   padding: 0px;
 }
@@ -122,9 +122,9 @@ body {
 
 .jumbotron {
 	background: transparent;
-	margin-top: 25%;
+	margin-top: 0px;
 	color: white;
-	height: 400px;
+	height: 600px;
 }
 
 .jumbo-description {
@@ -133,9 +133,11 @@ body {
 }
 
 .btn-lg {
-	margin-top: 2%;
-	width: 20em;
+	margin-top: 50px;
+	width: 400px;
+	padding: 50px;
 	border-radius: 1.3em;
+	mix-blend-mode: color-dodge;
 }
 
 
@@ -143,7 +145,7 @@ body {
 
 .grey {
 	
-	padding-top: 40px;
+	padding: 5em 1em;
 	background-color: #F5F5F5;
 	text-align: center
 }
@@ -152,11 +154,11 @@ h2, .lead-title, .lead-subtitle {
 	font-family: $font-title;
 
 	.lead-title {
-		font-size: 2em;
+		font-size: 35px;
 	}
 
 	.lead-subtitle {
-		font-size: 0.7em;
+		font-size: 25px;
 	}
 
 }
@@ -188,10 +190,14 @@ h2, .lead-title, .lead-subtitle {
 	transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+
+>>>>>>> 28fe8024a860119f04ced567ae4dd30b98eea946
 // Page contact
 
 #map {
@@ -219,10 +225,15 @@ label {
   font-family: $font;
 }
 
+<<<<<<< HEAD
+=======
+#success-message {
+>>>>>>> 28fe8024a860119f04ced567ae4dd30b98eea946
 
 #success-message {
 	color:  #00796B;
 }
+
 .address {
 	color: #26A69A;
 	font-family: $font;
@@ -232,7 +243,6 @@ label {
 
 #adress {
 	color: #26A69A;
-
 }
 
 
@@ -245,4 +255,9 @@ label {
     .navbar-laravel {
   		padding: 10px;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 28fe8024a860119f04ced567ae4dd30b98eea946

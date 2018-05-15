@@ -55,34 +55,51 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="{{ route('register') }}">Inscription</a>
+                            <a class="nav-link" href="#" id="register">Inscription</a>
                         </li>
 
-                        <li class="nav-item linknavbar">
-                            <a class="nav-link" href="{{ route('login') }}">Connexion</a>
+                        <li class="nav-item linknavbar" id="connect">
+                            <a class="nav-link" href="#">Connexion</a>
                         </li>
 
                     </ul>
 
-                        @else
+                    @else
 
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                    <ul class="navbar-nav">
 
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="/">Accueil</a>
+                        </li>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                        <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
+ 
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item linknavbar">
+                            <a class="nav-link" href="{{ route('register') }}">Historique</a>
+                        </li>
+
+                        <li class="nav-item dropdown linknavbar">
+                                
+                            <a class="nav-link" href="#"  
+                                onclick="event.preventDefault();document.getElementById('logout-form').submit();"> Déconnexion
+                                    
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
-                                    </form>
-                                </div>
-                            </li>
+                            </form>
+
+                        </li>
+
+                    </ul>
 
                         @endguest
             
@@ -91,7 +108,8 @@
                 </div>
 
             </nav>
-        
+
+            <div id="popupconnect"></div>
         
         <main>
             @yield('content')
@@ -99,22 +117,54 @@
 
         <footer>
             
-            <div class="row align-items-center text-center">
-                <div class="col">
-                    <a href="" class="footerlink">Contactez nous</a><br>
+            <div class="container-fluid">
 
-                    <a href=""><img class="logofooter" src="img/facebook.png"></a>
-                    <a href=""><img class="logofooter" src="img/twitter.png"></a>
-                    <a href=""><img class="logofooter" src="img/instagram.png"></a>
-                    <a href=""><img class="logofooter" src="img/linkedin.png"></a>
-                    <a href=""><img class="logofooter" src="img/googleplus.png"></a><br>
+                <div class="row align-items-center text-center">
 
-                    <a href="" class="footerlink">Mentions légales</a>
+                    <div class="col">
+
+                        <a href="" class="footerlink">Contactez nous</a><br>
+
+                        <a href=""><img class="logofooter" src="img/facebook.png"></a>
+                        <a href=""><img class="logofooter" src="img/twitter.png"></a>
+                        <a href=""><img class="logofooter" src="img/instagram.png"></a>
+                        <a href=""><img class="logofooter" src="img/linkedin.png"></a>
+                        <a href=""><img class="logofooter" src="img/googleplus.png"></a><br>
+
+                        <a href="" class="footerlink">Mentions légales</a>
+
+                    </div>
+
                 </div>
+
             </div>
 
         </footer>
 
     </div>
 </body>
+
+<script>
+    
+$(function() {
+
+    $('#connect').on('click', function() {
+
+        $.get('login', function(data) {
+
+            $('#popupconnect').html(data);
+        })
+    })
+
+    $('#register').on('click', function() {
+
+        $.get('register', function(data) {
+
+            $('#popupconnect').html(data);
+        })
+    })
+});
+
+</script>
+
 </html>
