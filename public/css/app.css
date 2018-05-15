@@ -10610,20 +10610,20 @@ label {
   font-family: "Merriweather", serif;
 }
 
-<<<<<<< HEAD
 .address {
   color: #26A69A;
   font-family: "Merriweather", serif;
   background-color: white;
+  height: 30px;
 }
 
 #adress {
   color: #26A69A;
-=======
+}
+
 @media screen and (max-width: 991px) {
   .navbar-laravel {
     padding: 10px;
   }
->>>>>>> 36081a4605fd1018cb88f8b581bf60872df986b4
 }
 
