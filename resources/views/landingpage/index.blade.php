@@ -8,10 +8,10 @@
 				<img src="images/result_page.jpg" alt="tree" class="img-fluid" id="jumbo-tree">
 				<div class="jumbotron jumbotron-fluid">
 				  <div class="container-fluid jumbo-text">
-					<p class="lead lead-title text-right">Il n'y a pas d'âge pour apprendre <br> <span class="lead-subtitle">...à se connaître.</span> </p>
-				  	<p class="jumbo-description text-center">Orientation post bac, reconversion professionnelle ou indécisions de toujours, <br> tealJobs vous oriente vers les métiers d'avenir qui correspondent le mieux à votre personnalité.</p>
+					<p class="lead lead-title text-right">Il n'y a pas d'âge pour apprendre <br> <span class="lead-subtitle">[à se connaître.]</span> </p>
+				  	{{-- <p class="jumbo-description text-center">Orientation post bac, reconversion professionnelle ou indécisions de toujours, <br> tealJobs vous oriente vers les métiers d'avenir qui correspondent le mieux à votre personnalité.</p> --}}
 				  	<p class="lead text-center">
-				    	<a class="btn btn-dark btn-lg" href="/test" role="button">Testez-vous !</a>
+				    	<a class="btn btn-dark btn-lg" href="/test" role="button">Testez-vous</a>
 				  	</p>
 				  </div>
 				</div>

@@ -101,14 +101,14 @@ body {
 }
 
 #jumbo-tree {
-  background-size: cover;
+
   filter: blur(15px);
-  width: 100%;
-  height: 800px;
-  position: fixed;
-  top:0;
-  left:0;
+  width: 100vw;
+  min-width:1100px;
   z-index: -1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   margin: 0px; 
   padding: 0px;
 }
@@ -122,9 +122,9 @@ body {
 
 .jumbotron {
 	background: transparent;
-	margin-top: 25%;
+	margin-top: 0px;
 	color: white;
-	height: 400px;
+	height: 600px;
 }
 
 .jumbo-description {
@@ -133,9 +133,11 @@ body {
 }
 
 .btn-lg {
-	margin-top: 2%;
-	width: 20em;
+	box-shadow: 6px 7px 25px black;
+	margin-top: 50px;
+	width: 300px;
 	border-radius: 1.3em;
+	mix-blend-mode: color-dodge;
 }
 
 
@@ -143,7 +145,7 @@ body {
 
 .grey {
 	
-	padding-top: 40px;
+	padding: 5em 1em;
 	background-color: #F5F5F5;
 	text-align: center
 }
@@ -152,11 +154,11 @@ h2, .lead-title, .lead-subtitle {
 	font-family: $font-title;
 
 	.lead-title {
-		font-size: 2em;
+		font-size: 35px;
 	}
 
 	.lead-subtitle {
-		font-size: 0.7em;
+		font-size: 25px;
 	}
 
 }
@@ -188,8 +190,11 @@ h2, .lead-title, .lead-subtitle {
 	transform: scale(1.1);
 }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 36081a4605fd1018cb88f8b581bf60872df986b4
 // Page contact
 
 #map {
@@ -209,10 +214,30 @@ h2, .lead-title, .lead-subtitle {
 
 }
 
+.etoile {
+	color: red;
+}
+
 label {
   font-family: $font;
 }
 
+<<<<<<< HEAD
+#success-message {
+
+}
+.address {
+	color: #26A69A;
+	font-family: $font;
+	background-color: white;
+	height: 30px;
+}
+
+#adress {
+	color: #26A69A;
+
+}
+=======
 
 
 // Media-queries
@@ -224,3 +249,4 @@ label {
   		padding: 10px;
 	}
 }
+>>>>>>> 36081a4605fd1018cb88f8b581bf60872df986b4
