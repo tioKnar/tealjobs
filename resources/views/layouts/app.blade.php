@@ -38,36 +38,26 @@
                         
                         @guest
 
-                        <li class="nav-item">
+                        <li class="nav-item" style="width: 100px">
                             <a class="nav-link" href="/">Accueil</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item" style="width: 100px">
                             <a class="nav-link" href="contact">Contact</a>
                         </li>
                         
-                        <li class="nav-item">
+                        <li class="nav-item" style="width: 100px">
                             <a class="navbar-brand" href="/"><img src="img/logo.png" style="width: 120px; height: 60px"></a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item" style="width: 100px">
                             <a class="nav-link" href="{{ route('register') }}">Inscription</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item" style="width: 100px">
                             <a class="nav-link" href="{{ route('login') }}">Connexion</a>
                         </li>
 
-<<<<<<< HEAD
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('S\'inscrire') }}</a></li>
-                            <li><a class="nav-link" href="contact">{{ __('Contact') }}</a></li>
-=======
->>>>>>> 924586dd89c138a814ca7ab38d80ed760ee6d882
                         @else
 
                             <li class="nav-item dropdown">
