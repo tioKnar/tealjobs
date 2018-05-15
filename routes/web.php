@@ -31,6 +31,10 @@ Route::post('/contact', 'ContactController@store');
 
 // Route Backend
 
+Route::get('/admin', 'AdminController@index');
+
+Route::post('/admin', 'AdminController@store');
+
 Route::get('/users', 'UsersController@index');
 
 Route::post('/users', 'UsersController@store');

@@ -8,9 +8,105 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+
+// Header 
+
 .navbar-laravel {
-  background-color: #fff;
+  background-color: #138496;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+
+.navbar-light .navbar-nav .nav-link {
+	color: #B2EBF2;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: white;
+}
+
+
+// Footer 
+
+footer {
+	 background-color: #138496;
+	 padding-top: 25px;
+	 padding-bottom: 25px;
+}
+
+.footerlink {
+	text-decoration: none;
+	color: #B2EBF2;
+}
+
+.footerlink:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.logofooter {
+	width: 35px;
+	height: 35px; 
+	margin: 20px 5px 20px 5px;
+}
+
+
+// Page admin
+
+#adminform {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#admininfo {
+	background-color: white;
+	padding: 30px 25px;
+	margin-bottom: 0px;
+}
+
+#adminformup {
+	background-color: #138496;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	height: 55px;
+	line-height: 55px;
+}
+
+.btn-info {
+	background-color: #138496;
+	margin-top: 10px;
+}
+
+.btn-info:hover {
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}
+
+
+// Page gestion users/classes/jobs
+
+#pageactive {
+	box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
+}
+
+.administration {
+	margin-top: 15px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+	border-radius: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 40px;
+	line-height: 40px;
+	test-decoration: none;
+	color: black;
+	transition-property: transform;
+	transition-duration: 0.6s;
+}
+
+.administration:hover {
+	text-decoration: none; 
+	color: black;
+	transform: scale(1.1);
+}
 
