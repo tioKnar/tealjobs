@@ -10413,8 +10413,7 @@ a.text-dark:focus {
 
 .navbar-laravel {
   background-color: #138496;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+  padding: 0px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -10423,6 +10422,16 @@ a.text-dark:focus {
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: white;
+}
+
+.linknavbar {
+  text-align: center;
+  width: 100px;
+}
+
+.navbar-brand {
+  width: 140px;
+  margin: 0px;
 }
 
 footer {
@@ -10593,5 +10602,11 @@ h2 .lead-subtitle,
 
 label {
   font-family: "Merriweather", serif;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-laravel {
+    padding: 10px;
+  }
 }
 
