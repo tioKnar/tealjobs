@@ -2,6 +2,20 @@
 
 @section('content')
 
-coucou je suis le test 
+<div class="container-fluid">
+	
+	<div class="row justify-content-center text-center">
+		
+		<a href="users" class="col-md-2 administration" id="pageactive">Gestion utilisateurs</a>
+
+		<a href="jobs" class="col-md-2 administration">Gestion métiers</a>
+
+		<a href="classes" class="col-md-2 administration">Gestion formations</a>
+
+	</div>
+
+		<br><br><br><h2 style="text-align: center;">Gestion des users</h2><br><br><br>
+
+</div>
 
 @endsection

@@ -16,6 +16,7 @@
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
+<<<<<<< HEAD
         "popper.js": "^1.12",
         "vue": "^2.5.7",
         "webpack": "^3.11.0",
@@ -25,5 +26,11 @@
         "file-loader": "^1.1.11",
         "fs": "0.0.1-security",
         "module": "^1.2.5"
+=======
+        "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "smartwizard": "^4.3.1"
+>>>>>>> 924586dd89c138a814ca7ab38d80ed760ee6d882
     }
 }
