@@ -13901,7 +13901,7 @@ $(document).ready(function () {
 
   setTimeout(function () {
 
-    $('.lead-title').fadeIn("slow");
+    $('#learn').fadeIn("slow");
   }, 4000);
 });
 

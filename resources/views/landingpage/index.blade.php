@@ -4,22 +4,34 @@
 	{{-- JUMBOTRON --}}
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col- col-lg-12">
-				<img src="images/result_page.jpg" alt="tree" class="img-fluid" id="jumbo-tree">
+			<div class="col-12">
 				<div class="jumbotron jumbotron-fluid">
-				  <div class="container-fluid jumbo-text">
-					<p class="lead lead-title text-right">Il n'y a pas d'âge pour apprendre <br> <span class="lead-subtitle">[à se connaître.]</span> </p>
-				  	{{-- <p class="jumbo-description text-center">Orientation post bac, reconversion professionnelle ou indécisions de toujours, <br> tealJobs vous oriente vers les métiers d'avenir qui correspondent le mieux à votre personnalité.</p> --}}
-				  	<p class="lead text-center">
-				    	<a class="btn btn-dark btn-lg" href="/test" role="button">Testez-vous</a>
-				  	</p>
-				  </div>
+					 <div class="container-fluid">
+						<div class="bg"></div>
+					 	<div class="fireflies">@include('fireflies.index')</div>
+					 	<div class="row">
+							<div class="col- col-lg-4 offset-lg-8 text-right" id="learn">
+						    	<p class="lead-title">Il n'y a pas d'âge pour apprendre</p>
+						    	<p class="lead-subtitle">[à se connaître.]</p>
+						    </div>
+						    <div class="col-lg-4 offset-lg-4 col- text-align-center">
+						    	<p class="lead text-center">
+					    			<a class="btn btn-dark btn-lg" href="/test" role="button">Commencer</a>
+					  			</p>
+						    </div>
+						 </div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	{{-- EXPLICATIONS --}}
+
+
+				  	{{-- <p class="jumbo-description text-center">Orientation post bac, reconversion professionnelle ou indécisions de toujours, <br> tealJobs vous oriente vers les métiers d'avenir qui correspondent le mieux à votre personnalité.</p> --}}
+
+
 	<section class="grey container-fluid">
 
       <div class="row justify-content-center">
