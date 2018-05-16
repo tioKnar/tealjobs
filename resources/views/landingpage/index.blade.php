@@ -10,9 +10,9 @@
 						<div class="bg"></div>
 					 	<div class="fireflies">@include('fireflies.index')</div>
 					 	<div class="row">
-							<div class="col- col-lg-4 offset-lg-8 text-right" id="learn">
-						    	<p class="lead-title">Il n'y a pas d'âge pour apprendre</p>
-						    	<p class="lead-subtitle">[à se connaître.]</p>
+							<div class="col- col-lg-6 offset-lg-6 text-right" id="learn">
+						    	<p class="lead-subtitle">Orientation post bac, reconversion professionnelle ou indécisions de toujours,</p>
+						    	<p class="lead-title">tealJobs vous oriente vers les métiers d'avenir qui vous correspondent.</p>
 						    </div>
 						    <div class="col-lg-4 offset-lg-4 col- text-align-center">
 						    	<p class="lead text-center">
@@ -27,10 +27,6 @@
 	</div>
 
 	{{-- EXPLICATIONS --}}
-
-
-				  	{{-- <p class="jumbo-description text-center">Orientation post bac, reconversion professionnelle ou indécisions de toujours, <br> tealJobs vous oriente vers les métiers d'avenir qui correspondent le mieux à votre personnalité.</p> --}}
-
 
 	<section class="grey container-fluid">
 

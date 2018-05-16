@@ -20276,12 +20276,12 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.lead-title {
-  font-size: 2em;
+.lead-subtitle {
+  font-size: 1.1em;
 }
 
-.lead-subtitle {
-  font-size: 1em;
+.lead-title {
+  font-size: 1.5em;
 }
 
 .btn-lg,
