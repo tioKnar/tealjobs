@@ -20157,26 +20157,15 @@ a.text-dark:focus {
 }
 
 .navbar-laravel {
-  background-color: #1B4C51;
-  padding: 0px;
+  background-color: white;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #B2DFDB;
+  color: #00695C;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: white;
-}
-
-.linknavbar {
-  text-align: center;
-  width: 120px;
-}
-
-.navbar-brand {
-  width: 140px;
-  margin: 0px;
+  color: #26A69A;
 }
 
 footer {
@@ -20381,11 +20370,5 @@ label {
 
 #adress {
   color: #26A69A;
-}
-
-@media screen and (max-width: 991px) {
-  .navbar-laravel {
-    padding: 10px;
-  }
 }
 
