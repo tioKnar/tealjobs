@@ -20274,7 +20274,7 @@ body {
   line-height: 2em;
   margin-top: 8vh;
   font-family: "Cutive Mono", monospace;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 733px) {
@@ -20393,5 +20393,9 @@ label {
 #adress {
   color: #26A69A;
   font-family: "Lato", sans-serif;
+}
+
+.col-12 {
+  padding: 0px;
 }
 
