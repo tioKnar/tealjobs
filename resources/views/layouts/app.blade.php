@@ -105,7 +105,7 @@
 
                     <div class="col">
 
-                        <a href="" class="footerlink">Contactez nous</a><br>
+                        <a href="contact" class="footerlink">Contactez nous</a><br>
 
                         <a href=""><img class="logofooter" src="img/facebook.png"></a>
                         <a href=""><img class="logofooter" src="img/twitter.png"></a>
