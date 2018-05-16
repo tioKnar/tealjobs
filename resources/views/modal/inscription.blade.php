@@ -21,11 +21,19 @@
                 <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                    <input  type="text" class="form-group form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" placeholder="Nom" required autofocus>
+                    <input  type="text" class="form-group form-control{{ $errors->has('firstname') ? ' is-invalid' : '' }}" name="firstname" value="{{ old('firstname') }}" placeholder="Prénom" required autofocus>
 
-                        @if ($errors->has('name'))
+                        @if ($errors->has('firstname'))
                             <span class="invalid-feedback">
-                                <strong>{{ $errors->first('name') }}</strong>
+                                <strong>{{ $errors->first('firstname') }}</strong>
+                            </span>
+                        @endif
+
+                    <input  type="text" class="form-group form-control{{ $errors->has('lastname') ? ' is-invalid' : '' }}" name="lastname" value="{{ old('lastname') }}" placeholder="Nom" required autofocus>
+
+                        @if ($errors->has('lastname'))
+                            <span class="invalid-feedback">
+                                <strong>{{ $errors->first('lastname') }}</strong>
                             </span>
                         @endif
 

@@ -14,13 +14,15 @@ class UsersTableSeeder extends Seeder
     {
         $data = [
             [
-        		'name' => 'Admin',
+        		'firstname' => 'Admin',
+                'lastname' => 'Admin',
         		'email' => 'admin@admin.com',
         		'password' => '$2y$10$Bcig7/YblRSjO5VacS.eAesMGMcrKMamRSiDMZ6cWP0VA1Q7e3Y3m',
         		'role' => 'admin',
             ],
             [
-                'name' => 'User',
+                'firstname' => 'User',
+                'lastname' => 'User',
                 'email' => 'user@user.com',
                 'password' => '$2y$10$3ILFr0a1fQubk9Jhx3Ke7uvj1RJp02BPcOtpKgdLlo3fcqpfKNVBW',
                 'role' => 'user',
