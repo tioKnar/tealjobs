@@ -1,13 +1,131 @@
 @extends('layouts.app')
 
     @section ('content')
-<!--    <form id="SignupForm" action="">
-        @foreach ($questions as $question)
-        <fieldset>
-            {{ $question->question }}
-        </fieldset>
-        @endforeach
-    </form> -->
+
+<div id="quizzie">
+  <h1>What Type Of Thing Are You?</h1>
+    <ul class="quiz-step step1 current">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #1: Are you more...</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">This Thing</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap"> 
+                <p class="answer-text">That Thing</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step2">
+        <li class="question">
+            <div class="question-wrap">
+                <p>Question #2: Are you more...</p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">First Thing</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Second Thing</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step3">
+        <li class="question">
+            <div class="question-wrap">
+                <p>Question #3: Are you more...</p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap">
+                <p class="answer-text">One Thing</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Another Thing</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step4">
+        <li class="question">
+            <div class="question-wrap">
+                <p>Question #4: Are you more...</p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap">
+                <p class="answer-text">Thing 1</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Thing 2</p>
+            </div>
+        </li>
+    </ul>
+    <ul id="results">
+        <li class="results-inner">
+            <p>Your result is:</p>
+            <h1></h1>
+            <p class="desc"></p>
+        </li>
+    </ul>
+</div>
+
+
+<div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Test</h2>
+                    <form action="" method="POST">
+                        @csrf
+                        <fieldset>
+                        <p>question1</p>
+                            <input type="radio" name="1" class="input-error">réponse1<br>
+                            <input type="radio" name="2">réponse2<br>
+                            <input type="radio" name="3">réponse3<br>
+                            <input type="radio" name="4">réponse4<br>
+                            <input type="radio" name="5">réponse5<br>
+                            <input type="radio" name="6">réponse6<br>
+                            <button class="btn btn-next">next</button>
+                        </fieldset>
+                        <fieldset>
+                        <p>question2</p>
+                            <input type="radio" name="1">réponse1<br>
+                            <input type="radio" name="2">réponse2<br>
+                            <input type="radio" name="3">réponse3<br>
+                            <input type="radio" name="4">réponse4<br>
+                            <input type="radio" name="5">réponse5<br>
+                            <input type="radio" name="6">réponse6<br>
+                            <button class="btn btn-next">next</button>
+                        </fieldset>
+                        <fieldset>
+                        <p>question3</p>
+                            <input type="radio" name="1">réponse1<br>
+                            <input type="radio" name="2">réponse2<br>
+                            <input type="radio" name="3">réponse3<br>
+                            <input type="radio" name="4">réponse4<br>
+                            <input type="radio" name="5">réponse5<br>
+                            <input type="radio" name="6">réponse6<br>
+                            <button type="submit" class="btn btn-submit" name="save">submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+
+        </script>
+
 
     <div class="container" style="padding-top: 15px;">
 
