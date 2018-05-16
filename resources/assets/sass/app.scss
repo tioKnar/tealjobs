@@ -14,6 +14,12 @@
 //Fireflies
 @import "fireflies.css";
 
+
+.col-12 {
+	padding: 0px;
+}
+
+
 // Header 
 
 .navbar-laravel {
@@ -263,6 +269,7 @@ label {
 
 //Page Resultats
 
-.col-12 {
-	padding: 0px;
+#result-tree {
+	object-fit: cover;
+	height: 91.7vh;
 }
