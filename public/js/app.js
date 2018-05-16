@@ -13897,6 +13897,14 @@ var app = new Vue({
   el: '#app'
 });
 
+$(document).ready(function () {
+
+  setTimeout(function () {
+
+    $('#learn').fadeIn("slow");
+  }, 4000);
+});
+
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {

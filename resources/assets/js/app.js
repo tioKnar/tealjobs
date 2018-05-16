@@ -20,3 +20,13 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+
+$(document).ready(function(){
+
+	    setTimeout(function(){
+
+	        $('#learn').fadeIn("slow");
+	    }, 4000);
+
+	});
