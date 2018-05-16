@@ -26,15 +26,17 @@
 <body>
     <div id="app">
         
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-laravel">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
 
             <div class="container">
+
+                <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
   
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         
                     @guest
                     
@@ -47,12 +49,6 @@
                         <li class="nav-item linknavbar">
                             <a class="nav-link" href="contact">Contact</a>
                         </li>
-
-                    </ul>
-
-                        <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
- 
-                    <ul class="navbar-nav">
 
                         <li class="nav-item linknavbar">
                             <a class="nav-link" href="#" id="register" data-toggle="modal" data-target="#modalregister">Inscription</a>
@@ -191,12 +187,6 @@
                           
                 </form>
 
-            </div>
-          
-            <div class="modal-footer">
-            
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          
             </div>
         
         </div>
