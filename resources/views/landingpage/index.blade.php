@@ -33,12 +33,14 @@
       <div class="row justify-content-center">
 	        <div class="col-lg-4 context">
 	          <span> <img src="img/landing_icons/network.png" id="landing-logo" alt="network" height="100" width="100" > </span>
-	          <h2>Contexte</h2>
-	          <p>Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere</p>
+	          <h2>Aujourd'hui</h2>
+	          <p>Entre turnover, besoin de changer d'horizons et accomplissement personnel, "faire carrière" est une option de moins en moins envisagée par les étudiant.e.s et salarié.e.s.</p>
+	      	  <p>Seulement, la masse d'informations disponibles en terme d'orientation professionnelle est aussi importante que disparate - et trouver sa voie se révèle parfois être un vrai défi.</p>
 	        </div>
 	        <div class="col-lg-4 potential">
 	          <span> <img src="img/landing_icons/sprout.png" id="landing-logo" alt="sprout" height="100" width="100" > </span>
 	          <h2>Potentiel</h2>
+	          <p>Entre turnover et besoin de changer d'horizons, "faire carrière" est une réalité de moins en moins réalisable. La masse d'informations disponibles en terme d'orientation professionnelle est aussi importante que disparate.  s'orienter ou se réorienter se révèle parfois être un vrai défi.</p>
 	          <p>Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere</p>
 	        </div>
 	        <div class="col-lg-4 success">
