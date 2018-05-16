@@ -71,11 +71,7 @@ section {
 
 body {
   margin: 0;
-<<<<<<< HEAD
-  font-family: "Raleway", sans-serif;
-=======
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
->>>>>>> ef4a243057565c0246686ea9797a8790b7bec5db
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10416,22 +10412,12 @@ a.text-dark:focus {
 }
 
 .navbar-laravel {
-<<<<<<< HEAD
-  background-color: #138496;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #B2EBF2;
-=======
   background-color: #1B4C51;
   padding: 0px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #B2DFDB;
->>>>>>> ef4a243057565c0246686ea9797a8790b7bec5db
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -10599,8 +10585,6 @@ h2 .lead-subtitle,
           transform: scale(1.1);
 }
 
-<<<<<<< HEAD
-=======
 #map {
   width: 100%;
   height: 400px;
@@ -10646,4 +10630,3 @@ label {
   }
 }
 
->>>>>>> ef4a243057565c0246686ea9797a8790b7bec5db
