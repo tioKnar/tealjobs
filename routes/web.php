@@ -31,7 +31,7 @@ Route::post('/contact', 'ContactController@store');
 
 // Route Backend
 
-Route::get('/admin', 'AdminController@index');
+Route::get('/admin', 'AdminController@index')->name('admin');
 
 Route::post('/admin', 'AdminController@store');
 
