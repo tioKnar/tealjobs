@@ -20158,6 +20158,7 @@ a.text-dark:focus {
 
 .navbar-laravel {
   background-color: white;
+  padding: 0px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -20221,7 +20222,7 @@ footer {
 }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Lato", sans-serif;
 }
 
 .jumbotron {
@@ -20272,16 +20273,29 @@ body {
 #learn {
   line-height: 2em;
   margin-top: 8vh;
-  font-family: "Inconsolata", monospace;
-  color: rgba(255, 255, 255, 0.8);
+  font-family: "Cutive Mono", monospace;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.lead-title {
-  font-size: 2em;
+@media (max-width: 733px) {
+  .lead-subtitle {
+    display: none;
+  }
 }
 
 .lead-subtitle {
-  font-size: 1em;
+  font-size: 1.3em;
+}
+
+.lead-title {
+  font-size: 1.6em;
+}
+
+@media (max-width: 733px) {
+  .btn-lg,
+  .btn-group-lg > .btn {
+    margin-top: 10%;
+  }
 }
 
 .btn-lg,
@@ -20296,10 +20310,18 @@ body {
   padding: 5em 1em;
   background-color: #F5F5F5;
   text-align: center;
+  line-heigt: 2em;
 }
 
-h2 {
-  font-family: "Inconsolata", monospace;
+.grey h2 {
+  font-family: "Kaushan Script", cursive;
+}
+
+.grey p {
+  padding: 2px 8px;
+  font-size: 1.15em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 #pageactive {
@@ -20354,7 +20376,7 @@ h2 {
 }
 
 label {
-  font-family: "Merriweather", serif;
+  font-family: "Lato", sans-serif;
 }
 
 #success-message {
@@ -20363,12 +20385,17 @@ label {
 
 .address {
   color: #26A69A;
-  font-family: "Merriweather", serif;
+  font-family: "Lato", sans-serif;
   background-color: white;
   height: 30px;
 }
 
 #adress {
   color: #26A69A;
+  font-family: "Lato", sans-serif;
+}
+
+.col-12 {
+  padding: 0px;
 }
 

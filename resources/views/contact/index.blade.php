@@ -14,12 +14,12 @@
 
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center address">
-                <strong><p id="adress">66 Rue Abbé de l'Épée, 33000 Bordeaux</p></strong>
+                <strong id="adress"><p>66 Rue Abbé de l'Épée, 33000 Bordeaux</p></strong>
             </div>
         </div>
 
         @if(!empty($successMessage) )
-            <strong id="success-message">{{ $successMessage }} </strong>
+            <strong id="success-message">{{ $successMessage }}</strong>
         @endif
         <div class="row justify-content-center text-align">
             <div class="col-md-6 formulaire-contact">

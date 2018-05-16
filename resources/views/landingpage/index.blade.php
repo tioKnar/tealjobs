@@ -10,9 +10,9 @@
 						<div class="bg"></div>
 					 	<div class="fireflies">@include('fireflies.index')</div>
 					 	<div class="row">
-							<div class="col- col-lg-4 offset-lg-8 text-right" id="learn">
-						    	<p class="lead-title">Il n'y a pas d'âge pour apprendre</p>
-						    	<p class="lead-subtitle">[à se connaître.]</p>
+							<div class="col- col-lg-6 offset-lg-6 text-right" id="learn">
+						    	<p class="lead-subtitle">Orientation post bac, reconversion professionnelle ou indécisions de toujours,</p>
+						    	<p class="lead-title">TealJobs vous oriente vers les métiers d'avenir qui vous correspondent.</p>
 						    </div>
 						    <div class="col-lg-4 offset-lg-4 col- text-align-center">
 						    	<p class="lead text-center">
@@ -28,27 +28,26 @@
 
 	{{-- EXPLICATIONS --}}
 
-
-				  	{{-- <p class="jumbo-description text-center">Orientation post bac, reconversion professionnelle ou indécisions de toujours, <br> tealJobs vous oriente vers les métiers d'avenir qui correspondent le mieux à votre personnalité.</p> --}}
-
-
 	<section class="grey container-fluid">
 
       <div class="row justify-content-center">
 	        <div class="col-lg-4 context">
 	          <span> <img src="img/landing_icons/network.png" id="landing-logo" alt="network" height="100" width="100" > </span>
-	          <h2>Contexte</h2>
-	          <p>Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere</p>
+	          <h2>Aujourd'hui</h2>
+		          <p>Entre turn over, besoin de changer d'horizon et remises en questions, "faire carrière" est une option de moins en moins envisagée par les étudiant.e.s et salarié.e.s.</p>
+		      	  <p>Trouver sa voie est pourtant un vrai défi quand se retrouver dans les ressources disponibles sur le sujet s'ajoute à la recherche de son potentiel.</p>
 	        </div>
 	        <div class="col-lg-4 potential">
 	          <span> <img src="img/landing_icons/sprout.png" id="landing-logo" alt="sprout" height="100" width="100" > </span>
 	          <h2>Potentiel</h2>
-	          <p>Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere</p>
+		          <p>C'est ce potentiel que TealJobs vous aide à faire germer à travers un test de personnalité ludique et gratuit.</p>
+		          <p>En vous orientant vers des métiers qui vous animent, TealJobs pose les bases de votre (ré)orientation professionnelle.</p>
 	        </div>
 	        <div class="col-lg-4 success">
 	          <span> <img src="img/landing_icons/success.png" id="landing-logo" alt="success" height="100" width="100" > </span>
-	          <h2>Métiers</h2>
-	          <p>Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere</p>
+	          <h2>Demain</h2>
+		          <p>TealJobs vous permet également de choisir entre des centres de formation agrées, qui correspondent à vos choix de métiers.</p>
+		          <p>Et pour sauvegarder votre historique de test et revenir vers les centres de formation qui vous intéressent, il vous suffit de créer un compte. Gratuit lui aussi.</p>
 	        </div>
 
       </div>

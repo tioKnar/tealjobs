@@ -17,7 +17,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Kaushan+Script|Lato" rel="stylesheet"> 
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -47,16 +47,14 @@
                         </li>
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="contact">Contact</a>
-                        </li>
-
-                        <li class="nav-item linknavbar">
                             <a class="nav-link" href="#" id="register" data-toggle="modal" data-target="#modalregister">Inscription</a>
                         </li>
+                        @include('modal.inscription')
 
                         <li class="nav-item linknavbar" id="connect">
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#modalconnect">Connexion</a>
                         </li>
+                        @include('modal.connexion')
 
                     </ul>
 
@@ -67,16 +65,6 @@
                         <li class="nav-item linknavbar">
                             <a class="nav-link" href="/">Accueil</a>
                         </li>
-
-                        <li class="nav-item linknavbar">
-                            <a class="nav-link" href="contact">Contact</a>
-                        </li>
-
-                    </ul>
-
-                        <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
- 
-                    <ul class="navbar-nav">
 
                         <li class="nav-item linknavbar">
                             <a class="nav-link" href="{{ route('register') }}">Historique</a>
@@ -117,7 +105,7 @@
 
                     <div class="col">
 
-                        <a href="" class="footerlink">Contactez nous</a><br>
+                        <a href="contact" class="footerlink">Contactez nous</a><br>
 
                         <a href=""><img class="logofooter" src="img/facebook.png"></a>
                         <a href=""><img class="logofooter" src="img/twitter.png"></a>
@@ -137,63 +125,6 @@
 
     </div>
 </body>
-
-<!-- Modal Connexion -->
-
-<div class="modal fade" id="modalconnect" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-    <div class="modal-dialog" role="document">
-
-        <div class="modal-content">
-        
-            <div class="modal-header">
-
-                <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
-            
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-      
-            </div>
-      
-            <div class="modal-body">
-
-                <form method="POST" action="{{ route('login') }}" class="form-group">
-                            @csrf
-             
-                    <input id="email" type="email" class="form-group form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus>
-
-                        @if ($errors->has('email'))
-                            <span class="invalid-feedback">
-                               <strong>{{ $errors->first('email') }}</strong>
-                            </span>
-                        @endif
-                                  
-                    <input id="password" type="password" class="form-group form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Mot de passe" required>
-
-                        @if ($errors->has('password'))
-                            <span class="invalid-feedback">
-                                <strong>{{ $errors->first('password') }}</strong>
-                            </span>
-                        @endif
-
-                    <button type="submit" class="btn btn-info form-group form-control">
-                                        {{ __('Login') }}
-                    </button>
-
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                              {{ __('Forgot Your Password?') }}
-                    </a>
-                          
-                </form>
-
-            </div>
-        
-        </div>
-      
-    </div>
-
-</div>
 
 </html>
 
