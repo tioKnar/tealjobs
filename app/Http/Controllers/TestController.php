@@ -26,16 +26,9 @@ class TestController extends Controller
         // return Redirect::back();
     }
 
-}
 
 
-    public function store(){
-        $values = Request::all();
 
-        // $rules = [
-        //     "1" => 
-        // ];
-        // return Redirect::back();
-    }
+
 }
 
