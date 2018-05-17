@@ -25,7 +25,8 @@
 				<div id="result-bg" alt="result_tree">
 					<div id="foliage-square">
 						@foreach($tests as $test)
-							<div class="fruit">{{$test['job']}}</div>
+							<div class="job" >{{$test['job']}}</div>
+							<img src="images/fruit.png">
 						@endforeach
 					</div>				
 				</div>
@@ -35,18 +36,18 @@
 		</div>
 	</div>
 
-{{-- <script>
+<script>
 	
 	$(function() {
 
 		let $width = $('#foliage').width();
 		let $height = $('#foliage').height();
 			
-		@foreach($results as $result) {
+		@foreach($tests as $test) {
 			 var $left = Math.floor(Math.random() * (width-100));
 			 var $top = Math.floor(Math.random() * (height-100));
 
-			 $("<div id='fruit'>{{$result->name}}</div>").appendTo("#foliage").css({
+			 $("<div class='job'>{{$test['job']}}</div> <img src='images/fruit.png'>").appendTo("#foliage-square").css({
 			 	left: $left;
 			 	top: $top;
 			 })
@@ -56,6 +57,6 @@
 
 	};
 	
-</script> --}}
+</script>
 
 @endsection

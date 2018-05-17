@@ -122,13 +122,13 @@ bottom: 0;
 
     @media(min-width: 992px){
 
-    	background: url('../img/tree/result_page_pano.jpg');
+    	background: url('../img/tree/tree_pano.jpg');
     	height: 600px;
     	background-position: right;
     	background-size: cover;
     } 
     @media(max-width: 991.98px){
-    	background: url('../img/tree/result_page.jpg');
+    	background: url('../img/tree/tree.jpg');
     	height: 400px;
     	background-position: center;
     	background-size: cover;
@@ -297,7 +297,7 @@ label {
 	    } 
 
 	    @media(max-width: 734px){
-	    	background: url('../img/tree/result_page.jpg');
+	    	background: url('../img/tree/tree.jpg');
 	    	height: 400px;
 	    	background-position: center;
 	    	background-size: cover;
@@ -310,10 +310,10 @@ label {
 	@media(min-width:735px) {
 		background-color: transparent;
 	    position: absolute;
-	    top: 13%;
-	    left: calc(48% - 275px);
-	    width: 553px;
-	    height: 286px;
+	    top: 29%;
+	    left: calc(48% - 250px);
+	    width: 500px;
+	    height: 250px;
 	    border-radius: 49% 50% 5% 5%;
 	}
 
@@ -328,14 +328,19 @@ label {
 	}
 }
 
+.job {
+	visibility: hidden;
+}
+
+.job:hover {
+	visibility: visible;
+}
 
 .fruit {
-
 	position: absolute;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	// background-color: red;
-  	background: radial-gradient(closest-side, #ebf8e1, #f69d3c, rgba(254, 252, 234, 0) 100%);
+	height: 40px;
+}
 
+.fruit:hover {
+	background-image: radial-gradient(16px at 60px 50% , #000000 0%, #000000 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);
 }
