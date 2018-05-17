@@ -13,16 +13,21 @@ class TestController extends Controller
 {
     public function index(){
 
-        return view('test.index');
     	
+
+        return view('test.index');
+
     }
 
     public function store(){
         $values = Request::all();
 
         // $rules = [
-        //     "1" => 
+        //     "1" =>
         // ];
         // return Redirect::back();
     }
+
 }
+
+
