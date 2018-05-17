@@ -20156,6 +20156,10 @@ a.text-dark:focus {
   }
 }
 
+.col-12 {
+  padding: 0px;
+}
+
 .navbar-laravel {
   background-color: white;
   padding: 0px;
@@ -20395,7 +20399,9 @@ label {
   font-family: "Lato", sans-serif;
 }
 
-.col-12 {
-  padding: 0px;
+#result-tree {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 91.7vh;
 }
 
