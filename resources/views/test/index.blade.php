@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
 
 	<div class="container-fluid" >
@@ -105,5 +106,6 @@ $(function() {
 });
 
 </script>
+
 
 @endsection
