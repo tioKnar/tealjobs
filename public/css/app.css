@@ -20328,6 +20328,10 @@ body {
   text-justify: inter-word;
 }
 
+.completed {
+  display: none;
+}
+
 #pageactive {
   -webkit-box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
           box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
@@ -20403,9 +20407,5 @@ label {
   -o-object-fit: cover;
      object-fit: cover;
   height: 91.7vh;
-}
-
-.completed {
-  display: none;
 }
 

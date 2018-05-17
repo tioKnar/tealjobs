@@ -18,8 +18,6 @@ class TestController extends Controller
                         ->join('interanswers', 'questions.id', '=', 'interanswers.question_id')
                         ->join('answers', 'interanswers.answer_id', '=', 'answers.id')
                         ->get();
-        // dd($resultats);
-
 
         return view('test.index')->with('resultats', $resultats);
     }
