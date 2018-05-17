@@ -17,9 +17,12 @@ class TestController extends Controller
         $resultats = DB::table('questions')
                         ->join('interanswers', 'questions.id', '=', 'interanswers.question_id')
                         ->join('answers', 'interanswers.answer_id', '=', 'answers.id')
+                        ->inRandomOrder()
                         ->get();
 
-        return view('test.index')->with('resultats', $resultats);
+        $first = $resultats[0]->question_id;
+
+        return view('test.index')->with('resultats', $resultats)->with('first', $first);
     }
 
     

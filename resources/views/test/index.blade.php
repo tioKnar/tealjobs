@@ -1,39 +1,45 @@
 @extends('layouts.app')
 
+
 @section('content')
 
 	<div class="container-fluid" >
 
 		<div class="row justify-content-center text-center" id="test">
 
-				@foreach($resultats as $resultat)
 
-					<div class="col-md-4 test @if($resultat->question_id != 1) {{ 'completed' }} @endif">
+			@foreach($resultats as $resultat)
 
-						<br><h3>{{ $resultat->question }}</h3>
+				<div class="col-md-4 test @if($resultat->question_id != $first) {{ 'completed' }} @endif">
+
+					<br><h3>{{ $resultat->question }}</h3>
 							
-								<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>
-								<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>
-								<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>
-								<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>
-								<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>
-								<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>
+						<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>
+
+						<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>
+						
+						<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>
+						
+						<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>
+						
+						<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>
+						
+						<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>
 				
+						@if($resultat->question_id != $first)
 
-							@if($resultat->question_id != 1)
+							<button class="previous">previous</button>
 
-								<button class="previous">previous</button>
+						@endif
 
-							@endif
-					</div>
+				</div>
 
-				@endforeach
+			@endforeach
 
-				
-	
 		</div>
-
+	
 	</div>
+	<br><br>
 
 <script>
 	
@@ -55,9 +61,9 @@ $(function() {
 
 	$('.bouton').on('click', function() {
 
-		$(this).parent().addClass('completed');
+		$(this).parent().fadeOut({queue:false, duration:650}).animate({left: "-=100"}, 650);
 			
-		$(this).parent().next().removeClass('completed');
+		$(this).parent().next().css({left: "+=100"}).delay(640).animate({opacity:"toggle", left: "-=100"}, 650);
 
 		$tab.push($(this).attr('data-id'));
 
@@ -66,9 +72,9 @@ $(function() {
 
 	$('.previous').on('click', function() {
 
-		$(this).parent().addClass('completed');
+		$(this).parent().fadeOut({queue:false, duration:650}).animate({left: "+=100"}, 650);
 			
-		$(this).parent().prev().removeClass('completed');
+		$(this).parent().prev().delay(640).animate({opacity:"toggle", left: "+=100"}, 650);
 
 		$tab.pop();
 
