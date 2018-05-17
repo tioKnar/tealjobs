@@ -11,13 +11,14 @@
 					<div class="col-md-4 test @if($resultat->question_id != 1) {{ 'completed' }} @endif">
 
 						<br><h3>{{ $resultat->question }}</h3>
-
+							
 								<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>
 								<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>
 								<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>
 								<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>
 								<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>
 								<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>
+				
 
 							@if($resultat->question_id != 1)
 
@@ -25,7 +26,10 @@
 
 							@endif
 					</div>
+
 				@endforeach
+
+				
 	
 		</div>
 
@@ -34,6 +38,18 @@
 <script>
 	
 $(function() {
+
+	var collection = $(".bouton").get();
+
+	collection.sort(function() {
+
+		return Math.random()*10 > 5 ? 1 : -1; 
+	});
+
+	$.each(collection, function(i, el) {
+
+		$(el).appendTo($(el).parent());
+	});
 
 	$tab = [];
 
@@ -46,13 +62,6 @@ $(function() {
 		$tab.push($(this).attr('data-id'));
 
 		console.log($tab);	
-	});
-
-	$('.next').on('click', function() {
-
-		$(this).parent().addClass('completed');
-			
-		$(this).parent().next().removeClass('completed');
 	});
 
 	$('.previous').on('click', function() {

@@ -24,9 +24,7 @@ class TestController extends Controller
 
     
     public function store(){
+
         $values = Request::all();
-
-
     }
-
 }
