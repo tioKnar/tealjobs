@@ -271,5 +271,53 @@ label {
 
 #result-tree {
 	object-fit: cover;
+	
+
+	    @media(min-width: 735px){
+
+	    	background: url('../img/tree/result_page_pano.jpg');
+	    	height: 600px;
+	    	background-position: center;
+	    	background-size: cover;
+	    } 
+	    @media(max-width: 733px){
+	    	background: url('../img/tree/result_page.jpg');
+	    	height: 400px;
+	    	background-position: center;
+	    	background-size: cover;
+	    } 
+}
+
+#result-tree {
+	object-fit: cover;
 	height: 91.7vh;
+	min-height: 250px;
+	min-width: 400px
+}
+
+#foliage-square {
+	background-position: center;
+	background-color: white;
+	position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 90%;
+    height: 60%;
+}
+
+#foliage {
+	width: 100%;
+	height: 100%;
+    border-radius: 41% 6% 104% 6%;
+    background-color: red;
+    transform: rotate(54deg);
+}
+
+
+#fruit {
+
+	position: absolute;
+  	border-radius: 100%;
+  	background: radial-gradient(closest-side, #ebf8e1, #f69d3c, rgba(254, 252, 234, 0) 100%);
+
 }

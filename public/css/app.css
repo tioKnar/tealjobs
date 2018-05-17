@@ -20402,6 +20402,56 @@ label {
 #result-tree {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 735px) {
+  #result-tree {
+    background: url(/images/result_page_pano.jpg?0487819653b740d44fc55a23dfe745f1);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 733px) {
+  #result-tree {
+    background: url(/images/result_page.jpg?7eaff8d4c1e503d3397077a88a8375ae);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+#result-tree {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 91.7vh;
+  min-height: 250px;
+  min-width: 400px;
+}
+
+#foliage-square {
+  background-position: center;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  width: 90%;
+  height: 60%;
+}
+
+#foliage {
+  width: 100%;
+  height: 100%;
+  border-radius: 41% 6% 104% 6%;
+  background-color: red;
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
+
+#fruit {
+  position: absolute;
+  border-radius: 100%;
+  background: radial-gradient(closest-side, #ebf8e1, #f69d3c, rgba(254, 252, 234, 0) 100%);
 }
 
