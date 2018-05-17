@@ -1,97 +1,35 @@
 @extends('layouts.app')
 
-
 @section('content')
 
 	<div class="container-fluid" >
 
 		<div class="row justify-content-center text-center" id="test">
 
-			<div class="col-md-4 test" id="id1">
-				
-				<br><h3>Question 1</h3><br>
+				@foreach($resultats as $resultat)
 
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=1>Réponse 1</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=2>Réponse 2</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=3>Réponse 3</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=4>Réponse 4</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
+					<div class="col-md-4 test @if($resultat->question_id != 1) {{ 'completed' }} @endif">
 
-				<button class="previous">previous</button>
-				<button class="next">next</button>
+						<br><h3>{{ $resultat->question }}</h3>
 
-			</div>
+								<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>
+								<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>
+								<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>
+								<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>
+								<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>
+								<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>
 
-			<div class="col-md-4 completed test" id="id2">
+							@if($resultat->question_id != 1)
+
+								<button class="previous">previous</button>
+
+							@endif
+					</div>
+				@endforeach
 	
-				<br><h3>Question 2</h3><br>
-
-				<button type="button" class="form-control form-group btn btn-info boutn" data-id=1>Réponse 1</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=2>Réponse 2</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=3>Réponse 3</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=4>Réponse 4</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
-
-				<button class="previous">previous</button>
-				<button class="next">next</button>
-
-			</div>
-
-			<div class="col-md-4 completed test" id="id3">
-				
-				<br><h3>Question 3</h3><br>
-
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=1>Réponse 1</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=2>Réponse 2</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=3>Réponse 3</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=4>Réponse 4</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
-
-				<button class="previous">previous</button>
-				<button class="next">next</button>
-
-			</div>
-
-			<div class="col-md-4 completed test" id="id4">
-				
-				<br><h3>Question 4</h3><br>
-
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=1>Réponse 1</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=2>Réponse 2</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=3>Réponse 3</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=4>Réponse 4</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
-
-				<button class="previous">previous</button>
-				<button class="next">next</button>
-
-			</div>
-
-			<div class="col-md-4 completed test" id="id5">
-				
-				<br><h3>Question 5</h3><br>
-
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=1>Réponse 1</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=2>Réponse 2</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=3>Réponse 3</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=4>Réponse 4</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
-				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
-
-				<button class="previous">previous</button>
-				<button class="next">next</button>
-
-			</div>
-
 		</div>
 
 	</div>
-
-<br><br>
 
 <script>
 	
@@ -130,6 +68,5 @@ $(function() {
 });
 
 </script>
-
 
 @endsection
