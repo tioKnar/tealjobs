@@ -6,6 +6,7 @@
 	<div class="container-fluid" >
 
 		<div class="row justify-content-center text-center" id="test">
+
 				
 				@foreach($resultats as $resultat)
 					<div class="col-md-4 test @if($resultat->question_id != 1) {{ 'completed' }} @endif">
@@ -22,11 +23,16 @@
 								<!-- <button class="next">next</button> -->
 					</div>
 				@endforeach
+
+
+			
 		</div>
+
 
 	</div>
 
 <br><br>
+
 
 
 
@@ -46,6 +52,7 @@ $(function() {
 
 		console.log($tab);	
 	})
+
 
 	// $('.next').on('click', function() {
 
