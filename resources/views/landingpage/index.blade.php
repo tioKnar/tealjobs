@@ -7,7 +7,7 @@
 			<div class="col-12">
 				<div class="jumbotron jumbotron-fluid">
 					 <div class="container-fluid">
-						<div class="bg"></div>
+						<div id="landing-bg"></div>
 					 	<div class="fireflies">@include('fireflies.index')</div>
 					 	<div class="row">
 							<div class="col- col-lg-6 offset-lg-6 text-right" id="learn">

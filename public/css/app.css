@@ -20177,6 +20177,7 @@ footer {
   background-color: #1B4C51;
   padding-top: 25px;
   padding-bottom: 25px;
+  position: fixed bottom;
 }
 
 .footerlink {
@@ -20246,7 +20247,7 @@ body {
   }
 }
 
-.bg {
+#landing-bg {
   -webkit-filter: blur(8.5px);
           filter: blur(8.5px);
   position: absolute;
@@ -20256,8 +20257,8 @@ body {
   bottom: 0;
 }
 
-@media (min-width: 735px) {
-  .bg {
+@media (min-width: 992px) {
+  #landing-bg {
     background: url(/images/result_page_pano.jpg?0487819653b740d44fc55a23dfe745f1);
     height: 600px;
     background-position: right;
@@ -20265,8 +20266,8 @@ body {
   }
 }
 
-@media (max-width: 733px) {
-  .bg {
+@media (max-width: 991.98px) {
+  #landing-bg {
     background: url(/images/result_page.jpg?7eaff8d4c1e503d3397077a88a8375ae);
     height: 400px;
     background-position: center;
@@ -20281,7 +20282,7 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
-@media (max-width: 733px) {
+@media (max-width: 991.8px) {
   .lead-subtitle {
     display: none;
   }
@@ -20295,7 +20296,7 @@ body {
   font-size: 1.6em;
 }
 
-@media (max-width: 733px) {
+@media (max-width: 991.8px) {
   .btn-lg,
   .btn-group-lg > .btn {
     margin-top: 10%;
@@ -20403,13 +20404,13 @@ label {
   font-family: "Lato", sans-serif;
 }
 
-#result-tree {
+#result-bg {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 @media (min-width: 735px) {
-  #result-tree {
+  #result-bg {
     background: url(/images/result_page_pano.jpg?0487819653b740d44fc55a23dfe745f1);
     height: 600px;
     background-position: center;
@@ -20417,8 +20418,8 @@ label {
   }
 }
 
-@media (max-width: 733px) {
-  #result-tree {
+@media (max-width: 734px) {
+  #result-bg {
     background: url(/images/result_page.jpg?7eaff8d4c1e503d3397077a88a8375ae);
     height: 400px;
     background-position: center;
@@ -20426,36 +20427,35 @@ label {
   }
 }
 
-#result-tree {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 91.7vh;
-  min-height: 250px;
-  min-width: 400px;
+@media (min-width: 735px) {
+  #foliage-square {
+    background-color: transparent;
+    position: absolute;
+    top: 13%;
+    left: calc(48% - 275px);
+    width: 553px;
+    height: 286px;
+    border-radius: 49% 50% 5% 5%;
+  }
 }
 
-#foliage-square {
-  background-position: center;
-  background-color: white;
+@media (min-width: 310px) and (max-width: 734.98px) {
+  #foliage-square {
+    background-color: transparent;
+    position: absolute;
+    top: 10%;
+    left: calc(48% - 190px);
+    width: 380px;
+    height: 203px;
+    border-radius: 49% 64% 5% 5%;
+  }
+}
+
+.fruit {
   position: absolute;
-  top: 10%;
-  left: 8%;
-  width: 90%;
-  height: 60%;
-}
-
-#foliage {
-  width: 100%;
-  height: 100%;
-  border-radius: 41% 6% 104% 6%;
-  background-color: red;
-  -webkit-transform: rotate(54deg);
-          transform: rotate(54deg);
-}
-
-#fruit {
-  position: absolute;
-  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
   background: radial-gradient(closest-side, #ebf8e1, #f69d3c, rgba(254, 252, 234, 0) 100%);
 }
 
