@@ -2,13 +2,33 @@
 
 @section('content')
 
+
+<?php
+
+	$tests = [
+		[  
+			'nom' =>  'Romain',
+			'job' =>  'Drag Queen'							
+		],
+		[
+			'nom' => 'Caroline',
+			'job' => 'Pompier'
+		]
+	];
+// dd($tests);
+?>
+
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
-				<img src="images/result_page_pano.jpg" class="img-fluid" id="result-tree" alt="result_tree">
-					<div id="foliage-square">	
-						<div id="foliage"></div>
-					</div>
+				<div id="result-bg" alt="result_tree">
+					<div id="foliage-square">
+						@foreach($tests as $test)
+							<div class="fruit">{{$test['job']}}</div>
+						@endforeach
+					</div>				
+				</div>
 
 				{{-- <div class="fireflies">@include('fireflies.index')</div> --}}
 			</div>
