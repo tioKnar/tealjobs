@@ -20332,6 +20332,12 @@ body {
   display: none;
 }
 
+.previous {
+  position: absolute;
+  top: 452px;
+  left: calc(50% - 38px);
+}
+
 #pageactive {
   -webkit-box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
           box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);

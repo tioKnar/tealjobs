@@ -200,6 +200,13 @@ bottom: 0;
 	display: none;
 }
 
+.previous {
+
+	position: absolute;
+	top: 452px;
+	left: calc(50% - 38px);
+}
+
 // Page gestion users/classes/jobs
 
 #pageactive {
