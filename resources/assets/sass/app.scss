@@ -14,10 +14,17 @@
 //Fireflies
 @import "fireflies.css";
 
+
+.col-12 {
+	padding: 0px;
+}
+
+
 // Header 
 
 .navbar-laravel {
   background-color: white;
+  padding: 0px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -113,6 +120,7 @@ right: 0;
 bottom: 0;
 
     @media(min-width: 735px){
+
     	background: url('../img/tree/result_page_pano.jpg');
     	height: 600px;
     	background-position: right;
@@ -127,18 +135,33 @@ bottom: 0;
 }
 
 #learn {
+	
 	line-height: 2em;
 	margin-top: 8vh;
-	font-family: $font-title;
+	font-family: $jumbo-font;
 	color: $jumbo-title;
 }
 
-.lead-title {
-	font-size: 2em;
+@media(max-width: 733px){
+
+	.lead-subtitle {
+		display: none;
+	}
 }
 
 .lead-subtitle {
-	font-size: 1em;
+	font-size: 1.3em;
+}
+
+.lead-title {
+	font-size: 1.6em;
+}
+
+@media(max-width: 733px){
+
+	.btn-lg {
+		margin-top: 10%;
+	}
 }
 
 .btn-lg {
@@ -155,12 +178,22 @@ bottom: 0;
 	
 	padding: 5em 1em;
 	background-color: #F5F5F5;
-	text-align: center
+	text-align: center;
+	line-heigt: 2em;
+	
+	h2 {
+		font-family: $font-title;
+	}
+
+	p {
+		padding: 2px 8px;
+		font-size: 1.15em;
+		text-align: justify;
+		text-justify: inter-word;
+	}
 }
 
-h2 {
-	font-family: $font-title;
-}
+
 
 
 // Page gestion users/classes/jobs
@@ -231,4 +264,12 @@ label {
 #adress {
 	color: #26A69A;
 	font-family: $font;
+}
+
+
+//Page Resultats
+
+#result-tree {
+	object-fit: cover;
+	height: 91.7vh;
 }
