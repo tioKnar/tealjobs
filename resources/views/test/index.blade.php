@@ -1,8 +1,5 @@
 @extends('layouts.app')
-<<<<<<< HEAD
 
-=======
->>>>>>> 6830d9c90d115f619573f767dd6789954fccb27b
 
 
 @section('content')
@@ -24,18 +21,9 @@
 
 			</div>
 
-<<<<<<< HEAD
-
-
-
-
-
-			<div class="col-md-4" id="id2" style="display: none">
-				
-=======
 			<div class="col-md-4 completed" id="id2">
 	
->>>>>>> 6830d9c90d115f619573f767dd6789954fccb27b
+
 				<br><h3>Question 2</h3><br>
 
 				<button type="button" class="form-control form-group btn btn-info boutn" data-id=1>Réponse 1</button>
@@ -85,15 +73,7 @@
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
 
 			</div>
-<<<<<<< HEAD
 		</div>
-		<button class="previous">Previous</button>
-		<button class="next">Next</button>
-=======
-
-		</div>
-
->>>>>>> 6830d9c90d115f619573f767dd6789954fccb27b
 	</div>
 
 <br><br>
