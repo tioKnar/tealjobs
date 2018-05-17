@@ -10,7 +10,7 @@
 				
 				<br><h3>Question 1</h3><br>
 
-				<button type="button1" class="form-control form-group btn btn-info bouton" data-id=1>Réponse 1</button>
+				<button type="button" class="form-control form-group btn btn-info bouton" data-id=1>Réponse 1</button>
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=2>Réponse 2</button>
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=3>Réponse 3</button>
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=4>Réponse 4</button>
@@ -20,7 +20,7 @@
 			</div>
 
 			<div class="col-md-4 completed" id="id2">
-				
+	
 				<br><h3>Question 2</h3><br>
 
 				<button type="button" class="form-control form-group btn btn-info boutn" data-id=1>Réponse 1</button>

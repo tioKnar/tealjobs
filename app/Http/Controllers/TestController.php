@@ -16,15 +16,18 @@ class TestController extends Controller
     	
 
         return view('test.index');
-    	
+
     }
 
     public function store(){
         $values = Request::all();
 
         // $rules = [
-        //     "1" => 
+        //     "1" =>
         // ];
         // return Redirect::back();
     }
+
 }
+
+
