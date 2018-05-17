@@ -20405,3 +20405,7 @@ label {
   height: 91.7vh;
 }
 
+.completed {
+  display: none;
+}
+

@@ -47395,7 +47395,7 @@ if (false) {
 /* 43 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n\tdisplay: none;\r\n              ^\r\n      Invalid CSS after \"\tdisplay: none;\": expected \"}\", was \"\"\r\n      in C:\\xampp\\htdocs\\tealjobs\\resources\\assets\\sass\\app.scss (line 279, column 16)\n    at runLoaders (C:\\xampp\\htdocs\\tealjobs\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\xampp\\htdocs\\tealjobs\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\xampp\\htdocs\\tealjobs\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\xampp\\htdocs\\tealjobs\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\xampp\\htdocs\\tealjobs\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (C:\\xampp\\htdocs\\tealjobs\\node_modules\\neo-async\\async.js:7974:18)\n    at options.error (C:\\xampp\\htdocs\\tealjobs\\node_modules\\node-sass\\lib\\index.js:294:32)");
 
 /***/ })
 /******/ ]);

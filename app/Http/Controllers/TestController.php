@@ -13,6 +13,8 @@ class TestController extends Controller
 {
     public function index(){
 
+    	
+
         return view('test.index');
 
     }
@@ -28,7 +30,10 @@ class TestController extends Controller
 
 
 
+<<<<<<< HEAD
 
 
 }
 
+=======
+>>>>>>> 6830d9c90d115f619573f767dd6789954fccb27b
