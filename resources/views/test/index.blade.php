@@ -7,7 +7,7 @@
 
 		<div class="row justify-content-center text-center" id="test">
 
-			<div class="col-md-4" id="id1">
+			<div class="col-md-4 test" id="id1">
 				
 				<br><h3>Question 1</h3><br>
 
@@ -18,9 +18,12 @@
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
 
+				<button class="previous">previous</button>
+				<button class="next">next</button>
+
 			</div>
 
-			<div class="col-md-4 completed" id="id2">
+			<div class="col-md-4 completed test" id="id2">
 	
 				<br><h3>Question 2</h3><br>
 
@@ -31,9 +34,12 @@
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
 
+				<button class="previous">previous</button>
+				<button class="next">next</button>
+
 			</div>
 
-			<div class="col-md-4 completed" id="id3">
+			<div class="col-md-4 completed test" id="id3">
 				
 				<br><h3>Question 3</h3><br>
 
@@ -44,9 +50,12 @@
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
 
+				<button class="previous">previous</button>
+				<button class="next">next</button>
+
 			</div>
 
-			<div class="col-md-4 completed" id="id4">
+			<div class="col-md-4 completed test" id="id4">
 				
 				<br><h3>Question 4</h3><br>
 
@@ -57,9 +66,12 @@
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
 
+				<button class="previous">previous</button>
+				<button class="next">next</button>
+
 			</div>
 
-			<div class="col-md-4 completed" id="id5">
+			<div class="col-md-4 completed test" id="id5">
 				
 				<br><h3>Question 5</h3><br>
 
@@ -70,6 +82,9 @@
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=5>Réponse 5</button>
 				<button type="button" class="form-control form-group btn btn-info bouton" data-id=6>Réponse 6</button>
 
+				<button class="previous">previous</button>
+				<button class="next">next</button>
+
 			</div>
 
 		</div>
@@ -77,10 +92,6 @@
 	</div>
 
 <br><br>
-
-<button id="previous">previous</button>
-<button id="next">next</button>
-
 
 <script>
 	
@@ -97,12 +108,25 @@ $(function() {
 		$tab.push($(this).attr('data-id'));
 
 		console.log($tab);	
-	})
+	});
 
-	$('#next').on('click', function() {
+	$('.next').on('click', function() {
 
-		
-	})
+		$(this).parent().addClass('completed');
+			
+		$(this).parent().next().removeClass('completed');
+	});
+
+	$('.previous').on('click', function() {
+
+		$(this).parent().addClass('completed');
+			
+		$(this).parent().prev().removeClass('completed');
+
+		$tab.pop();
+
+		console.log($tab);
+	});
 });
 
 </script>
