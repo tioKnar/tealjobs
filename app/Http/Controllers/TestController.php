@@ -7,33 +7,24 @@ use App\Model\Question;
 use App\Model\Answer;
 use App\Model\Interanswer;
 use Redirect;
+use DB;
 
 
 class TestController extends Controller
 {
     public function index(){
 
-    	
+        $resultats = DB::table('questions')
+                        ->join('interanswers', 'questions.id', '=', 'interanswers.question_id')
+                        ->join('answers', 'interanswers.answer_id', '=', 'answers.id')
+                        ->get();
 
-        return view('test.index');
-
+        return view('test.index')->with('resultats', $resultats);
     }
 
+    
     public function store(){
+
         $values = Request::all();
-
-        // $rules = [
-        //     "1" =>
-        // ];
-        // return Redirect::back();
     }
-
-
-
-<<<<<<< HEAD
-
-
 }
-
-=======
->>>>>>> 6830d9c90d115f619573f767dd6789954fccb27b
