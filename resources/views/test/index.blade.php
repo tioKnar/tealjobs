@@ -77,8 +77,9 @@
 
 <br><br>
 
-<button id="next">next</button>
 <button id="previous">previous</button>
+<button id="next">next</button>
+
 
 <script>
 	
@@ -97,7 +98,7 @@ $(function() {
 		console.log($tab);	
 	})
 
-	$('.next').on('click', function() {
+	$('#next').on('click', function() {
 
 		
 	})
