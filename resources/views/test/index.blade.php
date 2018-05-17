@@ -71,7 +71,7 @@ $(function() {
 		$tab.pop();
 		
 		console.log($tab);
-	})
+	});
 });
 
 </script>
