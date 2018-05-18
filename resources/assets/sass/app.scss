@@ -337,10 +337,14 @@ label {
 }
 
 .fruit {
+	background-size: cover;
+	background-image: url("../img/tree/fruit.png");
 	position: absolute;
 	height: 40px;
+	width: 40px;
+	transition: 1s;
 }
 
 .fruit:hover {
-	background-image: radial-gradient(16px at 60px 50% , #000000 0%, #000000 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);
+	background-image: url("../img/tree/glowing_fruit.png");
 }

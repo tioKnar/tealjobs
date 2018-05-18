@@ -20470,11 +20470,16 @@ label {
 }
 
 .fruit {
+  background-size: cover;
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
   height: 40px;
+  width: 40px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .fruit:hover {
-  background-image: radial-gradient(16px at 60px 50%, #000000 0%, #000000 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
 }
 

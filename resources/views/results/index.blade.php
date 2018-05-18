@@ -26,7 +26,7 @@
 					<div id="foliage-square">
 						@foreach($tests as $test)
 							<div class="job" >{{$test['job']}}</div>
-							<img src="images/fruit.png">
+							<div class="fruit"></div>
 						@endforeach
 					</div>				
 				</div>
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 
-<script>
+{{-- <script>
 	
 	$(function() {
 
@@ -47,7 +47,7 @@
 			 var $left = Math.floor(Math.random() * (width-100));
 			 var $top = Math.floor(Math.random() * (height-100));
 
-			 $("<div class='job'>{{$test['job']}}</div> <img src='images/fruit.png'>").appendTo("#foliage-square").css({
+			 $("<div class='job'>{{$test['job']}}</div> <img class='fruit' src='images/fruit.png'>").appendTo("#foliage-square").css({
 			 	left: $left;
 			 	top: $top;
 			 })
@@ -57,6 +57,6 @@
 
 	};
 	
-</script>
+</script> --}}
 
 @endsection
