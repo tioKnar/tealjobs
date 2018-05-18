@@ -17,7 +17,9 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Kaushan+Script|Lato" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Kaushan+Script|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -97,28 +99,34 @@
             @yield('content')
         </main>
 
-        <footer>
-            
-            <div class="container-fluid">
+        <footer class="footer-distributed">
 
-                <div class="row align-items-center text-center">
+            <div class="footer-right">
 
-                    <div class="col">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
 
-                        <a href="contact" class="footerlink">Contactez nous</a><br>
+            </div>
 
-                        <a href=""><img class="logofooter" src="img/facebook.png"></a>
-                        <a href=""><img class="logofooter" src="img/twitter.png"></a>
-                        <a href=""><img class="logofooter" src="img/instagram.png"></a>
-                        <a href=""><img class="logofooter" src="img/linkedin.png"></a>
-                        <a href=""><img class="logofooter" src="img/googleplus.png"></a><br>
+            <div class="footer-left">
 
-                        <a href="" class="footerlink">Mentions légales</a>
+                <p class="footer-links">
+                    <a href="#">Home</a>
+                    ·
+                    <a href="#">Blog</a>
+                    ·
+                    <a href="#">Pricing</a>
+                    ·
+                    <a href="#">About</a>
+                    ·
+                    <a href="#">Faq</a>
+                    ·
+                    <a href="#">Contact</a>
+                </p>
 
-                    </div>
-
-                </div>
-
+                <p>Company TealJobs &copy; 2018</p>
             </div>
 
         </footer>
