@@ -20272,7 +20272,7 @@ body {
 
 @media (max-width: 991.98px) {
   #landing-bg {
-    background: url(/images/tree.jpg?ef587b8e67f1ada73801e18d96f8014c);
+    background: url(/images/tree.jpg?8abd97a0aac8fe1f16a36041ef987dad);
     height: 400px;
     background-position: center;
     background-size: cover;
@@ -20425,7 +20425,7 @@ label {
 
 @media (min-width: 735px) {
   #result-bg {
-    background: url(/images/result_page_pano.jpg?3d431c6d865c1dbbd5bc549c076c9a6b);
+    background: url(/images/result_page_pano.jpg?5407ab7a7a8daa24269c5d3e86e755a3);
     height: 600px;
     background-position: center;
     background-size: cover;
@@ -20434,7 +20434,7 @@ label {
 
 @media (max-width: 734px) {
   #result-bg {
-    background: url(/images/tree.jpg?ef587b8e67f1ada73801e18d96f8014c);
+    background: url(/images/tree.jpg?8abd97a0aac8fe1f16a36041ef987dad);
     height: 400px;
     background-position: center;
     background-size: cover;
