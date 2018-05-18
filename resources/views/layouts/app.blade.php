@@ -139,19 +139,12 @@
 
         @if($errors->has('email') || $errors->has('password') || $errors->has('firstname') || $errors->has('lastname') )
 
-<<<<<<< HEAD
-            </div>
-
-        </div>
-      
-    </div>
-=======
                 $('#modalregister').modal('show');
 
         @endif
->>>>>>> ba3d9a4c44ecd0b2b77965d1d90eb6384a082e59
 
     });
+    
 </script>
 
 </html>
