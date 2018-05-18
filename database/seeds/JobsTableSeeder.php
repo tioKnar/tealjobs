@@ -13,10 +13,22 @@ class JobsTableSeeder extends Seeder
     public function run()
     {
          $data = [
-        		'name' => 'Développeur',
-        		'description' => 'Devenez de véritables hackers',
-        		'note' => '6',
-        	];
+                    [
+            		'name' => 'Développeur',
+            		'description' => 'Devenez de véritables hackers',
+            		'note' => '6',
+                    ],
+                    [
+                    'name' => 'Drag Queen',
+                    'description' => 'Devenez de véritables fumeurs',
+                    'note' => '8',
+                    ],
+                    [
+                    'name' => 'Pompier',
+                    'description' => 'Devenez de véritables sauveurs',
+                    'note' => '6',
+                    ],
+        	   ];
 
          Job::insert($data);
     }
