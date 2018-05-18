@@ -13,9 +13,20 @@ class IntersectorsTableSeeder extends Seeder
     public function run()
     {
          $data = [
+
+                [
         		'sector_id' => '2',
-        		'job_id' => '3',
-        	];
+        		'job_id' => '1',
+        	    ],
+                [
+                'sector_id' => '2',
+                'job_id' => '2',
+                ],
+                [
+                'sector_id' => '2',
+                'job_id' => '3',
+                ],                
+        ];
 
         Intersector::insert($data);
     }

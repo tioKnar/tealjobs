@@ -2,30 +2,35 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
 use App\Model\Question;
 use App\Model\Answer;
 use App\Model\Interanswer;
+use Redirect;
+use DB;
 
 
 class TestController extends Controller
 {
     public function index(){
 
-    	$allQuestions = Question::all();
-    	$totalQuestions = $allQuestions->count();
+        $resultats = DB::table('questions')
+                        ->join('interanswers', 'questions.id', '=', 'interanswers.question_id')
+                        ->join('answers', 'interanswers.answer_id', '=', 'answers.id')
+                        ->inRandomOrder()
+                        ->get();
 
-    	$item = 1;
+                        // dd($resultats);
 
-    	$question = Question::find($item);
-    	
-    	$reponses = Answer::all()->where('id', '=', $item);
+        $first = $resultats[0]->question_id;
 
-    	// dd($question);
+        return view('test.index')->with('resultats', $resultats)->with('first', $first);
+    }
 
-    	return view('test.index')->with('question', $question)
-    							 ->with('reponses', $reponses)
-    							 ->with('item', $item)
-    							 ->with('totalQuestions', $totalQuestions);
+    
+    public function store(){
+
+        $values = Request::all();
+
     }
 }

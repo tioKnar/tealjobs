@@ -53,6 +53,46 @@ class AnswersTableSeeder extends Seeder
         		'answer5' => 'immense',
         		'answer6' => 'minuscule',
             ],
+                      [
+                'answer1' => 'bleu 12',
+                'answer2' => 'rouge 12',
+                'answer3' => 'vert 12',
+                'answer4' => 'jaune 12',
+                'answer5' => 'violet 12',
+                'answer6' => 'orange 12',
+            ],
+            [
+                'answer1' => 'gateaux 12',
+                'answer2' => 'bonbons 12',
+                'answer3' => 'fromage 12',
+                'answer4' => 'chocolat 12',
+                'answer5' => 'madelaines 12',
+                'answer6' => 'boudoirs 12',
+            ],
+            [
+                'answer1' => 'eau 12',
+                'answer2' => 'vin 12',
+                'answer3' => 'biere 12',
+                'answer4' => 'coca 12',
+                'answer5' => 'orangina 12',
+                'answer6' => 'fanta 12',
+            ],
+            [
+                'answer1' => 'chat 12',
+                'answer2' => 'chien 12',
+                'answer3' => 'oiseau 12',
+                'answer4' => 'poisson 12',
+                'answer5' => 'serpent 12',
+                'answer6' => 'taupe 12',
+            ],
+            [
+                'answer1' => 'grand 12',
+                'answer2' => 'petit 12',
+                'answer3' => 'tres petit 12',
+                'answer4' => 'tres grand 12',
+                'answer5' => 'immense 12',
+                'answer6' => 'minuscule 12',
+            ],
         	];
 
         Answer::insert($data);

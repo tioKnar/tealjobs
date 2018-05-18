@@ -17,7 +17,9 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Kaushan+Script|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -26,41 +28,35 @@
 <body>
     <div id="app">
         
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-laravel">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
 
             <div class="container">
+
+                <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
   
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         
                     @guest
                     
                     <ul class="navbar-nav">
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="/">Accueil</a>
+                            <a class="nav-link nav-lien" href="/">Accueil</a>
                         </li>
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="contact">Contact</a>
+                            <a class="nav-link nav-lien" href="#" id="register" data-toggle="modal" data-target="#modalregister">Inscription</a>
                         </li>
-
-                    </ul>
-
-                        <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
- 
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item linknavbar">
-                            <a class="nav-link" href="#" id="register" data-toggle="modal" data-target="#modalregister">Inscription</a>
-                        </li>
+                        @include('modal.inscription')
 
                         <li class="nav-item linknavbar" id="connect">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalconnect">Connexion</a>
+                            <a class="nav-link nav-lien" href="#" data-toggle="modal" data-target="#modalconnect">Connexion</a>
                         </li>
+                        @include('modal.connexion')
 
                     </ul>
 
@@ -71,16 +67,6 @@
                         <li class="nav-item linknavbar">
                             <a class="nav-link" href="/">Accueil</a>
                         </li>
-
-                        <li class="nav-item linknavbar">
-                            <a class="nav-link" href="contact">Contact</a>
-                        </li>
-
-                    </ul>
-
-                        <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
- 
-                    <ul class="navbar-nav">
 
                         <li class="nav-item linknavbar">
                             <a class="nav-link" href="{{ route('register') }}">Historique</a>
@@ -113,91 +99,60 @@
             @yield('content')
         </main>
 
-        <footer>
-            
-            <div class="container-fluid">
+        <footer class="footer-distributed">
 
-                <div class="row align-items-center text-center">
+            <div class="footer-right">
 
-                    <div class="col">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.github.com"><i class="fa fa-github"></i></a>
 
-                        <a href="" class="footerlink">Contactez nous</a><br>
+            </div>
 
-                        <a href=""><img class="logofooter" src="img/facebook.png"></a>
-                        <a href=""><img class="logofooter" src="img/twitter.png"></a>
-                        <a href=""><img class="logofooter" src="img/instagram.png"></a>
-                        <a href=""><img class="logofooter" src="img/linkedin.png"></a>
-                        <a href=""><img class="logofooter" src="img/googleplus.png"></a><br>
+            <div class="footer-left">
 
-                        <a href="" class="footerlink">Mentions légales</a>
+                <p class="footer-links">
 
-                    </div>
+                    <a href="contact">Contact</a>
+                    ·
+                    <a href="#">Mentions légales</a>
+                </p>
 
-                </div>
-
+                <p>Company TealJobs &copy; 2018</p>
             </div>
 
         </footer>
 
     </div>
+
 </body>
 
-<!-- Modal Connexion -->
+<script>
+    $(function(){
 
-<div class="modal fade" id="modalconnect" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        @if($errors->has('email') || $errors->has('password'))
 
-    <div class="modal-dialog" role="document">
+                $('#modalconnect').modal('show');
 
-        <div class="modal-content">
-        
-            <div class="modal-header">
+        @endif
 
-                <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
-            
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-      
-            </div>
-      
-            <div class="modal-body">
+        @if($errors->has('email') || $errors->has('password') || $errors->has('firstname') || $errors->has('lastname') )
 
-                <form method="POST" action="{{ route('login') }}" class="form-group">
-                            @csrf
-             
-                    <input id="email" type="email" class="form-group form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus>
-
-                        @if ($errors->has('email'))
-                            <span class="invalid-feedback">
-                               <strong>{{ $errors->first('email') }}</strong>
-                            </span>
-                        @endif
-                                  
-                    <input id="password" type="password" class="form-group form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Mot de passe" required>
-
-                        @if ($errors->has('password'))
-                            <span class="invalid-feedback">
-                                <strong>{{ $errors->first('password') }}</strong>
-                            </span>
-                        @endif
-
-                    <button type="submit" class="btn btn-info form-group form-control">
-                                        {{ __('Login') }}
-                    </button>
-
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                              {{ __('Forgot Your Password?') }}
-                    </a>
-                          
-                </form>
-
+<<<<<<< HEAD
             </div>
 
         </div>
       
     </div>
+=======
+                $('#modalregister').modal('show');
 
-</div>
+        @endif
+>>>>>>> ba3d9a4c44ecd0b2b77965d1d90eb6384a082e59
+
+    });
+</script>
 
 </html>
 

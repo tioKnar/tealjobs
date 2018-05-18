@@ -12,31 +12,31 @@
 
 
 //Fireflies
+@import "fireflies.css";
+
+
+.col-12 {
+	padding: 0px;
+}
 
 
 // Header 
 
+.nav-lien {
+	margin-left: 3.3vh;
+}
+
 .navbar-laravel {
-  background-color: #1B4C51;
+  background-color: white;
   padding: 0px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-	color: #B2DFDB;
+	color: #00695C;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-	color: white;
-}
-
-.linknavbar {
-	text-align: center;
-	width: 120px;
-}
-
-.navbar-brand {
-	width: 140px;
-	margin: 0px
+	color: #26A69A;
 }
 
 
@@ -46,6 +46,7 @@ footer {
 	 background-color: #1B4C51;
 	 padding-top: 25px;
 	 padding-bottom: 25px;
+	 position: fixed bottom;
 }
 
 .footerlink {
@@ -103,43 +104,75 @@ body {
 	font-family: $font;
 }
 
-#jumbo-tree {
-
-  filter: blur(15px);
-  width: 100vw;
-  min-width:1100px;
-  z-index: -1;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  margin: 0px; 
-  padding: 0px;
-}
-
-
-.lead {
-    font-size: 2.25rem;
-    font-weight: 300;
-    line-height: 1;
-}
-
 .jumbotron {
 	background: transparent;
-	margin-top: 0px;
-	color: rgba(255,255,255,0.8);
-	height: 500px;
+	padding: 0px;
+    @media(min-width: 735px){
+		height: 600px;
+    } 
+    @media(max-width: 733px){
+    	height: 400px;
+    } 
+
 }
 
-.jumbo-description {
-	font-size: 1.1em;
-	margin-top: 9%;	
+#landing-bg {
+filter: blur(8.5px);
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+    @media(min-width: 992px){
+
+    	background: url('../img/tree/tree_pano.jpg');
+    	height: 600px;
+    	background-position: right;
+    	background-size: cover;
+    } 
+    @media(max-width: 991.98px){
+    	background: url('../img/tree/tree.jpg');
+    	height: 400px;
+    	background-position: center;
+    	background-size: cover;
+    } 
+}
+
+#learn {
+	
+	line-height: 2em;
+	margin-top: 8vh;
+	font-family: $jumbo-font;
+	color: $jumbo-title;
+}
+
+@media(max-width: 991.8px){
+
+	.lead-subtitle {
+		display: none;
+	}
+}
+
+.lead-subtitle {
+	font-size: 1.3em;
+}
+
+.lead-title {
+	font-size: 1.6em;
+}
+
+@media(max-width: 991.8px){
+
+	.btn-lg {
+		margin-top: 10%;
+	}
 }
 
 .btn-lg {
-	margin-top: 100px;
-	width: 65%;
-	padding: 10%;
-	border-radius: 1.3em;
+	margin-top: 25%;
+	padding: 1rem 5rem;
+	border-radius: 2.3rem;
 	mix-blend-mode: color-dodge;
 }
 
@@ -150,22 +183,38 @@ body {
 	
 	padding: 5em 1em;
 	background-color: #F5F5F5;
-	text-align: center
-}
-
-h2, .lead-title, .lead-subtitle {
-	font-family: $font-title;
-
-	.lead-title {
-		font-size: 35px;
+	text-align: center;
+	line-heigt: 2em;
+	
+	h2 {
+		font-family: $font-title;
 	}
 
-	.lead-subtitle {
-		font-size: 25px;
+	p {
+		padding: 2px 8px;
+		font-size: 1.15em;
+		text-align: justify;
+		text-justify: inter-word;
 	}
-
 }
 
+// Page test
+
+.completed {
+
+	display: none;
+}
+
+.previous {
+
+	position: absolute;
+	top: 452px;
+	left: calc(50% - 38px);
+}
+
+.test{
+	border: 2px solid black;
+}
 
 // Page gestion users/classes/jobs
 
@@ -234,15 +283,149 @@ label {
 
 #adress {
 	color: #26A69A;
+	font-family: $font;
 }
 
 
-// Media-queries
+//Page Resultats
 
-@media screen and (max-width: 991px) {
+#result-bg {
+	object-fit: cover;
+	
+	    @media(min-width: 735px){
 
-    .navbar-laravel {
-  		padding: 10px;
+	    	background: url('../img/tree/result_page_pano.jpg');
+	    	height: 600px;
+	    	background-position: center;
+	    	background-size: cover;
+	    } 
+
+	    @media(max-width: 734px){
+	    	background: url('../img/tree/tree.jpg');
+	    	height: 400px;
+	    	background-position: center;
+	    	background-size: cover;
+	    } 
+}
+
+
+#foliage-square {
+
+	@media(min-width:735px) {
+		background-color: transparent;
+	    position: absolute;
+	    top: 29%;
+	    left: calc(48% - 250px);
+	    width: 500px;
+	    height: 250px;
+	    border-radius: 49% 50% 5% 5%;
 	}
 
+	@media(min-width:310px) and (max-width:734.98px) {
+		background-color: transparent;
+	    position: absolute;
+	    top: 10%;
+	    left: calc(48% - 190px);
+	    width: 380px;
+	    height: 203px;
+	    border-radius: 49% 64% 5% 5%;
+	}
+}
+
+.job {
+	visibility: hidden;
+}
+
+.job:hover {
+	visibility: visible;
+}
+
+.fruit {
+	background-size: cover;
+	background-image: url("../img/tree/fruit.png");
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	transition: 0.5s;
+}
+
+.fruit:hover {
+	background-image: url("../img/tree/glowing_fruit.png");
+}
+
+
+// TEST FOOTER
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 100%;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	background-color:  #33383b;
+	border-radius: 32px;
+
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
 }

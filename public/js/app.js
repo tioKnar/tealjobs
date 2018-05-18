@@ -13897,13 +13897,19 @@ var app = new Vue({
   el: '#app'
 });
 
-$(document).ready(function () {
+// $(document).ready(function(){
 
-  setTimeout(function () {
+//     setTimeout(function(){
 
-    $('.lead-title').fadeIn("slow");
-  }, 4000);
-});
+//         $('.lead-subtitle').fadeOut("slow", 1000, function(){
+
+//         	$('.lead-title').fadeOut("slow", 1500, function(){
+//         	//animation complete
+// 	        });
+// 	    });
+// 	}, 1500);
+
+// });
 
 /***/ }),
 /* 13 */

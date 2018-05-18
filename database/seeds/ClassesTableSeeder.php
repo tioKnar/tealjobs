@@ -22,6 +22,7 @@ class ClassesTableSeeder extends Seeder
         		'cp' => '33000',
         		'address' => '13 rue abbé de l\'épée',
         		'cost' => '3200',
+                'job_id' => '1',
         	];
 
         Classe::insert($data);

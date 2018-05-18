@@ -24,6 +24,7 @@ class CreateClassesTable extends Migration
             $table->integer('tel');
             $table->string('mail');
             $table->string('address');
+            $table->integer('job_id');
             $table->timestamps();
         });
     }
