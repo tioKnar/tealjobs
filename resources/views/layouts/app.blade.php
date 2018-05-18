@@ -45,16 +45,16 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="/">Accueil</a>
+                            <a class="nav-link nav-lien" href="/">Accueil</a>
                         </li>
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="#" id="register" data-toggle="modal" data-target="#modalregister">Inscription</a>
+                            <a class="nav-link nav-lien" href="#" id="register" data-toggle="modal" data-target="#modalregister">Inscription</a>
                         </li>
                         @include('modal.inscription')
 
                         <li class="nav-item linknavbar" id="connect">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalconnect">Connexion</a>
+                            <a class="nav-link nav-lien" href="#" data-toggle="modal" data-target="#modalconnect">Connexion</a>
                         </li>
                         @include('modal.connexion')
 
