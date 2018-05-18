@@ -47,4 +47,3 @@ Route::get('/jobs', 'JobsController@index');
 
 Route::post('/jobs', 'JobsController@store');
 
-Route::get('/results', 'ResultsController@index');

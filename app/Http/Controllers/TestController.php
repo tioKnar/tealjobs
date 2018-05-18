@@ -20,6 +20,8 @@ class TestController extends Controller
                         ->inRandomOrder()
                         ->get();
 
+                        // dd($resultats);
+
         $first = $resultats[0]->question_id;
 
         return view('test.index')->with('resultats', $resultats)->with('first', $first);
@@ -29,5 +31,9 @@ class TestController extends Controller
     public function store(){
 
         $values = Request::all();
+
+        
+
+
     }
 }
