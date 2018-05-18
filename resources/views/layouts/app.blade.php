@@ -52,7 +52,7 @@
                         @include('modal.inscription')
 
                         <li class="nav-item linknavbar" id="connect">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalconnect">Connexion</a>
+                            <a class="nav-link" id="trigger-login" href="#" data-toggle="modal" data-target="#modalconnect">Connexion</a>
                         </li>
                         @include('modal.connexion')
 
@@ -124,7 +124,23 @@
         </footer>
 
     </div>
+
+    <div id="test" class="{{ $errors }}"></div>
 </body>
+
+<script>
+   
+ $(function() {
+
+    console.log($('#test').attr('class'));
+
+    if($('#test').attr('class') != "[]")  {
+        
+        $('#trigger-login').trigger('click');
+    }
+ })   
+
+</script>
 
 </html>
 
