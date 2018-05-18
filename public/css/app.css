@@ -20475,8 +20475,8 @@ label {
   position: absolute;
   height: 40px;
   width: 40px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .fruit:hover {
