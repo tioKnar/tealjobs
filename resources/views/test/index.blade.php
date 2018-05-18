@@ -36,7 +36,7 @@
 
 			@endforeach
 
-			<a href="results?profile=">clic</a>
+			<a id="resultat" href="results?profile=">clic</a>
 
 		</div>
 	
@@ -48,9 +48,6 @@
 
 	
 $(function() {
-
-	
-
 
 	var collection = $(".bouton").get();
 
@@ -87,18 +84,21 @@ $(function() {
 			}
 		}
 
-
-		$maxvalue = Math.max($tabOcc);
-
 		console.log($tabOcc);
-		console.log($maxvalue);
 
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
 		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0]);
+		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
 
-		// $.each($tabOcc, function(index,value){
-		// 	console.log(index + ':' + value);
-		// })
+		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1]);
+		$b = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
+
+		$c = $a + $b;
+		console.log($c);
+
+		console.log($('#resultat').attr('href', 'results?profile=' + $c));
+
 	});
 
 	$('.previous').on('click', function() {
