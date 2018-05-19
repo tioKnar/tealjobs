@@ -21,7 +21,7 @@ class CreateClassesTable extends Migration
             $table->string('contact');
             $table->string('city');
             $table->integer('cp');
-            $table->integer('tel');
+            $table->string('tel');
             $table->string('mail');
             $table->string('address');
             $table->integer('job_id');

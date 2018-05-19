@@ -32,6 +32,28 @@
 
 				<input type="tel" name="tel" class="form form-group form-control" value="{{ $classe->tel }}">
 
+				<select name="job_id" class="form form-group form-control {{ $errors->has('job_id') ? 'border border-danger' : '' }}">
+					
+					<option>-- Séléctionner un métier --</option>
+
+				@foreach($jobs as $job)
+
+					 @if($classe->job_id == $job->id)
+
+						<option value="{{ $job->id }}" selected>{{ $job->name }}</option>
+					
+					@else
+
+						<option value="{{ $job->id }}">{{ $job->name }}</option>
+
+					@endif
+
+
+
+				@endforeach
+
+				</select>
+
 				<button class="btn btn-info form-control">Modifier</button>
 
 			</form>
