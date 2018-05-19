@@ -289,6 +289,14 @@ label {
 
 //Page Resultats
 
+// #test {
+// 	object-fit: cover;
+// 	height: 600px;
+// 	background: url('../img/tree/test.jpg');
+// 	background-position: center;
+// 	background-size: cover;
+// }
+
 #result-bg {
 	object-fit: cover;
 	
@@ -308,49 +316,112 @@ label {
 	    } 
 }
 
-
 #foliage-square {
 
 	@media(min-width:735px) {
-		background-color: transparent;
-	    position: absolute;
-	    top: 29%;
-	    left: calc(48% - 250px);
-	    width: 500px;
-	    height: 250px;
-	    border-radius: 49% 50% 5% 5%;
+        background-color: transparent;
+        position: absolute;
+        top: 29%;
+        left: calc(48% - 250px);
+        width: 500px;
+        height: 250px;
+    }
+
+    @media(min-width:310px) and (max-width:734.98px) {
+        background-color: transparent;
+        position: absolute;
+        top: 10%;
+        left: calc(48% - 190px);
+        width: 380px;
+        height: 203px;
+        border-radius: 49% 64% 5% 5%;
+    }
+}
+
+@for $i from 1 to 16 {
+	#fruit#{$i} {
+		background-image: url("../img/tree/fruit.png");
+		position: absolute;
+		width: $fruit-width;
+		height: $fruit-height;
+		background-size: cover;
+		position: absolute;
+		transition: 0.5s;
 	}
 
-	@media(min-width:310px) and (max-width:734.98px) {
-		background-color: transparent;
-	    position: absolute;
-	    top: 10%;
-	    left: calc(48% - 190px);
-	    width: 380px;
-	    height: 203px;
-	    border-radius: 49% 64% 5% 5%;
+	#fruit#{$i}:hover {
+		background-image: url("../img/tree/glowing_fruit.png");
 	}
 }
 
+#fruit1 {
+	top:200px;
+	left:85px;
+}
+#fruit2 {
+	top:75px;
+	left:350px;
+}
+#fruit3 {
+	top:65px;
+	left:150px;
+}
+#fruit4 {
+	top:160px;
+	left:175px;
+}
+#fruit5 {
+	top:80px;
+	left:235px;
+}
+#fruit6 {
+	top:-15px;
+	left:310px;
+}
+#fruit7 {
+	top:130px;
+	left:270px;
+}
+#fruit8 {
+	top:100px;
+	left:80px;
+}
+#fruit9 {
+	top:10px;
+	left:110px;
+}
+#fruit10 {
+	top:165px;
+	left:340px;
+}
+#fruit11 {
+	top:0px;
+	left:225px;
+}
+#fruit12 {
+	top:130px;
+	left:400px;
+}
+#fruit13 {
+	top:150px;
+	left:50px;
+}
+#fruit14 {
+	top:10px;
+	left:395px;
+}
+#fruit15 {
+	top:150px;
+	left:470px;
+}
+
 .job {
-	visibility: hidden;
+	color: white;
+	// visibility: hidden;
 }
 
 .job:hover {
 	visibility: visible;
-}
-
-.fruit {
-	background-size: cover;
-	background-image: url("../img/tree/fruit.png");
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	transition: 0.5s;
-}
-
-.fruit:hover {
-	background-image: url("../img/tree/glowing_fruit.png");
 }
 
 

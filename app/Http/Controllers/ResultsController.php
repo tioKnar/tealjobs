@@ -21,9 +21,8 @@ class ResultsController extends Controller
                          ->where('analyses.resultprofile' , '=',  '43')
                          ->get();
         
-         $randomize = $jobs->random(3)
-                           ->values();
-
+         $randomize = $jobs->random(3);
+                         
         return view('results.index')
               ->with('results', $randomize);
     }
