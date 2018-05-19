@@ -2,36 +2,30 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Hash;
 use App\Model\User;
 use Redirect;
 use Request;
 use Validator;
 
-class UsersController extends Controller
+class UserController extends Controller
 {
-
-	public function __construct() {
-
-        $this->middleware('auth');
-    }
+     public function index() {
     
-    public function index() {
+    	$user = User::where('id', $_GET['id'])->first();
 
-    	$users = User::paginate(4);
-
-    	return view('users.index')->with('users', $users);
+    	return view('userupdate.index')->with('user', $user);
     }
 
-    public function store() {
+    public function update() {
 
+    	
     	$values = Request::all();
 
     	$rules = [
 			'firstname' => 'required|string|max:255',
 			'lastname' => 'required|string|max:255',
 			'email' => 'email|required',
-			'password' => 'required|string|min:6',
+
 		];
 
 		$validator = Validator::make($values, $rules, [
@@ -41,10 +35,6 @@ class UsersController extends Controller
 			'firstname.required' =>'Veuillez entrer un prénom',
 			'lastname.string' =>'Nom invalide',
 			'lastname.required' =>'Veuillez entrer un nom',
-			'password.required' =>'Veuillez entrer un mot de passe',
-			'password.string' =>'Veuillez entrer un mot de passe',
-			'password.min' =>'Le mot de passe doit faire au moins 6 caractères',
-
 		]);
 
 		if($validator->fails()) {
@@ -55,28 +45,16 @@ class UsersController extends Controller
 							->withInput();
 		}
 
-		$user = new User();
+		$user = User::where('id', $_GET['id'])->first();
 
 		$user->email = $_POST['email'];
 		$user->firstname = $_POST['firstname'];
 		$user->lastname = $_POST['lastname'];
-		$user->password = Hash::make($_POST['password']);
 
 		$user->save();
 
-		flash('Utilisateur ajouté')->success();
+		flash('Utilisateur modifié')->success();
 
 		return Redirect::back();
-    }
-
-     public function delete() {
-     		
-	     	$id = $_GET['id'];
-
-	    	$user = User::where('id', $id)->first();
-	    		
-	    	$user->delete();
-
-	 		return Redirect::back();
     }
 }

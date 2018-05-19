@@ -7,22 +7,16 @@ use Redirect;
 use Request;
 use Validator;
 
-class JobsController extends Controller
+class JobController extends Controller
 {
-
-	public function __construct() {
-
-        $this->middleware('auth');
-    }
-    
     public function index() {
+    
+    	$job = Job::where('id', $_GET['id'])->first();
 
-    	$jobs = Job::paginate(4);
-
-    	return view('jobs.index')->with('jobs', $jobs);
+    	return view('jobupdate.index')->with('job', $job);
     }
 
-    public function store() {
+      public function update() {
 
     	$values = Request::all();
 
@@ -49,7 +43,7 @@ class JobsController extends Controller
 							->withInput();
 		}
 
-		$job = new Job();
+		$job = Job::where('id', $_GET['id'])->first();
 
 		$job->name = $_POST['name'];
 		$job->description = $_POST['description'];
@@ -57,19 +51,8 @@ class JobsController extends Controller
 
 		$job->save();
 
-		flash('Métier ajouté')->success();
+		flash('Métier modifié')->success();
 
 		return Redirect::back();
-    }
-
-     public function delete() {
-     		
-	     	$id = $_GET['id'];
-
-	    	$job = Job::where('id', $id)->first();
-	    		
-	    	$job->delete();
-
-	 		return Redirect::back();
-    }
+	}
 }

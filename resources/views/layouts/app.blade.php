@@ -20,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Kaushan+Script|Lato" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -103,27 +102,20 @@
 
             <div class="footer-right">
 
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.github.com"><i class="fa fa-github"></i></a>
 
             </div>
 
             <div class="footer-left">
 
                 <p class="footer-links">
-                    <a href="#">Home</a>
+
+                    <a href="contact">Contact</a>
                     ·
-                    <a href="#">Blog</a>
-                    ·
-                    <a href="#">Pricing</a>
-                    ·
-                    <a href="#">About</a>
-                    ·
-                    <a href="#">Faq</a>
-                    ·
-                    <a href="#">Contact</a>
+                    <a href="#">Mentions légales</a>
                 </p>
 
                 <p>Company TealJobs &copy; 2018</p>
@@ -151,6 +143,7 @@
         @endif
 
     });
+    
 </script>
 
 </html>

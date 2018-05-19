@@ -36,12 +36,16 @@
 
 			@endforeach
 
+			<a id="resultat" href="results?profile=">clic</a>
+
 		</div>
 	
 	</div>
 	<br><br>
 
 <script>
+
+
 	
 $(function() {
 
@@ -67,7 +71,34 @@ $(function() {
 
 		$tab.push($(this).attr('data-id'));
 
-		console.log($tab);	
+		console.log($tab);
+
+		$tabOcc = { };
+
+		for(i=0; i < $tab.length; i++){
+			if($tabOcc[$tab[i]]){
+				$tabOcc[$tab[i]] ++;
+			}
+			else{
+				$tabOcc[$tab[i]] = 1;
+			}
+		}
+
+		console.log($tabOcc);
+
+		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0]);
+		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
+
+		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1]);
+		$b = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
+
+		$c = $a + $b;
+		console.log($c);
+
+		console.log($('#resultat').attr('href', 'results?profile=' + $c));
+
 	});
 
 	$('.previous').on('click', function() {
@@ -80,6 +111,7 @@ $(function() {
 
 		console.log($tab);
 	});
+	
 });
 
 </script>

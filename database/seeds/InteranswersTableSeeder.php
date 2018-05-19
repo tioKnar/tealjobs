@@ -37,6 +37,22 @@ class InteranswersTableSeeder extends Seeder
         		'question_id' => '6',
         		'answer_id' => '6',
             ],
+                        [
+                'question_id' => '7',
+                'answer_id' => '7',
+            ],
+            [
+                'question_id' => '8',
+                'answer_id' => '8',
+            ],
+            [
+                'question_id' => '9',
+                'answer_id' => '9',
+            ],
+            [
+                'question_id' => '10',
+                'answer_id' => '10',
+            ],
         	];
 
         Interanswer::insert($data);
