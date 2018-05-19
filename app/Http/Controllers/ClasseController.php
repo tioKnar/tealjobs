@@ -3,34 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Model\Classe;
-use App\Model\Job;
 use Redirect;
 use Request;
 use Validator;
 
-class ClassesController extends Controller
+class ClasseController extends Controller
 {
-	public function __construct() {
-
-        $this->middleware('auth');
-    }
-
     public function index() {
+    
+    	$classe = Classe::where('id', $_GET['id'])->first();
 
-    	 $classes = Classe::paginate(4);
-
-    	 $jobs = Job::get();
-
-    	return view('classes.index')->with('classes', $classes)->with('jobs', $jobs);
+    	return view('classeupdate.index')->with('classe', $classe);
     }
 
-    public function store() {
+    public function update() {
 
     	$values = Request::all();
 
     	$rules = [
 			'name' => 'required|string|max:255',
 			'description' => 'required|string|max:255',
+			'cost' => 'required|integer',
 			'cost' => 'required|integer',
 			'contact' => 'required|string',
 			'city' => 'required|string',
@@ -52,7 +45,7 @@ class ClassesController extends Controller
 			'city.string' =>'Ville invalide',
 			'address.string' =>'Adresse invalide',
 			'cp.integer' =>'Code postal invalide',
-			'tel.numeric' =>'Téléphone invalide',
+			'tel.integer' =>'Téléphone invalide',
 			'job_id.integer' =>'Métier invalide',
 		]);
 
@@ -64,7 +57,7 @@ class ClassesController extends Controller
 							->withInput();
 		}
 
-		$classe = new Classe();
+		$classe = Classe::where('id', $_GET['id'])->first();
 
 		$classe->name = $_POST['name'];
 		$classe->description = $_POST['description'];
@@ -79,19 +72,8 @@ class ClassesController extends Controller
 
 		$classe->save();
 
-		flash('Formation ajoutée')->success();
+		flash('Formation modifiée')->success();
 
 		return Redirect::back();
-    }
-
-    public function delete() {
-     		
-	     	$id = $_GET['id'];
-
-	    	$classe = Classe::where('id', $id)->first();
-	    		
-	    	$classe->delete();
-
-	 		return Redirect::back();
     }
 }

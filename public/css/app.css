@@ -20230,6 +20230,18 @@ footer {
   border-color: #17a2b8;
 }
 
+#boutonadmin {
+  margin-top: 40px;
+}
+
+#tableadmin {
+  margin-top: 60px;
+}
+
+#tableupdateadmin {
+  margin-top: 60px;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }

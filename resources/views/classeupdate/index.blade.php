@@ -1,0 +1,49 @@
+@extends('layouts/app')
+
+@section('content')
+
+
+<div class="container-fluid" id="tableupdateadmin">
+
+	<div class="row justify-content-center">
+
+		<div class="col-md-4">
+
+			<h2 style="text-align: center">Modifier une formation</h2><br>
+
+			<form method="post" class="form-group">
+				@csrf
+				
+				<input type="text" name="name" class="form form-group form-control" value="{{ $classe->name }}">
+
+				<textarea name="description" class="form form-group form-control" rows="5">{{ $classe->description }}</textarea>
+
+				<input type="number" name="cost" class="form form-group form-control" value="{{ $classe->cost }}">
+
+				<input type="text" name="contact" class="form form-group form-control" value="{{ $classe->contact }}">
+
+				<input type="text" name="city" class="form form-group form-control" value="{{ $classe->city }}">
+
+				<input type="text" name="address" class="form form-group form-control" value="{{ $classe->address }}">
+
+				<input type="number" name="cp" class="form form-group form-control" value="{{ $classe->cp }}">
+
+				<input type="email" name="mail" class="form form-group form-control" value="{{ $classe->mail }}">
+
+				<input type="tel" name="tel" class="form form-group form-control" value="{{ $classe->tel }}">
+
+				<button class="btn btn-info form-control">Modifier</button>
+
+			</form>
+
+			@include('flash::message')
+
+			<a href="classes">Liste des formations</a>
+
+		</div>
+
+	</div>
+
+</div>
+
+@endsection
