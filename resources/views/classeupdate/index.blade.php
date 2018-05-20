@@ -2,6 +2,12 @@
 
 @section('content')
 
+ @if( Auth::user()->role == 'user')
+
+	<p>Vous n'avez pas accès à cette page</p>
+	<a href="/">Retour à l'accueil</a>
+
+ @else
 
 <div class="container-fluid" id="tableupdateadmin">
 
@@ -67,5 +73,7 @@
 	</div>
 
 </div>
+
+@endif
 
 @endsection

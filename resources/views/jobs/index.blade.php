@@ -2,6 +2,13 @@
 
 @section('content')
 
+ @if( Auth::user()->role == 'user')
+
+	<p>Vous n'avez pas accès à cette page</p>
+	<a href="/">Retour à l'accueil</a>
+
+ @else
+
 <div class="container-fluid" id="boutonadmin">
 	
 	<div class="row justify-content-center text-center">
@@ -87,5 +94,7 @@
 	</div>
 
 </div>
+
+@endif
 
 @endsection
