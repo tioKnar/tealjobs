@@ -37,7 +37,7 @@ class ClassesController extends Controller
 			'address' => 'required|string',
 			'cp' => 'required|integer',
 			'mail' => 'email|required',
-			'tel' => 'numeric|regex:#^0[1-9][0-9]{8}#',
+			'tel' => 'required|regex:#^0[1-9][0-9]{8}#',
 			'job_id' => 'required|integer',
 
 		];
@@ -52,7 +52,7 @@ class ClassesController extends Controller
 			'city.string' =>'Ville invalide',
 			'address.string' =>'Adresse invalide',
 			'cp.integer' =>'Code postal invalide',
-			'tel.numeric' =>'Téléphone invalide',
+			'tel.regex' =>'Téléphone invalide',
 			'job_id.integer' =>'Métier invalide',
 		]);
 

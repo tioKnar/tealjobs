@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Model\Classe;
+use App\Model\Job;
 use Redirect;
 use Request;
 use Validator;
@@ -13,7 +14,9 @@ class ClasseController extends Controller
     
     	$classe = Classe::where('id', $_GET['id'])->first();
 
-    	return view('classeupdate.index')->with('classe', $classe);
+    	 $jobs = Job::get();
+
+    	return view('classeupdate.index')->with('classe', $classe)->with('jobs', $jobs);
     }
 
     public function update() {
@@ -30,7 +33,7 @@ class ClasseController extends Controller
 			'address' => 'required|string',
 			'cp' => 'required|integer',
 			'mail' => 'email|required',
-			'tel' => 'numeric|regex:#^0[1-9][0-9]{8}#',
+			'tel' => 'required|regex:#^0[1-9][0-9]{8}#',
 			'job_id' => 'required|integer',
 
 		];
@@ -45,7 +48,7 @@ class ClasseController extends Controller
 			'city.string' =>'Ville invalide',
 			'address.string' =>'Adresse invalide',
 			'cp.integer' =>'Code postal invalide',
-			'tel.integer' =>'Téléphone invalide',
+			'tel.regex' =>'Téléphone invalide',
 			'job_id.integer' =>'Métier invalide',
 		]);
 

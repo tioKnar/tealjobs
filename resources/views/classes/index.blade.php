@@ -88,7 +88,18 @@
 							<span>Contact : {{ $classe->contact }}</span><br>
 							<span>Adresse : {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}</span><br>
 							<span>Email : {{ $classe->mail }}</span><br>
-							<span>Tel : {{ $classe->tel }}</span><hr>
+							<span>Tel : {{ $classe->tel }}</span><br>
+							
+							@foreach($jobs as $job)
+
+								@if($job->id == $classe->job_id)
+
+									<span>Métier : {{ $job->name }}</span><hr>
+
+								@endif
+
+							@endforeach
+
 							<a href="classeupdate?id={{ $classe->id }}">Modifier</a>
 							<a href="classedelete?id={{ $classe->id }}" class="supp">/ Supprimer</a>
 
