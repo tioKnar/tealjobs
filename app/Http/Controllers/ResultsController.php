@@ -22,7 +22,7 @@ class ResultsController extends Controller
                          ->get();
         
          $randomize = $jobs->random(3);
-                         
+                        
         return view('results.index')
               ->with('results', $randomize);
     }

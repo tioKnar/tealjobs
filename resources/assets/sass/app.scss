@@ -308,13 +308,6 @@ label {
 
 //Page Resultats
 
-// #test {
-// 	object-fit: cover;
-// 	height: 600px;
-// 	background: url('../img/tree/test.jpg');
-// 	background-position: center;
-// 	background-size: cover;
-// }
 
 #result-bg {
 	object-fit: cover;
@@ -322,7 +315,7 @@ label {
 	    @media(min-width: 735px){
 
 	    	background: url('../img/tree/result_page_pano.jpg');
-	    	height: 600px;
+	    	height: 650px;
 	    	background-position: center;
 	    	background-size: cover;
 	    } 
@@ -358,7 +351,7 @@ label {
 }
 
 @for $i from 1 to 16 {
-	#fruit#{$i} {
+	.fruit#{$i} {
 		background-image: url("../img/tree/fruit.png");
 		position: absolute;
 		width: $fruit-width;
@@ -368,28 +361,56 @@ label {
 		transition: 0.5s;
 	}
 
-	#fruit#{$i}:hover {
-		background-image: url("../img/tree/glowing_fruit.png");
+	#job#{$i} {
+		display: none;
+		opacity: 0;
 	}
+
+	.fruit#{$i}:hover {
+		background-image: url("../img/tree/glowing_fruit.png");
+
+		@keyframes jobs {
+		    from {opacity: 0;}
+		    to {opacity: 1;}
+		}
+
+		#job#{$i} {
+			font-family: $font-title;
+			font-size: 1.2em;
+			background-color: rgba(0,0,0,0.6);
+			width: 115px;
+			height: 50px;
+			color: white;
+			border-radius: 5px;
+			position: relative;
+			top: -55px;
+			animation-name: jobs;
+    		animation-duration: 1s;
+    		opacity: 1;
+			display: inline-block;
+		}
+	}
+
+
 }
 
-#fruit1 {
+.fruit1 {
 	top:200px;
 	left:85px;
 }
-#fruit2 {
+.fruit2 {
 	top:75px;
 	left:350px;
 }
-#fruit3 {
+.fruit3 {
 	top:65px;
 	left:150px;
 }
-#fruit4 {
+.fruit4 {
 	top:160px;
 	left:175px;
 }
-#fruit5 {
+.fruit5 {
 	top:80px;
 	left:235px;
 }
@@ -434,14 +455,6 @@ label {
 	left:470px;
 }
 
-.job {
-	color: white;
-	// visibility: hidden;
-}
-
-.job:hover {
-	visibility: visible;
-}
 
 
 // TEST FOOTER
