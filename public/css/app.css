@@ -4,8 +4,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
 }
 
 .firefly {
@@ -21279,6 +21279,42 @@ label {
 #fruit15 {
   top: 150px;
   left: 470px;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  border: 2px solid teal;
+}
+
+.modal-content .modal-header {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.modal-content h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5em;
+  color: teal;
+}
+
+.modal-content .job-description {
+  font-size: 0.9em;
+}
+
+.modal-content .table-striped {
+  color: #f1f1f1;
+  background-color: teal;
+}
+
+body.modal-open #result-bg {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .footer-distributed {

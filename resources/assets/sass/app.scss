@@ -455,7 +455,43 @@ label {
 	left:470px;
 }
 
+//Page Resultats - Modal
 
+.modal-content {
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 10px;
+	border: 2px solid teal;
+
+	.modal-header {
+		flex-direction: column !important;
+	}
+
+	h2 {
+		font-family: $font-title;
+		font-size: 1.5em;
+		color: teal;
+	}
+
+	.job-description {
+		font-size: 0.9em;
+	}
+
+	.table-striped {
+		color: #f1f1f1;
+		background-color: teal;
+	}
+
+
+}
+
+body.modal-open #result-bg {
+	-webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+
+}
 
 // TEST FOOTER
 

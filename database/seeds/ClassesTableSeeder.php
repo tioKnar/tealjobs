@@ -13,7 +13,8 @@ class ClassesTableSeeder extends Seeder
     public function run()
     {
          $data = [
-        		'name' => 'Webforce3',
+        		'classes_name' => 'Webforce3',
+                'duration' => '3 mois',
         		'description' => 'Devenir développeur en seulement 3 mois',
         		'contact' => 'Lilian Delaportua',
         		'mail' => 'webforce@formation.com',

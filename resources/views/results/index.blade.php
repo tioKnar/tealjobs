@@ -7,8 +7,8 @@
 			<div class="col-12">
 				<div id="result-bg" alt="result_tree">
 
-					<div class="fireflies">@include('fireflies.index')</div>
-
+				</div>
+				<div class="fireflies">@include('fireflies.index')</div>
 					<div class="row " id="foliage-square">
 						<?php $e=1 ?>
 						@foreach($results as $result)
@@ -24,7 +24,6 @@
 						<?php $e++ ?>
 						@endforeach
 					</div>			
-				</div>
 			</div>
 		</div>
 	</div>
