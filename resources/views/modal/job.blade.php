@@ -29,7 +29,7 @@
 			    <tr>
 			      <th scope="row">Coût</th>
 			      @foreach($results as $result)
-			      	<td scope="col">{{$result->cost}}</td>
+			      	<td scope="col">{{$result->cost}}€</td>
 			      @endforeach
 			    </tr>
 			    <tr>
