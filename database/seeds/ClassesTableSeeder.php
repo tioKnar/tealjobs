@@ -25,6 +25,7 @@ class ClassesTableSeeder extends Seeder
         		'address' => '13 rue abbé de l\'épée',
         		'cost' => '3200',
                 'job_id' => '1',
+                'link' => 'http://www.wf3.fr/',
             ],
             [
                 'classes_name' => 'Wild Code School',
@@ -38,6 +39,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'saint Pierre',
                 'cost' => '6000',
                 'job_id' => '1',
+                'link' => 'https://wildcodeschool.fr/',
             ],
             [
                 'classes_name' => 'Drag School',
@@ -51,6 +53,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '1 rue de jojo',
                 'cost' => '15000',
                 'job_id' => '2',
+                'link' => 'http://www.ecole-de-maquillage.eu/tag/maquillage-drag-queen-transformiste',
             ],
             [
                 'classes_name' => 'Pompom school',
@@ -64,6 +67,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'Rue de l\'echelle',
                 'cost' => '12',
                 'job_id' => '3',
+                'link' => 'http://www.ensosp.fr/SP/pages-ENSOSP/formations/officier-de-sapeur-pompier',
             ],
 
         ];

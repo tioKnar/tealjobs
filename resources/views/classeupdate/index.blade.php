@@ -62,6 +62,8 @@
 
 				</select>
 
+				<input type="url" name="link" class="form form-group form-control" value="{{ $classe->link }}">
+
 				<button class="btn btn-info form-control">Modifier</button>
 
 			</form>

@@ -69,6 +69,8 @@
 
 				</select>
 
+				<input type="url" name="link" class="form form-group form-control {{ $errors->has('link') ? 'border border-danger' : '' }}" value="{{ old('link') }}" placeholder="Site de la formation">
+
 				<button class="btn btn-info form-control">Ajouter</button>
 
 			</form>
@@ -93,22 +95,24 @@
 
 							<h4>{{ $classe->classes_name }}</h4><hr>
 							<p>{{ $classe->description}}</p>
-							<span><strong>Durée :</strong> {{ $classe->duration }} mois</span><br>
-							<span><strong>Coût :</strong> {{ $classe->cost }} €</span><br>
-							<span><strong>Contact :</strong> {{ $classe->contact }}</span><br>
-							<span><strong>Adresse :</strong> {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}</span><br>
-							<span><strong>Email :</strong> {{ $classe->mail }}</span><br>
-							<span><strong>Téléphone :</strong> {{ $classe->tel }}</span><br>
+							<strong>Durée :</strong> {{ $classe->duration }} mois<br>
+							<strong>Coût :</strong> {{ $classe->cost }} €<br>
+							<strong>Contact :</strong> {{ $classe->contact }}<br>
+							<strong>Adresse :</strong> {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}<br>
+							<strong>Email :</strong> {{ $classe->mail }}<br>
+							<strong>Téléphone :</strong> {{ $classe->tel }}<br>
 							
 							@foreach($jobs as $job)
 
 								@if($job->id == $classe->job_id)
 
-									<span><strong>Métier :</strong> {{ $job->name }}</span><hr>
+									<strong>Métier :</strong> {{ $job->name }}<br>
 
 								@endif
 
 							@endforeach
+
+							<strong>Site :</strong><a href="{{ $classe->link }}"> {{ $classe->link }} </a><hr>
 
 							<a href="classeupdate?id={{ $classe->id }}">Modifier</a>
 							<a href="classedelete?id={{ $classe->id }}" class="supp">/ Supprimer</a>

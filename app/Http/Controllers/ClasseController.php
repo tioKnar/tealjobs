@@ -35,6 +35,7 @@ class ClasseController extends Controller
 			'mail' => 'email|required',
 			'tel' => 'required|regex:#^0[1-9][0-9]{8}#',
 			'job_id' => 'required|integer',
+			'link' => 'required|string',
 
 		];
 
@@ -50,6 +51,7 @@ class ClasseController extends Controller
 			'cp.integer' =>'Code postal invalide',
 			'tel.regex' =>'Téléphone invalide',
 			'job_id.integer' =>'Métier invalide',
+			'link.string' => 'lien invalide',
 		]);
 
 		if($validator->fails()) {
@@ -72,6 +74,7 @@ class ClasseController extends Controller
 		$classe->mail = $_POST['mail'];
 		$classe->address = $_POST['address'];
 		$classe->job_id = $_POST['job_id'];
+		$classe->link = $_POST['link'];
 
 		$classe->save();
 
