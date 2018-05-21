@@ -20,9 +20,11 @@
 			<form method="post" class="form-group">
 				@csrf
 				
-				<input type="text" name="name" class="form form-group form-control" value="{{ $classe->name }}">
+				<input type="text" name="classes_name" class="form form-group form-control" value="{{ $classe->classes_name }}">
 
 				<textarea name="description" class="form form-group form-control" rows="5">{{ $classe->description }}</textarea>
+
+				<input type="number" name="duration" class="form form-group form-control" value="{{ $classe->duration }}">
 
 				<input type="number" name="cost" class="form form-group form-control" value="{{ $classe->cost }}">
 

@@ -29,8 +29,9 @@ class ClassesController extends Controller
     	$values = Request::all();
 
     	$rules = [
-			'name' => 'required|string|max:255',
+			'classes_name' => 'required|string|max:255',
 			'description' => 'required|string|max:255',
+			'duration' => 'required|integer',
 			'cost' => 'required|integer',
 			'contact' => 'required|string',
 			'city' => 'required|string',
@@ -45,8 +46,9 @@ class ClassesController extends Controller
 		$validator = Validator::make($values, $rules, [
 			'mail.email' => 'E-mail invalide',
 			'mail.required' => 'Veuillez entrer un email',
-			'name.string' =>'Nom invalide',
+			'classes_name.string' =>'Nom invalide',
 			'description.string' =>'Description invalide',
+			'duration.integer' => 'Durée invalide',
 			'cost.integer' =>'Coût invalide',
 			'contact.string' =>'Contact invalide',
 			'city.string' =>'Ville invalide',
@@ -66,8 +68,9 @@ class ClassesController extends Controller
 
 		$classe = new Classe();
 
-		$classe->name = $_POST['name'];
+		$classe->classes_name = $_POST['classes_name'];
 		$classe->description = $_POST['description'];
+		$classe->duration = $_POST['duration'];
 		$classe->cost = $_POST['cost'];
 		$classe->contact = $_POST['contact'];
 		$classe->city = $_POST['city'];

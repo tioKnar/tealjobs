@@ -37,9 +37,11 @@
 			<form method="post" class="form-group">
 				@csrf
 				
-				<input type="text" name="name" class="form form-group form-control {{ $errors->has('name') ? 'border border-danger' : '' }}" value="{{ old('name') }}" placeholder="Nom">
+				<input type="text" name="classes_name" class="form form-group form-control {{ $errors->has('classes_name') ? 'border border-danger' : '' }}" value="{{ old('classes_name') }}" placeholder="Nom">
 
 				<textarea name="description" class="form form-group form-control {{ $errors->has('description') ? 'border border-danger' : '' }}" placeholder="Description" rows="5">{{ old('description') }}</textarea>
+
+				<input type="number" name="duration" class="form form-group form-control {{ $errors->has('duration') ? 'border border-danger' : '' }}" value="{{ old('duration') }}" placeholder="Durée (nombre de mois)">
 
 				<input type="number" name="cost" class="form form-group form-control {{ $errors->has('cost') ? 'border border-danger' : '' }}" value="{{ old('cost') }}" placeholder="Coût">
 
@@ -89,9 +91,10 @@
 					
 						<li class="list-group-item">
 
-							<h4>{{ $classe->name }}</h4><hr>
+							<h4>{{ $classe->classes_name }}</h4><hr>
 							<p>{{ $classe->description}}</p>
-							<span><strong>Coût :</strong> {{ $classe->cost }}€</span><br>
+							<span><strong>Durée :</strong> {{ $classe->duration }} mois</span><br>
+							<span><strong>Coût :</strong> {{ $classe->cost }} €</span><br>
 							<span><strong>Contact :</strong> {{ $classe->contact }}</span><br>
 							<span><strong>Adresse :</strong> {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}</span><br>
 							<span><strong>Email :</strong> {{ $classe->mail }}</span><br>
