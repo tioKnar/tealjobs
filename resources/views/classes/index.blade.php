@@ -90,18 +90,18 @@
 						<li class="list-group-item">
 
 							<h4>{{ $classe->name }}</h4><hr>
-							<span>Description : {{ $classe->description}}</span><br>
-							<span>Coût : {{ $classe->cost }}€</span><br>
-							<span>Contact : {{ $classe->contact }}</span><br>
-							<span>Adresse : {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}</span><br>
-							<span>Email : {{ $classe->mail }}</span><br>
-							<span>Tel : {{ $classe->tel }}</span><br>
+							<p>{{ $classe->description}}</p>
+							<span><strong>Coût :</strong> {{ $classe->cost }}€</span><br>
+							<span><strong>Contact :</strong> {{ $classe->contact }}</span><br>
+							<span><strong>Adresse :</strong> {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}</span><br>
+							<span><strong>Email :</strong> {{ $classe->mail }}</span><br>
+							<span><strong>Téléphone :</strong> {{ $classe->tel }}</span><br>
 							
 							@foreach($jobs as $job)
 
 								@if($job->id == $classe->job_id)
 
-									<span>Métier : {{ $job->name }}</span><hr>
+									<span><strong>Métier :</strong> {{ $job->name }}</span><hr>
 
 								@endif
 
@@ -110,7 +110,7 @@
 							<a href="classeupdate?id={{ $classe->id }}">Modifier</a>
 							<a href="classedelete?id={{ $classe->id }}" class="supp">/ Supprimer</a>
 
-						</li>
+						</li><br>
 
 				@endforeach
 

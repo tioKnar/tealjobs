@@ -42,6 +42,8 @@
 
 				<select name="note" class="form form-group form-control {{ $errors->has('note') ? 'border border-danger' : '' }}">
 					
+					<option>-- Attribuez une note sur 10 --</option>
+
 					@for($i=1; $i<=10; $i++)
 
 						<option value="{{ $i }}">{{ $i }}</option>
