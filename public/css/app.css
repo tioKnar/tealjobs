@@ -21296,30 +21296,30 @@ label {
   left: 470px;
 }
 
-.modal-content {
+.modaljob-content {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   border: 2px solid teal;
 }
 
-.modal-content .modal-header {
+.modaljob-content .modaljob-header {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
           flex-direction: column !important;
 }
 
-.modal-content h2 {
+.modaljob-content h2 {
   font-family: "Kaushan Script", cursive;
   font-size: 1.5em;
   color: teal;
 }
 
-.modal-content .job-description {
+.modaljob-content .job-description {
   font-size: 0.9em;
 }
 
-.modal-content .table-striped {
+.modaljob-content .table-striped {
   color: #f1f1f1;
   background-color: teal;
 }
