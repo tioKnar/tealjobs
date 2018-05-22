@@ -23,65 +23,65 @@
                     @csrf
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="lastname">Votre Nom <span class="etoile" >*</span></label>
-                            <input type="text" value="{{ old('lastname') }}" class="form-control {{ $errors->has('lastname') ? ' has-error' : '' }}" name="lastname" >
+                            <label for="lastname_contact">Votre Nom <span class="etoile" >*</span></label>
+                            <input type="text" value="{{ old('lastname_contact') }}" class="form-control {{ $errors->has('lastname_contact') ? ' has-error' : '' }}" name="lastname_contact" >
                         </div>
-                        @if ($errors->has('lastname'))
+                        @if ($errors->has('lastname_contact'))
                             <span class="errors-contact">
-                                <strong class="alert alert-info" >{{ $errors->first('lastname') }}</strong>
+                                <strong class="alert alert-danger" >{{ $errors->first('lastname_contact') }}</strong>
+                            </span>
+                        @endif
+                    </div>_contact
+
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="name_contact">Votre Prénom <span class="etoile" >*</span></label>
+                            <input type="text" value="{{ old('name_contact') }}" class="form-control {{ $errors->has('name_contact') ? ' has-error' : '' }}" name="name_contact"_contact >
+                        </div>
+                        @if ($errors->has('name_contact'))
+                            <span class="errors-contact">
+                                <strong class="alert alert-danger" >{{ $errors->first('name_contact') }}</strong>
                             </span>
                         @endif
                     </div>
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="name">Votre Prénom <span class="etoile" >*</span></label>
-                            <input type="text" value="{{ old('name') }}" class="form-control {{ $errors->has('name') ? ' has-error' : '' }}" name="name" >
+                            <label for="email_contact">Votre Email <span class="etoile" >*</span></label>
+                            <input type="email" value="{{ old('email_contact') }}" class="form-control {{ $errors->has('email_contact') ? ' has-error' : '' }}" name="email_contact" >
                         </div>
-                        @if ($errors->has('name'))
+                        @if ($errors->has('email_contact'))
                             <span class="errors-contact">
-                                <strong class="alert alert-info" >{{ $errors->first('name') }}</strong>
+                                <strong class="alert alert-danger" >{{ $errors->first('email_contact') }}</strong>
                             </span>
                         @endif
                     </div>
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="email">Votre Email <span class="etoile" >*</span></label>
-                            <input type="email" value="{{ old('email') }}" class="form-control {{ $errors->has('email') ? ' has-error' : '' }}" name="email" >
+                            <label for="object_contact">Objet de la demande <span class="etoile" >*</span></label>
+                            <input type="text" value="{{ old('object_contact') }}" class="form-control {{ $errors->has('_contactobject_contact') ? ' has-error' : '' }}" name="object_contact" >
                         </div>
-                        @if ($errors->has('email'))
+                        @if ($errors->has('object_contact'))
                             <span class="errors-contact">
-                                <strong class="alert alert-info" >{{ $errors->first('email') }}</strong>
-                            </span>
-                        @endif
-                    </div>
-
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="object">Objet de la demande <span class="etoile" >*</span></label>
-                            <input type="text" value="{{ old('object') }}" class="form-control {{ $errors->has('object') ? ' has-error' : '' }}" name="object" >
-                        </div>
-                        @if ($errors->has('object'))
-                            <span class="errors-contact">
-                                <strong class="alert alert-info" >{{ $errors->first('object') }}</strong>
+                                <strong class="alert alert-danger" >{{ $errors->first('object_contact') }}</strong>
                             </span>
                         @endif
                      </div>
 
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="message">Votre Message <span class="etoile" >*</span></label>
-                            <textarea type="text" value="{{ old('message') }}" class="form-control {{ $errors->has('message') ? ' has-error' : '' }}" name="message" ></textarea>
+                            <label for="message_contact">Votre Message <span class="etoile" >*</span></label>
+                            <textarea type="text" value="{{ old('message_contact') }}" class="form-control {{ $errors->has('message_contact') ? ' has-error' : '' }}" name="message_contact" rows="5"></textarea>
                         </div>
-                        @if ($errors->has('message'))
+                        @if ($errors->has('message_contact'))
                             <span class="errors-contact">
-                                <strong class="alert alert-info" >{{ $errors->first('message') }}</strong>
+                                <strong class="alert alert-danger" >{{ $errors->first('message_contact') }}</strong>
                             </span>
                         @endif
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info">Envoyer</button>
+                        <button type="submit" class="btn btn-info form-control">Envoyer</button>
                     </div>
                 </form>
 
