@@ -21300,6 +21300,7 @@ label {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   border: 2px solid teal;
+  color: #f1f1f1;
 }
 
 .modaljob-content .modaljob-header {
@@ -21315,12 +21316,15 @@ label {
   color: teal;
 }
 
+.modaljob-content a {
+  color: #f1f1f1 !important;
+}
+
 .modaljob-content .job-description {
   font-size: 0.9em;
 }
 
 .modaljob-content .table-striped {
-  color: #f1f1f1;
   background-color: teal;
 }
 

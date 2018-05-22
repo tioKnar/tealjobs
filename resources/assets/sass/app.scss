@@ -462,6 +462,7 @@ label {
 	background-color: rgba(255,255,255,0.9);
 	border-radius: 10px;
 	border: 2px solid teal;
+	color: #f1f1f1;
 
 	.modaljob-header {
 		flex-direction: column !important;
@@ -473,12 +474,15 @@ label {
 		color: teal;
 	}
 
+	a {
+		color: #f1f1f1 !important;
+	}
+
 	.job-description {
 		font-size: 0.9em;
 	}
 
 	.table-striped {
-		color: #f1f1f1;
 		background-color: teal;
 	}
 

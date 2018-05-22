@@ -16,7 +16,7 @@
 			    	<th scope="col">Centres de formation</th>
 				  @foreach($classes as $class)
 				  	@if($class->job_id == $result->job_id)
-			      	<th scope="col">{{$class->classes_name}}</th>
+				  	<th scope="col"><a href="{{$class->link}}">{{$class->classes_name}}</a></th>
 			      	@endif
 			      @endforeach
 			    </tr>
@@ -46,6 +46,14 @@
 			      	@endif
 			      @endforeach
 			    </tr>
+			    <tr>
+			      <th scope="row">Contact</th>
+			      @foreach($classes as $class)
+			      	@if($class->job_id == $result->job_id)
+			      	<td scope="col"><a href="mailto:{{$class->mail}}">{{$class->contact}}</a></td>
+			      	@endif
+			      @endforeach
+			    </tr>			    
 			  </tbody>
 			</table>
       </div>
