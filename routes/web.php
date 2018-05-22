@@ -64,3 +64,11 @@ Route::get('/jobdelete', 'JobsController@delete');
 Route::get('/jobupdate', 'JobController@index');
 
 Route::post('/jobupdate', 'JobController@update');
+
+Route::get('/historychart', 'HistorychartController@index');
+
+Route::get('/historytree', 'HistorytreeController@index');
+
+Route::get('/historylist', 'HistorylistController@index');
+
+
