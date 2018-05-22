@@ -20352,8 +20352,8 @@ body {
   left: calc(50% - 38px);
 }
 
-.test {
-  border: 2px solid black;
+#test {
+  margin-top: 10vh;
 }
 
 #pageactive {
