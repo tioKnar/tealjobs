@@ -15,9 +15,8 @@ class CreateClassesTable extends Migration
     {
         Schema::create('classes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
             $table->string('classes_name');
-            $table->integer('duration');
+            $table->integer('duration')->nullable();
             $table->integer('cost');
             $table->string('contact');
             $table->string('city');

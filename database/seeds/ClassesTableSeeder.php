@@ -16,7 +16,7 @@ class ClassesTableSeeder extends Seeder
 
             [
         		'classes_name' => 'Webforce3',
-                'duration' => '3',
+
         		'contact' => 'Lilian Delaportua',
         		'mail' => 'webforce@formation.com',
         		'tel' => '0523659586',
@@ -27,7 +27,7 @@ class ClassesTableSeeder extends Seeder
 
                 ],
                 [
-                'name' => 'ABC CONSEIL SAMUEL BERNARDI
+                'classes_name' => 'ABC CONSEIL SAMUEL BERNARDI
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -41,7 +41,7 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 ],
                 [
-                'name' => 'AIDAMCIE CFAIE
+                'classes_name' => 'AIDAMCIE CFAIE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -56,7 +56,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CENTRE DE FORMATION D APPRENTIS
+                'classes_name' => 'CENTRE DE FORMATION D APPRENTIS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -71,7 +71,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CHAMBRE DE METIERS DE MEURTHE ET MOSELLE
+                'classes_name' => 'CHAMBRE DE METIERS DE MEURTHE ET MOSELLE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -86,7 +86,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CHEMIN FAISANT NOTRE MAISON FORMATION
+                'classes_name' => 'CHEMIN FAISANT NOTRE MAISON FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -101,7 +101,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ERGANES
+                'classes_name' => 'ERGANES
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -116,7 +116,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'FORMA2F
+                'classes_name' => 'FORMA2F
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -131,7 +131,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA DE LA CREATION DU DESIGN ET DES METIERS D\'ART
+                'classes_name' => 'GRETA DE LA CREATION DU DESIGN ET DES METIERS D\'ART
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -146,7 +146,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'INSTITUT DE FORMATION INTER PROFESSIONNEL DE L\'ALLIER
+                'classes_name' => 'INSTITUT DE FORMATION INTER PROFESSIONNEL DE L\'ALLIER
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -161,7 +161,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'INSTITUT MUNICIPAL D\'EDUCATION PERMANENTE DE PANTIN IMEPP
+                'classes_name' => 'INSTITUT MUNICIPAL D\'EDUCATION PERMANENTE DE PANTIN IMEPP
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -176,7 +176,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ITP INSTITUT TECHNIQUE PRIVE
+                'classes_name' => 'ITP INSTITUT TECHNIQUE PRIVE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -191,7 +191,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'JMSA. FORMATION CONSEIL MALOT JEAN MICHEL
+                'classes_name' => 'JMSA. FORMATION CONSEIL MALOT JEAN MICHEL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -206,7 +206,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'KURSUS FORMATION
+                'classes_name' => 'KURSUS FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -221,7 +221,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'LEARNING PRO SASU
+                'classes_name' => 'LEARNING PRO SASU
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -236,7 +236,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'NACRE SARL  FORMEO
+                'classes_name' => 'NACRE SARL  FORMEO
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -251,7 +251,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'NCS FORMATION SARL
+                'classes_name' => 'NCS FORMATION SARL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -266,7 +266,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'NG FORMATIONS
+                'classes_name' => 'NG FORMATIONS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -281,7 +281,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'PASSERELLES ET ACCOMPAGNEMENTS
+                'classes_name' => 'PASSERELLES ET ACCOMPAGNEMENTS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -296,7 +296,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'PERFO SARL
+                'classes_name' => 'PERFO SARL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -311,7 +311,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'RESEAU ACTION BUSINESS PARTNERS
+                'classes_name' => 'RESEAU ACTION BUSINESS PARTNERS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -326,7 +326,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'SARL ABSOLU CONSULTING
+                'classes_name' => 'SARL ABSOLU CONSULTING
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -341,7 +341,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'SARL AFLOKKAT
+                'classes_name' => 'SARL AFLOKKAT
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -356,7 +356,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ACCUEIL PAYSAN AUVERGNE
+                'classes_name' => 'ACCUEIL PAYSAN AUVERGNE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -371,7 +371,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'ADEPFO ASSOCIATION
+                'classes_name' => 'ADEPFO ASSOCIATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -386,7 +386,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'A. G. A. P. FORMATION
+                'classes_name' => 'A. G. A. P. FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -401,7 +401,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'AIFCC INSERTION
+                'classes_name' => 'AIFCC INSERTION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -416,7 +416,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'AREFFIG - ADMINISTRATION RECHERCHE EXPERTISE ET FORMATION EN FINANCE INFORMATIQUE ET GESTION
+                'classes_name' => 'AREFFIG - ADMINISTRATION RECHERCHE EXPERTISE ET FORMATION EN FINANCE INFORMATIQUE ET GESTION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -429,7 +429,7 @@ class ClassesTableSeeder extends Seeder
              
                 ],
                 [
-                'name' => 'ASSOCIATION INTERPRO.FORMATION CONTINUE DS LE CALVADOS(AIFCC)
+                'classes_name' => 'ASSOCIATION INTERPRO.FORMATION CONTINUE DS LE CALVADOS(AIFCC)
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -441,7 +441,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'ASSOCIATION REGIONALE D\'EDUCATION PERMANENTE ILLE ARMOR
+                'classes_name' => 'ASSOCIATION REGIONALE D\'EDUCATION PERMANENTE ILLE ARMOR
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -456,7 +456,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CENTRE DE FORMATION PROFESSIONNELLE ET DE PROMOTION AGRICOLE
+                'classes_name' => 'CENTRE DE FORMATION PROFESSIONNELLE ET DE PROMOTION AGRICOLE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -471,7 +471,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'cfa chambre des metiers',
+                'classes_name' => 'cfa chambre des metiers',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
                 'tel' => '0512345678',
@@ -485,7 +485,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE ROCHEFORT (CCIR)
+                'classes_name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE ROCHEFORT (CCIR)
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -500,7 +500,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'DEVELOPPEMENT AGRO ECONOMIQUE ET DE SECURITE ALIMENTAIRE
+                'classes_name' => 'DEVELOPPEMENT AGRO ECONOMIQUE ET DE SECURITE ALIMENTAIRE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -515,7 +515,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ECOLE NORMALE SUPERIEURE DE LYON - ENS LYON
+                'classes_name' => 'ECOLE NORMALE SUPERIEURE DE LYON - ENS LYON
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -530,7 +530,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'EURL CLARA MIOTTO -LA SOLUTION FORMATION
+                'classes_name' => 'EURL CLARA MIOTTO -LA SOLUTION FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -545,7 +545,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'FORMA2F
+                'classes_name' => 'FORMA2F
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -560,7 +560,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'FORMASUD EURL
+                'classes_name' => 'FORMASUD EURL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -575,7 +575,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'G I P  FORMATION CONTINUE
+                'classes_name' => 'G I P  FORMATION CONTINUE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -590,7 +590,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ISAAC DE L\'ETOILE - OGEC POITIERS NORD
+                'classes_name' => 'ISAAC DE L\'ETOILE - OGEC POITIERS NORD
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -605,7 +605,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'L\'ASSOSPHERE FORMATION
+                'classes_name' => 'L\'ASSOSPHERE FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -620,7 +620,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'LINORA FORMATION
+                'classes_name' => 'LINORA FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -635,7 +635,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'MARIE-ANGE ALEXANDRE CONSEIL - MAA CONSEIL
+                'classes_name' => 'MARIE-ANGE ALEXANDRE CONSEIL - MAA CONSEIL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -650,7 +650,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'PASSERELLES ET ACCOMPAGNEMENTS
+                'classes_name' => 'PASSERELLES ET ACCOMPAGNEMENTS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -665,7 +665,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'POL\'ETAMINE FORMATIONS ET ECHANGES
+                'classes_name' => 'POL\'ETAMINE FORMATIONS ET ECHANGES
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -680,7 +680,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'SAS ECOFAC
+                'classes_name' => 'SAS ECOFAC
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -695,7 +695,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'STE COOPERATIVE ARIAC
+                'classes_name' => 'STE COOPERATIVE ARIAC
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -710,7 +710,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'T L C
+                'classes_name' => 'T L C
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -725,7 +725,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'UNIVERSITE DE LIMOGES
+                'classes_name' => 'UNIVERSITE DE LIMOGES
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -740,7 +740,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'UNIVERSITE JEAN MONNET (UJM)
+                'classes_name' => 'UNIVERSITE JEAN MONNET (UJM)
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -755,7 +755,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'WOLTERS  KLUWER FRANCE
+                'classes_name' => 'WOLTERS  KLUWER FRANCE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -770,7 +770,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'AGIR POUR LA MOBILISATION DES SAVOIRS AMS GRAND SUD
+                'classes_name' => 'AGIR POUR LA MOBILISATION DES SAVOIRS AMS GRAND SUD
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -785,7 +785,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ANTEE FORMATION
+                'classes_name' => 'ANTEE FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -800,7 +800,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ASSOCIATION DE GESTION DU CONSERVATOIRE NATIONAL DES ARTS ET MÃ‰TIERS DE LA REUNION
+                'classes_name' => 'ASSOCIATION DE GESTION DU CONSERVATOIRE NATIONAL DES ARTS ET MÃ‰TIERS DE LA REUNION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -815,7 +815,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'AXYS S.A.R.L.
+                'classes_name' => 'AXYS S.A.R.L.
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -830,7 +830,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CONSERVATOIRE NATIONAL DES ARTS ET METIERS
+                'classes_name' => 'CONSERVATOIRE NATIONAL DES ARTS ET METIERS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -845,7 +845,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ESCENDO FORMATION
+                'classes_name' => 'ESCENDO FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -860,7 +860,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => ' GIP FCIP EDUCATION ET FORMATION TOUT AU LONG DE LA VIE
+                'classes_name' => ' GIP FCIP EDUCATION ET FORMATION TOUT AU LONG DE LA VIE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -874,7 +874,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA ARVE FAUCIGNY
+                'classes_name' => 'GRETA ARVE FAUCIGNY
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -889,7 +889,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA DE CORSE DU SUD   LYCEE LAETITIA BONAPARTE
+                'classes_name' => 'GRETA DE CORSE DU SUD   LYCEE LAETITIA BONAPARTE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -904,7 +904,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA DU RHONE - LYCEE LOUIS ARMAND
+                'classes_name' => 'GRETA DU RHONE - LYCEE LOUIS ARMAND
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -919,7 +919,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'INSTITUT UNIVERSITAIRE DE TECHNOLOGIE
+                'classes_name' => 'INSTITUT UNIVERSITAIRE DE TECHNOLOGIE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -934,7 +934,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ADALIANCE
+                'classes_name' => 'ADALIANCE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -949,7 +949,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'AFEPT   ASSOC. FORMATION ET EDUCATION PERMANENTE DE TIVOLI
+                'classes_name' => 'AFEPT   ASSOC. FORMATION ET EDUCATION PERMANENTE DE TIVOLI
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -964,7 +964,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'AFTEC
+                'classes_name' => 'AFTEC
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -979,7 +979,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ALPHA FORMATION O.I 
+                'classes_name' => 'ALPHA FORMATION O.I 
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -994,7 +994,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ARCOOP Scop Sarl
+                'classes_name' => 'ARCOOP Scop Sarl
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1009,7 +1009,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ASS DES AMIS DE L\'ENSEIG TECH D\'ARGENTEUIL ET DES ENVIRONS
+                'classes_name' => 'ASS DES AMIS DE L\'ENSEIG TECH D\'ARGENTEUIL ET DES ENVIRONS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1024,7 +1024,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ASSOC GESTION DE LA FORMATION CONTINUE, PROFES   SUPERIEURE
+                'classes_name' => 'ASSOC GESTION DE LA FORMATION CONTINUE, PROFES   SUPERIEURE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1036,7 +1036,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
+                'classes_name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1051,7 +1051,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ATRYA
+                'classes_name' => 'ATRYA
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1066,7 +1066,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'AVENIR & TALENT
+                'classes_name' => 'AVENIR & TALENT
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1081,7 +1081,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'BP FORMATION
+                'classes_name' => 'BP FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1096,7 +1096,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CAP SERVICES
+                'classes_name' => 'CAP SERVICES
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1111,7 +1111,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CCI  FORMATION COTE D\'OR 
+                'classes_name' => 'CCI  FORMATION COTE D\'OR 
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1126,7 +1126,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CHLOROPHYLLE INFORMATIQUE
+                'classes_name' => 'CHLOROPHYLLE INFORMATIQUE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1141,7 +1141,7 @@ class ClassesTableSeeder extends Seeder
             
                 ],
                 [
-                'name' => 'XXL Formation
+                'classes_name' => 'XXL Formation
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1156,7 +1156,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'A2COM FORMATION
+                'classes_name' => 'A2COM FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1171,7 +1171,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ACCRE SAS
+                'classes_name' => 'ACCRE SAS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1186,7 +1186,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'A SENATUS CONSULTO
+                'classes_name' => 'A SENATUS CONSULTO
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1201,7 +1201,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'B AND B PERFORMANCE
+                'classes_name' => 'B AND B PERFORMANCE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1216,7 +1216,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CHAMBRE DE METIERS ET DE L\'ARTISANAT DE LA DROME
+                'classes_name' => 'CHAMBRE DE METIERS ET DE L\'ARTISANAT DE LA DROME
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1228,7 +1228,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'EDINOVO FORMATION
+                'classes_name' => 'EDINOVO FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1240,7 +1240,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'IMAGE SCOP
+                'classes_name' => 'IMAGE SCOP
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1255,7 +1255,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'MME LAVANDIER MARJOLAINE - EIRL LES CLÃ‰S DE LA GESTION
+                'classes_name' => 'MME LAVANDIER MARJOLAINE - EIRL LES CLÃ‰S DE LA GESTION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1270,7 +1270,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'QUINTESSENCE FORMATION SARL
+                'classes_name' => 'QUINTESSENCE FORMATION SARL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1285,7 +1285,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'AFPI 8002
+                'classes_name' => 'AFPI 8002
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1300,7 +1300,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'ALPHA FORMA
+                'classes_name' => 'ALPHA FORMA
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1315,7 +1315,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ASFORQUAL BTP ASSOCIATION
+                'classes_name' => 'ASFORQUAL BTP ASSOCIATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1330,7 +1330,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'ASMFP 77
+                'classes_name' => 'ASMFP 77
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1345,7 +1345,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'ASSOCIATION INTERPROFESSIONNELLE POUR LA FORMATION PERMANENTE DANS LE SARLADAIS / AIFS
+                'classes_name' => 'ASSOCIATION INTERPROFESSIONNELLE POUR LA FORMATION PERMANENTE DANS LE SARLADAIS / AIFS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1357,7 +1357,7 @@ class ClassesTableSeeder extends Seeder
              
                 ],
                 [
-                'name' => 'ATFI  WAIBSPE3D',
+                'classes_name' => 'ATFI  WAIBSPE3D',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
                 'tel' => '0512345678',
@@ -1371,7 +1371,7 @@ class ClassesTableSeeder extends Seeder
              
                 ],
                 [
-                'name' => 'AT FORMATIONS ET CONSEILS
+                'classes_name' => 'AT FORMATIONS ET CONSEILS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1386,7 +1386,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'AZUR FORMATIONS ZI BRAYE DFE CAU
+                'classes_name' => 'AZUR FORMATIONS ZI BRAYE DFE CAU
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1401,7 +1401,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'CB BREIZH
+                'classes_name' => 'CB BREIZH
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1416,7 +1416,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'ARCADE
+                'classes_name' => 'ARCADE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1431,7 +1431,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'DJEM
+                'classes_name' => 'DJEM
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1446,7 +1446,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ELLIPSE FORMATION 
+                'classes_name' => 'ELLIPSE FORMATION 
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1461,7 +1461,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA DU VELAY LYCEE CHARLES ET ADRIEN DUPUY
+                'classes_name' => 'GRETA DU VELAY LYCEE CHARLES ET ADRIEN DUPUY
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1476,7 +1476,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'INST NATIONAL DE L\'AUDIOVISUEL
+                'classes_name' => 'INST NATIONAL DE L\'AUDIOVISUEL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1491,7 +1491,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CENTRE DE GESTION DE CHAMPAGNE
+                'classes_name' => 'CENTRE DE GESTION DE CHAMPAGNE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1503,7 +1503,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CONSULTING 26
+                'classes_name' => 'CONSULTING 26
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1515,7 +1515,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA VIVARAIS PROVENCE
+                'classes_name' => 'GRETA VIVARAIS PROVENCE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1527,7 +1527,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'PREPAVENIR FORMATION
+                'classes_name' => 'PREPAVENIR FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1539,7 +1539,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'LAMED SERVICES
+                'classes_name' => 'LAMED SERVICES
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1551,7 +1551,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ACTELIOR CONSEIL
+                'classes_name' => 'ACTELIOR CONSEIL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1566,7 +1566,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'AGCNAM DE BRETAGNE (ASSOCIATION DE GESTION DU CNAM EN BRETAGNE)CONSERVATOIRE ARTS ET METIERS
+                'classes_name' => 'AGCNAM DE BRETAGNE (ASSOCIATION DE GESTION DU CNAM EN BRETAGNE)CONSERVATOIRE ARTS ET METIERS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1578,7 +1578,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ASSOCIATION  DE GESTION DU CNAM EN REGION CENTRE
+                'classes_name' => 'ASSOCIATION  DE GESTION DU CNAM EN REGION CENTRE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1593,7 +1593,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'ASSOCIATION UDEL ENTREPRISE ET FORMATION
+                'classes_name' => 'ASSOCIATION UDEL ENTREPRISE ET FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1608,7 +1608,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
+                'classes_name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1623,7 +1623,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'ASS. REGIONALE DE FORMATION POUR L ARTISANAT DU BATIMENT
+                'classes_name' => 'ASS. REGIONALE DE FORMATION POUR L ARTISANAT DU BATIMENT
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1638,7 +1638,7 @@ class ClassesTableSeeder extends Seeder
               
                 ],
                 [
-                'name' => 'ATHENA TRAINING SARL
+                'classes_name' => 'ATHENA TRAINING SARL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1653,7 +1653,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ATOVA CONSEIL
+                'classes_name' => 'ATOVA CONSEIL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1668,7 +1668,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CAMPUS VEOLIA ENVIRONNEMENT IDF
+                'classes_name' => 'CAMPUS VEOLIA ENVIRONNEMENT IDF
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1683,7 +1683,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CCI  FORMATION COTE D\'OR 
+                'classes_name' => 'CCI  FORMATION COTE D\'OR 
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1698,7 +1698,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'CFPPA  CENTRE DE FORMATION PRO ET DE PROMO AGRICOLE DE NYONS
+                'classes_name' => 'CFPPA  CENTRE DE FORMATION PRO ET DE PROMO AGRICOLE DE NYONS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1713,7 +1713,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'AFTEC
+                'classes_name' => 'AFTEC
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1728,7 +1728,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'AGISS 
+                'classes_name' => 'AGISS 
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1743,7 +1743,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'ASSOCIATION DE GESTION DU CONSERVATOIRE NATIONAL DES ARTS ET MÃ‰TIERS DE LA REUNION
+                'classes_name' => 'ASSOCIATION DE GESTION DU CONSERVATOIRE NATIONAL DES ARTS ET MÃ‰TIERS DE LA REUNION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1758,7 +1758,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CCI  DE TOULOUSE 
+                'classes_name' => 'CCI  DE TOULOUSE 
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1773,7 +1773,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'CENTRE D\'AIDE DE DIALOGUE ET D\'ECOUTE - CADE
+                'classes_name' => 'CENTRE D\'AIDE DE DIALOGUE ET D\'ECOUTE - CADE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1788,7 +1788,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE DE LIMOGES ET DE LA HAUTE-VIENNE - CCI FORMATION - CAMPUS CONSULAIRE 
+                'classes_name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE DE LIMOGES ET DE LA HAUTE-VIENNE - CCI FORMATION - CAMPUS CONSULAIRE 
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1803,7 +1803,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'ECOLE D\'ELECTRICITE DE PRODUCTION ET DES METHODES INDUSTRIELLES
+                'classes_name' => 'ECOLE D\'ELECTRICITE DE PRODUCTION ET DES METHODES INDUSTRIELLES
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1818,7 +1818,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'EURL CLARA MIOTTO -LA SOLUTION FORMATION
+                'classes_name' => 'EURL CLARA MIOTTO -LA SOLUTION FORMATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1833,7 +1833,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'FEDE ASSOCIATIVE  POUR DEVEL DE L EMPLOI AGRICOLE ET RURAL
+                'classes_name' => 'FEDE ASSOCIATIVE  POUR DEVEL DE L EMPLOI AGRICOLE ET RURAL
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1848,7 +1848,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'GRETA DU VAR
+                'classes_name' => 'GRETA DU VAR
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1863,7 +1863,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'AFPI 8002
+                'classes_name' => 'AFPI 8002
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1878,7 +1878,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'C.C.I.M. (CHAMBRE DE COMMERCE ET D\'INDUSTRIE DU MORBIHAN)
+                'classes_name' => 'C.C.I.M. (CHAMBRE DE COMMERCE ET D\'INDUSTRIE DU MORBIHAN)
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1893,7 +1893,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'AFPIA EST NORD
+                'classes_name' => 'AFPIA EST NORD
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1908,7 +1908,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ASFIS
+                'classes_name' => 'ASFIS
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1923,7 +1923,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
+                'classes_name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1938,7 +1938,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'BTP CFA MIDI-PYRENEES 
+                'classes_name' => 'BTP CFA MIDI-PYRENEES 
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1953,7 +1953,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'CFA DU BATIMENT
+                'classes_name' => 'CFA DU BATIMENT
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1968,7 +1968,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'CFC AGEPAC - Apprentis d\'Auteuil Mayotte
+                'classes_name' => 'CFC AGEPAC - Apprentis d\'Auteuil Mayotte
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1983,7 +1983,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA DE BESANCON
+                'classes_name' => 'GRETA DE BESANCON
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -1998,7 +1998,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'GRETA DE CORSE DU SUD   LYCEE LAETITIA BONAPARTE
+                'classes_name' => 'GRETA DE CORSE DU SUD   LYCEE LAETITIA BONAPARTE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2013,7 +2013,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA LYON METROPOLE
+                'classes_name' => 'GRETA LYON METROPOLE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2028,7 +2028,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'GRETA MARSEILLE MEDITERRANEE
+                'classes_name' => 'GRETA MARSEILLE MEDITERRANEE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2043,7 +2043,7 @@ class ClassesTableSeeder extends Seeder
              
                 ],
                 [
-                'name' => 'GRETA NORD ISERE - LYCEE ELLA FITZGERALD  
+                'classes_name' => 'GRETA NORD ISERE - LYCEE ELLA FITZGERALD  
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2058,7 +2058,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE DE REGION I PARIS IDF
+                'classes_name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE DE REGION I PARIS IDF
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2070,7 +2070,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'GRETA MARSEILLE MEDITERRANEE
+                'classes_name' => 'GRETA MARSEILLE MEDITERRANEE
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2085,7 +2085,7 @@ class ClassesTableSeeder extends Seeder
                 
                 ],
                 [
-                'name' => 'IN\'FOR (INGENIERIE FORMATION)
+                'classes_name' => 'IN\'FOR (INGENIERIE FORMATION)
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2100,7 +2100,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'INSTITUT METIERS DE L\'ART ET ARTISANAT ASSOCIATION
+                'classes_name' => 'INSTITUT METIERS DE L\'ART ET ARTISANAT ASSOCIATION
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2115,7 +2115,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'GRETA DE BESANCON
+                'classes_name' => 'GRETA DE BESANCON
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
@@ -2130,7 +2130,7 @@ class ClassesTableSeeder extends Seeder
                
                 ],
                 [
-                'name' => 'GRETA DU VELAY LYCEE CHARLES ET ADRIEN DUPUY
+                'classes_name' => 'GRETA DU VELAY LYCEE CHARLES ET ADRIEN DUPUY
 ',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
