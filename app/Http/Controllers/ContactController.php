@@ -20,20 +20,20 @@ class ContactController extends Controller
 
         $rules =
         [
-            'email' => 'email|required',
-            'name' => 'string',
-            'lastname' => 'string',
-            'object' => 'string',
-            'message' => 'string',
+            'email_contact' => 'email|required',
+            'name_contact' => 'string',
+            'lastname_contact' => 'string',
+            'object_contact' => 'string',
+            'message_contact' => 'string',
         ];
 
         $validator = Validator::make($values, $rules,
         [
-           'email.email' => 'Votre email est invalid',
-           'name.string' => 'Votre prénom est obligatoire',
-           'lastname.string' => 'Votre nom de famille est obligatoire',
-           'object.string' => 'Votre object est obligatoire',
-           'message.string' => 'Votre message est obligatoire',
+           'email_contact.email' => 'Votre email est invalid',
+           'name_contact.string' => 'Votre prénom est obligatoire',
+           'lastname_contact.string' => 'Votre nom de famille est obligatoire',
+           'object_contact.string' => 'Votre object est obligatoire',
+           'message_contact.string' => 'Votre message est obligatoire',
         ]);
 
         if($validator->fails()) {
@@ -43,7 +43,7 @@ class ContactController extends Controller
         }
 
         $title = 'Formulaire de message';
-        $content = $values['lastname'] . ' - ' . $values['name'] . '<br>' . $values['message'];
+        $content = $values['lastname_contact'] . ' - ' . $values['name_contact'] . '<br>' . $values['message_contact'];
 
         $emails = [
             [getenv('APP_EMAIL')]

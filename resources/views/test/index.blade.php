@@ -72,7 +72,7 @@ $(function() {
 
 		$(this).parent().fadeOut({queue:false, duration:650}).animate({left: "-=100"}, 650);
 			
-		$(this).parent().next().css({left: "+=100"}).delay(640).animate({opacity:"toggle", left: "-=100"}, 650);
+		$(this).parent().next().delay(640).animate({opacity:"toggle", left: "-=100"}, 650);
 
 		$tab.push($(this).attr('data-id'));
 
