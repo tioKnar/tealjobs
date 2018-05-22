@@ -2,9 +2,9 @@
 
 <div class="modal fade" id="modaljob{{$e}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal-content modaljob-content">
 
-      <div class="modal-header">
+      <div class="modal-header modaljob-header">
         <h2 class="modal-title" id="job-title">{{$result->name}}</h2>
         <p class="job-description">{{$result->description}}</p>
       </div>
@@ -14,30 +14,46 @@
 			  <thead>
 			    <tr>
 			    	<th scope="col">Centres de formation</th>
-				  @foreach($results as $result)
-			      	<th scope="col">{{$result->classes_name}}</th>
+				  @foreach($classes as $class)
+				  	@if($class->job_id == $result->job_id)
+				  	<th scope="col"><a href="{{$class->link}}">{{$class->classes_name}}</a></th>
+			      	@endif
 			      @endforeach
 			    </tr>
 			  </thead>
 			  <tbody>
 			    <tr>
 			      <th scope="row">Durée</th>
-			      @foreach($results as $result)
-			      	<td scope="col">{{$result->duration}}</td>
+			      @foreach($classes as $class)
+			      	@if($class->job_id == $result->job_id)
+			      	<td scope="col">{{$class->duration}} mois</td>
+			      	@endif
 			      @endforeach
 			    </tr>
 			    <tr>
 			      <th scope="row">Coût</th>
-			      @foreach($results as $result)
-			      	<td scope="col">{{$result->cost}}€</td>
+			      @foreach($classes as $class)
+			      	@if($class->job_id == $result->job_id)
+			      	<td scope="col">{{$class->cost}}€</td>
+			      	@endif
 			      @endforeach
 			    </tr>
 			    <tr>
 			      <th scope="row">Ville</th>
-			      @foreach($results as $result)
-			      	<td scope="col">{{$result->city}}</td>
+			      @foreach($classes as $class)
+			      	@if($class->job_id == $result->job_id)
+			      	<td scope="col">{{$class->city}}</td>
+			      	@endif
 			      @endforeach
 			    </tr>
+			    <tr>
+			      <th scope="row">Contact</th>
+			      @foreach($classes as $class)
+			      	@if($class->job_id == $result->job_id)
+			      	<td scope="col"><a href="mailto:{{$class->mail}}">{{$class->contact}}</a></td>
+			      	@endif
+			      @endforeach
+			    </tr>			    
 			  </tbody>
 			</table>
       </div>

@@ -68,7 +68,7 @@
                         </li>
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="{{ route('register') }}">Historique</a>
+                            <a class="nav-link" href="historychart">Historique</a>
                         </li>
 
                         <li class="nav-item dropdown linknavbar">

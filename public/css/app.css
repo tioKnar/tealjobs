@@ -4,8 +4,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 90%;
 }
 
 .firefly {
@@ -20231,11 +20231,8 @@ footer {
 }
 
 #boutonadmin {
-  margin-top: 40px;
-}
-
-#tableadmin {
-  margin-top: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #tableupdateadmin {
@@ -20365,7 +20362,6 @@ body {
 }
 
 .administration {
-  margin-top: 15px;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
   border-radius: 20px;
@@ -20517,6 +20513,7 @@ label {
 }
 
 .fruit1:hover #job1 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20565,6 +20562,7 @@ label {
 }
 
 .fruit2:hover #job2 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20613,6 +20611,7 @@ label {
 }
 
 .fruit3:hover #job3 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20661,6 +20660,7 @@ label {
 }
 
 .fruit4:hover #job4 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20709,6 +20709,7 @@ label {
 }
 
 .fruit5:hover #job5 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20757,6 +20758,7 @@ label {
 }
 
 .fruit6:hover #job6 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20805,6 +20807,7 @@ label {
 }
 
 .fruit7:hover #job7 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20853,6 +20856,7 @@ label {
 }
 
 .fruit8:hover #job8 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20901,6 +20905,7 @@ label {
 }
 
 .fruit9:hover #job9 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20949,6 +20954,7 @@ label {
 }
 
 .fruit10:hover #job10 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -20997,6 +21003,7 @@ label {
 }
 
 .fruit11:hover #job11 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -21045,6 +21052,7 @@ label {
 }
 
 .fruit12:hover #job12 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -21093,6 +21101,7 @@ label {
 }
 
 .fruit13:hover #job13 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -21141,6 +21150,7 @@ label {
 }
 
 .fruit14:hover #job14 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -21189,6 +21199,7 @@ label {
 }
 
 .fruit15:hover #job15 {
+  line-height: 50px;
   font-family: "Kaushan Script", cursive;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -21281,31 +21292,39 @@ label {
   left: 470px;
 }
 
-.modal-content {
+.modaljob-content {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   border: 2px solid teal;
+  color: #f1f1f1;
 }
 
-.modal-content .modal-header {
+.modaljob-content .modaljob-header {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
           flex-direction: column !important;
 }
 
-.modal-content h2 {
+.modaljob-content .modaljob-header p {
+  color: #212529 !important;
+}
+
+.modaljob-content h2 {
   font-family: "Kaushan Script", cursive;
   font-size: 1.5em;
   color: teal;
 }
 
-.modal-content .job-description {
+.modaljob-content a {
+  color: #f1f1f1 !important;
+}
+
+.modaljob-content .job-description {
   font-size: 0.9em;
 }
 
-.modal-content .table-striped {
-  color: #f1f1f1;
+.modaljob-content .table-striped {
   background-color: teal;
 }
 
@@ -21315,6 +21334,14 @@ body.modal-open #result-bg {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+}
+
+.joblist {
+  margin-bottom: 50px;
+}
+
+#joblistbtn {
+  padding-left: 15px;
 }
 
 .footer-distributed {
@@ -21327,7 +21354,6 @@ body.modal-open #result-bg {
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
-  margin-top: 80px;
 }
 
 .footer-distributed .footer-left p {
