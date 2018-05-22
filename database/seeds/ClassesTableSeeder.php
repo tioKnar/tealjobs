@@ -2144,6 +2144,21 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
               
                 ],
+                [
+                'classes_name' => 'ESMA
+',
+                'contact' => 'mr truc',
+                'mail' => 'mail@mail.com',
+                'tel' => '0512345678',
+                'city' => 'PARIS
+',
+                'cp' => '75000
+',
+                'address' => 'AVENUE DU DOCTEUR DURAND
+',
+                'cost' => '3000',
+              
+                ],
         ];
 
 
