@@ -102,11 +102,8 @@ footer {
 //Page users/cobs/classes
 
 #boutonadmin {
-	margin-top: 40px;
-}
-
-#tableadmin {
-	margin-top: 60px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 
@@ -242,7 +239,6 @@ bottom: 0;
 }
 
 .administration {
-	margin-top: 15px;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 	border-radius: 20px;
 	margin-left: 15px;
@@ -493,6 +489,13 @@ body.modal-open #result-bg {
     filter: blur(5px);
 
 }
+
+// Page historylist
+
+.joblist {
+	margin-bottom: 50px;
+}
+
 
 // TEST FOOTER
 
