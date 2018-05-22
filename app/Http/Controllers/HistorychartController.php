@@ -12,14 +12,16 @@ class HistorychartController extends Controller
 
     	$user = Auth::user();
 
-    	$chart = \Lava::DataTable();
+    	$lava = new Lavacharts;
 
-        $chart ->addStringColumn('Profil')
+    	$reasons = \Lava::DataTable();
+
+        $reasons ->addStringColumn('Profil')
                ->addNumberColumn('Points')
                ->addStringColumn('Color');
 
 
-		$chart->addRows([
+		$reasons->addRows([
 		    ['Travaillomane',  $user['travaillomane'], 'green'],
 		    ['Empathique',     $user['empathique'],    'orange'],
 		    ['Rebelle',        $user['rebelle'],       'red'],
@@ -28,15 +30,10 @@ class HistorychartController extends Controller
 		    ['Promoteur',      $user['promoteur'],     'red']
 		]);
 
-		\Lava::ColumnChart('Votre profil', $chart,
-			[
-            	'title' => 'Votre profil',
-            	'titleTextStyle' => [
-					                'color'    => '#212529',
-					                'fontSize' => 14
-							        ]
+		$donutchart = \Lava::DonutChart('IMBD', $reasons, [
+				'title' => 'Votre profil'
 	        ]);
 
-    	return view('historychart.index', compact('lava'));
+    	return view('historychart.index')->with('lava', $lava);
     }
 }

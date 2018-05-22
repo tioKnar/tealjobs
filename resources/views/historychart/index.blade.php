@@ -14,8 +14,8 @@
 
 	</div>
 
-	<div id="profile-chart"></div>
-	@columnchart('Votre profil', 'profile-chart')
+	<div id="chart-div"></div>
+	<?= Lava::render('DonutChart', 'IMBD', 'chart-div') ?>
 
 </div>
 
