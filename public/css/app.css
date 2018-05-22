@@ -20434,7 +20434,7 @@ label {
 @media (min-width: 735px) {
   #result-bg {
     background: url(/images/result_page_pano.jpg?5407ab7a7a8daa24269c5d3e86e755a3);
-    height: 650px;
+    height: 90vh;
     background-position: center;
     background-size: cover;
   }

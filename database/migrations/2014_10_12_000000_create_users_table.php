@@ -21,6 +21,12 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->integer('profilpsy')->nullable();
             $table->string('role')->nullable();
+            $table->integer('travaillomane')->nullable();
+            $table->integer('empathique')->nullable();
+            $table->integer('rebelle')->nullable();
+            $table->integer('rêveur')->nullable();
+            $table->integer('persévérant')->nullable();
+            $table->integer('promoteur')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

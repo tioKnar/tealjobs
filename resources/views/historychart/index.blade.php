@@ -14,6 +14,9 @@
 
 	</div>
 
+	<div id="profile-chart"></div>
+	@columnchart('Votre profil', 'profile-chart')
+
 </div>
 
 @endsection
