@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Model\Classe;
+use App\Model\Interclasse;
 use App\Model\Job;
+use DB;
 use Redirect;
 use Request;
 use Validator;
@@ -12,11 +14,15 @@ class ClasseController extends Controller
 {
     public function index() {
     
-    	$classe = Classe::where('id', $_GET['id'])->first();
+    	$classes = DB::table('classes')
+    						->join('interclasses', 'classes.id', '=', 'interclasses.classes_id')
+    						->join('jobs', 'jobs.id', '=', 'interclasses.jobs_id')
+    						->where('classes.id', '=', $_GET['id'])
+    						->get();
+    						
+    	$jobs = Job::get();
 
-    	 $jobs = Job::get();
-
-    	return view('classeupdate.index')->with('classe', $classe)->with('jobs', $jobs);
+    	return view('classeupdate.index')->with('classes', $classes)->with('jobs', $jobs);
     }
 
     public function update() {
@@ -24,8 +30,7 @@ class ClasseController extends Controller
     	$values = Request::all();
 
     	$rules = [
-			'name' => 'required|string|max:255',
-			'description' => 'required|string|max:255',
+			'classes_name' => 'required|string|max:255',
 			'cost' => 'required|integer',
 			'cost' => 'required|integer',
 			'contact' => 'required|string',
@@ -34,24 +39,23 @@ class ClasseController extends Controller
 			'cp' => 'required|integer',
 			'mail' => 'email|required',
 			'tel' => 'required|regex:#^0[1-9][0-9]{8}#',
-			'job_id' => 'required|integer',
 			'link' => 'required|string',
+			'job_id' => 'required|array',
 
 		];
 
 		$validator = Validator::make($values, $rules, [
 			'mail.email' => 'E-mail invalide',
 			'mail.required' => 'Veuillez entrer un email',
-			'name.string' =>'Nom invalide',
-			'description.string' =>'Description invalide',
+			'classes_name.string' =>'Nom invalide',
 			'cost.integer' =>'Coût invalide',
 			'contact.string' =>'Contact invalide',
 			'city.string' =>'Ville invalide',
 			'address.string' =>'Adresse invalide',
 			'cp.integer' =>'Code postal invalide',
 			'tel.regex' =>'Téléphone invalide',
-			'job_id.integer' =>'Métier invalide',
 			'link.string' => 'lien invalide',
+			'job_id.array' =>'Métier invalide',
 		]);
 
 		if($validator->fails()) {
@@ -64,8 +68,7 @@ class ClasseController extends Controller
 
 		$classe = Classe::where('id', $_GET['id'])->first();
 
-		$classe->name = $_POST['name'];
-		$classe->description = $_POST['description'];
+		$classe->name = $_POST['classes_name'];
 		$classe->cost = $_POST['cost'];
 		$classe->contact = $_POST['contact'];
 		$classe->city = $_POST['city'];

@@ -20,49 +20,55 @@
 			<form method="post" class="form-group">
 				@csrf
 				
-				<input type="text" name="classes_name" class="form form-group form-control" value="{{ $classe->classes_name }}">
+				<input type="text" name="classes_name" class="form form-group form-control" value="{{ $classes[0]->classes_name }}">
 
-				<textarea name="description" class="form form-group form-control" rows="5">{{ $classe->description }}</textarea>
+				<input type="number" name="duration" class="form form-group form-control" value="{{ $classes[0]->duration }}">
 
-				<input type="number" name="duration" class="form form-group form-control" value="{{ $classe->duration }}">
+				<input type="number" name="cost" class="form form-group form-control" value="{{ $classes[0]->cost }}">
 
-				<input type="number" name="cost" class="form form-group form-control" value="{{ $classe->cost }}">
+				<input type="text" name="contact" class="form form-group form-control" value="{{ $classes[0]->contact }}">
 
-				<input type="text" name="contact" class="form form-group form-control" value="{{ $classe->contact }}">
+				<input type="text" name="city" class="form form-group form-control" value="{{ $classes[0]->city }}">
 
-				<input type="text" name="city" class="form form-group form-control" value="{{ $classe->city }}">
+				<input type="text" name="address" class="form form-group form-control" value="{{ $classes[0]->address }}">
 
-				<input type="text" name="address" class="form form-group form-control" value="{{ $classe->address }}">
+				<input type="number" name="cp" class="form form-group form-control" value="{{ $classes[0]->cp }}">
 
-				<input type="number" name="cp" class="form form-group form-control" value="{{ $classe->cp }}">
+				<input type="email" name="mail" class="form form-group form-control" value="{{ $classes[0]->mail }}">
 
-				<input type="email" name="mail" class="form form-group form-control" value="{{ $classe->mail }}">
+				<input type="tel" name="tel" class="form form-group form-control" value="{{ $classes[0]->tel }}">
 
-				<input type="tel" name="tel" class="form form-group form-control" value="{{ $classe->tel }}">
-
-				<select name="job_id" class="form form-group form-control {{ $errors->has('job_id') ? 'border border-danger' : '' }}">
+				<select multiple name="job_id[]" class="form form-group form-control {{ $errors->has('job_id') ? 'border border-danger' : '' }}">
 					
 					<option>-- Séléctionner un métier --</option>
 
+				
 				@foreach($jobs as $job)
 
-					 @if($classe->job_id == $job->id)
+				@foreach($classes as $classe)
+
+				 	@if($classe->jobs_id == $job->id)
 
 						<option value="{{ $job->id }}" selected>{{ $job->name }}</option>
-					
-					@else
+
+					@endif
+				
+				@endforeach
+		
+
+					@if($classes->jobs_id != $job->id)
 
 						<option value="{{ $job->id }}">{{ $job->name }}</option>
 
 					@endif
 
 
-
 				@endforeach
+				
 
 				</select>
 
-				<input type="url" name="link" class="form form-group form-control" value="{{ $classe->link }}">
+				<input type="url" name="link" class="form form-group form-control" value="{{ $classes[0]->link }}">
 
 				<button class="btn btn-info form-control">Modifier</button>
 

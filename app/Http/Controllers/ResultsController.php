@@ -8,7 +8,7 @@ use App\Model\Answer;
 use App\Model\Classe;
 use App\Model\Intersector;
 use App\Model\Job;
-use Redirect;
+use Redirect;0
 use DB;
 
 

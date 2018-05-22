@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Model\Classe;
+use App\Model\Interclasse;
 use App\Model\Job;
 use Redirect;
 use Request;
@@ -25,12 +26,11 @@ class ClassesController extends Controller
     }
 
     public function store() {
-
+	
     	$values = Request::all();
 
     	$rules = [
 			'classes_name' => 'required|string|max:255',
-			'description' => 'required|string|max:255',
 			'duration' => 'required|integer',
 			'cost' => 'required|integer',
 			'contact' => 'required|string',
@@ -39,8 +39,8 @@ class ClassesController extends Controller
 			'cp' => 'required|integer',
 			'mail' => 'email|required',
 			'tel' => 'required|regex:#^0[1-9][0-9]{8}#',
-			'job_id' => 'required|integer',
 			'link' => 'required|string',
+			'job_id' => 'required|array',
 
 		];
 
@@ -48,7 +48,6 @@ class ClassesController extends Controller
 			'mail.email' => 'E-mail invalide',
 			'mail.required' => 'Veuillez entrer un email',
 			'classes_name.string' =>'Nom invalide',
-			'description.string' =>'Description invalide',
 			'duration.integer' => 'Durée invalide',
 			'cost.integer' =>'Coût invalide',
 			'contact.string' =>'Contact invalide',
@@ -56,8 +55,8 @@ class ClassesController extends Controller
 			'address.string' =>'Adresse invalide',
 			'cp.integer' =>'Code postal invalide',
 			'tel.regex' =>'Téléphone invalide',
-			'job_id.integer' =>'Métier invalide',
 			'link.string' => 'lien invalide',
+			'job_id.array' =>'Métier invalide',
 		]);
 
 		if($validator->fails()) {
@@ -71,7 +70,6 @@ class ClassesController extends Controller
 		$classe = new Classe();
 
 		$classe->classes_name = $_POST['classes_name'];
-		$classe->description = $_POST['description'];
 		$classe->duration = $_POST['duration'];
 		$classe->cost = $_POST['cost'];
 		$classe->contact = $_POST['contact'];
@@ -80,10 +78,21 @@ class ClassesController extends Controller
 		$classe->tel = $_POST['tel'];
 		$classe->mail = $_POST['mail'];
 		$classe->address = $_POST['address'];
-		$classe->job_id = $_POST['job_id'];
 		$classe->link = $_POST['link'];
 
 		$classe->save();
+
+		$lastclasse = Classe::get()->last();
+
+		foreach($_POST['job_id'] as $value) {
+
+			$interclasse = new Interclasse;
+			$interclasse->jobs_id = $value;
+			$interclasse->classes_id = $lastclasse->id;
+			$interclasse->save();
+		};
+
+
 
 		flash('Formation ajoutée')->success();
 

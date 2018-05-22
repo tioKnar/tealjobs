@@ -39,8 +39,6 @@
 				
 				<input type="text" name="classes_name" class="form form-group form-control {{ $errors->has('classes_name') ? 'border border-danger' : '' }}" value="{{ old('classes_name') }}" placeholder="Nom">
 
-				<textarea name="description" class="form form-group form-control {{ $errors->has('description') ? 'border border-danger' : '' }}" placeholder="Description" rows="5">{{ old('description') }}</textarea>
-
 				<input type="number" name="duration" class="form form-group form-control {{ $errors->has('duration') ? 'border border-danger' : '' }}" value="{{ old('duration') }}" placeholder="Durée (nombre de mois)">
 
 				<input type="number" name="cost" class="form form-group form-control {{ $errors->has('cost') ? 'border border-danger' : '' }}" value="{{ old('cost') }}" placeholder="Coût">
@@ -57,7 +55,7 @@
 
 				<input type="tel" name="tel" class="form form-group form-control {{ $errors->has('tel') ? 'border border-danger' : '' }}" value="{{ old('tel') }}" placeholder="Téléphone">
 
-				<select name="job_id" class="form form-group form-control {{ $errors->has('job_id') ? 'border border-danger' : '' }}">
+				<select multiple name="job_id[]" class="form form-group form-control {{ $errors->has('job_id') ? 'border border-danger' : '' }}">
 					
 					<option>-- Séléctionner un métier --</option>
 
