@@ -20381,6 +20381,21 @@ body {
   margin-top: 80px;
 }
 
+.previous {
+  position: absolute;
+  top: 452px;
+  left: calc(50% - 38px);
+}
+
+#test {
+  margin-top: 10vh;
+}
+
+#pageactive {
+  -webkit-box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
+          box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
+}
+
 #accessadmin {
   margin-top: 80px;
 }

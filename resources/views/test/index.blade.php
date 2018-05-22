@@ -7,36 +7,41 @@
 
 		<div class="row justify-content-center text-center" id="test">
 
+			<div class="col- col-md-4">
+			
+				@foreach($resultats as $resultat)
 
-			@foreach($resultats as $resultat)
+					<div class="col- test @if($resultat->question_id != $first) {{ 'completed' }} @endif">
 
-				<div class="col-md-4 test @if($resultat->question_id != $first) {{ 'completed' }} @endif">
+						<br><h3>{{ $resultat->question }}</h3>
+								
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>
 
-					<br><h3>{{ $resultat->question }}</h3>
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>
 							
-						<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>
+							
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>
+							
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>
+							
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>
+					
+							@if($resultat->question_id != $first)
 
-						<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>
-						
-						<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>
-						
-						<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>
-						
-						<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>
-						
-						<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>
-				
-						@if($resultat->question_id != $first)
+								<button class="previous">previous</button>
 
-							<button class="previous">previous</button>
+							@endif
 
-						@endif
+					</div>
 
-				</div>
+				@endforeach
 
-			@endforeach
+			</div>
 
-			<a id="resultat" href="results?profile=">clic</a>
+			<div class="col- col-md-4 offset-col-md-1" id="growing"></div>
+
+			<a id="resultat" href="results?profile=" hidden>Résultats</a>
 
 		</div>
 	
@@ -81,6 +86,26 @@ $(function() {
 			}
 			else{
 				$tabOcc[$tab[i]] = 1;
+			}
+		}
+
+		if($tab.length >= 0 && $tab.length <= 3){
+			$('#growing').append('<img src="images/grow01.png" alt="grow01">');
+		}
+		else if($tab.length >= 4 && $tab.length <= 6) {
+			$('#growing').html('<img src="images/grow02.png" alt="grow02">');
+		}
+		else if($tab.length >= 7 && $tab.length <= 9) {
+			$('#growing').html('<img src="images/grow03.png" alt="grow03">');
+		}
+		else if($tab.length >= 10 && $tab.length <= 12) {
+			$('#growing').html('<img src="images/grow04.png" alt="grow04">');
+		}
+		else if($tab.length >= 13 && $tab.length <= 15) {
+			$('#growing').html('<img src="images/grow03.png" alt="grow03">');
+
+			if($tab.length == 15) {
+				$('#resultat').removeAttr('hidden');
 			}
 		}
 
