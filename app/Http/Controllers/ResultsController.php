@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Request;
 use App\Model\Analyse;
 use App\Model\Answer;
+use App\Model\Classe;
 use App\Model\Intersector;
 use App\Model\Job;
 use Redirect;
@@ -18,19 +19,15 @@ class ResultsController extends Controller
          $jobs = DB::table('jobs')
                          ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
                          ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
-                         ->join('classes', 'classes.job_id', '=', 'jobs.id')
                          ->where('analyses.resultprofile' , '=',  '43')
                          ->get();
         
-         $randomize = $jobs->random(4);
+
+         $classes = Classe::get();
                         
         return view('results.index')
-              ->with('results', $randomize);
+              ->with('classes', $classes)
+              ->with('results', $jobs);
     }
 
-    
-    public function store(){
-
-        $values = Request::all();
-    }
 }

@@ -375,6 +375,7 @@ label {
 		}
 
 		#job#{$i} {
+			line-height: 50px;
 			font-family: $font-title;
 			font-size: 1.2em;
 			background-color: rgba(0,0,0,0.6);

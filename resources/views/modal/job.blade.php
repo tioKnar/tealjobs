@@ -14,28 +14,30 @@
 			  <thead>
 			    <tr>
 			    	<th scope="col">Centres de formation</th>
-				  @foreach($results as $result)
-			      	<th scope="col">{{$result->classes_name}}</th>
+				  @foreach($classes as $class)
+				  	@if($class->job_id == $result->job_id)
+			      	<th scope="col">{{$class->classes_name}}</th>
+			      	@endif
 			      @endforeach
 			    </tr>
 			  </thead>
 			  <tbody>
 			    <tr>
 			      <th scope="row">Durée</th>
-			      @foreach($results as $result)
-			      	<td scope="col">{{$result->duration}}</td>
+			      @foreach($classes as $class)
+			      	<td scope="col">{{$class->duration}}</td>
 			      @endforeach
 			    </tr>
 			    <tr>
 			      <th scope="row">Coût</th>
-			      @foreach($results as $result)
-			      	<td scope="col">{{$result->cost}}€</td>
+			      @foreach($classes as $class)
+			      	<td scope="col">{{$class->cost}}€</td>
 			      @endforeach
 			    </tr>
 			    <tr>
 			      <th scope="row">Ville</th>
-			      @foreach($results as $result)
-			      	<td scope="col">{{$result->city}}</td>
+			      @foreach($classes as $class)
+			      	<td scope="col">{{$class->city}}</td>
 			      @endforeach
 			    </tr>
 			  </tbody>
