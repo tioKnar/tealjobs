@@ -22,16 +22,41 @@
 
 		<ul class="list-group list-group-flush col">
   			
+  			<?php $i = 1 ?>
   			@foreach($jobs as $job)
+				
+				<button type="button" data-toggle="collapse" data-target="#{{ $i }}" aria-expanded="false" aria-controls="{{ $i }}">
 
-				<li class="list-group-item">
+					<li class="list-group-item">
 
-					<h5>{{ $job->name}}</h5>
-					{{ $job->description }}
+						<h5>{{ $job->name}}</h5>
+						{{ $job->description }}
 
-				</li>
+					</li>
 
+				</button>
+
+				<div class="collapse" id="{{ $i }}">
+    					
+    				@foreach($classes as $classe)
+
+						@if($classe->job_id == $job->job_id)
+
+							<div class="card card-body">
+   								 
+								{{ $classe->classes_name }}
+
+  							</div>
+
+						@endif
+
+    				@endforeach
+
+				</div><br>
+			
+			<?php $i++ ?>
   			@endforeach
+
 		</ul>
 
 	</div>
