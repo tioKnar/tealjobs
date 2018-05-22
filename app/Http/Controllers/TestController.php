@@ -24,7 +24,9 @@ class TestController extends Controller
 
         $first = $resultats[0]->question_id;
 
-        return view('test.index')->with('resultats', $resultats)->with('first', $first);
+        return view('test.index')
+                        ->with('resultats', $resultats)
+                        ->with('first', $first);
     }
 
     
