@@ -150,8 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
-        Laracasts\Flash\FlashServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
+        Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -211,8 +210,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'Form' => Collective\Html\FormFacade::class,
-        'HTML' => Collective\Html\HtmlFacade::class,
+        'Charts' => Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
 
     ],
 
