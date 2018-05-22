@@ -20230,6 +20230,15 @@ footer {
   border-color: #17a2b8;
 }
 
+#boutonadmin {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#tableupdateadmin {
+  margin-top: 60px;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -20353,7 +20362,6 @@ body {
 }
 
 .administration {
-  margin-top: 15px;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
   border-radius: 20px;
@@ -20426,7 +20434,7 @@ label {
 @media (min-width: 735px) {
   #result-bg {
     background: url(/images/result_page_pano.jpg?5407ab7a7a8daa24269c5d3e86e755a3);
-    height: 600px;
+    height: 650px;
     background-position: center;
     background-size: cover;
   }
@@ -20449,7 +20457,6 @@ label {
     left: calc(48% - 250px);
     width: 500px;
     height: 250px;
-    border-radius: 49% 50% 5% 5%;
   }
 }
 
@@ -20465,26 +20472,876 @@ label {
   }
 }
 
-.job {
-  visibility: hidden;
-}
-
-.job:hover {
-  visibility: visible;
-}
-
-.fruit {
-  background-size: cover;
+.fruit1 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  height: 40px;
   width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.fruit:hover {
+#job1 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit1:hover {
   background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@-webkit-keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit1:hover #job1 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit2 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job2 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit2:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit2:hover #job2 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit3 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job3 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit3:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit3:hover #job3 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit4 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job4 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit4:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit4:hover #job4 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit5 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job5 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit5:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit5:hover #job5 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit6 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job6 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit6:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit6:hover #job6 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit7 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job7 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit7:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit7:hover #job7 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit8 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job8 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit8:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit8:hover #job8 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit9 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job9 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit9:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit9:hover #job9 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit10 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job10 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit10:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit10:hover #job10 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit11 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job11 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit11:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit11:hover #job11 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit12 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job12 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit12:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit12:hover #job12 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit13 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job13 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit13:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit13:hover #job13 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit14 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job14 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit14:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit14:hover #job14 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit15 {
+  background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#job15 {
+  display: none;
+  opacity: 0;
+}
+
+.fruit15:hover {
+  background-image: url(/images/glowing_fruit.png?d8462c96af40fa1e039745fead11a144);
+}
+
+@keyframes jobs {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fruit15:hover #job15 {
+  line-height: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 115px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -55px;
+  -webkit-animation-name: jobs;
+          animation-name: jobs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  display: inline-block;
+}
+
+.fruit1 {
+  top: 200px;
+  left: 85px;
+}
+
+.fruit2 {
+  top: 75px;
+  left: 350px;
+}
+
+.fruit3 {
+  top: 65px;
+  left: 150px;
+}
+
+.fruit4 {
+  top: 160px;
+  left: 175px;
+}
+
+.fruit5 {
+  top: 80px;
+  left: 235px;
+}
+
+#fruit6 {
+  top: -15px;
+  left: 310px;
+}
+
+#fruit7 {
+  top: 130px;
+  left: 270px;
+}
+
+#fruit8 {
+  top: 100px;
+  left: 80px;
+}
+
+#fruit9 {
+  top: 10px;
+  left: 110px;
+}
+
+#fruit10 {
+  top: 165px;
+  left: 340px;
+}
+
+#fruit11 {
+  top: 0px;
+  left: 225px;
+}
+
+#fruit12 {
+  top: 130px;
+  left: 400px;
+}
+
+#fruit13 {
+  top: 150px;
+  left: 50px;
+}
+
+#fruit14 {
+  top: 10px;
+  left: 395px;
+}
+
+#fruit15 {
+  top: 150px;
+  left: 470px;
+}
+
+.modaljob-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  border: 2px solid teal;
+  color: #f1f1f1;
+}
+
+.modaljob-content .modaljob-header {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.modaljob-content .modaljob-header p {
+  color: #212529 !important;
+}
+
+.modaljob-content h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5em;
+  color: teal;
+}
+
+.modaljob-content a {
+  color: #f1f1f1 !important;
+}
+
+.modaljob-content .job-description {
+  font-size: 0.9em;
+}
+
+.modaljob-content .table-striped {
+  background-color: teal;
+}
+
+body.modal-open #result-bg {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.joblist {
+  margin-bottom: 50px;
+}
+
+#joblistbtn {
+  padding-left: 15px;
 }
 
 .footer-distributed {
@@ -20497,7 +21354,6 @@ label {
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
-  margin-top: 80px;
 }
 
 .footer-distributed .footer-left p {

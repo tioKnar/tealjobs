@@ -18,7 +18,8 @@
 			
 				<div class="row">
 
-					<form class="col form-group" action="users" id='admininfo'>
+					<form method="POST" action="{{ route('login') }}" class="col form-group" id='admininfo'>
+						@csrf
 							
 						<label for="email">Votre adresse email</label>
 						<input type="email" name="email" id="email" class="form-group form-control" placeholder="Email">

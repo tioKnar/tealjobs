@@ -13,8 +13,10 @@ class ClassesTableSeeder extends Seeder
     public function run()
     {
          $data = [
-                [
-        		'name' => 'Webforce3',
+
+            [
+        		'classes_name' => 'Webforce3',
+                'duration' => '3',
         		'contact' => 'Lilian Delaportua',
         		'mail' => 'webforce@formation.com',
         		'tel' => '0523659586',
@@ -22,7 +24,7 @@ class ClassesTableSeeder extends Seeder
         		'cp' => '33000',
         		'address' => '13 rue abbé de l\'épée',
         		'cost' => '3200',
-                'job_id' => '1',
+
                 ],
                 [
                 'name' => 'ABC CONSEIL SAMUEL BERNARDI
@@ -37,7 +39,6 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'RESIDENCE PARC MONTCEAU BT B
 ',
                 'cost' => '3000',
-                'job_id' => '1',
                 ],
                 [
                 'name' => 'AIDAMCIE CFAIE
@@ -52,7 +53,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '41 RUE PAS DES HEURES 
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CENTRE DE FORMATION D APPRENTIS
@@ -67,7 +68,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '7 RUE DU CHATEAU DE L HORLOGE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CHAMBRE DE METIERS DE MEURTHE ET MOSELLE
@@ -82,7 +83,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '4 RUE DE LA VOLOGNE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CHEMIN FAISANT NOTRE MAISON FORMATION
@@ -97,7 +98,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'NOTRE MAISON FORMATION
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ERGANES
@@ -112,7 +113,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '5 AVENUE GEORGES BATAILLE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'FORMA2F
@@ -127,7 +128,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '22 AVENUE MICHEL GONDINET
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA DE LA CREATION DU DESIGN ET DES METIERS D\'ART
@@ -142,7 +143,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '21 RUE DE SAMBRE ET MEUSE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'INSTITUT DE FORMATION INTER PROFESSIONNEL DE L\'ALLIER
@@ -157,7 +158,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '11 ROUTE DE PARIS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'INSTITUT MUNICIPAL D\'EDUCATION PERMANENTE DE PANTIN IMEPP
@@ -172,7 +173,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '10 RUE GAMBETTA
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ITP INSTITUT TECHNIQUE PRIVE
@@ -187,7 +188,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '84 BD DE LA CORDERIE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'JMSA. FORMATION CONSEIL MALOT JEAN MICHEL
@@ -202,7 +203,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '47-49 RUE JULES JUILLET
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'KURSUS FORMATION
@@ -217,7 +218,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '40 RUE DU BIGNON 
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'LEARNING PRO SASU
@@ -232,7 +233,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '27 DOMAINE DU LAC
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'NACRE SARL  FORMEO
@@ -247,7 +248,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '4 CHEMIN DES ROSSIGNOLS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'NCS FORMATION SARL
@@ -262,7 +263,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '31 Avenue de l\'Yser
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'NG FORMATIONS
@@ -277,7 +278,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '289 avenue marÃ©chal foch 
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'PASSERELLES ET ACCOMPAGNEMENTS
@@ -292,7 +293,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '21 RUE DES GOYAVIERS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'PERFO SARL
@@ -307,7 +308,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'VOIRDIERES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'RESEAU ACTION BUSINESS PARTNERS
@@ -322,7 +323,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '85 AVENUE JEAN MERMOZ
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'SARL ABSOLU CONSULTING
@@ -337,7 +338,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '3 AVENUE DU CIMETIERE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'SARL AFLOKKAT
@@ -352,7 +353,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '7 COURS NAPOLEON
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ACCUEIL PAYSAN AUVERGNE
@@ -367,7 +368,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '53, RUE DE LA PARDIGE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'ADEPFO ASSOCIATION
@@ -382,7 +383,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '2 ESPL.COMPANS CAFFARELLI
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'A. G. A. P. FORMATION
@@ -397,7 +398,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '36 allée Boucher
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'AIFCC INSERTION
@@ -412,7 +413,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '7 RUE PROFESSEUR J.ROUSSELOT
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'AREFFIG - ADMINISTRATION RECHERCHE EXPERTISE ET FORMATION EN FINANCE INFORMATIQUE ET GESTION
@@ -425,7 +426,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '1 allée des lilas
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+             
                 ],
                 [
                 'name' => 'ASSOCIATION INTERPRO.FORMATION CONTINUE DS LE CALVADOS(AIFCC)
@@ -437,7 +438,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '47000',
                 'address' => '20 rue des tubes',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'ASSOCIATION REGIONALE D\'EDUCATION PERMANENTE ILLE ARMOR
@@ -452,7 +453,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '190 AVENUE GENERAL GEORGE PATTON
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CENTRE DE FORMATION PROFESSIONNELLE ET DE PROMOTION AGRICOLE
@@ -467,7 +468,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'ROUTE DE CAEN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'cfa chambre des metiers',
@@ -481,7 +482,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '09 RUE DU 11 NOVEMBRE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE ROCHEFORT (CCIR)
@@ -496,7 +497,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'CORDERIE ROYALE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'DEVELOPPEMENT AGRO ECONOMIQUE ET DE SECURITE ALIMENTAIRE
@@ -511,7 +512,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '8 RESIDENCE RIVIERA
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ECOLE NORMALE SUPERIEURE DE LYON - ENS LYON
@@ -526,7 +527,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '15 PARVIS RENE DESCARTES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'EURL CLARA MIOTTO -LA SOLUTION FORMATION
@@ -541,7 +542,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '1025 RUE HENRI BECQUEREL
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'FORMA2F
@@ -556,7 +557,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '22 AVENUE MICHEL GONDINET
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'FORMASUD EURL
@@ -571,7 +572,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '29 QUATER AVENUE DU COLONEL PARDES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'G I P  FORMATION CONTINUE
@@ -586,7 +587,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '17 BOULEVARD DE LA PAIX - CS 50033
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ISAAC DE L\'ETOILE - OGEC POITIERS NORD
@@ -601,7 +602,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '62 RUE DU PORTEAU
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'L\'ASSOSPHERE FORMATION
@@ -616,7 +617,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '11 AVENUE AMPERE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'LINORA FORMATION
@@ -631,7 +632,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '1 RUE DES ECOLES 
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'MARIE-ANGE ALEXANDRE CONSEIL - MAA CONSEIL
@@ -646,7 +647,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '8 RUE DES FILLES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'PASSERELLES ET ACCOMPAGNEMENTS
@@ -661,7 +662,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '21 RUE DES GOYAVIERS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'POL\'ETAMINE FORMATIONS ET ECHANGES
@@ -676,7 +677,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'AVENUE DU 8E REGIMENT DE HUSSARDS  BAT. 23
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'SAS ECOFAC
@@ -691,7 +692,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '46 AVENUE FRANCOIS MITERRAND
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'STE COOPERATIVE ARIAC
@@ -706,7 +707,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '8 AVENUE DU LAC
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'T L C
@@ -721,7 +722,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '26 BOULEVARD DES FEDERES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'UNIVERSITE DE LIMOGES
@@ -736,7 +737,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '209 BOULEVARD DE VANTEAUX
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'UNIVERSITE JEAN MONNET (UJM)
@@ -751,7 +752,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '21 RUE DENIS PAPIN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'WOLTERS  KLUWER FRANCE
@@ -766,7 +767,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '14, RUE FRUCTIDOR
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'AGIR POUR LA MOBILISATION DES SAVOIRS AMS GRAND SUD
@@ -781,7 +782,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '70 BD MATABIAU
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ANTEE FORMATION
@@ -796,7 +797,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '40 rue des martyrs
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ASSOCIATION DE GESTION DU CONSERVATOIRE NATIONAL DES ARTS ET MÃ‰TIERS DE LA REUNION
@@ -811,7 +812,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '18 RUE CLAUDE CHAPPE ZAC 2000 
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'AXYS S.A.R.L.
@@ -826,7 +827,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '33 RUE DU REMPART ST CLAUDE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CONSERVATOIRE NATIONAL DES ARTS ET METIERS
@@ -841,7 +842,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '292 RUE ST MARTIN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ESCENDO FORMATION
@@ -856,7 +857,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '01 RUE LEO DELIBES -
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => ' GIP FCIP EDUCATION ET FORMATION TOUT AU LONG DE LA VIE
@@ -870,7 +871,7 @@ class ClassesTableSeeder extends Seeder
 ',
                 'address' => '12 rue des arts',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA ARVE FAUCIGNY
@@ -885,7 +886,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '210 QUAI DU PARQUET
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA DE CORSE DU SUD   LYCEE LAETITIA BONAPARTE
@@ -900,7 +901,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'AV NAPOLEON III
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA DU RHONE - LYCEE LOUIS ARMAND
@@ -915,7 +916,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '507 AVENUE DU BEAUJOLAIS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'INSTITUT UNIVERSITAIRE DE TECHNOLOGIE
@@ -930,7 +931,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'ALLEE ANDRE MAUROIS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ADALIANCE
@@ -945,7 +946,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '83 BOULEVARD DE LA REPUBLIQUE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'AFEPT   ASSOC. FORMATION ET EDUCATION PERMANENTE DE TIVOLI
@@ -960,7 +961,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '40 RUE DE MARSEILLE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'AFTEC
@@ -975,7 +976,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '22 AVENUE DES DROITS DE L\'HOMME
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ALPHA FORMATION O.I 
@@ -990,7 +991,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '14, RUE JULES HERMANN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ARCOOP Scop Sarl
@@ -1005,7 +1006,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '2 rue Camille Claudel
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ASS DES AMIS DE L\'ENSEIG TECH D\'ARGENTEUIL ET DES ENVIRONS
@@ -1020,7 +1021,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '84 B BD HELOISE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ASSOC GESTION DE LA FORMATION CONTINUE, PROFES   SUPERIEURE
@@ -1032,7 +1033,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '25 rue des buffles',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
@@ -1047,7 +1048,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'AVENUE DES FACULTES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ATRYA
@@ -1062,7 +1063,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'ZI LE MOULIN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'AVENIR & TALENT
@@ -1077,7 +1078,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '8 rue Alexander Fleming
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'BP FORMATION
@@ -1092,7 +1093,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'ROUTE DE LOURDES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CAP SERVICES
@@ -1107,7 +1108,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '11 RUE DUPHOT
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CCI  FORMATION COTE D\'OR 
@@ -1122,7 +1123,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'PLACE JEAN BOUHEY
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CHLOROPHYLLE INFORMATIQUE
@@ -1137,7 +1138,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '21 RUE DU 8 MAI 1945
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+            
                 ],
                 [
                 'name' => 'XXL Formation
@@ -1152,7 +1153,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '34 RUE RAYMOND ARON BP 520
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'A2COM FORMATION
@@ -1167,7 +1168,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '1 BOULEVARD DU TRIEUX
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ACCRE SAS
@@ -1182,7 +1183,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '20, RUE ENRICO FERMI
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'A SENATUS CONSULTO
@@ -1197,7 +1198,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '23 RUE BOYER - BARRET
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'B AND B PERFORMANCE
@@ -1212,7 +1213,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '57 BOULEVARD DE VERDUN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CHAMBRE DE METIERS ET DE L\'ARTISANAT DE LA DROME
@@ -1224,7 +1225,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => 'rue du dome',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'EDINOVO FORMATION
@@ -1236,7 +1237,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => 'place de la bourse',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'IMAGE SCOP
@@ -1251,7 +1252,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '125 RUE DE L\'HOSTELLERIE 
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'MME LAVANDIER MARJOLAINE - EIRL LES CLÃ‰S DE LA GESTION
@@ -1266,7 +1267,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '13 RUE DE MONTAIGU
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'QUINTESSENCE FORMATION SARL
@@ -1281,7 +1282,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '10 PLACE DE LA JOLIETTE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'AFPI 8002
@@ -1296,7 +1297,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '114 CHAUSSEE ROMAINE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'ALPHA FORMA
@@ -1311,7 +1312,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '42 AVENUE MATHILDE EMILIE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ASFORQUAL BTP ASSOCIATION
@@ -1326,7 +1327,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '14 AVENUE DE L\'ARIEGE BP 1
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'ASMFP 77
@@ -1341,7 +1342,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '38 AVENUE FRANKLIN ROOSEVELT
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'ASSOCIATION INTERPROFESSIONNELLE POUR LA FORMATION PERMANENTE DANS LE SARLADAIS / AIFS
@@ -1353,7 +1354,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '26 rue des faussets',
                 'cost' => '3000',
-                'job_id' => '1',
+             
                 ],
                 [
                 'name' => 'ATFI  WAIBSPE3D',
@@ -1367,7 +1368,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '24 RESIDENCE DU PARC
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+             
                 ],
                 [
                 'name' => 'AT FORMATIONS ET CONSEILS
@@ -1382,7 +1383,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '4 PLACE ARISTIDE BRIAND
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'AZUR FORMATIONS ZI BRAYE DFE CAU
@@ -1397,7 +1398,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '371 AVENUE DE LA  RASCLAVE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'CB BREIZH
@@ -1412,7 +1413,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'ESPACE PERFORMANCE ALPHASIS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'ARCADE
@@ -1427,7 +1428,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '6 PLACE BARTHELEMY NIOLLON
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'DJEM
@@ -1442,7 +1443,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '16 RUE AMPÃ¨RE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ELLIPSE FORMATION 
@@ -1457,7 +1458,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '8, CITÃ© JOLY
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA DU VELAY LYCEE CHARLES ET ADRIEN DUPUY
@@ -1472,7 +1473,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '2/4 AVENUE DU DOCTEUR DURAND
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'INST NATIONAL DE L\'AUDIOVISUEL
@@ -1487,7 +1488,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '4 AVE DE L\'EUROPE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CENTRE DE GESTION DE CHAMPAGNE
@@ -1499,7 +1500,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '12 rue des faussets',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CONSULTING 26
@@ -1511,7 +1512,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '32000',
                 'address' => '14 place des morts-vivants',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA VIVARAIS PROVENCE
@@ -1523,7 +1524,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '75000',
                 'address' => '89 avenue de la soie',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'PREPAVENIR FORMATION
@@ -1535,7 +1536,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '75010',
                 'address' => '46 place de la république',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'LAMED SERVICES
@@ -1547,7 +1548,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '1 rue du mur',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ACTELIOR CONSEIL
@@ -1562,7 +1563,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '7BIS RUE DES AULNES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'AGCNAM DE BRETAGNE (ASSOCIATION DE GESTION DU CNAM EN BRETAGNE)CONSERVATOIRE ARTS ET METIERS
@@ -1574,7 +1575,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '12 rue des ames',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ASSOCIATION  DE GESTION DU CNAM EN REGION CENTRE
@@ -1589,7 +1590,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '21 BIS RUE EUGENE VIGNAT
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'ASSOCIATION UDEL ENTREPRISE ET FORMATION
@@ -1604,7 +1605,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '14 BLD ROCHEPLATTE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
@@ -1619,7 +1620,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'AVENUE DES FACULTES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'ASS. REGIONALE DE FORMATION POUR L ARTISANAT DU BATIMENT
@@ -1634,7 +1635,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '14 RUE DES FRERES LUMIERE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
                 [
                 'name' => 'ATHENA TRAINING SARL
@@ -1649,7 +1650,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '4 BIS RUE GABRIEL VAYABOURY
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ATOVA CONSEIL
@@ -1664,7 +1665,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '54 RUE PAULE VERLAINE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CAMPUS VEOLIA ENVIRONNEMENT IDF
@@ -1679,7 +1680,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '25 AVENUE LIONEL TERRAY
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CCI  FORMATION COTE D\'OR 
@@ -1694,7 +1695,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'PLACE JEAN BOUHEY
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'CFPPA  CENTRE DE FORMATION PRO ET DE PROMO AGRICOLE DE NYONS
@@ -1709,7 +1710,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '2 AVENUE DE VENTEROL
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'AFTEC
@@ -1724,7 +1725,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '22 AVENUE DES DROITS DE L\'HOMME
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'AGISS 
@@ -1739,7 +1740,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '71 COURS ALBERT THOMAS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'ASSOCIATION DE GESTION DU CONSERVATOIRE NATIONAL DES ARTS ET MÃ‰TIERS DE LA REUNION
@@ -1754,7 +1755,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '18 RUE CLAUDE CHAPPE ZAC 2000 
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CCI  DE TOULOUSE 
@@ -1769,7 +1770,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '2 RUE D\'ALSACE LORRAINE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'CENTRE D\'AIDE DE DIALOGUE ET D\'ECOUTE - CADE
@@ -1784,7 +1785,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'PLACE DES COCOTIERS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE DE LIMOGES ET DE LA HAUTE-VIENNE - CCI FORMATION - CAMPUS CONSULAIRE 
@@ -1799,7 +1800,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '16 PLACE JOURDAN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'ECOLE D\'ELECTRICITE DE PRODUCTION ET DES METHODES INDUSTRIELLES
@@ -1814,7 +1815,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '13 BOULEVARD DE L\'HAUTIL
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'EURL CLARA MIOTTO -LA SOLUTION FORMATION
@@ -1829,7 +1830,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '1025 RUE HENRI BECQUEREL
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'FEDE ASSOCIATIVE  POUR DEVEL DE L EMPLOI AGRICOLE ET RURAL
@@ -1844,7 +1845,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '104 RUE ROBESPIERRE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'GRETA DU VAR
@@ -1859,7 +1860,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'LYCEE LANGEVIN BD L\'EUROPE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'AFPI 8002
@@ -1874,7 +1875,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '114 CHAUSSEE ROMAINE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'C.C.I.M. (CHAMBRE DE COMMERCE ET D\'INDUSTRIE DU MORBIHAN)
@@ -1889,7 +1890,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '2 BIS RUE EDOUARD BEAUVAIS
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'AFPIA EST NORD
@@ -1904,7 +1905,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '2 RUE DU 8 MAI 1945  BP 25
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ASFIS
@@ -1919,7 +1920,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '44 RUE DU LOUVRE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'ASS REG DU CONSERVATOIRE NAT. DES ARTS ET METIERS DE PIC
@@ -1934,7 +1935,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'AVENUE DES FACULTES
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'BTP CFA MIDI-PYRENEES 
@@ -1949,7 +1950,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '3 IMPASSE GEORGES DAZET
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'CFA DU BATIMENT
@@ -1964,7 +1965,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '154 CHEMIN DE BLORY
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'CFC AGEPAC - Apprentis d\'Auteuil Mayotte
@@ -1979,7 +1980,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'BP 1023
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA DE BESANCON
@@ -1994,7 +1995,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '35 AVENUE DE MONTRAPON
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'GRETA DE CORSE DU SUD   LYCEE LAETITIA BONAPARTE
@@ -2009,7 +2010,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'AV NAPOLEON III
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA LYON METROPOLE
@@ -2024,7 +2025,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '41 RUE ANTOINE LUMIERE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'GRETA MARSEILLE MEDITERRANEE
@@ -2039,7 +2040,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'LYCEE JEAN PERRIN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+             
                 ],
                 [
                 'name' => 'GRETA NORD ISERE - LYCEE ELLA FITZGERALD  
@@ -2054,7 +2055,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '33 AVENUE D\'ITALIE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'CHAMBRE DE COMMERCE ET D\'INDUSTRIE DE REGION I PARIS IDF
@@ -2066,7 +2067,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '75000',
                 'address' => 'place principale',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'GRETA MARSEILLE MEDITERRANEE
@@ -2081,7 +2082,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => 'LYCEE JEAN PERRIN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+                
                 ],
                 [
                 'name' => 'IN\'FOR (INGENIERIE FORMATION)
@@ -2096,7 +2097,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '23 RUE DE LA VANNE
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'INSTITUT METIERS DE L\'ART ET ARTISANAT ASSOCIATION
@@ -2111,7 +2112,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '20 RUE JEAN MOULIN
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'GRETA DE BESANCON
@@ -2126,7 +2127,7 @@ class ClassesTableSeeder extends Seeder
                 'address' => '35 AVENUE DE MONTRAPON
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+               
                 ],
                 [
                 'name' => 'GRETA DU VELAY LYCEE CHARLES ET ADRIEN DUPUY
@@ -2141,9 +2142,10 @@ class ClassesTableSeeder extends Seeder
                 'address' => '2/4 AVENUE DU DOCTEUR DURAND
 ',
                 'cost' => '3000',
-                'job_id' => '1',
+              
                 ],
-        	];
+        ];
+
 
         Classe::insert($data);
     }

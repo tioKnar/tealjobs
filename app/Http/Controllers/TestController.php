@@ -32,8 +32,5 @@ class TestController extends Controller
 
         $values = Request::all();
 
-        
-
-
     }
 }

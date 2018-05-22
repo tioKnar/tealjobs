@@ -2,7 +2,21 @@
 
 @section('content')
 
-	<div class="container-fluid">
+<div class="container-fluid" id="boutonadmin">
+	
+	<div class="row justify-content-center text-center">
+		
+		<a href="historychart" class="col-md-2 administration">Diagramme</a>
+
+		<a href="historytree" class="col-md-2 administration" id="pageactive">Arbre à métier</a>
+
+		<a href="historylist" class="col-md-2 administration">Liste des métiers</a>
+
+	</div>
+
+</div>
+
+<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
 				<div id="result-bg" alt="result_tree">

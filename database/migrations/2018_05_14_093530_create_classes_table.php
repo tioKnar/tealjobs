@@ -16,14 +16,16 @@ class CreateClassesTable extends Migration
         Schema::create('classes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('classes_name');
+            $table->integer('duration');
             $table->integer('cost');
             $table->string('contact');
             $table->string('city');
             $table->integer('cp');
-            $table->integer('tel');
+            $table->string('tel');
             $table->string('mail');
             $table->string('address');
-            $table->integer('job_id');
+            $table->string('link')->nullable();
             $table->timestamps();
         });
     }

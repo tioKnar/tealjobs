@@ -99,7 +99,23 @@ footer {
 }
 
 
+//Page users/cobs/classes
+
+#boutonadmin {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+// Page userupadte/jobupdate/classeupdate
+
+#tableupdateadmin {
+	margin-top: 60px;
+}
+
+
 //Landing Page - Jumbotron
+
 body {
 	font-family: $font;
 }
@@ -223,7 +239,6 @@ bottom: 0;
 }
 
 .administration {
-	margin-top: 15px;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 	border-radius: 20px;
 	margin-left: 15px;
@@ -289,13 +304,14 @@ label {
 
 //Page Resultats
 
+
 #result-bg {
 	object-fit: cover;
 	
 	    @media(min-width: 735px){
 
 	    	background: url('../img/tree/result_page_pano.jpg');
-	    	height: 600px;
+	    	height: 650px;
 	    	background-position: center;
 	    	background-size: cover;
 	    } 
@@ -308,49 +324,188 @@ label {
 	    } 
 }
 
-
 #foliage-square {
 
 	@media(min-width:735px) {
-		background-color: transparent;
-	    position: absolute;
-	    top: 29%;
-	    left: calc(48% - 250px);
-	    width: 500px;
-	    height: 250px;
-	    border-radius: 49% 50% 5% 5%;
+        background-color: transparent;
+        position: absolute;
+        top: 29%;
+        left: calc(48% - 250px);
+        width: 500px;
+        height: 250px;
+    }
+
+    @media(min-width:310px) and (max-width:734.98px) {
+        background-color: transparent;
+        position: absolute;
+        top: 10%;
+        left: calc(48% - 190px);
+        width: 380px;
+        height: 203px;
+        border-radius: 49% 64% 5% 5%;
+    }
+}
+
+@for $i from 1 to 16 {
+	.fruit#{$i} {
+		background-image: url("../img/tree/fruit.png");
+		position: absolute;
+		width: $fruit-width;
+		height: $fruit-height;
+		background-size: cover;
+		position: absolute;
+		transition: 0.5s;
 	}
 
-	@media(min-width:310px) and (max-width:734.98px) {
-		background-color: transparent;
-	    position: absolute;
-	    top: 10%;
-	    left: calc(48% - 190px);
-	    width: 380px;
-	    height: 203px;
-	    border-radius: 49% 64% 5% 5%;
+	#job#{$i} {
+		display: none;
+		opacity: 0;
 	}
+
+	.fruit#{$i}:hover {
+		background-image: url("../img/tree/glowing_fruit.png");
+
+		@keyframes jobs {
+		    from {opacity: 0;}
+		    to {opacity: 1;}
+		}
+
+		#job#{$i} {
+			line-height: 50px;
+			font-family: $font-title;
+			font-size: 1.2em;
+			background-color: rgba(0,0,0,0.6);
+			width: 115px;
+			height: 50px;
+			color: white;
+			border-radius: 5px;
+			position: relative;
+			top: -55px;
+			animation-name: jobs;
+    		animation-duration: 1s;
+    		opacity: 1;
+			display: inline-block;
+		}
+	}
+
+
 }
 
-.job {
-	visibility: hidden;
+.fruit1 {
+	top:200px;
+	left:85px;
+}
+.fruit2 {
+	top:75px;
+	left:350px;
+}
+.fruit3 {
+	top:65px;
+	left:150px;
+}
+.fruit4 {
+	top:160px;
+	left:175px;
+}
+.fruit5 {
+	top:80px;
+	left:235px;
+}
+#fruit6 {
+	top:-15px;
+	left:310px;
+}
+#fruit7 {
+	top:130px;
+	left:270px;
+}
+#fruit8 {
+	top:100px;
+	left:80px;
+}
+#fruit9 {
+	top:10px;
+	left:110px;
+}
+#fruit10 {
+	top:165px;
+	left:340px;
+}
+#fruit11 {
+	top:0px;
+	left:225px;
+}
+#fruit12 {
+	top:130px;
+	left:400px;
+}
+#fruit13 {
+	top:150px;
+	left:50px;
+}
+#fruit14 {
+	top:10px;
+	left:395px;
+}
+#fruit15 {
+	top:150px;
+	left:470px;
 }
 
-.job:hover {
-	visibility: visible;
+//Page Resultats - Modal
+
+.modaljob-content {
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 10px;
+	border: 2px solid teal;
+	color: #f1f1f1;
+
+	.modaljob-header {
+		flex-direction: column !important;
+
+		p {
+			color: #212529 !important;
+		}
+	}
+
+	h2 {
+		font-family: $font-title;
+		font-size: 1.5em;
+		color: teal;
+	}
+
+	a {
+		color: #f1f1f1 !important;
+	}
+
+	.job-description {
+		font-size: 0.9em;
+	}
+
+	.table-striped {
+		background-color: teal;
+	}
+
+
 }
 
-.fruit {
-	background-size: cover;
-	background-image: url("../img/tree/fruit.png");
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	transition: 0.5s;
+body.modal-open #result-bg {
+	-webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+
 }
 
-.fruit:hover {
-	background-image: url("../img/tree/glowing_fruit.png");
+// Page historylist
+
+.joblist {
+	margin-bottom: 50px;
+}
+
+#joblistbtn {
+	padding-left: 15px;
 }
 
 
@@ -363,9 +518,7 @@ label {
 	width: 100%;
 	text-align: left;
 	font: normal 16px sans-serif;
-
 	padding: 45px 50px;
-	margin-top: 80px;
 }
 
 .footer-distributed .footer-left p{

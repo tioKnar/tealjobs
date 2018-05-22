@@ -39,11 +39,36 @@ Route::get('/users', 'UsersController@index');
 
 Route::post('/users', 'UsersController@store');
 
+Route::get('/userdelete', 'UsersController@delete');
+
+Route::get('/userupdate', 'UserController@index');
+
+Route::post('/userupdate', 'UserController@update');
+
 Route::get('/classes', 'ClassesController@index');
 
 Route::post('/classes', 'ClassesController@store');
 
+Route::get('/classedelete', 'ClassesController@delete');
+
+Route::get('/classeupdate', 'ClasseController@index');
+
+Route::post('/classeupdate', 'ClasseController@update');
+
 Route::get('/jobs', 'JobsController@index');
 
 Route::post('/jobs', 'JobsController@store');
+
+Route::get('/jobdelete', 'JobsController@delete');
+
+Route::get('/jobupdate', 'JobController@index');
+
+Route::post('/jobupdate', 'JobController@update');
+
+Route::get('/historychart', 'HistorychartController@index');
+
+Route::get('/historytree', 'HistorytreeController@index');
+
+Route::get('/historylist', 'HistorylistController@index');
+
 

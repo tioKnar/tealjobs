@@ -8,30 +8,25 @@ use Redirect;
 use Request;
 use Validator;
 
-class ClassesController extends Controller
+class ClasseController extends Controller
 {
-	public function __construct() {
-
-        $this->middleware('auth');
-    }
-
     public function index() {
-
-    	 $classes = Classe::paginate(4);
+    
+    	$classe = Classe::where('id', $_GET['id'])->first();
 
     	 $jobs = Job::get();
 
-    	return view('classes.index')->with('classes', $classes)->with('jobs', $jobs);
+    	return view('classeupdate.index')->with('classe', $classe)->with('jobs', $jobs);
     }
 
-    public function store() {
+    public function update() {
 
     	$values = Request::all();
 
     	$rules = [
-			'classes_name' => 'required|string|max:255',
+			'name' => 'required|string|max:255',
 			'description' => 'required|string|max:255',
-			'duration' => 'required|integer',
+			'cost' => 'required|integer',
 			'cost' => 'required|integer',
 			'contact' => 'required|string',
 			'city' => 'required|string',
@@ -47,9 +42,8 @@ class ClassesController extends Controller
 		$validator = Validator::make($values, $rules, [
 			'mail.email' => 'E-mail invalide',
 			'mail.required' => 'Veuillez entrer un email',
-			'classes_name.string' =>'Nom invalide',
+			'name.string' =>'Nom invalide',
 			'description.string' =>'Description invalide',
-			'duration.integer' => 'Durée invalide',
 			'cost.integer' =>'Coût invalide',
 			'contact.string' =>'Contact invalide',
 			'city.string' =>'Ville invalide',
@@ -68,11 +62,10 @@ class ClassesController extends Controller
 							->withInput();
 		}
 
-		$classe = new Classe();
+		$classe = Classe::where('id', $_GET['id'])->first();
 
-		$classe->classes_name = $_POST['classes_name'];
+		$classe->name = $_POST['name'];
 		$classe->description = $_POST['description'];
-		$classe->duration = $_POST['duration'];
 		$classe->cost = $_POST['cost'];
 		$classe->contact = $_POST['contact'];
 		$classe->city = $_POST['city'];
@@ -85,19 +78,8 @@ class ClassesController extends Controller
 
 		$classe->save();
 
-		flash('Formation ajoutée')->success();
+		flash('Formation modifiée')->success();
 
 		return Redirect::back();
-    }
-
-    public function delete() {
-     		
-	     	$id = $_GET['id'];
-
-	    	$classe = Classe::where('id', $id)->first();
-	    		
-	    	$classe->delete();
-
-	 		return Redirect::back();
     }
 }

@@ -20,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Kaushan+Script|Lato" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -69,7 +68,7 @@
                         </li>
 
                         <li class="nav-item linknavbar">
-                            <a class="nav-link" href="{{ route('register') }}">Historique</a>
+                            <a class="nav-link" href="historychart">Historique</a>
                         </li>
 
                         <li class="nav-item dropdown linknavbar">
@@ -144,6 +143,7 @@
         @endif
 
     });
+    
 </script>
 
 </html>
