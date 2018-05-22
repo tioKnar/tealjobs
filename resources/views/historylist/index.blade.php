@@ -20,7 +20,7 @@
 
 	<div class="row justify-content-center">
 
-		<ul class="list-group list-group-flush col">
+		<ul class="list-group list-group-flush col" id="joblistbtn">
   			
   			<?php $i = 1 ?>
   			@foreach($jobs as $job)
@@ -43,8 +43,20 @@
 						@if($classe->job_id == $job->job_id)
 
 							<div class="card card-body">
+
+								<div>
    								 
-								{{ $classe->classes_name }}
+									<h4>{{ $classe->classes_name }}</h4><hr>
+									<p>{{ $classe->description}}</p>
+									<strong>Durée :</strong> {{ $classe->duration }} mois<br>
+									<strong>Coût :</strong> {{ $classe->cost }} €<br>
+									<strong>Contact :</strong> {{ $classe->contact }}<br>
+									<strong>Adresse :</strong> {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}<br>
+									<strong>Email :</strong> {{ $classe->mail }}<br>
+									<strong>Téléphone :</strong> {{ $classe->tel }}<br>
+									<strong>Site :</strong><a href="{{ $classe->link }}"> {{ $classe->link }} </a>
+
+								</div>
 
   							</div>
 
