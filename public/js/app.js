@@ -47395,7 +47395,7 @@ if (false) {
 /* 43 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n\twidth: ;\r\n     ^\r\n      Style declaration must contain a value\r\n      in C:\\laragon\\www\\tealjobs\\resources\\assets\\sass\\app.scss (line 315, column 7)\n    at runLoaders (C:\\laragon\\www\\tealjobs\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\laragon\\www\\tealjobs\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\laragon\\www\\tealjobs\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\laragon\\www\\tealjobs\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\laragon\\www\\tealjobs\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (C:\\laragon\\www\\tealjobs\\node_modules\\neo-async\\async.js:7974:18)\n    at options.error (C:\\laragon\\www\\tealjobs\\node_modules\\node-sass\\lib\\index.js:294:32)");
 
 /***/ })
 /******/ ]);
