@@ -20558,11 +20558,15 @@ label {
 
 @media (max-width: 469.98px) {
   #result-bg {
-    background: url(/images/tree_min.jpg?e2bfce1434e9870266aec289f0fb3e18);
-    height: 300px;
+    background: url(/images/tree_min.jpg?76f8c8349d6baa75db77dbd078889df0);
+    height: 125vh;
     background-position: top;
     background-size: cover;
   }
+}
+
+#responsive-jobs {
+  display: none;
 }
 
 @media (min-width: 850px) {
@@ -20580,21 +20584,29 @@ label {
   #foliage-square {
     background-size: cover;
     position: absolute;
-    top: calc(31% - 17vh);
-    left: calc(46% - 250px);
-    width: 490px;
-    height: 23vh;
+    top: calc(48% - 17vh);
+    left: calc(42% - 250px);
+    width: 462px;
+    height: 18vh;
   }
 }
 
 @media (max-width: 469.98px) {
   #foliage-square {
-    background-size: cover;
+    display: none;
+  }
+}
+
+@media (max-width: 469.98px) {
+  #responsive-jobs {
+    display: block !important;
     position: absolute;
-    top: calc(31% - 17vh);
-    left: calc(46% - 250px);
-    width: 490px;
-    height: 23vh;
+    top: calc(50% - 300px);
+    left: calc(50% - 139px);
+  }
+
+  #responsive-jobs .list-group-item {
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -20642,7 +20654,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20655,6 +20667,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit1:hover #job1 {
+    opacity: 1;
+  }
 }
 
 .fruit2 {
@@ -20691,7 +20709,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20704,6 +20722,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit2:hover #job2 {
+    opacity: 1;
+  }
 }
 
 .fruit3 {
@@ -20740,7 +20764,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20753,6 +20777,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit3:hover #job3 {
+    opacity: 1;
+  }
 }
 
 .fruit4 {
@@ -20789,7 +20819,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20802,6 +20832,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit4:hover #job4 {
+    opacity: 1;
+  }
 }
 
 .fruit5 {
@@ -20838,7 +20874,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20851,6 +20887,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit5:hover #job5 {
+    opacity: 1;
+  }
 }
 
 .fruit6 {
@@ -20887,7 +20929,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20900,6 +20942,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit6:hover #job6 {
+    opacity: 1;
+  }
 }
 
 .fruit7 {
@@ -20936,7 +20984,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20949,6 +20997,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit7:hover #job7 {
+    opacity: 1;
+  }
 }
 
 .fruit8 {
@@ -20985,7 +21039,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20998,6 +21052,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit8:hover #job8 {
+    opacity: 1;
+  }
 }
 
 .fruit9 {
@@ -21034,7 +21094,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21047,6 +21107,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit9:hover #job9 {
+    opacity: 1;
+  }
 }
 
 .fruit10 {
@@ -21083,7 +21149,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21096,6 +21162,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit10:hover #job10 {
+    opacity: 1;
+  }
 }
 
 .fruit11 {
@@ -21132,7 +21204,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21145,6 +21217,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit11:hover #job11 {
+    opacity: 1;
+  }
 }
 
 .fruit12 {
@@ -21181,7 +21259,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21194,6 +21272,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit12:hover #job12 {
+    opacity: 1;
+  }
 }
 
 .fruit13 {
@@ -21230,7 +21314,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21243,6 +21327,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit13:hover #job13 {
+    opacity: 1;
+  }
 }
 
 .fruit14 {
@@ -21279,7 +21369,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21292,6 +21382,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit14:hover #job14 {
+    opacity: 1;
+  }
 }
 
 .fruit15 {
@@ -21328,7 +21424,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.7em;
+  font-size: 1.6em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21341,6 +21437,12 @@ label {
   opacity: 1;
   display: inline-block;
   padding: 10px 25px 0px 25px;
+}
+
+@media (max-width: 469.98px) {
+  .fruit15:hover #job15 {
+    opacity: 1;
+  }
 }
 
 .fruit1 {

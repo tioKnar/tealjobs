@@ -453,11 +453,15 @@ label {
 
 	    @media(max-width: 469.98px) {
 	    	background: url('../img/tree/tree_min.jpg');
-	    	height: 300px;
+	    	height: 125vh;
 	    	background-position: top;
 	    	background-size: cover;
 	    } 
 }
+
+#responsive-jobs {
+        	display: none;
+        }
 
 #foliage-square {
 
@@ -471,21 +475,30 @@ label {
     }
 
     @media(min-width: 470px) and (max-width: 849.98px) {
-        background-size: cover;
+		background-size: cover;
 	    position: absolute;
-	    top: calc(31% - 17vh);
-	    left: calc(46% - 250px);
-	    width: 490px;
-	    height: 23vh;
+	    top: calc(48% - 17vh);
+	    left: calc(42% - 250px);
+	    width: 462px;
+	    height: 18vh;
     }
 
     @media(max-width: 469.98px) {
-        background-size: cover;
+        display: none;
+    }
+
+}
+
+@media(max-width: 469.98px) {
+    #responsive-jobs {
+		display: block !important;
 	    position: absolute;
-	    top: calc(31% - 17vh);
-	    left: calc(46% - 250px);
-	    width: 490px;
-	    height: 23vh;
+	    top: calc(50% - 300px);
+	    left: calc(50% - 139px);
+
+	    .list-group-item {
+	    	background-color: rgba(255,255,255,0.8);
+	    }
     }
 }
 
@@ -517,7 +530,7 @@ label {
 			z-index:1;
 			line-height: 30px;
 			font-family: $font-title;
-			font-size: 1.7em;
+			font-size: 1.6em;
 			background-color: rgba(0,0,0,0.6);
 			color: white;
 			border-radius: 5px;
@@ -528,6 +541,10 @@ label {
     		opacity: 1;
 			display: inline-block;
 			padding: 10px 25px 0px 25px;
+
+			 @media(max-width: 469.98px) {
+	        	opacity: 1;
+	    		}
 		}
 	}
 
