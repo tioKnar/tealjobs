@@ -20,12 +20,17 @@
 
 					@if($classe->jobs_id == $job->job_id)
 
-						<h5>{{ $classe->classes_name }}</h5>
-						<strong>Durée : </strong>{{ $classe->duration }} mois<br>
-						<strong>Ville : </strong>{{ $classe->city }}<br>
-						<strong>Email : </strong>{{ $classe->mail }}<br>
-						<strong>Site web : </strong><a href="{{ $classe->link }}">{{ $classe->link }}</a>
-						<hr>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $classe->classes_name }}</h5>
+                    <p class="card-text">
+                        <strong>Ville : </strong>{{ $classe->city }}<br>
+                        <strong>Durée : </strong>{{ $classe->duration }} mois<br>
+                        <strong>Email : </strong>{{ $classe->mail }}<br></p>
+                    <p class="card-text"><small class="text-muted">Site web : <a href="{{ $classe->link }}">{{ $classe->link }}</a></small></p>
+                </div>
+            </div>
+            <hr>
 					
 					@endif
 
