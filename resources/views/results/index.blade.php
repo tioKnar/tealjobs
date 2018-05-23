@@ -23,7 +23,15 @@
 
 						<?php $e++ ?>
 						@endforeach
-					</div>			
+					</div>	
+
+					<ul class="list-group" id="responsive-jobs">
+						<?php $e=1 ?>
+						@foreach($jobs as $job)
+							<li class="list-group-item">{{$job->name}}</li>
+						<?php $e++ ?>
+						@endforeach
+					</ul>		
 			</div>
 		</div>
 	</div>

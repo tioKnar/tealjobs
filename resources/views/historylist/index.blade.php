@@ -28,7 +28,7 @@
 							  <div class="card-header">{{$job->name}}</div>
 							  <div class="card-body text-primary">
 							    <h5 class="card-title"></h5>
-							    <p class="card-text">{{ $job->description }}</p>
+							    <p class="card-text">{{$job->description}}</p>
 							  </div>
 							  </div>
 				</div>
