@@ -26,22 +26,28 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Comment vous positionnez-vous face au travail de groupe ?',
             ],
              [
-                'question' => 'Quel taille fais-tu ?',
+                'question' => 'Lorque vous êtes stressé.e, vous avez tendance à :',
             ],
             [
-                'question' => 'Quelle couleur es-tu 12 ?',
+                'question' => 'Comment préférez-vous qu\'on s\'adresse à vous ?',
             ],
              [
-                'question' => 'Que manges-tu 12 ?',
+                'question' => 'Toute personne a besoin de reconnaissance. Que voulez-vous que les autres reconnaissent chez vous ?',
             ],
              [
-                'question' => 'Que bois-tu 12 ?',
+                'question' => 'Au sein d\'un groupe, vous avez un travail à rendre dans des délais très courts. Le stress vous gagne. Comment réagissez vous avec les personnes travaillant avec vous ?',
             ],
              [
-                'question' => 'Quel animal es-tu 12 ?',
+                'question' => 'Comment vous adressez-vous à autrui ?',
             ],
              [
-                'question' => 'Quel taille fais-tu 12 ?',
+                'question' => 'En période de stress, comment intéragissez-vous avec les personnes de votre entourage ?',
+            ],
+            [
+                'question' => 'Comment vous définiriez-vous ? Que dit-on de vous ?',
+            ],
+            [
+                'question' => 'Les vacances idéales, pour moi c\'est:',
             ],
         	];
 

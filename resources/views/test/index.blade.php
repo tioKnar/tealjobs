@@ -17,17 +17,17 @@
 
 						<br><h3>{{ $resultat->question }}</h3>
 								
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="1" @if(empty($resultat->answer1)) 'hidden' @endif>{{ $resultat->answer1 }}</button>
+							@if(! empty($resultat->answer1))<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>@endif
 
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="2" @if(empty($resultat->answer2)) 'hidden' @endif>{{ $resultat->answer2 }}</button>
+							@if(! empty($resultat->answer2))<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>@endif
 							
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="3" @if(empty($resultat->answer3)) 'hidden' @endif>{{ $resultat->answer3 }}</button>
+							@if(! empty($resultat->answer3))<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>@endif
 							
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="4" @if(empty($resultat->answer4)) 'hidden' @endif>{{ $resultat->answer4 }}</button>
+							@if(! empty($resultat->answer4))<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>@endif
 							
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="5" @if(empty($resultat->answer5)) 'hidden' @endif>{{ $resultat->answer5 }}</button>
+							@if(! empty($resultat->answer5))<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>@endif
 							
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="6" @if(empty($resultat->answer6)) 'hidden' @endif>{{ $resultat->answer6 }}</button>
+							@if(! empty($resultat->answer6))<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>@endif
 					
 							@if($resultat->question_id != $first)
 
@@ -41,7 +41,7 @@
 
 			</div>
 
-			<div class="col- col-md-4 offset-col-md-1" id="growing"></div>
+			<div class="col- col-md-4 offset-col-md-1 align-baseline" id="growing"></div>
 
 			<a id="resultat" href="results?profile=" hidden>Résultats</a>
 
@@ -94,22 +94,21 @@ $(function() {
 		if($tab.length == 0){
 			$('#growing').html('<img src="images/grow01.png" alt="grow01">');
 		}
-		else if($tab.length == 1 && )
-		else if($tab.length >= 4 && $tab.length <= 6) {
+		else if($tab.length >= 1 && $tab.length <= 2) {
 			$('#growing').html('<img src="images/grow02.png" alt="grow02">');
 		}
-		else if($tab.length >= 7 && $tab.length <= 9) {
+		else if($tab.length >= 3 && $tab.length <= 6) {
 			$('#growing').html('<img src="images/grow03.png" alt="grow03">');
 		}
-		else if($tab.length >= 10 && $tab.length <= 12) {
+		else if($tab.length >= 7 && $tab.length <= 11) {
 			$('#growing').html('<img src="images/grow04.png" alt="grow04">');
 		}
-		else if($tab.length >= 13 && $tab.length <= 15) {
+		else if($tab.length >= 12 && $tab.length <= 14) {
 			$('#growing').html('<img src="images/grow05.png" alt="grow05">');
-
-			if($tab.length == 15) {
-				$('#resultat').removeAttr('hidden');
-			}
+		}
+		else {
+			$('#growing').html('<img src="images/grow06.png" alt="grow06">');
+			$('#resultat').removeAttr('hidden');
 		}
 
 		console.log($tabOcc);
