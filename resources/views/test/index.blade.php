@@ -91,9 +91,10 @@ $(function() {
 			}
 		}
 
-		if($tab.length >= 0 && $tab.length <= 3){
-			$('#growing').append('<img src="images/grow01.png" alt="grow01">');
+		if($tab.length == 0){
+			$('#growing').html('<img src="images/grow01.png" alt="grow01">');
 		}
+		else if($tab.length == 1 && )
 		else if($tab.length >= 4 && $tab.length <= 6) {
 			$('#growing').html('<img src="images/grow02.png" alt="grow02">');
 		}
@@ -104,7 +105,7 @@ $(function() {
 			$('#growing').html('<img src="images/grow04.png" alt="grow04">');
 		}
 		else if($tab.length >= 13 && $tab.length <= 15) {
-			$('#growing').html('<img src="images/grow03.png" alt="grow03">');
+			$('#growing').html('<img src="images/grow05.png" alt="grow05">');
 
 			if($tab.length == 15) {
 				$('#resultat').removeAttr('hidden');
