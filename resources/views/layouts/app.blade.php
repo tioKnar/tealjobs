@@ -130,9 +130,11 @@
 
                 <p class="footer-links">
 
-                    <a href="contact">Contact</a>
-                    ·
-                    <a href="#">Mentions légales</a>
+                    <a href="contact">Contact </a>
+                    / 
+                    <a href="partners"> Partenaires </a>
+                    / 
+                    <a href="legalnotice"> Mentions légales</a>
                 </p>
 
                 <p>Company TealJobs &copy; 2018</p>
