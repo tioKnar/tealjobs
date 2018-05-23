@@ -31,7 +31,7 @@
                                 <strong class="alert alert-danger" >{{ $errors->first('lastname_contact') }}</strong>
                             </span>
                         @endif
-                    </div>_contact
+                    </div>
 
                     <div class="form-group">
                         <div class="form-group">
