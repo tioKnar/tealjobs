@@ -20538,8 +20538,6 @@ label {
 
 @media (min-width: 735px) {
   #foliage-square {
-    background-color: grey;
-    z-index: -1;
     background-color: transparent;
     position: absolute;
     top: 29%;
