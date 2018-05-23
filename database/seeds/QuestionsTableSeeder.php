@@ -49,6 +49,18 @@ class QuestionsTableSeeder extends Seeder
             [
                 'question' => 'Les vacances idéales, pour moi c\'est:',
             ],
+            [
+                'question' => 'question12',
+            ],
+            [
+                'question' => 'question13',
+            ],
+            [
+                'question' => 'question14',
+            ],
+            [
+                'question' => 'question15',
+            ],
         	];
 
         Question::insert($data);

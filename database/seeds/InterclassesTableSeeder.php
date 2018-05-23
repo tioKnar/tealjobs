@@ -1006,6 +1006,10 @@ class InterclassesTableSeeder extends Seeder
         		'jobs_id' => '39',
         		'classes_id' => '63',
         	    ],
+                [
+                'jobs_id' => '39',
+                'classes_id' => '1',
+                ],
         	    [
         		'jobs_id' => '39',
         		'classes_id' => '64',

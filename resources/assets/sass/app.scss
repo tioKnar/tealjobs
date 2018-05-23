@@ -29,6 +29,8 @@
 .navbar-laravel {
   background-color: white;
   padding: 0px;
+  z-index: 1;
+  position: fixed top;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -302,16 +304,33 @@ bottom: 0;
 
 // Page test
 
+// @media(min-width: 735px){
+
+// 	#growing {
+// 	// border: 2px solid black;
+// 	// margin: 90px;
+// 	// height: 650px;
+
+// 		img {
+// 		display: none;
+// 		}
+// 	}
+// }
+
 #test-bg {
     background: url('../img/tree/test_bg.jpg');
 	background-size: cover;
 	filter: blur(8.5px);
 	position: fixed !important;
 	top: 0;
-	left: -25px;
-	right: 0;
+	left: -40px;
+	right: -40px;
 	bottom: 0;
 	height: 90vh;
+}
+
+.centrage{
+	margin: auto;
 }
 
 .completed {
@@ -321,14 +340,16 @@ bottom: 0;
 
 .previous {
 
-	position: absolute;
-	top: 510px;
+	position: relative;
+	top: 0px;
 	left: calc(50% - 38px);
 }
 
 .test{
 
-	margin-top: 7vh;
+	// position: absolute;
+	// border: 2px solid black;
+	// margin-top: 2vh;
 
 	h3 {
 		font-family: $font-title;
@@ -336,18 +357,38 @@ bottom: 0;
 	}
 }
 
+a.under-line{
+	text-decoration: none;
+}
+
+.wrap-answers{
+	wrap-word: break-word;
+	// border: 1px solid;
+	border-color: rgb(51,181,229);
+	background-color: rgb(51,181,229);
+	padding: 10px;
+	color: white;
+}
+
 #growing {
-	margin-bottom: 90px;
+	// border: 2px solid black;
+	// margin: 90px;
+	height: 650px;
 
 	img {
 		width: 100%;
 		position: absolute;
-		bottom: 0;
-		left: 0;
+		bottom: 150px;
+		left: 25px;
 		opacity: 0.7;
+		// border: 2px solid black;
 	}
 }
 
+#resultat{
+	font-size:50px;
+	z-index: 1;
+}
 
 // Page contact
 
@@ -378,6 +419,7 @@ label {
 	font-family: $font;
 	background-color: white;
 	height: 30px;
+	line-height: 30px;
 }
 
 #adress {

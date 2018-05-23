@@ -7,9 +7,9 @@
 		<div id="test-bg"></div>
 		<div class="fireflies">@include('fireflies.index')</div>
 
-		<div class="row justify-content-center text-center" id="test">
+		<div class="row justify-content-center text-center align-end centrage" id="test">
 
-			<div class="col- col-md-4">
+			<div class="col- col-md-5 centrage">
 			
 				@foreach($resultats as $resultat)
 
@@ -17,17 +17,18 @@
 
 						<br><h3>{{ $resultat->question }}</h3>
 								
-							@if(! empty($resultat->answer1))<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>@endif
+							@if(! empty($resultat->answer1))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="1">{{ $resultat->answer1 }}</p></a>@endif
 
-							@if(! empty($resultat->answer2))<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>@endif
-							
-							@if(! empty($resultat->answer3))<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>@endif
-							
-							@if(! empty($resultat->answer4))<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>@endif
-							
-							@if(! empty($resultat->answer5))<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>@endif
-							
-							@if(! empty($resultat->answer6))<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>@endif
+							@if(! empty($resultat->answer2))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="2">{{ $resultat->answer2 }}</p></a>@endif
+
+							@if(! empty($resultat->answer3))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="3">{{ $resultat->answer3 }}</p></a>@endif
+
+							@if(! empty($resultat->answer4))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="4">{{ $resultat->answer4 }}</p></a>@endif
+
+							@if(! empty($resultat->answer5))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="5">{{ $resultat->answer5 }}</p></a>@endif
+
+							@if(! empty($resultat->answer6))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="6">{{ $resultat->answer6 }}</p></a>@endif
+
 					
 							@if($resultat->question_id != $first)
 
@@ -35,15 +36,16 @@
 
 							@endif
 
+
 					</div>
 
 				@endforeach
-
+				<a id="resultat" href="results?profile=" class="completed" >Résultats</a>
 			</div>
 
-			<div class="col- col-md-4 offset-col-md-1 align-baseline" id="growing"></div>
+			<div class="col- col-md-3 offset-col-md-1" id="growing"></div>
 
-			<a id="resultat" href="results?profile=" hidden>Résultats</a>
+			
 
 		</div>
 	
@@ -70,11 +72,13 @@ $(function() {
 
 	$tab = [];
 
-	$('.bouton').on('click', function() {
+	$('.bouton').on('click', function(e) {
 
-		$(this).parent().fadeOut({queue:false, duration:450}).animate({left: "-=100"}, 450);
+		e.preventDefault();
+
+		$(this).parent().parent().fadeOut(450);
 			
-		$(this).parent().next().delay(440).animate({opacity:"toggle", left: "-=100"}, 450);
+		$(this).parent().parent().next().delay(430).fadeIn(450);
 
 		$tab.push($(this).attr('data-id'));
 
@@ -108,7 +112,7 @@ $(function() {
 		}
 		else {
 			$('#growing').html('<img src="images/grow06.png" alt="grow06">');
-			$('#resultat').removeAttr('hidden');
+			$('#resultat').removeClass('completed');
 		}
 
 		console.log($tabOcc);
@@ -128,11 +132,13 @@ $(function() {
 
 	});
 
-	$('.previous').on('click', function() {
+	$('.previous').on('click', function(e) {
 
-		$(this).parent().fadeOut({queue:false, duration:450}).animate({left: "+=100"}, 450);
+		e.preventDefault();
+
+		$(this).parent().fadeOut(450);
 			
-		$(this).parent().prev().delay(440).animate({opacity:"toggle", left: "+=100"}, 450);
+		$(this).parent().prev().delay(440).fadeIn(450);
 
 		$tab.pop();
 

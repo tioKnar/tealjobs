@@ -545,7 +545,7 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 ],
                 [
-                'classes_name' => 'ASSOCIATION DE GESTION DU CONSERVATOIRE NATIONAL DES ARTS ET MÃ‰TIERS DE LA REUNION',
+                'classes_name' => 'ASSOCIATION DE GESTION DU CONSERVATOIRE NATIONAL DES ARTS ET METIERS DE LA REUNION',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
                 'tel' => '0512345678',
@@ -855,7 +855,7 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 ],
                 [
-                'classes_name' => 'MME LAVANDIER MARJOLAINE - EIRL LES CLÃ‰S DE LA GESTION',
+                'classes_name' => 'MME LAVANDIER MARJOLAINE - EIRL LES CLES DE LA GESTION',
                 'contact' => 'mr truc',
                 'mail' => 'mail@mail.com',
                 'tel' => '0512345678',

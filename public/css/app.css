@@ -20167,6 +20167,8 @@ a.text-dark:focus {
 .navbar-laravel {
   background-color: white;
   padding: 0px;
+  z-index: 1;
+  position: fixed top;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -20439,10 +20441,14 @@ body {
           filter: blur(8.5px);
   position: fixed !important;
   top: 0;
-  left: -25px;
-  right: 0;
+  left: -40px;
+  right: -40px;
   bottom: 0;
   height: 90vh;
+}
+
+.centrage {
+  margin: auto;
 }
 
 .completed {
@@ -20450,13 +20456,9 @@ body {
 }
 
 .previous {
-  position: absolute;
-  top: 510px;
+  position: relative;
+  top: 0px;
   left: calc(50% - 38px);
-}
-
-.test {
-  margin-top: 7vh;
 }
 
 .test h3 {
@@ -20464,16 +20466,33 @@ body {
   color: white;
 }
 
+a.under-line {
+  text-decoration: none;
+}
+
+.wrap-answers {
+  wrap-word: break-word;
+  border-color: #33b5e5;
+  background-color: #33b5e5;
+  padding: 10px;
+  color: white;
+}
+
 #growing {
-  margin-bottom: 90px;
+  height: 650px;
 }
 
 #growing img {
   width: 100%;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 150px;
+  left: 25px;
   opacity: 0.7;
+}
+
+#resultat {
+  font-size: 50px;
+  z-index: 1;
 }
 
 #map {
@@ -20503,6 +20522,7 @@ label {
   font-family: "Lato", sans-serif;
   background-color: white;
   height: 30px;
+  line-height: 30px;
 }
 
 #adress {

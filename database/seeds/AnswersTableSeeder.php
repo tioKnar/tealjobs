@@ -113,6 +113,38 @@ class AnswersTableSeeder extends Seeder
 ',
                 'answer6' => 'un séjour sportif',
             ],
+            [
+                'answer1' => 'reponse1',
+                'answer2' => 'reponse2',
+                'answer3' => 'reponse3',
+                'answer4' => 'reponse4',
+                'answer5' => 'reponse5',
+                'answer6' => 'reponse6',
+            ],
+            [
+                'answer1' => 'reponse1',
+                'answer2' => 'reponse2',
+                'answer3' => 'reponse3',
+                'answer4' => 'reponse4',
+                'answer5' => 'reponse5',
+                'answer6' => 'reponse6',
+            ],
+            [
+                'answer1' => 'reponse1',
+                'answer2' => 'reponse2',
+                'answer3' => 'reponse3',
+                'answer4' => 'reponse4',
+                'answer5' => 'reponse5',
+                'answer6' => 'reponse6',
+            ],
+            [
+                'answer1' => 'reponse1',
+                'answer2' => 'reponse2',
+                'answer3' => 'reponse3',
+                'answer4' => 'reponse4',
+                'answer5' => 'reponse5',
+                'answer6' => 'reponse6',
+            ],
         	];
 
         Answer::insert($data);
