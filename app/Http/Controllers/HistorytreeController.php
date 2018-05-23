@@ -14,17 +14,21 @@ class HistorytreeController extends Controller
 {	
     public function index() {
 
-         $jobs = DB::table('jobs')
-                         ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
-                         ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
-                         ->where('analyses.resultprofile' , '=',  '43')
-                         ->get();
-        
+        $jobs = DB::table('jobs')
+                        ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
+                        ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
+                        ->where('analyses.resultprofile' , '=',  '26')
+                        ->groupBy('name')
+                        ->take(15)
+                        ->get();
 
-         $classes = Classe::get();
+        $classes = DB::table('classes')
+                        ->join('interclasses', 'classes.id', '=', 'interclasses.classes_id')
+                        ->join('jobs', 'jobs.id', '=', 'interclasses.jobs_id')
+                        ->get();
                         
         return view('historytree.index')
               ->with('classes', $classes)
-              ->with('results', $jobs);
+              ->with('jobs', $jobs);
     }
 }

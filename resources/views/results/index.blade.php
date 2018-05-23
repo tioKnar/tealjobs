@@ -11,11 +11,11 @@
 				<div class="fireflies">@include('fireflies.index')</div>
 					<div class="row " id="foliage-square">
 						<?php $e=1 ?>
-						@foreach($results as $result)
+						@foreach($jobs as $job)
 								<a class="nav-link nav-lien fruit{{$e}}" href="#" id="modal-job" data-toggle="modal" data-target="#modaljob{{$e}}">
 
 									<div id="job{{$e}}">
-										<p class="font-weight-light text-center align-middle">{{$result->name}}</p>
+										<p class="font-weight-light text-center align-middle">{{$job->name}}</p>
 									</div>
 								</a>
 
