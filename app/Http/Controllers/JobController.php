@@ -45,9 +45,9 @@ class JobController extends Controller
 
 		$job = Job::where('id', $_GET['id'])->first();
 
-		$job->name = $_POST['name'];
-		$job->description = $_POST['description'];
-		$job->note = $_POST['note'];
+		$job->name = $values['name'];
+		$job->description = $values['description'];
+		$job->note = $values['note'];
 
 		$job->save();
 

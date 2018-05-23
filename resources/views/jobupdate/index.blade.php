@@ -22,7 +22,7 @@
 				
 				<input type="text" name="name" class="form form-group form-control" value="{{ $job->name }}">
 
-				<textarea name="description" class="form form-group form-control">{{ $job->description }}</textarea>
+				<textarea name="description" class="form form-group form-control" rows="5">{{ $job->description }}</textarea>
 
 				<select name="note" class="form form-group form-control">
 					
