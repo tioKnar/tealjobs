@@ -105,7 +105,7 @@ class JobsTableSeeder extends Seeder
                     'note' => '0',
                     ],
                     [
-                    'name' => 'maind\'oeuvre dans le BTP',
+                    'name' => 'Main d\'oeuvre dans le BTP',
                     'description' => 'Prépare le terrain, les outils, les matériaux nécessaires à l\'exécution des travaux de construction, de réparation et d\'entretien et de démolition de bâtiments.',
                     'note' => '0',
                     ],
@@ -351,7 +351,7 @@ class JobsTableSeeder extends Seeder
                     'note' => '0',
                     ],
                     [
-                    'name' => 'professeur de collège et lycée',
+                    'name' => 'Professeur de collège et lycée',
                     'description' => 'Le professeur de collège et de lycée est spécialiste d\'une discipline (français, maths, histoire...) qu\'il enseigne à des classes de 20 à 30 élèves. Pédagogue, il transmet ses connaissances dans le respect des programmes de l\'Éducation nationale.
 
 ',
