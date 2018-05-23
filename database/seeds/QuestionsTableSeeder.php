@@ -14,16 +14,16 @@ class QuestionsTableSeeder extends Seeder
     {
          $data = [
             [
-        		'question' => 'Quelle couleur es-tu ?',
+        		'question' => 'De quoi pensez-vous avoir besoin au quotidien ?',
             ],
              [
-                'question' => 'Que manges-tu ?',
+                'question' => 'Par quel biais vous exprimez-vous au quotidien ?',
             ],
              [
-                'question' => 'Que bois-tu ?',
+                'question' => 'Quelle question met en lumière le plus évidemment vos doutes et vos incertitudes ?',
             ],
              [
-                'question' => 'Quel animal es-tu ?',
+                'question' => 'Comment vous positionnez-vous face au travail de groupe ?',
             ],
              [
                 'question' => 'Quel taille fais-tu ?',

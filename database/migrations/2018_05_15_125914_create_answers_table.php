@@ -15,12 +15,12 @@ class CreateAnswersTable extends Migration
     {
         Schema::create('answers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('answer1');
-            $table->string('answer2');
-            $table->string('answer3');
-            $table->string('answer4');
-            $table->string('answer5');
-            $table->string('answer6');
+            $table->string('answer1')->nullable();
+            $table->string('answer2')->nullable();
+            $table->string('answer3')->nullable();
+            $table->string('answer4')->nullable();
+            $table->string('answer5')->nullable();
+            $table->string('answer6')->nullable();
             $table->timestamps();
         });
     }
