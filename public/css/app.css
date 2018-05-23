@@ -20264,7 +20264,10 @@ footer {
 
 .administration:hover {
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: #17A2B8;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -20359,18 +20362,18 @@ body {
   mix-blend-mode: color-dodge;
 }
 
-.grey {
+.explication {
   padding: 5em 1em;
   background-color: #F5F5F5;
   text-align: center;
   line-heigt: 2em;
 }
 
-.grey h2 {
+.explication h2 {
   font-family: "Kaushan Script", cursive;
 }
 
-.grey p {
+.explication p {
   padding: 2px 8px;
   font-size: 1.15em;
   text-align: justify;
@@ -21397,10 +21400,6 @@ label {
   font-family: "Kaushan Script", cursive;
   font-size: 1.5em;
   color: teal;
-}
-
-.modaljob-content a {
-  color: #f1f1f1 !important;
 }
 
 .modaljob-content .job-description {

@@ -129,7 +129,9 @@ footer {
 
 .administration:hover {
 	text-decoration: none; 
-	color: black;
+	color: white;
+	background-color: #17A2B8;
+	box-shadow: none;
 	transform: scale(1.1);
 }
 
@@ -223,7 +225,7 @@ bottom: 0;
 
 //Landing page - Explications
 
-.grey {
+.explication {
 	
 	padding: 5em 1em;
 	background-color: #F5F5F5;
@@ -557,10 +559,6 @@ label {
 		color: teal;
 	}
 
-	a {
-		color: #f1f1f1 !important;
-	}
-
 	.job-description {
 		font-size: 0.9em;
 	}
@@ -582,7 +580,6 @@ body.modal-open #result-bg {
 }
 
 // Page historylist
-
 
 .joblist {
 	margin-bottom: 50px;
