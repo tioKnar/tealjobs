@@ -129,7 +129,9 @@ footer {
 
 .administration:hover {
 	text-decoration: none; 
-	color: black;
+	color: white;
+	background-color: #17A2B8;
+	box-shadow: none;
 	transform: scale(1.1);
 }
 
@@ -555,10 +557,6 @@ label {
 		font-family: $font-title;
 		font-size: 1.5em;
 		color: teal;
-	}
-
-	a {
-		color: #f1f1f1 !important;
 	}
 
 	.job-description {

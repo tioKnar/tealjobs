@@ -8,6 +8,7 @@ use App\Model\Job;
 use Redirect;
 use Request;
 use Validator;
+use DB;
 
 class ClassesController extends Controller
 {
@@ -20,7 +21,9 @@ class ClassesController extends Controller
 
     	 $classes = Classe::paginate(4);
 
-    	 $jobs = Job::get();
+    	 $jobs = DB::table('jobs')
+    	 				->orderBy('name')
+    	 				->get();
 
     	return view('classes.index')->with('classes', $classes)->with('jobs', $jobs);
     }
@@ -38,7 +41,7 @@ class ClassesController extends Controller
 			'cp' => 'required|integer',
 			'mail' => 'email|required',
 			'tel' => 'required|regex:#^0[1-9][0-9]{8}#',
-			'job_id' => 'required|array',
+			'job_id' => 'array',
 		];
 
 		if(!empty($values['duration'])) {
@@ -99,15 +102,17 @@ class ClassesController extends Controller
 
 		$lastclasse = Classe::get()->last();
 
-		foreach($values['job_id'] as $value) {
+		if(!empty($value['job_id'])) {
 
-			$interclasse = new Interclasse;
-			$interclasse->jobs_id = $value;
-			$interclasse->classes_id = $lastclasse->id;
-			$interclasse->save();
-		};
+			foreach($values['job_id'] as $value) {
 
+				$interclasse = new Interclasse;
+				$interclasse->jobs_id = $value;
+				$interclasse->classes_id = $lastclasse->id;
+				$interclasse->save();
+			};
 
+		}
 
 		flash('Formation ajoutée')->success();
 

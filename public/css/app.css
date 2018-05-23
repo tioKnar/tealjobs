@@ -20264,7 +20264,10 @@ footer {
 
 .administration:hover {
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: #17A2B8;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -21397,10 +21400,6 @@ label {
   font-family: "Kaushan Script", cursive;
   font-size: 1.5em;
   color: teal;
-}
-
-.modaljob-content a {
-  color: #f1f1f1 !important;
 }
 
 .modaljob-content .job-description {

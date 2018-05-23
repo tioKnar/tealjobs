@@ -21,10 +21,10 @@
 					@if($classe->jobs_id == $job->job_id)
 
 						<h5>{{ $classe->classes_name }}</h5>
-						<strong>Durée : </strong>{{ $classe->duration }}<br>
+						<strong>Durée : </strong>{{ $classe->duration }} mois<br>
 						<strong>Ville : </strong>{{ $classe->city }}<br>
 						<strong>Email : </strong>{{ $classe->mail }}<br>
-						<strong>Site web : </strong>{{ $classe->link }}
+						<strong>Site web : </strong><a href="{{ $classe->link }}">{{ $classe->link }}</a>
 						<hr>
 					
 					@endif

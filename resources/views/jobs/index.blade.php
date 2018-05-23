@@ -52,6 +52,30 @@
 
 				</select>
 
+				<select multiple name="sector_id[]" class="form form-group form-control {{ $errors->has('sector_id') ? 'border border-danger' : '' }}">
+					
+					<option>-- Séléctionner un secteur --</option>
+
+				@foreach($sectors as $sector)
+
+					<option value="{{ $sector->id }}">{{ $sector->name }}</option>
+
+				@endforeach
+
+				</select>
+
+				<select multiple name="classes_id[]" class="form form-group form-control {{ $errors->has('classes_id') ? 'border border-danger' : '' }}">
+					
+					<option>-- Séléctionner un secteur --</option>
+
+				@foreach($classes as $classe)
+
+					<option value="{{ $classe->id }}">{{ $classe->classes_name }}</option>
+
+				@endforeach
+
+				</select>
+
 				<button class="btn btn-info form-control">Ajouter</button>
 
 			</form>
