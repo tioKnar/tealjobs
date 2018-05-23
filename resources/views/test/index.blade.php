@@ -32,7 +32,7 @@
 					
 							@if($resultat->question_id != $first)
 
-								<button class="previous">previous</button>
+								<button class="previous">Retour</button>
 
 							@endif
 
@@ -43,7 +43,12 @@
 				<a id="resultat" href="results?profile=" class="completed" >Résultats</a>
 			</div>
 
-			<div class="col- col-md-3 offset-col-md-1" id="growing"></div>
+			<div class="col-md-3" id="land">
+				<img src="images/land.png" alt="land">
+				<div id="grow">
+					<img src="images/grow01.png" alt="grow01">
+				</div>
+			</div>
 
 			
 
@@ -95,23 +100,20 @@ $(function() {
 			}
 		}
 
-		if($tab.length == 0){
-			$('#growing').html('<img src="images/grow01.png" alt="grow01">');
-		}
-		else if($tab.length >= 1 && $tab.length <= 2) {
-			$('#growing').html('<img src="images/grow02.png" alt="grow02">');
+		if($tab.length >= 1 && $tab.length <= 2) {
+			$('#grow').html('<img src="images/grow02.png" alt="grow02">');
 		}
 		else if($tab.length >= 3 && $tab.length <= 6) {
-			$('#growing').html('<img src="images/grow03.png" alt="grow03">');
+			$('#grow').html('<img src="images/grow03.png" alt="grow03">');
 		}
 		else if($tab.length >= 7 && $tab.length <= 11) {
-			$('#growing').html('<img src="images/grow04.png" alt="grow04">');
+			$('#grow').html('<img src="images/grow04.png" alt="grow04">');
 		}
 		else if($tab.length >= 12 && $tab.length <= 14) {
-			$('#growing').html('<img src="images/grow05.png" alt="grow05">');
+			$('#grow').html('<img src="images/grow05.png" alt="grow05">');
 		}
 		else {
-			$('#growing').html('<img src="images/grow06.png" alt="grow06">');
+			$('#grow').html('<img src="images/grow06.png" alt="grow06">');
 			$('#resultat').removeClass('completed');
 		}
 

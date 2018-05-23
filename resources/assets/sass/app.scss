@@ -306,18 +306,19 @@ bottom: 0;
 
 // Page test
 
-// @media(min-width: 735px){
+// @media(max-width: 469.98px){
 
-// 	#growing {
-// 	// border: 2px solid black;
-// 	// margin: 90px;
-// 	// height: 650px;
-
-// 		img {
+// 	#land {
 // 		display: none;
 // 		}
-// 	}
 // }
+
+#grow {
+	position: absolute;
+	top:0;
+	left:5%;
+}
+
 
 #test-bg {
     background: url('../img/tree/test_bg.jpg');
@@ -332,7 +333,7 @@ bottom: 0;
 }
 
 .centrage{
-	margin: auto;
+	// margin: auto;
 }
 
 .completed {
@@ -370,21 +371,6 @@ a.under-line{
 	background-color: rgb(51,181,229);
 	padding: 10px;
 	color: white;
-}
-
-#growing {
-	// border: 2px solid black;
-	// margin: 90px;
-	height: 650px;
-
-	img {
-		width: 100%;
-		position: absolute;
-		bottom: 150px;
-		left: 25px;
-		opacity: 0.7;
-		// border: 2px solid black;
-	}
 }
 
 #resultat{
