@@ -28,7 +28,7 @@
 
 	{{-- EXPLICATIONS --}}
 
-	<section class="grey container-fluid">
+	<section class="explication container-fluid">
 
       <div class="row justify-content-center">
 	        <div class="col-lg-4 context">
