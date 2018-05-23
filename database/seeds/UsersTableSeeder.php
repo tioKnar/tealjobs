@@ -22,8 +22,8 @@ class UsersTableSeeder extends Seeder
                 'travaillomane' => 6,
                 'empathique' => 6,
                 'rebelle' => 6,
-                'rêveur' => 6,
-                'persévérant' => 6, 
+                'reveur' => 6,
+                'perseverant' => 6, 
                 'promoteur' => 6,
             ],
             [
@@ -35,8 +35,8 @@ class UsersTableSeeder extends Seeder
                 'travaillomane' => 1,
                 'empathique' => 2,
                 'rebelle' => 3,
-                'rêveur' => 4,
-                'persévérant' => 5, 
+                'reveur' => 4,
+                'perseverant' => 5, 
                 'promoteur' => 6,
 
             ]

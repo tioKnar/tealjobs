@@ -10,9 +10,9 @@ class HistorychartController extends Controller
     public function index() {
 
     	$user = Auth::user();
+  
 
-
-	return view('historychart.index');
+	return view('historychart.index')->with('user', $user);
 
 
     }

@@ -20437,12 +20437,12 @@ body {
   background-size: cover;
   -webkit-filter: blur(8.5px);
           filter: blur(8.5px);
-  position: absolute;
+  position: fixed !important;
   top: 0;
-  left: 0;
+  left: -25px;
   right: 0;
   bottom: 0;
-  height: 150vh;
+  height: 90vh;
 }
 
 .completed {
