@@ -67,7 +67,7 @@
 
 				</select>
 
-				<input type="url" name="link" class="form form-group form-control {{ $errors->has('link') ? 'border border-danger' : '' }}" value="{{ old('link') }}" placeholder="Site de la formation">
+				<input type="url" name="link" class="form form-group form-control {{ $errors->has('link') ? 'border border-danger' : '' }}" value="{{ old('link') }}" placeholder="Site web">
 
 				<button class="btn btn-info form-control">Ajouter</button>
 
