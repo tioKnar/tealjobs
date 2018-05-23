@@ -15,7 +15,6 @@
 	</div>
 
 	<div id="chart-div"></div>
-	<?= Lava::render('DonutChart', 'IMBD', 'chart-div') ?>
 
 </div>
 
