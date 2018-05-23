@@ -27,6 +27,7 @@ class ResultsController extends Controller
          $classes = DB::table('classes')
                         ->join('interclasses', 'classes.id', '=', 'interclasses.classes_id')
                         ->join('jobs', 'jobs.id', '=', 'interclasses.jobs_id')
+                        ->orderBy('city')
                         ->get();
                         
         return view('results.index')

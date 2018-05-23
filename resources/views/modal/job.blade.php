@@ -15,72 +15,26 @@
       		</div>
 
       		<div class="modal-body">
-				<table class="table table-striped">
-			  		
-			  		<thead>
+				
+				@foreach($classes as $classe)
 
-			    		<tr>
-			    			<th scope="col">Centres de formation</th>	
-				  			<th scope="col">Durée</th>
-				  			<th scope="col">Ville</th>
-				  			<th scope="col">Email</th>
-				  			<th scope="col">Site web</th>
-			    		</tr>
+					@if($classe->jobs_id == $job->job_id)
 
-			  		</thead>
-			  		
-			  		<tbody>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $classe->classes_name }}</h5>
+                    <p class="card-text">
+                        <strong>Ville : </strong>{{ $classe->city }}<br>
+                        <strong>Durée : </strong>{{ $classe->duration }} mois<br>
+                        <strong>Email : </strong>{{ $classe->mail }}<br></p>
+                    <p class="card-text"><small class="text-muted">Site web : <a href="{{ $classe->link }}">{{ $classe->link }}</a></small></p>
+                </div>
+            </div>
+            <hr>
+					
+					@endif
 
-			  			
-
-			    		<tr>
-			      			<th scope="row">Durée</th>
-					      	@foreach($classes as $class)
-					      		@if($class->jobs_id == $job->job_id)
-					      			<td scope="col">{{ $class->duration }} mois</td>
-					      		@endif
-					      	@endforeach
-					    </tr>		   			 
-			    
-			    		<tr>
-			      			<th scope="row">Ville</th>
-			      			@foreach($classes as $class)
-			      				@if($class->jobs_id == $job->job_id)
-			      					<td scope="col">{{ $class->city }}</td>
-			      				@endif
-			      			@endforeach
-			   			 </tr>
-
-			   			 <tr>
-			      			<th scope="row">Email</th>
-						     @foreach($classes as $class)
-						      	@if($class->jobs_id == $job->job_id)
-						      		<td scope="col">{{ $class->mail }}</td>
-						      	@endif
-						     @endforeach
-			    		</tr>
-
-			   			 <tr>
-			      			<th scope="row">Téléphone</th>
-						     @foreach($classes as $class)
-						      	@if($class->jobs_id == $job->job_id)
-						      		<td scope="col">{{ $class->tel }}</td>
-						      	@endif
-						     @endforeach
-			    		</tr>
-
-			   			 <tr>
-			      			<th scope="row">Site web</th>
-						     @foreach($classes as $class)
-						      	@if($class->jobs_id == $job->job_id)
-						      		<td scope="col">{{ $class->link }}</td>
-						      	@endif
-						     @endforeach
-			    		</tr>	
-
-			  		</tbody>
-
-				</table>
+				@endforeach
       		
       		</div>
 

@@ -2,10 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Classe;
 use App\Model\Job;
+use App\Model\Sector;
+use App\Model\Intersector;
+use App\Model\Interclasse;
 use Redirect;
 use Request;
 use Validator;
+use DB;
 
 class JobsController extends Controller
 {
@@ -19,7 +24,15 @@ class JobsController extends Controller
 
     	$jobs = Job::paginate(4);
 
-    	return view('jobs.index')->with('jobs', $jobs);
+    	$sectors = DB::table('sectors')
+    					->orderBy('name')
+    					->get();
+
+    	$classes = DB::table('classes')
+    					->orderBy('classes_name')
+    					->get();
+
+    	return view('jobs.index')->with('jobs', $jobs)->with('sectors', $sectors)->with('classes', $classes);
     }
 
     public function store() {
@@ -30,6 +43,8 @@ class JobsController extends Controller
 			'name' => 'required|string|max:255',
 			'description' => 'required|string|max:255',
 			'note' => 'integer|required',
+			'sector_id' => 'array',
+			'classes_id' => 'array'
 		];
 
 		$validator = Validator::make($values, $rules, [
@@ -39,6 +54,8 @@ class JobsController extends Controller
 			'description.required' =>'Veuillez entrer une description',
 			'note.integer' =>'Note invalide',
 			'note.required' =>'Veuillez entrer une note',
+			'sector_id.array' =>'Secteur invalide',
+			'classes_id.array' =>'Formation invalide',
 		]);
 
 		if($validator->fails()) {
@@ -56,6 +73,28 @@ class JobsController extends Controller
 		$job->note = $values['note'];
 
 		$job->save();
+
+		$lastjob = Job::get()->last();
+
+		foreach($values['sector_id'] as $value) {
+
+				$interintersector = new Intersector;
+				$interintersector->sector_id = $value;
+				$interintersector->job_id = $lastjob->id;
+				$interintersector->save();
+		};
+
+
+		if(!empty($values['classes_id'])) {
+
+			foreach($values['classes_id'] as $value) {
+
+				$interclasses = new Interclasse;
+				$interclasses->classes_id = $value;
+				$interclasses->jobs_id = $lastjob->id;
+				$interclasses->save();
+			};
+		}
 
 		flash('Métier ajouté')->success();
 
