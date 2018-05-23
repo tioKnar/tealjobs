@@ -20518,7 +20518,7 @@ label {
      object-fit: cover;
 }
 
-@media (min-width: 735px) {
+@media (min-width: 850px) {
   #result-bg {
     background: url(/images/result_page_pano.jpg?5407ab7a7a8daa24269c5d3e86e755a3);
     height: 90vh;
@@ -20527,7 +20527,7 @@ label {
   }
 }
 
-@media (max-width: 734px) {
+@media (min-width: 470px) and (max-width: 849.98px) {
   #result-bg {
     background: url(/images/tree.jpg?8abd97a0aac8fe1f16a36041ef987dad);
     height: 400px;
@@ -20536,34 +20536,53 @@ label {
   }
 }
 
-@media (min-width: 735px) {
+@media (max-width: 469.98px) {
+  #result-bg {
+    background: url(/images/tree_min.jpg?e2bfce1434e9870266aec289f0fb3e18);
+    height: 300px;
+    background-position: top;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 850px) {
   #foliage-square {
-    background-color: transparent;
+    background-size: cover;
     position: absolute;
-    top: 29%;
-    left: calc(48% - 250px);
-    width: 500px;
+    top: calc(48% - 17vh);
+    left: calc(46% - 250px);
+    width: 590px;
     height: 30vh;
   }
 }
 
-@media (min-width: 310px) and (max-width: 734.98px) {
+@media (min-width: 470px) and (max-width: 849.98px) {
   #foliage-square {
-    background-color: black;
-    z-index: -1;
+    background-size: cover;
     position: absolute;
-    top: 10%;
-    left: calc(48% - 190px);
-    width: 380px;
-    height: 203px;
+    top: calc(31% - 17vh);
+    left: calc(46% - 250px);
+    width: 490px;
+    height: 23vh;
+  }
+}
+
+@media (max-width: 469.98px) {
+  #foliage-square {
+    background-size: cover;
+    position: absolute;
+    top: calc(31% - 17vh);
+    left: calc(46% - 250px);
+    width: 490px;
+    height: 23vh;
   }
 }
 
 .fruit1 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20603,7 +20622,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20621,8 +20640,8 @@ label {
 .fruit2 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20652,7 +20671,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20670,8 +20689,8 @@ label {
 .fruit3 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20701,7 +20720,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20719,8 +20738,8 @@ label {
 .fruit4 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20750,7 +20769,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20768,8 +20787,8 @@ label {
 .fruit5 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20799,7 +20818,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20817,8 +20836,8 @@ label {
 .fruit6 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20848,7 +20867,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20866,8 +20885,8 @@ label {
 .fruit7 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20897,7 +20916,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20915,8 +20934,8 @@ label {
 .fruit8 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20946,7 +20965,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -20964,8 +20983,8 @@ label {
 .fruit9 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -20995,7 +21014,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21013,8 +21032,8 @@ label {
 .fruit10 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -21044,7 +21063,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21062,8 +21081,8 @@ label {
 .fruit11 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -21093,7 +21112,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21111,8 +21130,8 @@ label {
 .fruit12 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -21142,7 +21161,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21160,8 +21179,8 @@ label {
 .fruit13 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -21191,7 +21210,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21209,8 +21228,8 @@ label {
 .fruit14 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -21240,7 +21259,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21258,8 +21277,8 @@ label {
 .fruit15 {
   background-image: url(/images/fruit.png?0afa94baf674df90febff3a690a4201c);
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-size: cover;
   position: absolute;
   -webkit-transition: 0.5s;
@@ -21289,7 +21308,7 @@ label {
   z-index: 1;
   line-height: 30px;
   font-family: "Kaushan Script", cursive;
-  font-size: 1.9em;
+  font-size: 1.7em;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 5px;
@@ -21305,78 +21324,78 @@ label {
 }
 
 .fruit1 {
-  top: 200px;
-  left: 85px;
+  top: 108%;
+  left: 21%;
 }
 
 .fruit2 {
-  top: 75px;
-  left: 350px;
+  top: 45%;
+  left: 69%;
 }
 
 .fruit3 {
-  top: 65px;
-  left: 150px;
+  top: 40%;
+  left: 31%;
 }
 
 .fruit4 {
-  top: 160px;
-  left: 175px;
+  top: 80%;
+  left: 30%;
 }
 
 .fruit5 {
-  top: 80px;
-  left: 235px;
+  top: 30%;
+  left: 48%;
 }
 
 .fruit6 {
-  top: -15px;
-  left: 310px;
+  top: -10%;
+  left: 57%;
 }
 
 .fruit7 {
-  top: 130px;
-  left: 270px;
+  top: 73%;
+  left: 56%;
 }
 
 .fruit8 {
-  top: 100px;
-  left: 80px;
+  top: 55%;
+  left: 15%;
 }
 
 .fruit9 {
-  top: 10px;
-  left: 110px;
+  top: 0%;
+  left: 22%;
 }
 
 .fruit10 {
-  top: 165px;
-  left: 340px;
+  top: 110%;
+  left: 73%;
 }
 
 .fruit11 {
-  top: 0px;
-  left: 225px;
+  top: 0;
+  left: 42%;
 }
 
 .fruit12 {
-  top: 130px;
-  left: 400px;
+  top: 75%;
+  left: 82%;
 }
 
 .fruit13 {
-  top: 150px;
-  left: 50px;
+  top: 81%;
+  left: 9%;
 }
 
 .fruit14 {
-  top: 10px;
-  left: 395px;
+  top: 13%;
+  left: 77%;
 }
 
 .fruit15 {
-  top: 150px;
-  left: 470px;
+  top: 97%;
+  left: 92%;
 }
 
 .modaljob-content {
