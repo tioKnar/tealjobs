@@ -54,7 +54,7 @@
 
 				<select multiple name="sector_id[]" class="form form-group form-control {{ $errors->has('sector_id') ? 'border border-danger' : '' }}">
 					
-					<option>-- Séléctionner un secteur --</option>
+					<option>-- Séléction de secteurs --</option>
 
 				@foreach($sectors as $sector)
 
@@ -66,7 +66,7 @@
 
 				<select multiple name="classes_id[]" class="form form-group form-control {{ $errors->has('classes_id') ? 'border border-danger' : '' }}">
 					
-					<option>-- Séléctionner un secteur --</option>
+					<option>-- Séléction de formations --</option>
 
 				@foreach($classes as $classe)
 
