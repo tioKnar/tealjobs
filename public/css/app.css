@@ -20359,18 +20359,18 @@ body {
   mix-blend-mode: color-dodge;
 }
 
-.explication {
+.grey {
   padding: 5em 1em;
   background-color: #F5F5F5;
   text-align: center;
   line-heigt: 2em;
 }
 
-.explication h2 {
+.grey h2 {
   font-family: "Kaushan Script", cursive;
 }
 
-.explication p {
+.grey p {
   padding: 2px 8px;
   font-size: 1.15em;
   text-align: justify;
@@ -21424,8 +21424,18 @@ body.modal-open #result-bg {
   margin-bottom: 50px;
 }
 
-#joblistbtn {
-  padding-left: 15px;
+.joblist .card {
+  margin-bottom: 0.8em;
+}
+
+.joblist .card-header {
+  font-family: "Kaushan Script", cursive;
+  color: teal;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0, 0, 0, 900px black;
+          box-shadow: 0, 0, 0, 900px black;
 }
 
 #myChart {
