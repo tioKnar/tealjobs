@@ -23,7 +23,7 @@ class ClassesTableSeeder extends Seeder
         		'cp' => '33000',
         		'address' => '13 rue abbé de l\'épée',
         		'cost' => '3200',
-                'duration' => '12',
+                'duration' => '3',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -59,7 +59,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '13090',
                 'address' => '7 RUE DU CHATEAU DE L HORLOGE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -71,7 +71,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '54520',
                 'address' => '4 RUE DE LA VOLOGNE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '9',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -107,7 +107,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '87500',
                 'address' => '22 AVENUE MICHEL GONDINET',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '18',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -143,7 +143,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '93500',
                 'address' => '10 RUE GAMBETTA',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -179,7 +179,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '35510',
                 'address' => '40 RUE DU BIGNON ',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -203,7 +203,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '31120',
                 'address' => '4 CHEMIN DES ROSSIGNOLS',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '18',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -215,7 +215,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '32000',
                 'address' => '31 Avenue de l\'Yser',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -263,7 +263,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '64140',
                 'address' => '85 AVENUE JEAN MERMOZ',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -277,8 +277,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'SARL AFLOKKAT',
@@ -289,9 +287,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '20000',
                 'address' => '7 COURS NAPOLEON',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '4',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -303,9 +299,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '43100',
                 'address' => '53, RUE DE LA PARDIGE',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -317,9 +311,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '31080',
                 'address' => '2 ESPL.COMPANS CAFFARELLI',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -331,8 +323,6 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '59118',
                 'address' => '36 allée Boucher',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
@@ -357,7 +347,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '1 allée des lilas',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -393,7 +383,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '14500',
                 'address' => 'ROUTE DE CAEN',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -417,7 +407,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '17306',
                 'address' => 'CORDERIE ROYALE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '18',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -453,7 +443,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '34000 ',
                 'address' => '1025 RUE HENRI BECQUEREL',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -477,7 +467,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '46220',
                 'address' => '29 QUATER AVENUE DU COLONEL PARDES',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '15',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -490,7 +480,6 @@ class ClassesTableSeeder extends Seeder
                 'address' => '17 BOULEVARD DE LA PAIX - CS 50033',
                 'cost' => '3000',
                 'duration' => '12',
-                'link' => 'http://www.wf3.fr/','duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -501,7 +490,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'POITIERS CEDEX',
                 'cp' => '86001',
                 'address' => '62 RUE DU PORTEAU',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -512,7 +502,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'CABESTANY',
                 'cp' => '66330',
                 'address' => '11 AVENUE AMPERE',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -523,7 +514,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'CHAVIGNY',
                 'cp' => '54230',
                 'address' => '1 RUE DES ECOLES ',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -534,7 +526,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'COULANGES-LES-NEVERS',
                 'cp' => '58660',
                 'address' => '8 RUE DES FILLES',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -545,7 +538,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'LE ROBERT',
                 'cp' => '97231',
                 'address' => '21 RUE DES GOYAVIERS',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '364',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -556,7 +550,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'ALTKIRCH',
                 'cp' => '68130',
                 'address' => 'AVENUE DU 8E REGIMENT DE HUSSARDS  BAT. 23',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -567,7 +562,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'LE MANS',
                 'cp' => '72000',
                 'address' => '46 AVENUE FRANCOIS MITERRAND',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -578,7 +574,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'CLERMONT L HERAULT (34800)',
                 'cp' => '34800',
                 'address' => '8 AVENUE DU LAC',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -589,7 +586,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'AMIENS',
                 'cp' => '80000',
                 'address' => '26 BOULEVARD DES FEDERES',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '8',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -600,7 +598,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'LIMOGES',
                 'cp' => '87000',
                 'address' => '209 BOULEVARD DE VANTEAUX',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -612,8 +611,6 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '42023',
                 'address' => '21 RUE DENIS PAPIN',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
@@ -638,7 +635,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '31000',
                 'address' => '70 BD MATABIAU',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '4',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -674,7 +671,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '17000',
                 'address' => '33 RUE DU REMPART ST CLAUDE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -686,7 +683,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '75141',
                 'address' => '292 RUE ST MARTIN',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -734,7 +731,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '20184',
                 'address' => 'AV NAPOLEON III',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '10',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -782,7 +779,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '40 RUE DE MARSEILLE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '10',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -818,7 +815,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '26106',
                 'address' => '2 rue Camille Claudel',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -842,7 +839,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '25 rue des buffles',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -866,7 +863,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '67110',
                 'address' => 'ZI LE MOULIN',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -878,7 +875,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '37000',
                 'address' => '8 rue Alexander Fleming',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -938,7 +935,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '76824',
                 'address' => '34 RUE RAYMOND ARON BP 520',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -950,7 +947,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '35740',
                 'address' => '1 BOULEVARD DU TRIEUX',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -964,8 +961,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'A SENATUS CONSULTO',
@@ -976,9 +971,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '75014',
                 'address' => '23 RUE BOYER - BARRET',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -992,8 +985,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'CHAMBRE DE METIERS ET DE L\'ARTISANAT DE LA DROME',
@@ -1004,9 +995,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => 'rue du dome',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1020,8 +1009,7 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
+
                 ],
                 [
                 'classes_name' => 'IMAGE SCOP',
@@ -1034,8 +1022,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'MME LAVANDIER MARJOLAINE - EIRL LES CLÃ‰S DE LA GESTION',
@@ -1046,9 +1032,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '31170',
                 'address' => '13 RUE DE MONTAIGU',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1060,9 +1044,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '13567',
                 'address' => '10 PLACE DE LA JOLIETTE',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1074,9 +1056,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '21000',
                 'address' => '114 CHAUSSEE ROMAINE',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '4',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1088,9 +1068,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '93150',
                 'address' => '42 AVENUE MATHILDE EMILIE',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '30',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1104,8 +1082,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'ASMFP 77',
@@ -1116,9 +1092,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '77210',
                 'address' => '38 AVENUE FRANKLIN ROOSEVELT',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1130,8 +1104,6 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '26 rue des faussets',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
@@ -1146,8 +1118,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'AT FORMATIONS ET CONSEILS',
@@ -1158,8 +1128,6 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '51100',
                 'address' => '4 PLACE ARISTIDE BRIAND',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
@@ -1174,8 +1142,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'CB BREIZH',
@@ -1186,9 +1152,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '35760',
                 'address' => 'ESPACE PERFORMANCE ALPHASIS',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1200,9 +1164,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '13617',
                 'address' => '6 PLACE BARTHELEMY NIOLLON',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1214,9 +1176,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '95300',
                 'address' => '16 RUE AMPÃ¨RE',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1228,8 +1188,6 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '75011',
                 'address' => '8, CITÃ© JOLY',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
@@ -1244,8 +1202,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'INST NATIONAL DE L\'AUDIOVISUEL',
@@ -1256,9 +1212,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '94360',
                 'address' => '4 AVE DE L\'EUROPE',
                 'cost' => '3000',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1272,8 +1226,6 @@ class ClassesTableSeeder extends Seeder
                 'cost' => '3000',
                 'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
-                'duration' => '12',
-                'link' => 'http://www.wf3.fr/',
                 ],
                 [
                 'classes_name' => 'CONSULTING 26',
@@ -1284,7 +1236,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '32000',
                 'address' => '14 place des morts-vivants',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1296,7 +1248,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '75000',
                 'address' => '89 avenue de la soie',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1320,7 +1272,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '33000',
                 'address' => '1 rue du mur',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1332,7 +1284,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '69410',
                 'address' => '7BIS RUE DES AULNES',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1380,7 +1332,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '80025',
                 'address' => 'AVENUE DES FACULTES',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1404,7 +1356,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '97440',
                 'address' => '4 BIS RUE GABRIEL VAYABOURY',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1416,7 +1368,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '69100',
                 'address' => '54 RUE PAULE VERLAINE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1452,7 +1404,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '26110',
                 'address' => '2 AVENUE DE VENTEROL',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1500,7 +1452,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '31002',
                 'address' => '2 RUE D\'ALSACE LORRAINE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1524,7 +1476,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '87011',
                 'address' => '16 PLACE JOURDAN',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '18',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1536,7 +1488,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '95092',
                 'address' => '13 BOULEVARD DE L\'HAUTIL',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1572,7 +1524,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '83514',
                 'address' => 'LYCEE LANGEVIN BD L\'EUROPE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '18',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1608,7 +1560,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '88350',
                 'address' => '2 RUE DU 8 MAI 1945  BP 25',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1620,7 +1572,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '75001',
                 'address' => '44 RUE DU LOUVRE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1632,7 +1584,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '80025',
                 'address' => 'AVENUE DES FACULTES',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1692,7 +1644,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '20184',
                 'address' => 'AV NAPOLEON III',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '24',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1716,7 +1668,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '13010',
                 'address' => 'LYCEE JEAN PERRIN',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '36',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1728,7 +1680,7 @@ class ClassesTableSeeder extends Seeder
                 'cp' => '38300',
                 'address' => '33 AVENUE D\'ITALIE',
                 'cost' => '3000',
-                'duration' => '12',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1763,7 +1715,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'MAZAMET',
                 'cp' => '81200',
                 'address' => '23 RUE DE LA VANNE',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
                 ],
                 [
@@ -1774,7 +1727,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'REVEL (31250)',
                 'cp' => '31250',
                 'address' => '20 RUE JEAN MOULIN',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '12',
                 'link' => 'http://www.wf3.fr/',
               
                 ],
@@ -1786,7 +1740,8 @@ class ClassesTableSeeder extends Seeder
                 'city' => 'PARIS',
                 'cp' => '75000',
                 'address' => 'AVENUE DU DOCTEUR DURAND',
-                'cost' => '3000','duration' => '12',
+                'cost' => '3000',
+                'duration' => '6',
                 'link' => 'http://www.wf3.fr/',
               
                 ],            

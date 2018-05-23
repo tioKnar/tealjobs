@@ -29,6 +29,16 @@ Route::get('/contact', 'ContactController@index');
 
 Route::post('/contact', 'ContactController@store');
 
+Route::get('/historychart', 'HistorychartController@index');
+
+Route::get('/historytree', 'HistorytreeController@index');
+
+Route::get('/historylist', 'HistorylistController@index');
+
+Route::get('/legalnotice', 'LegalNoticeController@index');
+
+Route::get('/partners', 'PartnersController@index');
+
 // Route Backend
 
 Route::get('/admin', 'AdminController@index')->name('admin');
@@ -65,10 +75,5 @@ Route::get('/jobupdate', 'JobController@index');
 
 Route::post('/jobupdate', 'JobController@update');
 
-Route::get('/historychart', 'HistorychartController@index');
-
-Route::get('/historytree', 'HistorytreeController@index');
-
-Route::get('/historylist', 'HistorylistController@index');
 
 
