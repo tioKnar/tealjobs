@@ -40,14 +40,13 @@
     					
     				@foreach($classes as $classe)
 
-						@if($classe->job_id == $job->job_id)
+						@if($classe->jobs_id == $job->job_id)
 
 							<div class="card card-body">
 
 								<div>
    								 
 									<h4>{{ $classe->classes_name }}</h4><hr>
-									<p>{{ $classe->description}}</p>
 									<strong>Durée :</strong> {{ $classe->duration }} mois<br>
 									<strong>Coût :</strong> {{ $classe->cost }} €<br>
 									<strong>Contact :</strong> {{ $classe->contact }}<br>

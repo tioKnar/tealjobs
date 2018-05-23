@@ -17,17 +17,17 @@
 
 						<br><h3>{{ $resultat->question }}</h3>
 								
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="1">{{ $resultat->answer1 }}</button>
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="1" @if(empty($resultat->answer1)) 'hidden' @endif>{{ $resultat->answer1 }}</button>
 
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="2">{{ $resultat->answer2 }}</button>
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="2" @if(empty($resultat->answer2)) 'hidden' @endif>{{ $resultat->answer2 }}</button>
 							
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="3">{{ $resultat->answer3 }}</button>
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="3" @if(empty($resultat->answer3)) 'hidden' @endif>{{ $resultat->answer3 }}</button>
 							
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="4">{{ $resultat->answer4 }}</button>
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="4" @if(empty($resultat->answer4)) 'hidden' @endif>{{ $resultat->answer4 }}</button>
 							
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="5">{{ $resultat->answer5 }}</button>
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="5" @if(empty($resultat->answer5)) 'hidden' @endif>{{ $resultat->answer5 }}</button>
 							
-							<button type="button" class="form-control form-group btn btn-info bouton" data-id="6">{{ $resultat->answer6 }}</button>
+							<button type="button" class="form-control form-group btn btn-info bouton" data-id="6" @if(empty($resultat->answer6)) 'hidden' @endif>{{ $resultat->answer6 }}</button>
 					
 							@if($resultat->question_id != $first)
 
@@ -72,9 +72,9 @@ $(function() {
 
 	$('.bouton').on('click', function() {
 
-		$(this).parent().fadeOut({queue:false, duration:650}).animate({left: "-=100"}, 650);
+		$(this).parent().fadeOut({queue:false, duration:450}).animate({left: "-=100"}, 450);
 			
-		$(this).parent().next().delay(640).animate({opacity:"toggle", left: "-=100"}, 650);
+		$(this).parent().next().delay(440).animate({opacity:"toggle", left: "-=100"}, 450);
 
 		$tab.push($(this).attr('data-id'));
 
@@ -131,9 +131,9 @@ $(function() {
 
 	$('.previous').on('click', function() {
 
-		$(this).parent().fadeOut({queue:false, duration:650}).animate({left: "+=100"}, 650);
+		$(this).parent().fadeOut({queue:false, duration:450}).animate({left: "+=100"}, 450);
 			
-		$(this).parent().prev().delay(640).animate({opacity:"toggle", left: "+=100"}, 650);
+		$(this).parent().prev().delay(440).animate({opacity:"toggle", left: "+=100"}, 450);
 
 		$tab.pop();
 

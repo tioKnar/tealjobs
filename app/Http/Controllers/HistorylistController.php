@@ -17,9 +17,13 @@ class HistorylistController extends Controller
                         ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
                         ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
                         ->where('analyses.resultprofile' , '=',  '13')
+                        ->groupBy('name')
                         ->get();
         
-        $classes = Classe::get();
+        $classes = DB::table('classes')
+                        ->join('interclasses', 'classes.id', '=', 'interclasses.classes_id')
+                        ->join('jobs', 'jobs.id', '=', 'interclasses.jobs_id')
+                        ->get();
 
         return view('historylist.index')
               ->with('classes', $classes)
