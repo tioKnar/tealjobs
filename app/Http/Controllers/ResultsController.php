@@ -8,7 +8,7 @@ use App\Model\Answer;
 use App\Model\Classe;
 use App\Model\Intersector;
 use App\Model\Job;
-use Redirect;0
+use Redirect;
 use DB;
 
 
@@ -17,11 +17,12 @@ class ResultsController extends Controller
     public function index(){
 
          $jobs = DB::table('jobs')
-                         ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
-                         ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
-                         ->where('analyses.resultprofile' , '=',  '43')
-                         ->get();
-        
+                        ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
+                        ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
+                        ->where('analyses.resultprofile' , '=',  '26')
+                        ->groupBy('name')
+                        ->take(15)
+                        ->get();
 
          $classes = Classe::get();
                         

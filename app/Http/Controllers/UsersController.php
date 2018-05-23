@@ -57,10 +57,10 @@ class UsersController extends Controller
 
 		$user = new User();
 
-		$user->email = $_POST['email'];
-		$user->firstname = $_POST['firstname'];
-		$user->lastname = $_POST['lastname'];
-		$user->password = Hash::make($_POST['password']);
+		$user->email = $values['email'];
+		$user->firstname = $values['firstname'];
+		$user->lastname = $values['lastname'];
+		$user->password = Hash::make($values['password']);
 
 		$user->save();
 

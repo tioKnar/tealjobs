@@ -31,7 +31,6 @@ class ClassesController extends Controller
 
     	$rules = [
 			'classes_name' => 'required|string|max:255',
-			'duration' => 'required|integer',
 			'cost' => 'required|integer',
 			'contact' => 'required|string',
 			'city' => 'required|string',
@@ -39,10 +38,18 @@ class ClassesController extends Controller
 			'cp' => 'required|integer',
 			'mail' => 'email|required',
 			'tel' => 'required|regex:#^0[1-9][0-9]{8}#',
-			'link' => 'required|string',
 			'job_id' => 'required|array',
-
 		];
+
+		if(!empty($values['duration'])) {
+				
+			$rules['duration'] = 'integer'; 
+		}
+
+		if(!empty($values['link'])) {
+				
+			$rules['link'] = 'string'; 
+		}
 
 		$validator = Validator::make($values, $rules, [
 			'mail.email' => 'E-mail invalide',
@@ -69,22 +76,30 @@ class ClassesController extends Controller
 
 		$classe = new Classe();
 
-		$classe->classes_name = $_POST['classes_name'];
-		$classe->duration = $_POST['duration'];
-		$classe->cost = $_POST['cost'];
-		$classe->contact = $_POST['contact'];
-		$classe->city = $_POST['city'];
-		$classe->cp = $_POST['cp'];
-		$classe->tel = $_POST['tel'];
-		$classe->mail = $_POST['mail'];
-		$classe->address = $_POST['address'];
-		$classe->link = $_POST['link'];
+		$classe->classes_name = $values['classes_name'];
+		$classe->cost = $values['cost'];
+		$classe->contact = $values['contact'];
+		$classe->city = $values['city'];
+		$classe->cp = $values['cp'];
+		$classe->tel = $values['tel'];
+		$classe->mail = $values['mail'];
+		$classe->address = $values['address'];
+
+		if(!empty($values['duration'])) {
+				
+			$classe->duration = $values['duration']; 
+		}
+
+		if(!empty($values['link'])) {
+				
+			$classe->link = $values['link'];
+		}
 
 		$classe->save();
 
 		$lastclasse = Classe::get()->last();
 
-		foreach($_POST['job_id'] as $value) {
+		foreach($values['job_id'] as $value) {
 
 			$interclasse = new Interclasse;
 			$interclasse->jobs_id = $value;

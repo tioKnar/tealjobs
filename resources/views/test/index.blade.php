@@ -4,6 +4,8 @@
 @section('content')
 
 	<div class="container-fluid" >
+		<div id="test-bg"></div>
+		<div class="fireflies">@include('fireflies.index')</div>
 
 		<div class="row justify-content-center text-center" id="test">
 

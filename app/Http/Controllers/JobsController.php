@@ -51,9 +51,9 @@ class JobsController extends Controller
 
 		$job = new Job();
 
-		$job->name = $_POST['name'];
-		$job->description = $_POST['description'];
-		$job->note = $_POST['note'];
+		$job->name = $values['name'];
+		$job->description = $values['description'];
+		$job->note = $values['note'];
 
 		$job->save();
 

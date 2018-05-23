@@ -47,9 +47,9 @@ class UserController extends Controller
 
 		$user = User::where('id', $_GET['id'])->first();
 
-		$user->email = $_POST['email'];
-		$user->firstname = $_POST['firstname'];
-		$user->lastname = $_POST['lastname'];
+		$user->email = $values['email'];
+		$user->firstname = $values['firstname'];
+		$user->lastname = $values['lastname'];
 
 		$user->save();
 

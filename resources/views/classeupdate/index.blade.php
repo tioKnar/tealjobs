@@ -22,7 +22,7 @@
 				
 				<input type="text" name="classes_name" class="form form-group form-control" value="{{ $classes[0]->classes_name }}">
 
-				<input type="number" name="duration" class="form form-group form-control" value="{{ $classes[0]->duration }}">
+				<input type="number" name="duration" class="form form-group form-control" value="{{ $classes[0]->duration }}" placeholder=" @if(empty($values['duration']))Durée de la formation (mois) @endif">
 
 				<input type="number" name="cost" class="form form-group form-control" value="{{ $classes[0]->cost }}">
 
@@ -37,38 +37,30 @@
 				<input type="email" name="mail" class="form form-group form-control" value="{{ $classes[0]->mail }}">
 
 				<input type="tel" name="tel" class="form form-group form-control" value="{{ $classes[0]->tel }}">
+				
+				<!-- Métiers correspondants :
+				<ul>
+				@foreach($classes as $classe)
+
+					<li>{{ $classe->name }}</li>
+
+				@endforeach
+				</ul>
 
 				<select multiple name="job_id[]" class="form form-group form-control {{ $errors->has('job_id') ? 'border border-danger' : '' }}">
 					
 					<option>-- Séléctionner un métier --</option>
 
-				
 				@foreach($jobs as $job)
-
-				@foreach($classes as $classe)
-
-				 	@if($classe->jobs_id == $job->id)
-
-						<option value="{{ $job->id }}" selected>{{ $job->name }}</option>
-
-					@endif
-				
-				@endforeach
-		
-
-					@if($classes->jobs_id != $job->id)
 
 						<option value="{{ $job->id }}">{{ $job->name }}</option>
 
-					@endif
-
-
-				@endforeach
+				@endforeach -->
 				
 
-				</select>
+				<!-- </select> -->
 
-				<input type="url" name="link" class="form form-group form-control" value="{{ $classes[0]->link }}">
+				<input type="url" name="link" class="form form-group form-control" value="{{ $classes[0]->link }}" placeholder=" @if(empty($values['link']))Site web @endif">
 
 				<button class="btn btn-info form-control">Modifier</button>
 

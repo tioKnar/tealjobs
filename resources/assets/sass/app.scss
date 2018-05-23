@@ -302,6 +302,18 @@ bottom: 0;
 
 // Page test
 
+#test-bg {
+    background: url('../img/tree/test_bg.jpg');
+	background-size: cover;
+	filter: blur(8.5px);
+	position: fixed !important;
+	top: 0;
+	left: -25px;
+	right: 0;
+	bottom: 0;
+	height: 90vh;
+}
+
 .completed {
 
 	display: none;
@@ -310,12 +322,26 @@ bottom: 0;
 .previous {
 
 	position: absolute;
-	top: 452px;
+	top: 510px;
 	left: calc(50% - 38px);
 }
 
 .test{
-	border: 2px solid black;
+
+	margin-top: 7vh;
+
+	h3 {
+		font-family: $font-title;
+		color: white;
+	}
+}
+
+#growing {
+	margin-bottom: 90px;
+
+	img {
+		width: 100%;
+	}
 }
 
 
@@ -465,43 +491,43 @@ label {
 	top:80px;
 	left:235px;
 }
-#fruit6 {
+.fruit6 {
 	top:-15px;
 	left:310px;
 }
-#fruit7 {
+.fruit7 {
 	top:130px;
 	left:270px;
 }
-#fruit8 {
+.fruit8 {
 	top:100px;
 	left:80px;
 }
-#fruit9 {
+.fruit9 {
 	top:10px;
 	left:110px;
 }
-#fruit10 {
+.fruit10 {
 	top:165px;
 	left:340px;
 }
-#fruit11 {
+.fruit11 {
 	top:0px;
 	left:225px;
 }
-#fruit12 {
+.fruit12 {
 	top:130px;
 	left:400px;
 }
-#fruit13 {
+.fruit13 {
 	top:150px;
 	left:50px;
 }
-#fruit14 {
+.fruit14 {
 	top:10px;
 	left:395px;
 }
-#fruit15 {
+.fruit15 {
 	top:150px;
 	left:470px;
 }

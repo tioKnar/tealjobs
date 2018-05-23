@@ -20432,18 +20432,44 @@ body {
           transform: scale(1.1);
 }
 
+#test-bg {
+  background: url(/images/test_bg.jpg?0123933cd74b01a0d54908397d480bed);
+  background-size: cover;
+  -webkit-filter: blur(8.5px);
+          filter: blur(8.5px);
+  position: fixed !important;
+  top: 0;
+  left: -25px;
+  right: 0;
+  bottom: 0;
+  height: 90vh;
+}
+
 .completed {
   display: none;
 }
 
 .previous {
   position: absolute;
-  top: 452px;
+  top: 510px;
   left: calc(50% - 38px);
 }
 
 .test {
-  border: 2px solid black;
+  margin-top: 7vh;
+}
+
+.test h3 {
+  font-family: "Kaushan Script", cursive;
+  color: white;
+}
+
+#growing {
+  margin-bottom: 90px;
+}
+
+#growing img {
+  width: 100%;
 }
 
 #map {
@@ -21296,52 +21322,52 @@ label {
   left: 235px;
 }
 
-#fruit6 {
+.fruit6 {
   top: -15px;
   left: 310px;
 }
 
-#fruit7 {
+.fruit7 {
   top: 130px;
   left: 270px;
 }
 
-#fruit8 {
+.fruit8 {
   top: 100px;
   left: 80px;
 }
 
-#fruit9 {
+.fruit9 {
   top: 10px;
   left: 110px;
 }
 
-#fruit10 {
+.fruit10 {
   top: 165px;
   left: 340px;
 }
 
-#fruit11 {
+.fruit11 {
   top: 0px;
   left: 225px;
 }
 
-#fruit12 {
+.fruit12 {
   top: 130px;
   left: 400px;
 }
 
-#fruit13 {
+.fruit13 {
   top: 150px;
   left: 50px;
 }
 
-#fruit14 {
+.fruit14 {
   top: 10px;
   left: 395px;
 }
 
-#fruit15 {
+.fruit15 {
   top: 150px;
   left: 470px;
 }

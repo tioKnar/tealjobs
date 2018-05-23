@@ -24,8 +24,8 @@ class CreateUsersTable extends Migration
             $table->integer('travaillomane')->nullable();
             $table->integer('empathique')->nullable();
             $table->integer('rebelle')->nullable();
-            $table->integer('rêveur')->nullable();
-            $table->integer('persévérant')->nullable();
+            $table->integer('reveur')->nullable();
+            $table->integer('perseverant')->nullable();
             $table->integer('promoteur')->nullable();
             $table->rememberToken();
             $table->timestamps();

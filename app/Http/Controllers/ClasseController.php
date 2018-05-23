@@ -32,22 +32,29 @@ class ClasseController extends Controller
     	$rules = [
 			'classes_name' => 'required|string|max:255',
 			'cost' => 'required|integer',
-			'cost' => 'required|integer',
 			'contact' => 'required|string',
 			'city' => 'required|string',
 			'address' => 'required|string',
 			'cp' => 'required|integer',
 			'mail' => 'email|required',
 			'tel' => 'required|regex:#^0[1-9][0-9]{8}#',
-			'link' => 'required|string',
-			'job_id' => 'required|array',
-
 		];
+
+		if(!empty($values['duration'])) {
+				
+			$rules['duration'] = 'integer'; 
+		}
+
+		if(!empty($values['link'])) {
+				
+			$rules['link'] = 'string'; 
+		}
 
 		$validator = Validator::make($values, $rules, [
 			'mail.email' => 'E-mail invalide',
 			'mail.required' => 'Veuillez entrer un email',
 			'classes_name.string' =>'Nom invalide',
+			'duration.integer' => 'Durée invalide',
 			'cost.integer' =>'Coût invalide',
 			'contact.string' =>'Contact invalide',
 			'city.string' =>'Ville invalide',
@@ -55,11 +62,9 @@ class ClasseController extends Controller
 			'cp.integer' =>'Code postal invalide',
 			'tel.regex' =>'Téléphone invalide',
 			'link.string' => 'lien invalide',
-			'job_id.array' =>'Métier invalide',
 		]);
 
 		if($validator->fails()) {
-
 
 			return Redirect::back()
 							->withErrors($validator)
@@ -68,16 +73,24 @@ class ClasseController extends Controller
 
 		$classe = Classe::where('id', $_GET['id'])->first();
 
-		$classe->name = $_POST['classes_name'];
-		$classe->cost = $_POST['cost'];
-		$classe->contact = $_POST['contact'];
-		$classe->city = $_POST['city'];
-		$classe->cp = $_POST['cp'];
-		$classe->tel = $_POST['tel'];
-		$classe->mail = $_POST['mail'];
-		$classe->address = $_POST['address'];
-		$classe->job_id = $_POST['job_id'];
-		$classe->link = $_POST['link'];
+		$classe->classes_name = $values['classes_name'];
+		$classe->cost = $values['cost'];
+		$classe->contact = $values['contact'];
+		$classe->city = $values['city'];
+		$classe->cp = $values['cp'];
+		$classe->tel = $values['tel'];
+		$classe->mail = $values['mail'];
+		$classe->address = $values['address'];
+
+		if(!empty($values['duration'])) {
+				
+			$classe->duration = $values['duration']; 
+		}
+
+		if(!empty($values['link'])) {
+				
+			$classe->link = $values['link'];
+		}
 
 		$classe->save();
 
