@@ -41,7 +41,7 @@
 
 			</div>
 
-			<div class="col- col-md-4 offset-col-md-1" id="growing"></div>
+			<div class="col- col-md-4 offset-col-md-1 align-baseline" id="growing"></div>
 
 			<a id="resultat" href="results?profile=" hidden>Résultats</a>
 
@@ -94,22 +94,21 @@ $(function() {
 		if($tab.length == 0){
 			$('#growing').html('<img src="images/grow01.png" alt="grow01">');
 		}
-		else if($tab.length == 1 && )
-		else if($tab.length >= 4 && $tab.length <= 6) {
+		else if($tab.length >= 1 && $tab.length <= 2) {
 			$('#growing').html('<img src="images/grow02.png" alt="grow02">');
 		}
-		else if($tab.length >= 7 && $tab.length <= 9) {
+		else if($tab.length >= 3 && $tab.length <= 6) {
 			$('#growing').html('<img src="images/grow03.png" alt="grow03">');
 		}
-		else if($tab.length >= 10 && $tab.length <= 12) {
+		else if($tab.length >= 7 && $tab.length <= 11) {
 			$('#growing').html('<img src="images/grow04.png" alt="grow04">');
 		}
-		else if($tab.length >= 13 && $tab.length <= 15) {
+		else if($tab.length >= 12 && $tab.length <= 14) {
 			$('#growing').html('<img src="images/grow05.png" alt="grow05">');
-
-			if($tab.length == 15) {
-				$('#resultat').removeAttr('hidden');
-			}
+		}
+		else {
+			$('#growing').html('<img src="images/grow06.png" alt="grow06">');
+			$('#resultat').removeAttr('hidden');
 		}
 
 		console.log($tabOcc);
