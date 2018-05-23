@@ -413,22 +413,24 @@ label {
 #foliage-square {
 
 	@media(min-width:735px) {
+		background-color: grey;
+        z-index: -1;
         background-color: transparent;
         position: absolute;
         top: 29%;
         left: calc(48% - 250px);
         width: 500px;
-        height: 250px;
+        height: 30vh;
     }
 
     @media(min-width:310px) and (max-width:734.98px) {
-        background-color: transparent;
+        background-color: black;
+        z-index: -1;
         position: absolute;
         top: 10%;
         left: calc(48% - 190px);
         width: 380px;
         height: 203px;
-        border-radius: 49% 64% 5% 5%;
     }
 }
 
@@ -457,12 +459,11 @@ label {
 		}
 
 		#job#{$i} {
-			line-height: 50px;
+			z-index:1;
+			line-height: 30px;
 			font-family: $font-title;
-			font-size: 1.2em;
+			font-size: 1.9em;
 			background-color: rgba(0,0,0,0.6);
-			width: 115px;
-			height: 50px;
 			color: white;
 			border-radius: 5px;
 			position: relative;
@@ -471,6 +472,7 @@ label {
     		animation-duration: 1s;
     		opacity: 1;
 			display: inline-block;
+			padding: 10px 25px 0px 25px;
 		}
 	}
 
