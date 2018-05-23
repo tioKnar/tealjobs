@@ -16,7 +16,7 @@ class HistorylistController extends Controller
         $jobs = DB::table('jobs')
                         ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
                         ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
-                        ->where('analyses.resultprofile' , '=',  '43')
+                        ->where('analyses.resultprofile' , '=',  '13')
                         ->get();
         
         $classes = Classe::get();
