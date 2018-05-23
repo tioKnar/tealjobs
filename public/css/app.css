@@ -21422,8 +21422,18 @@ body.modal-open #result-bg {
   margin-bottom: 50px;
 }
 
-#joblistbtn {
-  padding-left: 15px;
+.joblist .card {
+  margin-bottom: 0.8em;
+}
+
+.joblist .card-header {
+  font-family: "Kaushan Script", cursive;
+  color: teal;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0, 0, 0, 900px black;
+          box-shadow: 0, 0, 0, 900px black;
 }
 
 #myChart {

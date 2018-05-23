@@ -20,55 +20,45 @@
 
 	<div class="row justify-content-center">
 
-		<ul class="list-group list-group-flush col" id="joblistbtn">
-  			
-  			<?php $i = 1 ?>
-  			@foreach($jobs as $job)
-				
-				<button type="button" data-toggle="collapse" data-target="#{{ $i }}" aria-expanded="false" aria-controls="{{ $i }}">
 
-					<li class="list-group-item">
 
-						<h5>{{ $job->name}}</h5>
-						{{ $job->description }}
+				  	@foreach($jobs as $job)
+				<div class="card-deck col-lg-4">
+							  <div class="card border-primary" style="max-width: 18rem;">
+							  <div class="card-header">{{$job->name}}</div>
+							  <div class="card-body text-primary">
+							    <h5 class="card-title"></h5>
+							    <p class="card-text">{{ $job->description }}</p>
+							  </div>
+							  </div>
+				</div>
+					@endforeach
 
-					</li>
 
-				</button>
+		{{-- @foreach($classes as $classe)
 
-				<div class="collapse" id="{{ $i }}">
-    					
-    				@foreach($classes as $classe)
+			@if($classe->jobs_id == $job->job_id)
 
-						@if($classe->jobs_id == $job->job_id)
+				<div class="card card-body">
 
-							<div class="card card-body">
+					<div>
+						 
+						<h4>{{ $classe->classes_name }}</h4><hr>
+						<strong>Durée :</strong> {{ $classe->duration }} mois<br>
+						<strong>Coût :</strong> {{ $classe->cost }} €<br>
+						<strong>Contact :</strong> {{ $classe->contact }}<br>
+						<strong>Adresse :</strong> {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}<br>
+						<strong>Email :</strong> {{ $classe->mail }}<br>
+						<strong>Téléphone :</strong> {{ $classe->tel }}<br>
+						<strong>Site :</strong><a href="{{ $classe->link }}"> {{ $classe->link }} </a>
 
-								<div>
-   								 
-									<h4>{{ $classe->classes_name }}</h4><hr>
-									<strong>Durée :</strong> {{ $classe->duration }} mois<br>
-									<strong>Coût :</strong> {{ $classe->cost }} €<br>
-									<strong>Contact :</strong> {{ $classe->contact }}<br>
-									<strong>Adresse :</strong> {{ $classe->address }}, {{ $classe->cp }}, {{ $classe->city }}<br>
-									<strong>Email :</strong> {{ $classe->mail }}<br>
-									<strong>Téléphone :</strong> {{ $classe->tel }}<br>
-									<strong>Site :</strong><a href="{{ $classe->link }}"> {{ $classe->link }} </a>
+					</div>
 
-								</div>
+					</div>
 
-  							</div>
+			@endif
 
-						@endif
-
-    				@endforeach
-
-				</div><br>
-			
-			<?php $i++ ?>
-  			@endforeach
-
-		</ul>
+		@endforeach --}}
 
 	</div>
 

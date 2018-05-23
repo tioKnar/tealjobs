@@ -30,7 +30,7 @@
 		    data: {
 		        labels: ["Travaillomane", "Empathique", "Rebelle", "Rêveur", "Persévérant", "Promoteur"],
 		        datasets: [{
-		            label: 'Nombre de points',
+		            label: ["Profil psychologique"],
 		            data: [{{$user->travaillomane}},
 		            	   {{$user->empathique}},
 		            	   {{$user->rebelle}},

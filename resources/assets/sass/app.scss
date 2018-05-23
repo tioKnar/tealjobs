@@ -583,11 +583,22 @@ body.modal-open #result-bg {
 
 .joblist {
 	margin-bottom: 50px;
+
+	.card {
+
+		margin-bottom: 0.8em;
+	}
+
+	.card-header {
+		font-family: $font-title;
+		color: teal;
+	}
 }
 
-#joblistbtn {
-	padding-left: 15px;
+.card:hover {
+	box-shadow: 0, 0, 0, 900px black;
 }
+
 
 
 // Page historychart
