@@ -40,7 +40,6 @@
 					</div>
 
 				@endforeach
-				<!-- <a id="resultat" href="results?profile=" class="completed" >Résultats</a> -->
 				<form action="" method="POST">
 					@csrf
 					<input name="result_tree" type="text" hidden id="result_tree">
