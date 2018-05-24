@@ -17,7 +17,7 @@
 
 						<br><h3>{{ $resultat->question }}</h3>
 								
-							@if(! empty($resultat->answer1))<a href="" class="under-line rounded bouton wrap-answers" data-id="1">{{ $resultat->answer1 }}</a>@endif
+							@if(! empty($resultat->answer1))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="1">{{ $resultat->answer1 }}</p></a>@endif
 
 							@if(! empty($resultat->answer2))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="2">{{ $resultat->answer2 }}</p></a>@endif
 
