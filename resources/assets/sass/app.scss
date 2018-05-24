@@ -372,11 +372,12 @@ a.under-line{
 
 .wrap-answers{
 	wrap-word: break-word;
-	// border: 1px solid;
-	border-color: rgb(51,181,229);
-	background-color: rgb(51,181,229);
+	font-size: 1.2em;
+	border-color: #50988c;
+	background-color: #50988c;
 	padding: 10px;
 	color: white;
+	letter-spacing: 0.5px;
 }
 
 #resultat{

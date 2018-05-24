@@ -44,7 +44,7 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Rien ne va, aujourd\'hui. Rien. Vous :',
             ],
             [
-                'question' => 'Question classique : on dit que vous êtes plutôt :',
+                'question' => 'Question classique. On dit que vous êtes plutôt :',
             ],
             [
                 'question' => 'Vous sortez du ciné, le film est un des pires jamais faits :',
