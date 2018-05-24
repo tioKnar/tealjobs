@@ -20442,12 +20442,17 @@ body {
   left: 5%;
 }
 
+#testtest {
+  margin-bottom: 100px;
+}
+
 #test-bg {
   background: url(/images/test_bg.jpg?0123933cd74b01a0d54908397d480bed);
   background-size: cover;
   -webkit-filter: blur(8.5px);
           filter: blur(8.5px);
   position: fixed !important;
+  z-index: -1;
   top: 0;
   left: -40px;
   right: -40px;

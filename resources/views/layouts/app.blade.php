@@ -48,7 +48,7 @@
 
             <div class="container">
 
-                <a class="navbar-brand" href="/"><img src="img/logo.png"></a>
+                <a class="navbar-brand" href="/"><img src="images/logo.png"></a>
   
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
