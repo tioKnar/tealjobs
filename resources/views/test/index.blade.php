@@ -120,17 +120,29 @@ $(function() {
 			}
 		}
 
+		console.log($tabOcc);
+
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
 	
 		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
-		$b = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
-
-
-		$c = $a + $b;
-		console.log($tabOcc);
 		console.log($a);
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; }));
+
+		$b = Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; })[0];
 		console.log($b);
-		console.log($c);
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max-1; }));
+
+		if((Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; }).length == 2 )) {
+
+			$c = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0] + 
+				 Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
+		}
+		else {
+
+			$c = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0] +
+				 Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; })[0];
+			console.log($c);
+		}
 
 		// Envoi des deux plus grandes valeurs vers la page résultats
 
