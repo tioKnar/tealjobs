@@ -20467,7 +20467,7 @@ body {
 .previous {
   position: relative;
   top: 0px;
-  left: calc(50% - 38px);
+  left: 0px;
 }
 
 .test h3 {
@@ -20488,7 +20488,6 @@ a.under-line {
 }
 
 #resultat {
-  font-size: 50px;
   z-index: 1;
 }
 
