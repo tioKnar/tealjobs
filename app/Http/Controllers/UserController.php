@@ -8,7 +8,12 @@ use Request;
 use Validator;
 
 class UserController extends Controller
-{
+{	
+	public function __construct() {
+
+        $this->middleware('auth');
+    }
+    
      public function index() {
     
     	$user = User::where('id', $_GET['id'])->first();

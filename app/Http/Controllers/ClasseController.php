@@ -11,7 +11,12 @@ use Request;
 use Validator;
 
 class ClasseController extends Controller
-{
+{	
+	public function __construct() {
+
+        $this->middleware('auth');
+    }
+    
     public function index() {
     
     	$classes = DB::table('classes')

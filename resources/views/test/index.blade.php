@@ -36,7 +36,6 @@
 
 							@endif
 
-
 					</div>
 
 				@endforeach
@@ -81,7 +80,7 @@ $(function() {
 
 	$.each(collection, function(i, el) {
 
-		$(el).appendTo($(el).parent());
+		$(el).appendTo($(el).parent().parent());
 	});
 
 
@@ -96,9 +95,9 @@ $(function() {
 
 		// Passage à la question suivante en Jquery
 
-		$(this).parent().parent().fadeOut(450);
+		$(this).parent().fadeOut(450);
 			
-		$(this).parent().parent().next().delay(480).fadeIn(450);
+		$(this).parent().next().delay(451).fadeIn(450);
 
 
 		// Remplissage du tableau pour récupérer le profil psychologique
@@ -120,15 +119,16 @@ $(function() {
 		}
 
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
-		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0]);
+	
 		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
-
-		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
-		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1]);
 		$b = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
 
-		$c = $a + $b;
 
+		$c = $a + $b;
+		console.log($tabOcc);
+		console.log($a);
+		console.log($b);
+		console.log($c);
 
 		// Envoi des deux plus grandes valeurs vers la page résultats
 
@@ -138,7 +138,6 @@ $(function() {
 		// Envoi du tableau des profils psychologique vers la base de données
 
 		($('#result_chart').attr('value', $tab));
-		console.log($tab);
 
 
 		// Affichage de l'image de progression du test d'orientation
@@ -155,8 +154,10 @@ $(function() {
 		else if($tab.length >= 10 && $tab.length <= 13) {
 			$('#grow').html('<img src="images/grow05.png" alt="grow05">');
 		}
-		else {
+		else if($tab.length == 14) {
 			$('#grow').html('<img src="images/grow06.png" alt="grow06">');
+		}
+		else {
 			$('#resultat').delay(200).fadeIn(400).removeAttr('hidden');
 		}
 	});
@@ -169,7 +170,7 @@ $(function() {
 
 		$(this).parent().fadeOut(450);
 			
-		$(this).parent().prev().delay(480).fadeIn(450);
+		$(this).parent().prev().delay(451).fadeIn(450);
 
 		$tab.pop();
 	});
