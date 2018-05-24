@@ -41,16 +41,16 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Vous revoyez un.e ex pour une explication polie :',
             ],
              [
-                'question' => 'En période de stress, comment intéragissez-vous avec les personnes de votre entourage ?',
+                'question' => 'Rien ne va, aujourd\'hui. Rien. Vous :',
             ],
             [
-                'question' => 'Comment vous définiriez-vous ? Que dit-on de vous ?',
+                'question' => 'Question classique : on dit que vous êtes plutôt :',
             ],
             [
-                'question' => 'Les vacances idéales, pour moi c\'est:',
+                'question' => 'Vous sortez du ciné, le film est un des pires jamais faits :',
             ],
             [
-                'question' => 'question12',
+                'question' => 'Comment se passe une recherche de job, pour vous ?',
             ],
             [
                 'question' => 'question13',
