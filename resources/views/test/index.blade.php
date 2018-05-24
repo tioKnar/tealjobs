@@ -118,6 +118,9 @@ $(function() {
 		}
 
 		console.log($tabOcc);
+		$arr = Object.keys($tabOcc).map(function (key) { return $tabOcc[key]; });
+		console.log($arr);
+
 
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
 		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0]);
