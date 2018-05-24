@@ -32,7 +32,7 @@
 					
 							@if($resultat->question_id != $first)
 
-								<button class="previous">Retour</button>
+								<button class="previous btn btn-warning">Précedent</button>
 
 							@endif
 
@@ -40,7 +40,14 @@
 					</div>
 
 				@endforeach
-				<a id="resultat" href="results?profile=" class="completed" >Résultats</a>
+				<form action="" method="POST">
+					@csrf
+					<input name="result_tree" type="text" hidden id="result_tree">
+					<input name="result_chart" type="text" hidden id="result_chart">
+					
+					<button type="submit" class="btn btn-warning" id="resultat" hidden>Résultats</button>
+				</form>
+		
 			</div>
 
 			<div class="col-md-3" id="land">
@@ -63,6 +70,8 @@
 	
 $(function() {
 
+// Rangement random des différentes réponses
+
 	var collection = $(".bouton").get();
 
 	collection.sort(function() {
@@ -75,19 +84,29 @@ $(function() {
 		$(el).appendTo($(el).parent());
 	});
 
+
+// Création d'un événement au clique sur une réponse 
+
 	$tab = [];
 
 	$('.bouton').on('click', function(e) {
 
 		e.preventDefault();
 
+
+		// Passage à la question suivante en Jquery
+
 		$(this).parent().parent().fadeOut(450);
 			
-		$(this).parent().parent().next().delay(430).fadeIn(450);
+		$(this).parent().parent().next().delay(480).fadeIn(450);
+
+
+		// Remplissage du tableau pour récupérer le profil psychologique
 
 		$tab.push($(this).attr('data-id'));
 
-		console.log($tab);
+
+		// Récupération des deux plus grandes valeurs du tableau
 
 		$tabOcc = { };
 
@@ -99,6 +118,29 @@ $(function() {
 				$tabOcc[$tab[i]] = 1;
 			}
 		}
+
+		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0]);
+		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
+
+		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1]);
+		$b = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
+
+		$c = $a + $b;
+
+
+		// Envoi des deux plus grandes valeurs vers la page résultats
+
+		($('#result_tree').attr('value', $c));
+
+
+		// Envoi du tableau des profils psychologique vers la base de données
+
+		($('#result_chart').attr('value', $tab));
+
+
+		// Affichage de l'image de progression du test d'orientation
 
 		if($tab.length >= 1 && $tab.length <= 2) {
 			$('#grow').html('<img src="images/grow02.png" alt="grow02">');
@@ -114,25 +156,11 @@ $(function() {
 		}
 		else {
 			$('#grow').html('<img src="images/grow06.png" alt="grow06">');
-			$('#resultat').removeClass('completed');
+			$('#resultat').delay(200).fadeIn(400).removeAttr('hidden');
 		}
-
-		console.log($tabOcc);
-
-		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
-		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0]);
-		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
-
-		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
-		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1]);
-		$b = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
-
-		$c = $a + $b;
-		console.log($c);
-
-		console.log($('#resultat').attr('href', 'results?profile=' + $c));
-
 	});
+
+// Création d'un événement au clique sur précédent
 
 	$('.previous').on('click', function(e) {
 
@@ -140,11 +168,9 @@ $(function() {
 
 		$(this).parent().fadeOut(450);
 			
-		$(this).parent().prev().delay(440).fadeIn(450);
+		$(this).parent().prev().delay(480).fadeIn(450);
 
 		$tab.pop();
-
-		console.log($tab);
 	});
 	
 });

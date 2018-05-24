@@ -31,5 +31,7 @@ class TestController extends Controller
 
         $values = Request::all();
 
+        dd($values['result_chart']);
+
     }
 }

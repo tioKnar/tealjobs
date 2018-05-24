@@ -305,7 +305,7 @@ bottom: 0;
 
 // Page test
 
-@media(max-width: 469.98px){
+@media(max-width: 950px){
 
 	#land {
 		display: none;
@@ -348,7 +348,8 @@ bottom: 0;
 
 	position: relative;
 	top: 0px;
-	left: calc(50% - 38px);
+	left: 0px;
+	// background-color: #FEE494;
 }
 
 .test{
@@ -360,6 +361,8 @@ bottom: 0;
 	h3 {
 		font-family: $font-title;
 		color: white;
+		margin-bottom: 30px;
+		letter-spacing: 2px;
 	}
 }
 
@@ -377,7 +380,6 @@ a.under-line{
 }
 
 #resultat{
-	font-size:50px;
 	z-index: 1;
 }
 
@@ -753,7 +755,7 @@ body.modal-open #result-bg {
 }
 
 .logo-partners {
-  margin : 50px 60px 50px 60px;
+  margin: 50px 60px 50px 60px;
   height: 15vh;
   width: 20vw;
 }

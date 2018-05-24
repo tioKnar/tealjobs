@@ -20436,6 +20436,12 @@ body {
           transform: scale(1.1);
 }
 
+@media (max-width: 950px) {
+  #land {
+    display: none;
+  }
+}
+
 #grow {
   position: absolute;
   top: 0;
@@ -20467,12 +20473,14 @@ body {
 .previous {
   position: relative;
   top: 0px;
-  left: calc(50% - 38px);
+  left: 0px;
 }
 
 .test h3 {
   font-family: "Kaushan Script", cursive;
   color: white;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
 
 a.under-line {
@@ -20488,7 +20496,6 @@ a.under-line {
 }
 
 #resultat {
-  font-size: 50px;
   z-index: 1;
 }
 
