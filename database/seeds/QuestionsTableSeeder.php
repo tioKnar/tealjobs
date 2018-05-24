@@ -38,7 +38,7 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Au sein d\'un groupe, vous avez un travail à rendre dans des délais bien trop courts. Vous :',
             ],
              [
-                'question' => 'Comment vous adressez-vous à autrui ?',
+                'question' => 'Vous revoyez un.e ex pour une explication polie :',
             ],
              [
                 'question' => 'En période de stress, comment intéragissez-vous avec les personnes de votre entourage ?',
