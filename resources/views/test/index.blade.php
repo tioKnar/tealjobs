@@ -32,7 +32,7 @@
 					
 							@if($resultat->question_id != $first)
 
-								<button class="previous btn btn-warning">Précedent</button>
+								<button class="previous btn btn-warning">Précédent</button>
 
 							@endif
 

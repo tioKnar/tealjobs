@@ -43,7 +43,7 @@ class AnswersTableSeeder extends Seeder
         		'answer3' => 'Vous pouvez naviguer entre plusieurs groupes.',
         		'answer4' => '"Un groupe ?!"',
         		'answer5' => 'Une synergie entre deux personnes.',
-        		'answer6' => 'L\'essentiel, c\'est le résultat !,'
+        		'answer6' => 'L\'essentiel, c\'est le résultat !',
             ],
             [
         		'answer1' => 'Restez concentré sur l\'essentiel.',

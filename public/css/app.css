@@ -2,7 +2,7 @@
 
 .fireflies {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 90%;
   height: 90%;
@@ -20492,10 +20492,10 @@ a.under-line {
 }
 
 .wrap-answers {
-  wrap-word: break-word;
+  word-wrap: break-word;
   font-size: 1.2em;
-  border-color: #50988c;
-  background-color: #50988c;
+  border-color: #40ab8d;
+  background-color: #40ab8d;
   padding: 10px;
   color: white;
   letter-spacing: 0.5px;
