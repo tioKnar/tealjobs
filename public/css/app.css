@@ -20436,6 +20436,10 @@ body {
           transform: scale(1.1);
 }
 
+#land img {
+  width: 100%;
+}
+
 @media (max-width: 950px) {
   #land {
     display: none;
@@ -20463,7 +20467,7 @@ body {
   left: -40px;
   right: -40px;
   bottom: 0;
-  height: 90vh;
+  height: 100vh;
 }
 
 .completed {
@@ -20489,10 +20493,12 @@ a.under-line {
 
 .wrap-answers {
   wrap-word: break-word;
-  border-color: #33b5e5;
-  background-color: #33b5e5;
+  font-size: 1.2em;
+  border-color: #50988c;
+  background-color: #50988c;
   padding: 10px;
   color: white;
+  letter-spacing: 0.5px;
 }
 
 #resultat {

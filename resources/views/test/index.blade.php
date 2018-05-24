@@ -50,7 +50,7 @@
 		
 			</div>
 
-			<div class="col-md-3" id="land">
+			<div class="col-md-5 offset-md-1" id="land">
 				<img src="images/land.png" alt="land">
 				<div id="grow">
 					<img src="images/grow01.png" alt="grow01">
@@ -85,7 +85,7 @@ $(function() {
 	});
 
 
-// Création d'un événement au clique sur une réponse 
+// Création d'un événement au clic sur une réponse 
 
 	$tab = [];
 
@@ -146,13 +146,13 @@ $(function() {
 		if($tab.length >= 1 && $tab.length <= 2) {
 			$('#grow').html('<img src="images/grow02.png" alt="grow02">');
 		}
-		else if($tab.length >= 3 && $tab.length <= 6) {
+		else if($tab.length >= 3 && $tab.length <= 5) {
 			$('#grow').html('<img src="images/grow03.png" alt="grow03">');
 		}
-		else if($tab.length >= 7 && $tab.length <= 11) {
+		else if($tab.length >= 6 && $tab.length <= 9) {
 			$('#grow').html('<img src="images/grow04.png" alt="grow04">');
 		}
-		else if($tab.length >= 12 && $tab.length <= 14) {
+		else if($tab.length >= 10 && $tab.length <= 13) {
 			$('#grow').html('<img src="images/grow05.png" alt="grow05">');
 		}
 		else {
@@ -161,7 +161,7 @@ $(function() {
 		}
 	});
 
-// Création d'un événement au clique sur précédent
+// Création d'un événement au clic sur précédent
 
 	$('.previous').on('click', function(e) {
 
