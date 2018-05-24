@@ -21649,6 +21649,7 @@ body.modal-open #result-bg {
 
 .title-partners {
   font-family: "Kaushan Script", cursive;
+  color: #00796B;
 }
 
 .logo-partners {
@@ -21665,5 +21666,6 @@ body.modal-open #result-bg {
 
 .hr-partners {
   width: 11vw;
+  color: #00796B;
 }
 
