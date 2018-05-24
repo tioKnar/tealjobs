@@ -20436,6 +20436,10 @@ body {
           transform: scale(1.1);
 }
 
+#land img {
+  width: 100%;
+}
+
 @media (max-width: 950px) {
   #land {
     display: none;
@@ -20463,7 +20467,7 @@ body {
   left: -40px;
   right: -40px;
   bottom: 0;
-  height: 90vh;
+  height: 100vh;
 }
 
 .completed {

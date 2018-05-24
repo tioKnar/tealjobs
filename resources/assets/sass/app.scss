@@ -305,12 +305,18 @@ bottom: 0;
 
 // Page test
 
-@media(max-width: 950px){
+#land {
 
-	#land {
+	img {
+		width: 100%;
+	}
+
+	@media(max-width: 950px){
 		display: none;
-		}
+	}
+
 }
+
 
 #grow {
 	position: absolute;
@@ -332,7 +338,7 @@ bottom: 0;
 	left: -40px;
 	right: -40px;
 	bottom: 0;
-	height: 90vh;
+	height: 100vh;
 }
 
 .centrage{
