@@ -34,8 +34,8 @@
 	        <div class="col-lg-4 context">
 	          <span> <img src="images/landing_icons/network.png" id="landing-logo" alt="network" height="100" width="100" > </span>
 	          <h2>Aujourd'hui</h2>
-		          <p>Entre <span class="font-italic">turnover</span>, besoin de changer d'horizon et remises en questions, "faire carrière" est une option de moins en moins envisagée par les étudiant.e.s et salarié.e.s.</p>
-		      	  <p>Trouver sa voie est pourtant un vrai défi quand se retrouver dans les ressources disponibles sur le sujet s'ajoute à la recherche de son potentiel.</p>
+		          <p>Entre <span class="font-italic">turnover</span>, besoin de changer d'horizon et remises en questions personnelles, "faire carrière" est une option de moins en moins envisagée par les étudiant.e.s et salarié.e.s.</p>
+		      	  <p>Seulement, trouver sa voie est un vrai défi quand le vomlume de ressources disponibles sur le sujet s'ajoute à la découverte de son potentiel.</p>
 	        </div>
 	        <div class="col-lg-4 potential">
 	          <span> <img src="images/landing_icons/sprout.png" id="landing-logo" alt="sprout" height="100" width="100" > </span>

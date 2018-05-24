@@ -744,3 +744,26 @@ body.modal-open #result-bg {
 		line-height: 1.8;
 	}
 }
+
+// PAGE PARTENAIRES
+
+.title-partners {
+  font-family: $font-title;
+  color: #00796B;
+}
+
+.logo-partners {
+  margin : 50px 60px 50px 60px;
+  height: 15vh;
+  width: 20vw;
+}
+
+.logo-partners:hover {
+  transition: .3s ease-in-out;
+  opacity: 0.5;
+}
+
+.hr-partners {
+  width: 11vw;
+  color: #00796B;
+}
