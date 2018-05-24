@@ -43,8 +43,8 @@
 				<!-- <a id="resultat" href="results?profile=" class="completed" >Résultats</a> -->
 				<form action="" method="POST">
 					@csrf
-					<input name="result_tree[]" type="text" hidden id="result_tree">
-					<input name="result_chart[]" type="text" hidden id="result_chart">
+					<input name="result_tree" type="text" hidden id="result_tree">
+					<input name="result_chart" type="text" hidden id="result_chart">
 					
 					<button type="submit" class="btn btn-warning" id="resultat" hidden>Résultats</button>
 				</form>
@@ -142,7 +142,7 @@ $(function() {
 
 
 		console.log($('#result_tree').attr('value', $c));
-		console.log($('#result_chart').attr('value', '1,2,3'));
+		console.log($('#result_chart').attr('value', $tableauOcc));
 		console.log($tableauOcc);
 
 	});
