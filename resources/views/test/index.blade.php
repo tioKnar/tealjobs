@@ -136,17 +136,13 @@ $(function() {
 		console.log($b);
 		console.log($max_1);
 
-		if(($max.length > 2 && $max.length < 3)) {
+		if($max.length >= 2) {
 
 			$c = $max[0] + $max[1];
 		}
-		else if($max.length = 1 && $max_1.length = 1) {
+		else if($max.length == 1 && $max_1.length == 1) {
 
 			$c = $max[0] + $max_1[0];
-		}
-		else {
-
-			
 		}
 
 		console.log($c);
