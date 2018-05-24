@@ -40,7 +40,14 @@
 					</div>
 
 				@endforeach
-				<a id="resultat" href="results?profile=" class="completed" >Résultats</a>
+				<form action="" method="POST">
+					@csrf
+					<input name="result_tree" type="text" hidden id="result_tree">
+					<input name="result_chart" type="text" hidden id="result_chart">
+					
+					<button type="submit" class="btn btn-warning" id="resultat" hidden>Résultats</button>
+				</form>
+		
 			</div>
 
 			<div class="col-md-3" id="land">
@@ -131,6 +138,12 @@ $(function() {
 		console.log($c);
 
 		console.log($('#resultat').attr('href', 'results?profile=' + $c));
+
+		$tableauOcc = Object.keys($tabOcc).map(function(x) {return $tabOcc[x]});
+
+		console.log($('#result_tree').attr('value', $c));
+		console.log($('#result_chart').attr('value', $tableauOcc));
+		console.log($tableauOcc);
 
 	});
 
