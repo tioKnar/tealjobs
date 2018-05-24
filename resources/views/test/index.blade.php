@@ -3,7 +3,7 @@
 
 @section('content')
 
-	<div class="container-fluid" id="testtest">
+	<div class="container-fluid" >
 		<div id="test-bg"></div>
 		<div class="fireflies">@include('fireflies.index')</div>
 
@@ -32,7 +32,7 @@
 					
 							@if($resultat->question_id != $first)
 
-								<button class="previous btn btn-warning">Retour</button>
+								<button class="previous">Retour</button>
 
 							@endif
 
@@ -40,14 +40,7 @@
 					</div>
 
 				@endforeach
-				<form action="" method="POST">
-					@csrf
-					<input name="result_tree[]" type="text" hidden id="result_tree">
-					<input name="result_chart[]" type="text" hidden id="result_chart">
-					
-					<button type="submit" class="btn btn-warning" id="resultat" hidden>Résultats</button>
-				</form>
-		
+				<a id="resultat" href="results?profile=" class="completed" >Résultats</a>
 			</div>
 
 			<div class="col-md-3" id="land">
@@ -121,10 +114,10 @@ $(function() {
 		}
 		else {
 			$('#grow').html('<img src="images/grow06.png" alt="grow06">');
-			$('#resultat').delay(200).fadeIn(400).removeAttr('hidden');
+			$('#resultat').removeClass('completed');
 		}
 
-		// console.log($tabOcc);
+		console.log($tabOcc);
 
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
 		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0]);
@@ -137,12 +130,7 @@ $(function() {
 		$c = $a + $b;
 		console.log($c);
 
-		$tableauOcc = Object.keys($tabOcc).map(function(x) {return $tabOcc[x]});
-
-
-		console.log($('#result_tree').attr('value', $c));
-		console.log($('#result_chart').attr('value', '1,2,3'));
-		console.log($tableauOcc);
+		console.log($('#resultat').attr('href', 'results?profile=' + $c));
 
 	});
 
@@ -156,7 +144,7 @@ $(function() {
 
 		$tab.pop();
 
-		// console.log($tab);
+		console.log($tab);
 	});
 	
 });
