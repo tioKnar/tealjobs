@@ -124,7 +124,7 @@ $(function() {
 			$('#resultat').delay(200).fadeIn(400).removeAttr('hidden');
 		}
 
-		// console.log($tabOcc);
+		console.log($tabOcc);
 
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
 		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0]);
