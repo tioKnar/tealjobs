@@ -138,6 +138,7 @@ $(function() {
 		// Envoi du tableau des profils psychologique vers la base de données
 
 		($('#result_chart').attr('value', $tab));
+		console.log($tab);
 
 
 		// Affichage de l'image de progression du test d'orientation
