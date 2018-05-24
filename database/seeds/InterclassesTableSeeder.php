@@ -1322,6 +1322,318 @@ class InterclassesTableSeeder extends Seeder
         		'jobs_id' => '48',
         		'classes_id' => '46',
         	    ],
+                [
+                'jobs_id' => '10',
+                'classes_id' => '161',
+                ],
+                [
+                'jobs_id' => '10',
+                'classes_id' => '162',
+                ],
+                [
+                'jobs_id' => '10',
+                'classes_id' => '163',
+                ],
+                [
+                'jobs_id' => '14',
+                'classes_id' => '129',
+                ],
+                [
+                'jobs_id' => '14',
+                'classes_id' => '130',
+                ],
+                [
+                'jobs_id' => '14',
+                'classes_id' => '131',
+                ],
+                [
+                'jobs_id' => '17',
+                'classes_id' => '155',
+                ],
+                [
+                'jobs_id' => '17',
+                'classes_id' => '156',
+                ],
+                [
+                'jobs_id' => '17',
+                'classes_id' => '157',
+                ],
+                [
+                'jobs_id' => '17',
+                'classes_id' => '158',
+                ],
+                [
+                'jobs_id' => '17',
+                'classes_id' => '159',
+                ],
+                [
+                'jobs_id' => '17',
+                'classes_id' => '160',
+                ],
+                [
+                'jobs_id' => '18',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '18',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '19',
+                'classes_id' => '155',
+                ],
+                [
+                'jobs_id' => '19',
+                'classes_id' => '156',
+                ],
+                [
+                'jobs_id' => '19',
+                'classes_id' => '157',
+                ],
+                [
+                'jobs_id' => '19',
+                'classes_id' => '158',
+                ],
+                [
+                'jobs_id' => '19',
+                'classes_id' => '159',
+                ],
+                [
+                'jobs_id' => '19',
+                'classes_id' => '160',
+                ],
+                [
+                'jobs_id' => '20',
+                'classes_id' => '145',
+                ],
+                [
+                'jobs_id' => '22',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '22',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '23',
+                'classes_id' => '49',
+                ],[
+                'jobs_id' => '23',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '24',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '24',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '51',
+                'classes_id' => '126',
+                ],
+                [
+                'jobs_id' => '51',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '51',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '52',
+                'classes_id' => '148',
+                ],
+                [
+                'jobs_id' => '52',
+                'classes_id' => '149',
+                ],
+                [
+                'jobs_id' => '52',
+                'classes_id' => '150',
+                ],
+                [
+                'jobs_id' => '52',
+                'classes_id' => '151',
+                ],
+                [
+                'jobs_id' => '52',
+                'classes_id' => '152',
+                ],
+                [
+                'jobs_id' => '52',
+                'classes_id' => '153',
+                ],
+                [
+                'jobs_id' => '52',
+                'classes_id' => '154',
+                ],
+                [
+                'jobs_id' => '56',
+                'classes_id' => '164',
+                ],
+                [
+                'jobs_id' => '56',
+                'classes_id' => '165',
+                ],
+                [
+                'jobs_id' => '56',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '56',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '57',
+                'classes_id' => '164',
+                ],
+                [
+                'jobs_id' => '57',
+                'classes_id' => '165',
+                ],
+                [
+                'jobs_id' => '57',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '57',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '58',
+                'classes_id' => '137',
+                ],
+                [
+                'jobs_id' => '58',
+                'classes_id' => '158',
+                ],
+                [
+                'jobs_id' => '58',
+                'classes_id' => '159',
+                ],
+                [
+                'jobs_id' => '61',
+                'classes_id' => '137',
+                ],
+                [
+                'jobs_id' => '61',
+                'classes_id' => '158',
+                ],
+                [
+                'jobs_id' => '61',
+                'classes_id' => '159',
+                ],
+                [
+                'jobs_id' => '64',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '64',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '65',
+                'classes_id' => '166',
+                ],
+                [
+                'jobs_id' => '29',
+                'classes_id' => '116',
+                ],
+                [
+                'jobs_id' => '29',
+                'classes_id' => '156',
+                ],
+                [
+                'jobs_id' => '30',
+                'classes_id' => '116',
+                ],
+                [
+                'jobs_id' => '30',
+                'classes_id' => '156',
+                ],
+                [
+                'jobs_id' => '31',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '31',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '33',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '33',
+                'classes_id' => '70',
+                ],
+                [
+                'jobs_id' => '33',
+                'classes_id' => '108',
+                ],
+                [
+                'jobs_id' => '34',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '34',
+                'classes_id' => '70',
+                ],
+                [
+                'jobs_id' => '34',
+                'classes_id' => '108',
+                ],
+                [
+                'jobs_id' => '36',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '36',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '44',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '44',
+                'classes_id' => '70',
+                ],
+                [
+                'jobs_id' => '44',
+                'classes_id' => '108',
+                ],
+                [
+                'jobs_id' => '46',
+                'classes_id' => '49',
+                ],
+                [
+                'jobs_id' => '46',
+                'classes_id' => '50',
+                ],
+                [
+                'jobs_id' => '16',
+                'classes_id' => '132',
+                ],
+                [
+                'jobs_id' => '16',
+                'classes_id' => '133',
+                ],
+                [
+                'jobs_id' => '16',
+                'classes_id' => '134',
+                ],
+                [
+                'jobs_id' => '16',
+                'classes_id' => '82',
+                ],
+                [
+                'jobs_id' => '16',
+                'classes_id' => '111',
+                ],
+
 
 
 
