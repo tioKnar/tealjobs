@@ -18,7 +18,7 @@
 			<canvas id="myChart"></canvas>
 	    </div>
 	</div>
-<?= dd($user) ?>
+
 </div>
 
 <script>
