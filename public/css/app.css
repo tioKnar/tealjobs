@@ -2,7 +2,7 @@
 
 .fireflies {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 90%;
   height: 90%;
@@ -20492,10 +20492,10 @@ a.under-line {
 }
 
 .wrap-answers {
-  wrap-word: break-word;
+  word-wrap: break-word;
   font-size: 1.2em;
-  border-color: #50988c;
-  background-color: #50988c;
+  border-color: #40ab8d;
+  background-color: #40ab8d;
   padding: 10px;
   color: white;
   letter-spacing: 0.5px;
@@ -21586,6 +21586,34 @@ body.modal-open #result-bg {
 
 #myChart {
   margin-top: 4em;
+}
+
+.histo-profiles h2 {
+  font-family: "Kaushan Script", cursive;
+}
+
+.histo-profiles .colo-travaillomane {
+  color: #ff6384;
+}
+
+.histo-profiles .colo-empathique {
+  color: #36a2eb;
+}
+
+.histo-profiles .colo-rebelle {
+  color: #ffce56;
+}
+
+.histo-profiles .colo-reveur {
+  color: #4bc0c0;
+}
+
+.histo-profiles .colo-preseverant {
+  color: #9966ff;
+}
+
+.histo-profiles .colo-promoteur {
+  color: #ff9f40;
 }
 
 .footer-distributed {

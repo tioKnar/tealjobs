@@ -53,10 +53,10 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Comment se passe une recherche de job, pour vous ?',
             ],
             [
-                'question' => 'question13',
+                'question' => 'En cours, quel genre d\'élève êtes vous ?',
             ],
             [
-                'question' => 'question14',
+                'question' => 'Quel est votre rapport avec l\'argent ?',
             ],
             [
                 'question' => 'question15',

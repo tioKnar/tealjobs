@@ -8,7 +8,12 @@ use Request;
 use Validator;
 
 class JobController extends Controller
-{
+{	
+	public function __construct() {
+
+        $this->middleware('auth');
+    }
+    
     public function index() {
     
     	$job = Job::where('id', $_GET['id'])->first();
