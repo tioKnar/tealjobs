@@ -21,6 +21,40 @@
 
 </div>
 
+<section class="histo-profiles container">
+
+	 <div class="row justify-content-center text-justify">
+        <div class="col-md-4">
+          <h2 class="colo-travaillomane">Travaillomane</h2>
+	          <p><span class="font-weight-bold">Logique, organisé, responsable</span>, le type travaillomane (« <span class="font-italic">thinker</span> » en anglais) est un véritable analyste. Son efficacité et sa capacité à comprendre finement les systèmes lui permettent de briller dans ses recherches. Reconnaissez ses compétences, et il sera ravi !</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="colo-empathique">Empathique</h2>
+	          <p><span class="font-weight-bold">Chaleureux, sensible, compatissant</span>, le type empathique (« <span class="font-italic">harmonizer</span> » en anglais) prend soin des autres et de l’ambiance de son groupe. Il est connecté à ses émotions et les utilise pour se positionner par rapport au monde. Pour lui, l’important c’est de se sentir aimé, et si l’ambiance est chaleureuse, il est aux anges !</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="colo-rebelle">Rebelle</h2>
+	          <p><span class="font-weight-bold">Créatif, ludique, spontané</span>, le type rebelle (« <span class="font-italic">funster</span> » en anglais) est un bout-en-train ! Il est à la recherche d’amusement dans tous ses contextes et exprime ses réactions spontanément, sans filtre. Faites-lui une blague et vous verrez ses yeux pétiller !</p>
+        </div>
+	 </div>
+
+	 <div class="row justify-content-center text-justify">
+        <div class="col-md-4">
+          <h2 class="colo-reveur">Rêveur</h2>
+	          <p><span class="font-weight-bold">Calme, imaginatif, réfléchi</span>, le type rêveur (« <span class="font-italic">imaginer</span> » en anglais) est un penseur d’une grande profondeur. Son recul et son imagination lui permettent de modéliser des idées complexes… mais aussi d’être souvent qualifié « dans la lune ». Assurez-lui de la tranquillité et il vous remerciera.</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="colo-preseverant">Presévérant</h2>
+	          <p><span class="font-weight-bold">Engagé, observateur, consciencieux</span>, le type presévérant (« <span class="font-italic">believer</span> » en anglais) est une personne de principes. Ses valeurs et ses opinons sont très importantes, et on le retrouve souvent engagé, en politique ou ailleurs, pour les défendre. Pour le satisfaire, faites confiance à son jugement ou demandez-le lui, il apprécie donner son avis !</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="colo-promoteur">Promoteur</h2>
+	          <p><span class="font-weight-bold">Adaptable, charmeur, plein de ressources</span>, le type promoteur (« <span class="font-italic">doer</span> » en anglais) est un fonceur. Donnez lui un challenge, il l’accepte dans la seconde, même s’il n’a aucune idée de comment il va le réaliser. Chez lui, c’est l’action et l’efficacité qui importe. C’est la personne à inviter à courir un marathon dans 1 mois si vous êtes sans partenaire d’entrainement !</p>
+        </div>
+	 </div>
+	  
+</section>
+
 <script>
 
 	$(function() {
