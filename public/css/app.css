@@ -21588,6 +21588,34 @@ body.modal-open #result-bg {
   margin-top: 4em;
 }
 
+.histo-profiles h2 {
+  font-family: "Kaushan Script", cursive;
+}
+
+.histo-profiles .colo-travaillomane {
+  color: #ff6384;
+}
+
+.histo-profiles .colo-empathique {
+  color: #36a2eb;
+}
+
+.histo-profiles .colo-rebelle {
+  color: #ffce56;
+}
+
+.histo-profiles .colo-reveur {
+  color: #4bc0c0;
+}
+
+.histo-profiles .colo-preseverant {
+  color: #9966ff;
+}
+
+.histo-profiles .colo-promoteur {
+  color: #ff9f40;
+}
+
 .footer-distributed {
   background-color: #292c2f;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
