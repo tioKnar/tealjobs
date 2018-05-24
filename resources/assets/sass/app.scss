@@ -305,12 +305,12 @@ bottom: 0;
 
 // Page test
 
-// @media(max-width: 469.98px){
+@media(max-width: 950px){
 
-// 	#land {
-// 		display: none;
-// 		}
-// }
+	#land {
+		display: none;
+		}
+}
 
 #grow {
 	position: absolute;
@@ -361,6 +361,8 @@ bottom: 0;
 	h3 {
 		font-family: $font-title;
 		color: white;
+		margin-bottom: 30px;
+		letter-spacing: 2px;
 	}
 }
 
