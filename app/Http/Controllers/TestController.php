@@ -2,15 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Request;
-use Auth;
-use App\Model\Question;
 use App\Model\Answer;
 use App\Model\Interanswer;
-use Redirect;
+use App\Model\Question;
 use App\Model\User;
+use Auth;
 use DB;
-
+use Redirect;
+use Request;
 
 class TestController extends Controller
 {
