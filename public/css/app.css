@@ -20480,6 +20480,10 @@ body {
   left: 0px;
 }
 
+.test .bouton:hover {
+  cursor: pointer;
+}
+
 .test h3 {
   font-family: "Kaushan Script", cursive;
   color: white;
