@@ -43,6 +43,30 @@
 
 				<input type="email" name="email" class="form form-group form-control" value="{{ $user->email }}">
 
+				<select name="role" class="form form-group form-control {{ $errors->has('role') ? 'border border-danger' : '' }}">
+					
+					@if($user->role == 'user')
+
+						<option value="user" selected>User</option>
+
+					@else
+
+						<option value="user">User</option>
+
+					@endif
+
+					@if($user->role == 'admin')
+
+						<option value="admin" selected>Admin</option>
+
+					@else
+						
+						<option value="admin">Admin</option>
+
+					@endif
+
+				</select>
+
 				<button class="btn btn-info form-control">Modifier</button>
 
 			</form>

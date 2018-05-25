@@ -41,24 +41,6 @@
 
 				<textarea name="description" class="form form-group form-control" rows="5">{{ $job->description }}</textarea>
 
-				<select name="note" class="form form-group form-control">
-					
-					@for($i = 1; $i <= 10; $i++)
-	
-						@if($job->note == $i)
-
-							<option value="{{ $i }}" selected>{{ $i }}</option>
-
-						@else
-
-							<option value="{{ $i }}">{{ $i }}</option>
-
-						@endif
-
-					@endfor
-
-				</select>
-
 				<button class="btn btn-info form-control">Modifier</button>
 
 			</form>

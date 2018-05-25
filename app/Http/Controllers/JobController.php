@@ -28,7 +28,6 @@ class JobController extends Controller
     	$rules = [
 			'name' => 'required|string|max:255',
 			'description' => 'required|string|max:255',
-			'note' => 'integer|required',
 		];
 
 		$validator = Validator::make($values, $rules, [
@@ -36,8 +35,6 @@ class JobController extends Controller
 			'name.string' => 'Nom invalide',
 			'description.string' =>'Description invalide',
 			'description.required' =>'Veuillez entrer une description',
-			'note.integer' =>'Note invalide',
-			'note.required' =>'Veuillez entrer une note',
 		]);
 
 		if($validator->fails()) {
@@ -52,7 +49,6 @@ class JobController extends Controller
 
 		$job->name = $values['name'];
 		$job->description = $values['description'];
-		$job->note = $values['note'];
 
 		$job->save();
 
