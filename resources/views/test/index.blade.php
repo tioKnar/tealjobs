@@ -32,15 +32,16 @@
 							@if(! empty($resultat->answer6))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="6">{{ $resultat->answer6 }}</p></a>@endif
 
 					
-							@if($resultat->question_id != $first)
+				
 
-								<button class="previous btn btn-warning">Précédent</button>
+								<button class="previous btn btn-warning completed">Précédent</button>
 
-							@endif
+	
 
 					</div>
 
 				@endforeach
+				
 				<form action="" method="POST">
 					@csrf
 					<input name="result_tree" type="text" hidden id="result_tree">
@@ -105,6 +106,8 @@ $(function() {
 			
 
 		$(this).parent().next().delay(451).fadeIn(450);
+
+		$('.previous').fadeIn(450);
 
 
 
