@@ -2,8 +2,6 @@
 
 
 @section('content')
-	
-	@include('modal.history_job')
 
 	<div class="container-fluid" id="testtest">
 		<div id="test-bg"></div>
@@ -11,7 +9,7 @@
 
 		<div class="row justify-content-center text-center align-end centrage" id="test">
 
-			<div class="col col-md-5 centrage">
+			<div class="col- col-md-5 centrage">
 			
 				@foreach($resultats as $resultat)
 
@@ -32,16 +30,16 @@
 							@if(! empty($resultat->answer6))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="6">{{ $resultat->answer6 }}</p></a>@endif
 
 					
-				
+							<!-- @if($resultat->question_id != $first)
 
-								<button class="previous btn btn-warning completed">Précédent</button>
+								<button class="previous btn btn-warning">Précédent</button>
 
-	
+							@endif -->
 
 					</div>
 
 				@endforeach
-				
+				<button class="previous btn btn-warning completed">Précédent</button>
 				<form action="" method="POST">
 					@csrf
 					<input name="result_tree" type="text" hidden id="result_tree">
@@ -71,10 +69,6 @@
 
 	
 $(function() {
-
-// Modal indicatif
-
-	$('#modalhistory_job').modal('show');
 
 // Rangement random des différentes réponses
 
@@ -107,8 +101,6 @@ $(function() {
 
 		$(this).parent().next().delay(451).fadeIn(450);
 
-		$('.previous').fadeIn(450);
-
 
 
 		// Remplissage du tableau pour récupérer le profil psychologique
@@ -132,30 +124,26 @@ $(function() {
 		console.log($tabOcc);
 
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
-
-		$max = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; });
 	
-		$a = $max[0];
+		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
 		console.log($a);
-		console.log($max);
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; }));
 
-		$max_1 = Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; });
-
-		$b = $max_1[0];
+		$b = Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; })[0];
 		console.log($b);
-		console.log($max_1);
+		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max-1; }));
 
-		if($max.length >= 2) {
+		if((Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; }).length == 2 )) {
 
-			$c = $max[0] + $max[1];
+			$c = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0] + 
+				 Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
 		}
-		else if($max.length == 1 && $max_1.length == 1) {
+		else {
 
-			$c = $max[0] + $max_1[0];
+			$c = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0] +
+				 Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; })[0];
+			console.log($c);
 		}
-
-		console.log($c);
-		console.log($max.length);
 
 		// Envoi des deux plus grandes valeurs vers la page résultats
 
