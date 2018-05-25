@@ -20476,6 +20476,16 @@ body {
   margin-top: 10vh;
 }
 
+#modalhistory_job .modal-header h5 {
+  font-size: 1.5em;
+  font-family: "Kaushan Script", cursive;
+  color: teal;
+}
+
+#modalhistory_job .modal-body {
+  font-size: 1.1em;
+}
+
 #land img {
   width: 100%;
 }

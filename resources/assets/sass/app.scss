@@ -339,6 +339,22 @@ bottom: 0;
 
 }
 
+// Modal Test
+
+	#modalhistory_job {
+
+		.modal-header {
+			h5 {
+				font-size: 1.5em;
+				font-family: $font-title;
+				color: teal;
+			}
+		}
+
+		.modal-body {
+			font-size: 1.1em;
+		}
+	}
 
 // Page test
 
