@@ -2,6 +2,8 @@
 
 
 @section('content')
+	
+	@include('modal.history_job')
 
 	<div class="container-fluid" id="testtest">
 		<div id="test-bg"></div>
@@ -9,7 +11,7 @@
 
 		<div class="row justify-content-center text-center align-end centrage" id="test">
 
-			<div class="col- col-md-5 centrage">
+			<div class="col col-md-5 centrage">
 			
 				@foreach($resultats as $resultat)
 
@@ -68,6 +70,10 @@
 
 	
 $(function() {
+
+// Modal indicatif
+
+	$('#modalhistory_job').modal('show');
 
 // Rangement random des différentes réponses
 

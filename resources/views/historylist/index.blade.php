@@ -20,20 +20,29 @@
 
 	<div class="row justify-content-center">
 
+		@foreach($jobs as $job)
+				
+			<div class="card-deck col-md-4">
+					
+				<div class="card border-primary" style="max-width: 18rem;">
+					
+					<div class="card-header">{{$job->name}}</div>
+						
+						<div class="card-body text-primary">
+							 
+							 <h5 class="card-title"></h5>
+							 <p class="card-text">{{$job->description}}</p>
+						</div>
 
+					</div>
 
-				  	@foreach($jobs as $job)
-				<div class="card-deck col-lg-4">
-							  <div class="card border-primary" style="max-width: 18rem;">
-							  <div class="card-header">{{$job->name}}</div>
-							  <div class="card-body text-primary">
-							    <h5 class="card-title"></h5>
-							    <p class="card-text">{{$job->description}}</p>
-							  </div>
-							  </div>
-				</div>
-					@endforeach
+			</div>
+		
+		@endforeach
 
+	</div>
+
+</div>
 
 		{{-- @foreach($classes as $classe)
 
@@ -59,9 +68,5 @@
 			@endif
 
 		@endforeach --}}
-
-	</div>
-
-</div>
 
 @endsection
