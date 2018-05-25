@@ -44,8 +44,8 @@
 	          <p><span class="font-weight-bold">Calme, imaginatif, réfléchi</span>, le type rêveur (« <span class="font-italic">imaginer</span> » en anglais) est un penseur d’une grande profondeur. Son recul et son imagination lui permettent de modéliser des idées complexes… mais aussi d’être souvent qualifié « dans la lune ». Assurez-lui de la tranquillité et il vous remerciera.</p>
         </div>
         <div class="col-md-4">
-          <h2 class="colo-preseverant">Presévérant</h2>
-	          <p><span class="font-weight-bold">Engagé, observateur, consciencieux</span>, le type presévérant (« <span class="font-italic">believer</span> » en anglais) est une personne de principes. Ses valeurs et ses opinons sont très importantes, et on le retrouve souvent engagé, en politique ou ailleurs, pour les défendre. Pour le satisfaire, faites confiance à son jugement ou demandez-le lui, il apprécie donner son avis !</p>
+          <h2 class="colo-perseverant">Persévérant</h2>
+	          <p><span class="font-weight-bold">Engagé, observateur, consciencieux</span>, le type persévérant (« <span class="font-italic">believer</span> » en anglais) est une personne de principes. Ses valeurs et ses opinons sont très importantes, et on le retrouve souvent engagé, en politique ou ailleurs, pour les défendre. Pour le satisfaire, faites confiance à son jugement ou demandez-le lui, il apprécie donner son avis !</p>
         </div>
         <div class="col-md-4">
           <h2 class="colo-promoteur">Promoteur</h2>

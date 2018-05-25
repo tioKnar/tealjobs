@@ -397,9 +397,9 @@ bottom: 0;
 
 .test{
 
-	// position: absolute;
-	// border: 2px solid black;
-	// margin-top: 2vh;
+	.bouton:hover {
+		cursor: pointer;
+	}
 
 	h3 {
 		font-family: $font-title;
@@ -737,7 +737,7 @@ body.modal-open #result-bg {
 	.colo-reveur {
 		color: rgba(75, 192, 192, 1);
 	}
-	.colo-preseverant {
+	.colo-perseverant {
 		color: rgba(153, 102, 255, 1);
 	}
 	.colo-promoteur {

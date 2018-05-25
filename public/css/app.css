@@ -20520,6 +20520,10 @@ body {
   left: 0px;
 }
 
+.test .bouton:hover {
+  cursor: pointer;
+}
+
 .test h3 {
   font-family: "Kaushan Script", cursive;
   color: white;
@@ -21653,7 +21657,7 @@ body.modal-open #result-bg {
   color: #4bc0c0;
 }
 
-.histo-profiles .colo-preseverant {
+.histo-profiles .colo-perseverant {
   color: #9966ff;
 }
 
