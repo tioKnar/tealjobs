@@ -80,7 +80,7 @@ class AnswersTableSeeder extends Seeder
             [
                 'answer1' => 'Je récupère ma brosse à dents et je décolle.',
                 'answer2' => 'Il/Elle aura bien 10 minutes pour donner des nouvelles.',
-                'answer3' => 'Ce sera sans filtre : je ne ments jamais.',
+                'answer3' => 'Ce sera sans filtre : je ne mens jamais.',
                 'answer4' => '"On ne peut pas faire ça par sms ?!"',
                 'answer5' => 'Il/Elle va voir ce qu\'il/elle rate.',
                 'answer6' => 'Perdu pour perdu, je n\'aurai pas à le/la ménager...',
