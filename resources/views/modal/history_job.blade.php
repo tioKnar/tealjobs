@@ -6,9 +6,9 @@
     
         <div class="modal-content">
             
-            <div class="modal-header">
+            <div class="modal-header text-center">
                 
-                <h5 class="modal-title" id="exampleModalLongTitle">Point infos</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Bienvenu.e sur TealJobs !</h5>
                 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -17,15 +17,11 @@
             </div>
 
       <div class="modal-body">
-        Test gratuit
-        Résultat direct (métier et formation)
-
-        Si compte : 
-        Accès diagramme
-        Accès à l'historique de l'arbre
-        Accès à TOUTE la liste des métiers et des formation
+        <p>Ce test est gratuit, il vous permettra de découvrir les métiers et les formations <span class="font-weight-bold">faits pour vous</span>.
+        Évidemment, plus vos reponses seront sincères, mieux nous pourrons vous guider...</p>
+        <br>
+        <p>Pour aller plus loin, <span class="font-weight-bold">sauvegarder l'historique de vos résultats et voir votre profil psychologique</span>, pensez à créer un compte avant de commencer ce test !</p>
         
-        Courage bro
          
       </div>
 
