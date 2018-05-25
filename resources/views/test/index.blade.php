@@ -2,6 +2,8 @@
 
 
 @section('content')
+	
+	@include('modal.history_job')
 
 	<div class="container-fluid" id="testtest">
 		<div id="test-bg"></div>
@@ -9,7 +11,7 @@
 
 		<div class="row justify-content-center text-center align-end centrage" id="test">
 
-			<div class="col- col-md-5 centrage">
+			<div class="col col-md-5 centrage">
 			
 				@foreach($resultats as $resultat)
 
@@ -70,6 +72,10 @@
 	
 $(function() {
 
+// Modal indicatif
+
+	$('#modalhistory_job').modal('show');
+
 // Rangement random des différentes réponses
 
 	var collection = $(".bouton").get();
@@ -126,26 +132,30 @@ $(function() {
 		console.log($tabOcc);
 
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
+
+		$max = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; });
 	
-		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
+		$a = $max[0];
 		console.log($a);
-		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; }));
+		console.log($max);
 
-		$b = Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; })[0];
+		$max_1 = Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; });
+
+		$b = $max_1[0];
 		console.log($b);
-		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max-1; }));
+		console.log($max_1);
 
-		if((Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; }).length == 2 )) {
+		if($max.length >= 2) {
 
-			$c = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0] + 
-				 Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
+			$c = $max[0] + $max[1];
 		}
-		else {
+		else if($max.length == 1 && $max_1.length == 1) {
 
-			$c = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0] +
-				 Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; })[0];
-			console.log($c);
+			$c = $max[0] + $max_1[0];
 		}
+
+		console.log($c);
+		console.log($max.length);
 
 		// Envoi des deux plus grandes valeurs vers la page résultats
 

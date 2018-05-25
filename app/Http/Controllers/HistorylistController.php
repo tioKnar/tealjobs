@@ -6,17 +6,23 @@ use Request;
 use App\Model\Analyse;
 use App\Model\Classe;
 use App\Model\Intersector;
+use Auth;
 use Redirect;
 use DB;
 
 class HistorylistController extends Controller
 {	
+    public function __construct() {
+
+        $this->middleware('auth');
+    }
+    
     public function index() {
 
         $jobs = DB::table('jobs')
                         ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
                         ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
-                        ->where('analyses.resultprofile' , '=',  '12')
+                        ->where('analyses.resultprofile' , '=',  Auth::user()->profilpsy)
                         ->groupBy('name')
                         ->get();
         

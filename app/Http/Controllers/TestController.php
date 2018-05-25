@@ -33,32 +33,33 @@ class TestController extends Controller
 
         $values = Request::all();
 
-        // dd($values['result_chart']);
+        if( Auth::check() ) {
 
-        $occu1 = mb_substr_count($values['result_chart'], '1');
-        // dd($occu1);
-        $occu2 = mb_substr_count($values['result_chart'], '2');
-        $occu3 = mb_substr_count($values['result_chart'], '3');
-        $occu4 = mb_substr_count($values['result_chart'], '4');
-        $occu5 = mb_substr_count($values['result_chart'], '5');
-        $occu6 = mb_substr_count($values['result_chart'], '6');
+            // dd($values['result_chart']);
 
-        $user = User::where('id', Auth::user()->id)->first();
+            $occu1 = mb_substr_count($values['result_chart'], '1');
+            // dd($occu1);
+            $occu2 = mb_substr_count($values['result_chart'], '2');
+            $occu3 = mb_substr_count($values['result_chart'], '3');
+            $occu4 = mb_substr_count($values['result_chart'], '4');
+            $occu5 = mb_substr_count($values['result_chart'], '5');
+            $occu6 = mb_substr_count($values['result_chart'], '6');
 
-        $user->travaillomane = $occu1;
-        $user->empathique = $occu2;
-        $user->rebelle = $occu3;
-        $user->reveur = $occu4;
-        $user->perseverant = $occu5;
-        $user->promoteur = $occu6;
+            $user = User::where('id', Auth::user()->id)->first();
 
-        $user->profilpsy = $values['result_tree'];
+            $user->travaillomane = $occu1;
+            $user->empathique = $occu2;
+            $user->rebelle = $occu3;
+            $user->reveur = $occu4;
+            $user->perseverant = $occu5;
+            $user->promoteur = $occu6;
 
-        $user->save();
+            $user->profilpsy = $values['result_tree'];
 
-        return redirect()->route('results', ['profile' => $values['result_tree']]);
+            $user->save();
 
+        }
 
-
+            return redirect()->route('results', ['profile' => $values['result_tree']]);
     }
 }

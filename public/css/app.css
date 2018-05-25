@@ -20156,10 +20156,6 @@ a.text-dark:focus {
   }
 }
 
-.col-12 {
-  padding: 0px;
-}
-
 .nav-lien {
   margin-left: 3.3vh;
 }
@@ -20178,27 +20174,76 @@ a.text-dark:focus {
   color: #26A69A;
 }
 
-footer {
-  background-color: #1B4C51;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  position: fixed bottom;
+.footer-distributed {
+  background-color: #292c2f;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
 }
 
-.footerlink {
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
   text-decoration: none;
-  color: #B2DFDB;
+  color: inherit;
 }
 
-.footerlink:hover {
-  text-decoration: none;
-  color: white;
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 100%;
 }
 
-.logofooter {
-  width: 35px;
-  height: 35px;
-  margin: 20px 5px 20px 5px;
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #33383b;
+  border-radius: 32px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
 }
 
 #adminform {
@@ -20264,6 +20309,42 @@ footer {
 }
 
 .administration:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #17A2B8;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#accessadmin {
+  margin-top: 80px;
+}
+
+.accessaccueilbtn {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.homebtn {
+  font-size: 18px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  height: 50px;
+  line-height: 50px;
+  test-decoration: none;
+  color: black;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.homebtn:hover {
   text-decoration: none;
   color: white;
   background-color: #17A2B8;
@@ -20395,47 +20476,6 @@ body {
   margin-top: 10vh;
 }
 
-#pageactive {
-  -webkit-box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
-          box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
-}
-
-#accessadmin {
-  margin-top: 80px;
-}
-
-.accessaccueilbtn {
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-.homebtn {
-  font-size: 18px;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
-  height: 50px;
-  line-height: 50px;
-  test-decoration: none;
-  color: black;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.6s;
-          transition-duration: 0.6s;
-}
-
-.homebtn:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #17A2B8;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 #land img {
   width: 100%;
 }
@@ -20478,6 +20518,10 @@ body {
   position: relative;
   top: 0px;
   left: 0px;
+}
+
+.test .bouton:hover {
+  cursor: pointer;
 }
 
 .test h3 {
@@ -21588,6 +21632,11 @@ body.modal-open #result-bg {
   margin-top: 4em;
 }
 
+.histo-profiles {
+  margin-top: 55px;
+  margin-bottom: 60px;
+}
+
 .histo-profiles h2 {
   font-family: "Kaushan Script", cursive;
 }
@@ -21608,84 +21657,12 @@ body.modal-open #result-bg {
   color: #4bc0c0;
 }
 
-.histo-profiles .colo-preseverant {
+.histo-profiles .colo-perseverant {
   color: #9966ff;
 }
 
 .histo-profiles .colo-promoteur {
   color: #ff9f40;
-}
-
-.footer-distributed {
-  background-color: #292c2f;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: normal 16px sans-serif;
-  padding: 45px 50px;
-}
-
-.footer-distributed .footer-left p {
-  color: #8f9296;
-  font-size: 14px;
-  margin: 0;
-}
-
-/* Footer links */
-
-.footer-distributed p.footer-links {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 10px;
-  padding: 0;
-}
-
-.footer-distributed p.footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer-distributed .footer-right {
-  float: right;
-  margin-top: 6px;
-  max-width: 100%;
-}
-
-.footer-distributed .footer-right a {
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  background-color: #33383b;
-  border-radius: 32px;
-  font-size: 30px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-  margin-left: 3px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 600px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
-    text-align: center;
-  }
-
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
 }
 
 .title-partners {
@@ -21708,5 +21685,9 @@ body.modal-open #result-bg {
 .hr-partners {
   width: 11vw;
   color: #00796B;
+}
+
+.col-12 {
+  padding: 0px;
 }
 

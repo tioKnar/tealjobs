@@ -13,6 +13,11 @@ use Request;
 
 class HistorytreeController extends Controller
 {	
+    public function __construct() {
+
+        $this->middleware('auth');
+    }
+    
     public function index() {
 
         $jobs = DB::table('jobs')
