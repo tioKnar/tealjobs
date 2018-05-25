@@ -147,20 +147,17 @@
 </body>
 
 <script>
+
     $(function(){
-
-        @if($errors->has('email') || $errors->has('password'))
-
-                $('#modalconnect').modal('show');
-
+        @if($errors->first('connectfail'))
+            @if($errors->has('email') || $errors->has('password'))
+                    $('#modalconnect').modal('show');
+            @endif
+        @else
+            @if($errors->has('email') || $errors->has('password') || $errors->has('firstname') || $errors->has('lastname') )
+                    $('#modalregister').modal('show');
+            @endif
         @endif
-
-        @if($errors->has('email') || $errors->has('password') || $errors->has('firstname') || $errors->has('lastname') )
-
-                $('#modalregister').modal('show');
-
-        @endif
-
     });
     
 </script>

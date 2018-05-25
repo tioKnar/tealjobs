@@ -4,8 +4,25 @@
 
  @if( Auth::user()->role == 'user')
 
-	<p>Vous n'avez pas accès à cette page</p>
-	<a href="/">Retour à l'accueil</a>
+	<div class="container-fluid">
+    
+    	<div class="row justify-content-center text-center" id="welcomename">
+        
+        	<h4>Vous n'avez pas accès à cette page !</h4>
+	
+    	</div> 
+
+		<div id="accessuser">
+
+			<div class="row justify-content-center text-center accessaccueilbtn">
+
+				<a href="/" class="col-md-4 homebtn">Retour à l'accueil</a>
+
+			<div>
+
+		</div>
+
+	</div>
 
  @else
 
@@ -23,24 +40,6 @@
 				<input type="text" name="name" class="form form-group form-control" value="{{ $job->name }}">
 
 				<textarea name="description" class="form form-group form-control" rows="5">{{ $job->description }}</textarea>
-
-				<select name="note" class="form form-group form-control">
-					
-					@for($i = 1; $i <= 10; $i++)
-	
-						@if($job->note == $i)
-
-							<option value="{{ $i }}" selected>{{ $i }}</option>
-
-						@else
-
-							<option value="{{ $i }}">{{ $i }}</option>
-
-						@endif
-
-					@endfor
-
-				</select>
 
 				<button class="btn btn-info form-control">Modifier</button>
 

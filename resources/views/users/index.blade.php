@@ -4,8 +4,25 @@
 
  @if( Auth::user()->role == 'user')
 
-	<p>Vous n'avez pas accès à cette page</p>
-	<a href="/">Retour à l'accueil</a>
+	<div class="container-fluid">
+    
+    	<div class="row justify-content-center text-center" id="welcomename">
+        
+        	<h4>Vous n'avez pas accès à cette page !</h4>
+	
+    	</div> 
+
+		<div id="accessuser">
+
+			<div class="row justify-content-center text-center accessaccueilbtn">
+
+				<a href="/" class="col-md-4 homebtn">Retour à l'accueil</a>
+
+			<div>
+
+		</div>
+
+	</div>
 
  @else
 
@@ -44,6 +61,13 @@
 
 				<input type="password" name="password" class="form form-group form-control {{ $errors->has('password') ? 'border border-danger' : '' }}" value="{{ old('password') }}" placeholder="Mot de passe">
 
+				<select name="role" class="form form-group form-control {{ $errors->has('role') ? 'border border-danger' : '' }}">
+					
+					<option value="user">User</option>
+					<option value="admin">Admin</option>
+
+				</select>
+
 				<button class="btn btn-info form-control">Ajouter</button>
 
 			</form>
@@ -68,6 +92,7 @@
 
 							<h4>{{ $user->firstname }} {{ $user->lastname }} </h4>
 							<p>Email : {{ $user->email}}</p>
+							<p>Role : {{ $user->role }}</p>
 							<a href="userupdate?id={{ $user->id }}">Modifier</a>
 							<a href="userdelete?id={{ $user->id }}" class="supp">/ Supprimer</a>
 

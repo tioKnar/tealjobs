@@ -33,7 +33,7 @@ class FormulaireContact extends Mailable
 
         $values = Request::all();
 
-        return $this->from($values['email'], getenv('APP_NAME'))
+        return $this->from($values['email_contact'], getenv('APP_NAME'))
             ->subject('Formulaire de message')
             ->view('layouts.email-mailtrap');
     }

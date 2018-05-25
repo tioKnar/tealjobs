@@ -35,7 +35,7 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Vous êtes particulièrement connu.e pour :',
             ],
              [
-                'question' => 'Au sein d\'un groupe, vous avez un travail à rendre dans des délais bien trop courts. Vous :',
+                'question' => 'Au sein d\'un groupe, vous avez un travail à rendre dans des délais bien trop courts.',
             ],
              [
                 'question' => 'Vous revoyez un.e ex pour une explication polie :',
@@ -47,19 +47,31 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Question classique. On dit que vous êtes plutôt :',
             ],
             [
-                'question' => 'Vous sortez du ciné, le film est un des pires jamais faits :',
+                'question' => 'Vous sortez du ciné, le film est un des pires jamais réalisés :',
             ],
             [
                 'question' => 'Comment se passe une recherche de job, pour vous ?',
             ],
             [
-                'question' => 'En cours, quel genre d\'élève êtes vous ?',
+                'question' => 'En cours, quel genre d\'élève êtes-vous ?',
             ],
             [
-                'question' => 'Quel est votre rapport avec l\'argent ?',
+                'question' => 'Quel est votre rapport à l\'argent ?',
             ],
             [
-                'question' => 'question15',
+                'question' => 'Quand vous avez du temps libre que faites-vous ?',
+            ],
+            [
+                'question' => 'Choisissez un personnage célèbre :',
+            ],
+            [
+                'question' => 'Si j\'étais PDG :',
+            ],
+            [
+                'question' => 'Pour résoudre le problème du réchauffement climatique :',
+            ],
+            [
+                'question' => 'Comment demandez-vous l\'heure à vos collègues ?',
             ],
         ];
 

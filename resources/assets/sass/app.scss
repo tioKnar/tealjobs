@@ -15,12 +15,6 @@
 @import "fireflies.css";
 
 
-
-.col-12 {
-	padding: 0px;
-}
-
-
 // Header 
 
 .nav-lien {
@@ -42,29 +36,78 @@
 }
 
 
-// Footer 
+// TEST FOOTER
 
-footer {
-	 background-color: #1B4C51;
-	 padding-top: 25px;
-	 padding-bottom: 25px;
-	 position: fixed bottom;
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
 }
 
-.footerlink {
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
 	text-decoration: none;
-	color: #B2DFDB;
+	color:  inherit;
 }
 
-.footerlink:hover {
-	text-decoration: none;
-	color: white;
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 100%;
 }
 
-.logofooter {
-	width: 35px;
-	height: 35px; 
-	margin: 20px 5px 20px 5px;
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	background-color:  #33383b;
+	border-radius: 32px;
+
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
 }
 
 
@@ -130,6 +173,36 @@ footer {
 }
 
 .administration:hover {
+	text-decoration: none; 
+	color: white;
+	background-color: #17A2B8;
+	box-shadow: none;
+	transform: scale(1.1);
+}
+
+#accessadmin {
+	margin-top: 80px;
+}
+
+.accessaccueilbtn {
+	margin-top: 50px;
+	margin-bottom: 100px;
+
+}
+
+.homebtn {
+	font-size: 18px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+	border-radius: 20px;
+	height: 50px;
+	line-height: 50px;
+	test-decoration: none;
+	color: black;
+	transition-property: transform;
+	transition-duration: 0.6s;
+}
+
+.homebtn:hover {
 	text-decoration: none; 
 	color: white;
 	background-color: #17A2B8;
@@ -266,47 +339,24 @@ bottom: 0;
 
 }
 
+// Modal Test
 
-// Page gestion users/classes/jobs
+	#modalhistory_job {
 
-#pageactive {
-	box-shadow: 0px 0px 10px rgba(19, 132, 150, 0.9);
-}
+		.modal-header {
+			h5 {
+				font-size: 1.5em;
+				font-family: $font-title;
+				color: teal;
+			}
+		}
 
-#accessadmin {
-	margin-top: 80px;
-}
-
-.accessaccueilbtn {
-	margin-top: 50px;
-	margin-bottom: 100px;
-
-}
-
-.homebtn {
-	font-size: 18px;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-	border-radius: 20px;
-	height: 50px;
-	line-height: 50px;
-	test-decoration: none;
-	color: black;
-	transition-property: transform;
-	transition-duration: 0.6s;
-}
-
-.homebtn:hover {
-	text-decoration: none; 
-	color: white;
-	background-color: #17A2B8;
-	box-shadow: none;
-	transform: scale(1.1);
-}
-
+		.modal-body {
+			font-size: 1.1em;
+		}
+	}
 
 // Page test
-
-
 
 #land {
 
@@ -322,8 +372,8 @@ bottom: 0;
 
 
 #grow {
-	position: absolute;
-	top:0;
+	position: relative;
+	top:-50%;
 	left:5%;
 }
 
@@ -363,9 +413,9 @@ bottom: 0;
 
 .test{
 
-	// position: absolute;
-	// border: 2px solid black;
-	// margin-top: 2vh;
+	.bouton:hover {
+		cursor: pointer;
+	}
 
 	h3 {
 		font-family: $font-title;
@@ -392,6 +442,19 @@ a.under-line{
 #resultat{
 	z-index: 1;
 }
+
+#formtest {
+	margin-top: 40%
+}
+
+#endtest {
+	font-family: $font-title;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 30px;
+	letter-spacing: 2px;
+}
+
 
 // Page contact
 
@@ -432,7 +495,6 @@ label {
 
 
 //Page Resultats
-
 
 #result-bg {
 	object-fit: cover;
@@ -613,6 +675,7 @@ label {
 	left:92%;
 }
 
+
 //Page Resultats - Modal
 
 .modaljob-content {
@@ -654,6 +717,7 @@ body.modal-open #result-bg {
 
 }
 
+
 // Page historylist
 
 .joblist {
@@ -663,7 +727,6 @@ body.modal-open #result-bg {
 
 		margin-bottom: 0.8em;
 	}
-
 	.card-header {
 		font-family: $font-title;
 		color: teal;
@@ -671,9 +734,8 @@ body.modal-open #result-bg {
 }
 
 .card:hover {
-	box-shadow: 0, 0, 0, 900px black;
+	cursor: pointer;
 }
-
 
 
 // Page historychart
@@ -683,6 +745,8 @@ body.modal-open #result-bg {
 }
 
 .histo-profiles {
+	margin-top: 55px;
+	margin-bottom: 60px;
 
 	h2 {
 		font-family: $font-title;
@@ -700,7 +764,7 @@ body.modal-open #result-bg {
 	.colo-reveur {
 		color: rgba(75, 192, 192, 1);
 	}
-	.colo-preseverant {
+	.colo-perseverant {
 		color: rgba(153, 102, 255, 1);
 	}
 	.colo-promoteur {
@@ -708,79 +772,6 @@ body.modal-open #result-bg {
 	}
 }
 
-// TEST FOOTER
-
-.footer-distributed{
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: normal 16px sans-serif;
-	padding: 45px 50px;
-}
-
-.footer-distributed .footer-left p{
-	color:  #8f9296;
-	font-size: 14px;
-	margin: 0;
-}
-
-/* Footer links */
-
-.footer-distributed p.footer-links{
-	font-size:18px;
-	font-weight: bold;
-	color:  #ffffff;
-	margin: 0 0 10px;
-	padding: 0;
-}
-
-.footer-distributed p.footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.footer-distributed .footer-right{
-	float: right;
-	margin-top: 6px;
-	max-width: 100%;
-}
-
-.footer-distributed .footer-right a{
-	display: inline-block;
-	width: 60px;
-	height: 34px;
-	background-color:  #33383b;
-	border-radius: 32px;
-
-	font-size: 30px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-	margin-left: 3px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
-}
 
 // PAGE PARTENAIRES
 
@@ -803,4 +794,16 @@ body.modal-open #result-bg {
 .hr-partners {
   width: 11vw;
   color: #00796B;
+}
+
+.col-12 {
+	padding: 0px;
+}
+
+
+// Page password reset
+
+#passwordreset {
+	margin-top: 50px;
+	margin-bottom: 50px
 }
