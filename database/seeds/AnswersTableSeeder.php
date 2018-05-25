@@ -134,14 +134,46 @@ class AnswersTableSeeder extends Seeder
                 'answer6' => 'Money is life !',
             ],
             [
-                'answer1' => 'reponse1',
-                'answer2' => 'reponse2',
-                'answer3' => 'reponse3',
-                'answer4' => 'reponse4',
-                'answer5' => 'reponse5',
-                'answer6' => 'reponse6',
+                'answer1' => 'Une veille professionnelle, c\'est ce qui fait la différence.',
+                'answer2' => 'J\'aime faire du bénévolat et m\'occuper des autres',
+                'answer3' => 'Je sors avec des amis dès que j\'ai du temps.',
+                'answer4' => 'Un thé et un bouquin, pour me détendre.',
+                'answer5' => 'C\'est prévu, café en famille et chorale le dimanche.',
+                'answer6' => 'J\'ai très peu de temps libre entre le boulot et ma famille !',
             ],
-        	];
+            [
+                'answer1' => 'Margareth Tatcher.',
+                'answer2' => 'Gandhi.',
+                'answer3' => 'Lady Gaga.',
+                'answer4' => 'Leonard De Vinci.',
+                'answer5' => 'Martin Luther King.',
+                'answer6' => 'Zinédine Zidane.',
+            ],
+            [
+                'answer1' => 'Je serais totalement à ma place.',
+                'answer2' => 'Je serais soucieux du bien-être de mes employés.',
+                'answer3' => 'Je me déplacerais en hélico.',
+                'answer4' => 'Je serais malheureux.',
+                'answer5' => 'Je réspecterais le dialogue social.',
+                'answer6' => 'Ce serait un super challenge à relever.',
+            ],
+            [
+                'answer1' => 'Je réunis les dirigeants du monde et les oblige à travailler de concert.',
+                'answer2' => 'J\'aide les pays en voie de développement à passer aux énergies renouvellables.',
+                'answer3' => 'Je me tourne vers la conquête spaciale : il y a de l\'eau sur Mars.',
+                'answer4' => 'J\'invente une source d\'énergie gratuite, illimitée et écologique.',
+                'answer5' => 'J\'oblige les entreprises les plus polluantes à payer de lourdes amendes.',
+                'answer6' => 'Le seul problème là-dedans, c\'est cette théorie complotiste.',
+            ],
+            [
+                'answer1' => '"Peux-tu me donner l\'heure, s\'il-te-plaît ?"',
+                'answer2' => '"Sans vouloir te déranger, tu pourrais me donner l\'heure, s\'il-te-plaît ?"',
+                'answer3' => '"J\'adore ta monte ! Tu me donnerais l\'heure ?"',
+                'answer4' => '"Je ne suis pas à une demi-heure près."',
+                'answer5' => '"J\'ai toujours l\'heure sur moi..."',
+                'answer6' => '"Donne-moi l\'heure stp !"',
+            ],
+        ];
 
         Answer::insert($data);
     }

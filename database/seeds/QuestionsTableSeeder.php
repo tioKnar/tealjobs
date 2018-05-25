@@ -59,7 +59,19 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Quel est votre rapport à l\'argent ?',
             ],
             [
-                'question' => 'question15',
+                'question' => 'Quand vous avez du temps libre que faites-vous ?',
+            ],
+            [
+                'question' => 'Choisissez un personnage célèbre :',
+            ],
+            [
+                'question' => 'Si j\'étais PDG :',
+            ],
+            [
+                'question' => 'Pour résoudre le problème du réchauffement climatique :',
+            ],
+            [
+                'question' => 'Comment demandez-vous l\'heure à vos collègues ?',
             ],
         ];
 
