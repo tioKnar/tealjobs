@@ -2,6 +2,8 @@
 
 
 @section('content')
+	
+	@include('modal.history_job')
 
 	<div class="container-fluid" id="testtest">
 		<div id="test-bg"></div>
@@ -9,7 +11,7 @@
 
 		<div class="row justify-content-center text-center align-end centrage" id="test">
 
-			<div class="col- col-md-5 centrage">
+			<div class="col col-md-5 centrage">
 			
 				@foreach($resultats as $resultat)
 
@@ -30,15 +32,16 @@
 							@if(! empty($resultat->answer6))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="6">{{ $resultat->answer6 }}</p></a>@endif
 
 					
-							@if($resultat->question_id != $first)
+				
 
-								<button class="previous btn btn-warning">Précédent</button>
+								<button class="previous btn btn-warning completed">Précédent</button>
 
-							@endif
+	
 
 					</div>
 
 				@endforeach
+				
 				<form action="" method="POST">
 					@csrf
 					<input name="result_tree" type="text" hidden id="result_tree">
@@ -68,6 +71,10 @@
 
 	
 $(function() {
+
+// Modal indicatif
+
+	$('#modalhistory_job').modal('show');
 
 // Rangement random des différentes réponses
 
@@ -99,6 +106,8 @@ $(function() {
 			
 
 		$(this).parent().next().delay(451).fadeIn(450);
+
+		$('.previous').fadeIn(450);
 
 
 

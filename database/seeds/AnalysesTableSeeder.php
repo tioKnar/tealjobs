@@ -193,10 +193,26 @@ class AnalysesTableSeeder extends Seeder
         		'resultprofile' => '24',
         		'sector_id' => '23',
         	],
+            [
+                'resultprofile' => '24',
+                'sector_id' => '9',
+            ],
+            [
+                'resultprofile' => '24',
+                'sector_id' => '22',
+            ],
         	[
         		'resultprofile' => '42',
         		'sector_id' => '23',
         	],
+            [
+                'resultprofile' => '42',
+                'sector_id' => '9',
+            ],
+            [
+                'resultprofile' => '42',
+                'sector_id' => '22',
+            ],
         	[
         		'resultprofile' => '16',
         		'sector_id' => '24',

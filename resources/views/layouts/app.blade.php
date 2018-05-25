@@ -147,6 +147,7 @@
 </body>
 
 <script>
+    
     $(function(){
 
         @if($errors->has('email') || $errors->has('password'))
