@@ -13,195 +13,146 @@ class InterclassesTableSeeder extends Seeder
     public function run()
     {
         $data = [
-
+        	    [
+        		'jobs_id' => '1',
+        		'classes_id' => '3',
+        	    ],
+        	    [
+        		'jobs_id' => '1',
+        		'classes_id' => '4',
+        	    ],
+        	    [
+        		'jobs_id' => '1',
+        		'classes_id' => '5',
+        	    ],
+        	    [
+        		'jobs_id' => '1',
+        		'classes_id' => '6',
+        	    ],
+        	    [
+        		'jobs_id' => '1',
+        		'classes_id' => '7',
+        	    ],
+        	    [
+        		'jobs_id' => '1',
+        		'classes_id' => '8',
+        	    ],
+        	    [
+        		'jobs_id' => '1',
+        		'classes_id' => '10',
+        	    ],
+        	    [
+        		'jobs_id' => '1',
+        		'classes_id' => '11',
+        	    ],
+        	    [
+        		'jobs_id' => '2',
+        		'classes_id' => '3',
+        	    ],
+        	    [
+        		'jobs_id' => '2',
+        		'classes_id' => '4',
+        	    ],
+        	    [
+        		'jobs_id' => '2',
+        		'classes_id' => '5',
+        	    ],
+        	    [
+        		'jobs_id' => '2',
+        		'classes_id' => '6',
+        	    ],
+        	    [
+        		'jobs_id' => '2',
+        		'classes_id' => '7',
+        	    ],
+        	    [
+        		'jobs_id' => '2',
+        		'classes_id' => '8',
+        	    ],
+        	    [
+        		'jobs_id' => '2',
+        		'classes_id' => '10',
+        	    ],
+        	    [
+        		'jobs_id' => '2',
+        		'classes_id' => '11',
+        	    ],
+        	    [
+        		'jobs_id' => '3',
+        		'classes_id' => '3',
+        	    ],
+        	    [
+        		'jobs_id' => '3',
+        		'classes_id' => '4',
+        	    ],
+        	    [
+        		'jobs_id' => '3',
+        		'classes_id' => '5',
+        	    ],
+        	    [
+        		'jobs_id' => '3',
+        		'classes_id' => '6',
+        	    ],
+        	    [
+        		'jobs_id' => '3',
+        		'classes_id' => '7',
+        	    ],
+        	    [
+        		'jobs_id' => '3',
+        		'classes_id' => '8',
+        	    ],
+        	    [
+        		'jobs_id' => '3',
+        		'classes_id' => '10',
+        	    ],
+        	    [
+        		'jobs_id' => '3',
+        		'classes_id' => '11',
+        	    ],
+        	    [
+        		'jobs_id' => '4',
+        		'classes_id' => '49',
+        	    ],
+        	    [
+        		'jobs_id' => '4',
+        		'classes_id' => '50',
+        	    ],
+        	    [
+        		'jobs_id' => '5',
+        		'classes_id' => '47',
+        	    ],
+        	    [
+        		'jobs_id' => '5',
+        		'classes_id' => '49',
+        	    ],
+        	    [
+        		'jobs_id' => '5',
+        		'classes_id' => '50',
+        	    ],
+        	    [
+        		'jobs_id' => '5',
+        		'classes_id' => '51',
+        	    ],
+        	    [
+        		'jobs_id' => '6',
+        		'classes_id' => '49',
+        	    ],
+        	    [
+        		'jobs_id' => '6',
+        		'classes_id' => '50',
+        	    ],
+        	    [
+        		'jobs_id' => '7',
+        		'classes_id' => '127',
+        	    ],
+        	    [
+        		'jobs_id' => '7',
+        		'classes_id' => '128',
+        	    ],
                 [
-        		'jobs_id' => '1',
-        		'classes_id' => '2',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '3',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '4',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '5',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '6',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '7',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '8',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '9',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '10',
-        	    ],
-        	    [
-        		'jobs_id' => '1',
-        		'classes_id' => '11',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '2',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '3',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '4',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '5',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '6',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '7',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '8',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '9',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '10',
-        	    ],
-        	    [
-        		'jobs_id' => '2',
-        		'classes_id' => '11',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '2',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '3',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '4',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '5',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '6',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '7',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '8',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '9',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '10',
-        	    ],
-        	    [
-        		'jobs_id' => '3',
-        		'classes_id' => '11',
-        	    ],
-        	    [
-        		'jobs_id' => '4',
-        		'classes_id' => '47',
-        	    ],
-        	    [
-        		'jobs_id' => '4',
-        		'classes_id' => '48',
-        	    ],
-        	    [
-        		'jobs_id' => '4',
-        		'classes_id' => '49',
-        	    ],
-        	    [
-        		'jobs_id' => '4',
-        		'classes_id' => '50',
-        	    ],
-        	    [
-        		'jobs_id' => '4',
-        		'classes_id' => '51',
-        	    ],
-        	    [
-        		'jobs_id' => '5',
-        		'classes_id' => '47',
-        	    ],
-        	    [
-        		'jobs_id' => '5',
-        		'classes_id' => '48',
-        	    ],
-        	    [
-        		'jobs_id' => '5',
-        		'classes_id' => '49',
-        	    ],
-        	    [
-        		'jobs_id' => '5',
-        		'classes_id' => '50',
-        	    ],
-        	    [
-        		'jobs_id' => '5',
-        		'classes_id' => '51',
-        	    ],
-        	    [
-        		'jobs_id' => '6',
-        		'classes_id' => '47',
-        	    ],
-        	    [
-        		'jobs_id' => '6',
-        		'classes_id' => '48',
-        	    ],
-        	    [
-        		'jobs_id' => '6',
-        		'classes_id' => '49',
-        	    ],
-        	    [
-        		'jobs_id' => '6',
-        		'classes_id' => '50',
-        	    ],
-        	    [
-        		'jobs_id' => '6',
-        		'classes_id' => '51',
-        	    ],
-        	    [
-        		'jobs_id' => '7',
-        		'classes_id' => '127',
-        	    ],
-        	    [
-        		'jobs_id' => '7',
-        		'classes_id' => '128',
-        	    ],
+                'jobs_id' => '7',
+                'classes_id' => '75',
+                ],
         	    [
         		'jobs_id' => '8',
         		'classes_id' => '127',
@@ -217,26 +168,6 @@ class InterclassesTableSeeder extends Seeder
         	    [
         		'jobs_id' => '9',
         		'classes_id' => '128',
-        	    ],
-        	    [
-        		'jobs_id' => '11',
-        		'classes_id' => '24',
-        	    ],
-        	    [
-        		'jobs_id' => '11',
-        		'classes_id' => '25',
-        	    ],
-        	    [
-        		'jobs_id' => '11',
-        		'classes_id' => '26',
-        	    ],
-        	    [
-        		'jobs_id' => '11',
-        		'classes_id' => '27',
-        	    ],
-        	    [
-        		'jobs_id' => '11',
-        		'classes_id' => '28',
         	    ],
         	    [
         		'jobs_id' => '11',
@@ -318,6 +249,14 @@ class InterclassesTableSeeder extends Seeder
         		'jobs_id' => '13',
         		'classes_id' => '131',
         	    ],
+                [
+                'jobs_id' => '13',
+                'classes_id' => '132',
+                ],
+                [
+                'jobs_id' => '13',
+                'classes_id' => '133',
+                ],
         	    [
         		'jobs_id' => '15',
         		'classes_id' => '129',
@@ -328,7 +267,7 @@ class InterclassesTableSeeder extends Seeder
         	    ],
         	    [
         		'jobs_id' => '15',
-        		'classes_id' => '131',
+        		'classes_id' => '132',
         	    ],
         	    [
         		'jobs_id' => '21',
@@ -365,14 +304,6 @@ class InterclassesTableSeeder extends Seeder
         	    [
         		'jobs_id' => '21',
         		'classes_id' => '20',
-        	    ],
-        	    [
-        		'jobs_id' => '21',
-        		'classes_id' => '21',
-        	    ],
-        	    [
-        		'jobs_id' => '21',
-        		'classes_id' => '22',
         	    ],
         	    [
         		'jobs_id' => '21',
@@ -541,10 +472,6 @@ class InterclassesTableSeeder extends Seeder
         	    [
         		'jobs_id' => '28',
         		'classes_id' => '126',
-        	    ],
-        	    [
-        		'jobs_id' => '49',
-        		'classes_id' => '1',
         	    ],
         	    [
         		'jobs_id' => '49',
@@ -1128,10 +1055,6 @@ class InterclassesTableSeeder extends Seeder
         	    ],
         	    [
         		'jobs_id' => '41',
-        		'classes_id' => '82',
-        	    ],
-        	    [
-        		'jobs_id' => '41',
         		'classes_id' => '83',
         	    ],
         	    [
@@ -1172,10 +1095,6 @@ class InterclassesTableSeeder extends Seeder
         	    ],
         	    [
         		'jobs_id' => '43',
-        		'classes_id' => '82',
-        	    ],
-        	    [
-        		'jobs_id' => '43',
         		'classes_id' => '83',
         	    ],
         	    [
@@ -1205,10 +1124,6 @@ class InterclassesTableSeeder extends Seeder
         	    [
         		'jobs_id' => '45',
         		'classes_id' => '81',
-        	    ],
-        	    [
-        		'jobs_id' => '45',
-        		'classes_id' => '82',
         	    ],
         	    [
         		'jobs_id' => '45',
@@ -1345,6 +1260,14 @@ class InterclassesTableSeeder extends Seeder
                 [
                 'jobs_id' => '14',
                 'classes_id' => '131',
+                ],
+                [
+                'jobs_id' => '14',
+                'classes_id' => '132',
+                ],
+                [
+                'jobs_id' => '14',
+                'classes_id' => '133',
                 ],
                 [
                 'jobs_id' => '17',
@@ -1633,10 +1556,6 @@ class InterclassesTableSeeder extends Seeder
                 'jobs_id' => '16',
                 'classes_id' => '111',
                 ],
-
-
-
-
         ];
 
         Interclasse::insert($data);
