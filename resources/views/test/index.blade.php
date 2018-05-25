@@ -65,7 +65,7 @@
 	
 $(function() {
 
-// Modal indicatif
+// Modal info
 
 	$('#modalhistory_job').modal('show');
 
