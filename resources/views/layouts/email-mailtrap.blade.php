@@ -58,7 +58,7 @@
     <tr>
         <td style="padding:20px 40px 20px; color:#4e5665; text-align: center;">
             <multiline>
-                <p style="text-align: center;">{{'De : ' . $_POST['lastname'] . ' ' . $_POST['name']}} <br> Message :  {{ $_POST['message'] }}</p>
+                <p style="text-align: center;">{{'De : ' . $_POST['lastname_contact'] . ' ' . $_POST['name_contact']}} <br> Message :  {{ $_POST['message_contact'] }}</p>
             </multiline>
         </td>
     </tr>
@@ -67,7 +67,7 @@
         <td style="padding:20px 40px 20px; color:#fff; text-align: center; background-color: #313E4B;">
             <table align="center" cellpadding="0" cellspacing="0" border="0" style="width: 50%;">
                 <tr>
-                    <td colspan="4" style="text-align: center;">Envoyé de <a href="#" title="{{ $_POST['email'] }}" style="color: #fff; text-decoration: underline;">{{ $_POST['email'] }}</a></td>
+                    <td colspan="4" style="text-align: center;">Envoyé de <a href="#" title="{{ $_POST['email_contact'] }}" style="color: #fff; text-decoration: underline;">{{ $_POST['email_contact'] }}</a></td>
                 </tr>
             </table>
         </td>
