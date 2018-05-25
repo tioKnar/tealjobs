@@ -418,7 +418,7 @@ class JobsTableSeeder extends Seeder
                     'note' => '0',
                     ],
                     [
-                    'name' => 'Hotesse de l\'air',
+                    'name' => 'Steward / Hotesse de l\'air',
                     'description' => 'D\'un bout à l\'autre du monde, à bord des avions, les hôtesses et les stewards assurent la sécurité et le confort des passagers pendant le vol. Ils sont les représentants des compagnies aériennes dont ils doivent donner la meilleure image.
 
 ',
