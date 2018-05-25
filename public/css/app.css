@@ -21624,8 +21624,7 @@ body.modal-open #result-bg {
 }
 
 .card:hover {
-  -webkit-box-shadow: 0, 0, 0, 900px black;
-          box-shadow: 0, 0, 0, 900px black;
+  cursor: pointer;
 }
 
 #myChart {
