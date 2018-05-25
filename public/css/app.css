@@ -20559,6 +20559,18 @@ a.under-line {
   z-index: 1;
 }
 
+#formtest {
+  margin-top: 40%;
+}
+
+#endtest {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
 #map {
   width: 100%;
   height: 400px;
