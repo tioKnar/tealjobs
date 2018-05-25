@@ -20476,6 +20476,16 @@ body {
   margin-top: 10vh;
 }
 
+#modalhistory_job .modal-header h5 {
+  font-size: 1.5em;
+  font-family: "Kaushan Script", cursive;
+  color: teal;
+}
+
+#modalhistory_job .modal-body {
+  font-size: 1.1em;
+}
+
 #land img {
   width: 100%;
 }
@@ -20547,6 +20557,18 @@ a.under-line {
 
 #resultat {
   z-index: 1;
+}
+
+#formtest {
+  margin-top: 40%;
+}
+
+#endtest {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
 
 #map {
@@ -21624,8 +21646,7 @@ body.modal-open #result-bg {
 }
 
 .card:hover {
-  -webkit-box-shadow: 0, 0, 0, 900px black;
-          box-shadow: 0, 0, 0, 900px black;
+  cursor: pointer;
 }
 
 #myChart {

@@ -339,6 +339,22 @@ bottom: 0;
 
 }
 
+// Modal Test
+
+	#modalhistory_job {
+
+		.modal-header {
+			h5 {
+				font-size: 1.5em;
+				font-family: $font-title;
+				color: teal;
+			}
+		}
+
+		.modal-body {
+			font-size: 1.1em;
+		}
+	}
 
 // Page test
 
@@ -425,6 +441,19 @@ a.under-line{
 
 #resultat{
 	z-index: 1;
+}
+
+#formtest {
+	margin-top: 40%
+}
+
+#endtest {
+	font-family: $font-title;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 30px;
+	letter-spacing: 2px;
+	margin-bottom
 }
 
 
@@ -699,7 +728,6 @@ body.modal-open #result-bg {
 
 		margin-bottom: 0.8em;
 	}
-
 	.card-header {
 		font-family: $font-title;
 		color: teal;
@@ -707,7 +735,7 @@ body.modal-open #result-bg {
 }
 
 .card:hover {
-	box-shadow: 0, 0, 0, 900px black;
+	cursor: pointer;
 }
 
 

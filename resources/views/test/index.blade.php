@@ -2,6 +2,8 @@
 
 
 @section('content')
+	
+	@include('modal.history_job')
 
 	<div class="container-fluid" id="testtest">
 		<div id="test-bg"></div>
@@ -9,7 +11,7 @@
 
 		<div class="row justify-content-center text-center align-end centrage" id="test">
 
-			<div class="col- col-md-5 centrage">
+			<div class="col col-md-5 centrage">
 			
 				@foreach($resultats as $resultat)
 
@@ -29,22 +31,15 @@
 
 							@if(! empty($resultat->answer6))<a href="" class="under-line"><p class="rounded bouton wrap-answers" data-id="6">{{ $resultat->answer6 }}</p></a>@endif
 
-					
-							<!-- @if($resultat->question_id != $first)
-
-								<button class="previous btn btn-warning">Précédent</button>
-
-							@endif -->
-
 					</div>
 
 				@endforeach
-				<button class="previous btn btn-warning completed">Précédent</button>
-				<form action="" method="POST">
+				
+				<form action="" method="POST" id="formtest">
 					@csrf
 					<input name="result_tree" type="text" hidden id="result_tree">
 					<input name="result_chart" type="text" hidden id="result_chart">
-					
+					<p id="endtest" hidden>Félicitations, vous avez terminé le test !</p>
 					<button type="submit" class="btn btn-warning" id="resultat" hidden>Résultats</button>
 				</form>
 		
@@ -69,6 +64,10 @@
 
 	
 $(function() {
+
+// Modal info
+
+	$('#modalhistory_job').modal('show');
 
 // Rangement random des différentes réponses
 
@@ -97,10 +96,10 @@ $(function() {
 		// Passage à la question suivante en Jquery
 
 		$(this).parent().fadeOut(450);
-			
 
 		$(this).parent().next().delay(451).fadeIn(450);
 
+		$(this).parent().next().append('<button class="previous btn btn-warning">Précédent</button>');
 
 
 		// Remplissage du tableau pour récupérer le profil psychologique
@@ -124,26 +123,29 @@ $(function() {
 		console.log($tabOcc);
 
 		var max = Math.max.apply(null,Object.keys($tabOcc).map(function(x){ return $tabOcc[x] }));
+
+		$max = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; });
 	
-		$a = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0];
+		$a = $max[0];
 		console.log($a);
-		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; }));
+		console.log($max);
 
-		$b = Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; })[0];
+		$max_1 = Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; });
+
+		$b = $max_1[0];
 		console.log($b);
-		console.log(Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max-1; }));
+		console.log($max_1);
 
-		if((Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; }).length == 2 )) {
+		if($max.length >= 2) {
 
-			$c = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0] + 
-				 Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[1];
+			$c = $max[0] + $max[1];
 		}
-		else {
+		else if($max.length == 1 && $max_1.length >= 1) {
 
-			$c = Object.keys($tabOcc).filter(function(x){ return $tabOcc[x] == max; })[0] +
-				 Object.keys($tabOcc).filter(function(y){ return $tabOcc[y] == max-1; })[0];
-			console.log($c);
+			$c = $max[0] + $max_1[0];
 		}
+
+		console.log($c);
 
 		// Envoi des deux plus grandes valeurs vers la page résultats
 
@@ -173,19 +175,23 @@ $(function() {
 			$('#grow').html('<img src="images/grow06.png" alt="grow06">');
 		}
 		else {
-			$('#resultat').delay(200).fadeIn(400).removeAttr('hidden');
+			window.setTimeout(function(){$("#resultat").removeAttr("hidden");}, 450);
+			window.setTimeout(function(){$("#endtest").removeAttr("hidden");}, 450);
+			$('.previous').remove();
 		}
 	});
 
 // Création d'un événement au clic sur précédent
 
-	$('.previous').on('click', function(e) {
+	$('body').on('click', '.previous', function(e) {
 
 		e.preventDefault();
 
 		$(this).parent().fadeOut(450);
 			
 		$(this).parent().prev().delay(451).fadeIn(450);
+
+		$(this).fadeOut(450);
 
 		$tab.pop();
 	});
@@ -195,3 +201,5 @@ $(function() {
 </script>
 
 @endsection
+
+
