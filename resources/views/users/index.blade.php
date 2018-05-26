@@ -61,6 +61,13 @@
 
 				<input type="password" name="password" class="form form-group form-control {{ $errors->has('password') ? 'border border-danger' : '' }}" value="{{ old('password') }}" placeholder="Mot de passe">
 
+				<select name="role" class="form form-group form-control {{ $errors->has('role') ? 'border border-danger' : '' }}">
+					
+					<option value="user">User</option>
+					<option value="admin">Admin</option>
+
+				</select>
+
 				<button class="btn btn-info form-control">Ajouter</button>
 
 			</form>
@@ -85,6 +92,7 @@
 
 							<h4>{{ $user->firstname }} {{ $user->lastname }} </h4>
 							<p>Email : {{ $user->email}}</p>
+							<p>Role : {{ $user->role }}</p>
 							<a href="userupdate?id={{ $user->id }}">Modifier</a>
 							<a href="userdelete?id={{ $user->id }}" class="supp">/ Supprimer</a>
 

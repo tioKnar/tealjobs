@@ -32,6 +32,7 @@ class UsersController extends Controller
 			'lastname' => 'required|string|max:255',
 			'email' => 'email|required',
 			'password' => 'required|string|min:6',
+			'role' => 'required|string',
 		];
 
 		$validator = Validator::make($values, $rules, [
@@ -44,6 +45,7 @@ class UsersController extends Controller
 			'password.required' =>'Veuillez entrer un mot de passe',
 			'password.string' =>'Veuillez entrer un mot de passe',
 			'password.min' =>'Le mot de passe doit faire au moins 6 caractères',
+			'role.string' => 'Rôle invalide',
 
 		]);
 
@@ -61,6 +63,7 @@ class UsersController extends Controller
 		$user->firstname = $values['firstname'];
 		$user->lastname = $values['lastname'];
 		$user->password = Hash::make($values['password']);
+		$user->role = $values['role'];
 
 		$user->save();
 

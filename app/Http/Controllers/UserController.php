@@ -30,6 +30,7 @@ class UserController extends Controller
 			'firstname' => 'required|string|max:255',
 			'lastname' => 'required|string|max:255',
 			'email' => 'email|required',
+			'role' => 'required|string',
 
 		];
 
@@ -40,6 +41,7 @@ class UserController extends Controller
 			'firstname.required' =>'Veuillez entrer un prénom',
 			'lastname.string' =>'Nom invalide',
 			'lastname.required' =>'Veuillez entrer un nom',
+			'role.string' => 'Rôle invalide',
 		]);
 
 		if($validator->fails()) {
@@ -55,6 +57,7 @@ class UserController extends Controller
 		$user->email = $values['email'];
 		$user->firstname = $values['firstname'];
 		$user->lastname = $values['lastname'];
+		$user->role = $values['role'];
 
 		$user->save();
 
