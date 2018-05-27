@@ -35,7 +35,7 @@
 	          <span> <img src="images/landing_icons/network.png" id="landing-logo" alt="network" height="100" width="100" > </span>
 	          <h2>Aujourd'hui</h2>
 		          <p>Entre <span class="font-italic">turnover</span>, besoin de changer d'horizon et remises en questions personnelles, "faire carrière" est une option de moins en moins envisagée par les étudiant.e.s et salarié.e.s.</p>
-		      	  <p>Seulement, trouver sa voie est un vrai défi quand le vomlume de ressources disponibles sur le sujet s'ajoute à la découverte de son potentiel.</p>
+		      	  <p>Seulement, trouver sa voie est un vrai défi quand le volume de ressources disponibles sur le sujet s'ajoute à la découverte de son potentiel.</p>
 	        </div>
 	        <div class="col-lg-4 potential">
 	          <span> <img src="images/landing_icons/sprout.png" id="landing-logo" alt="sprout" height="100" width="100" > </span>
@@ -46,7 +46,7 @@
 	        <div class="col-lg-4 success">
 	          <span> <img src="images/landing_icons/success.png" id="landing-logo" alt="success" height="100" width="100" > </span>
 	          <h2>Demain</h2>
-		          <p>TealJobs vous permet également de choisir entre des centres de formation agrées, qui correspondent à vos choix de métiers.</p>
+		          <p>TealJobs vous permet également de choisir entre des centres de formation agréés, qui correspondent à vos choix de métiers.</p>
 		          <p>Vous pourrez aussi créer un compte pour sauvegarder votre historique de test et revenir vers les centres de formation qui vous intéressent. C'est gratuit :)</p>
 	        </div>
 
