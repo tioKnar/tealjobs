@@ -84,6 +84,7 @@
                         <button type="submit" class="btn btn-info form-control">Envoyer</button>
                     </div>
                 </form>
+                @include('flash::message')
 
             </div>
         </div>

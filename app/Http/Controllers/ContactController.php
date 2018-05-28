@@ -29,7 +29,7 @@ class ContactController extends Controller
 
         $validator = Validator::make($values, $rules,
         [
-           'email_contact.email' => 'Votre email est invalid',
+           'email_contact.email' => 'Votre email est invalide',
            'name_contact.string' => 'Votre prénom est obligatoire',
            'lastname_contact.string' => 'Votre nom de famille est obligatoire',
            'object_contact.string' => 'Votre object est obligatoire',
@@ -53,8 +53,8 @@ class ContactController extends Controller
                 ->send(new FormulaireContact($title, $content));
         }
 
-        return view('contact.index')
-            ->with('successMessage', 'Message envoyé !');
+        flash('Message envoyé !')->success();
 
+        return Redirect::back();
     }
 }

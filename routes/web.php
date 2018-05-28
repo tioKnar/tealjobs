@@ -23,7 +23,7 @@ Route::get('/test', 'TestController@index');
 
 Route::post('/test', 'TestController@store');
 
-Route::get('/results', 'ResultsController@index');
+Route::get('/results', 'ResultsController@index')->name('results');
 
 Route::get('/contact', 'ContactController@index');
 

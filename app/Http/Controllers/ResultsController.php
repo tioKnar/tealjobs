@@ -19,7 +19,7 @@ class ResultsController extends Controller
         $jobs = DB::table('jobs')
                         ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
                         ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
-                        ->where('analyses.resultprofile' , '=',  '26')
+                        ->where('analyses.resultprofile' , '=',  $_GET['profile'])
                         ->groupBy('name')
                         ->take(15)
                         ->get();

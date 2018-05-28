@@ -35,31 +35,43 @@ class QuestionsTableSeeder extends Seeder
                 'question' => 'Vous êtes particulièrement connu.e pour :',
             ],
              [
-                'question' => 'Au sein d\'un groupe, vous avez un travail à rendre dans des délais bien trop courts. Vous :',
+                'question' => 'Au sein d\'un groupe, vous avez un travail à rendre dans des délais bien trop courts.',
             ],
              [
-                'question' => 'Comment vous adressez-vous à autrui ?',
+                'question' => 'Vous revoyez un.e ex pour une explication polie :',
             ],
              [
-                'question' => 'En période de stress, comment intéragissez-vous avec les personnes de votre entourage ?',
+                'question' => 'Rien ne va, aujourd\'hui. Rien. Vous :',
             ],
             [
-                'question' => 'Comment vous définiriez-vous ? Que dit-on de vous ?',
+                'question' => 'Question classique. On dit que vous êtes plutôt :',
             ],
             [
-                'question' => 'Les vacances idéales, pour moi c\'est:',
+                'question' => 'Vous sortez du ciné, le film est un des pires jamais réalisés :',
             ],
             [
-                'question' => 'question12',
+                'question' => 'Comment se passe une recherche de job, pour vous ?',
             ],
             [
-                'question' => 'question13',
+                'question' => 'En cours, quel genre d\'élève êtes-vous ?',
             ],
             [
-                'question' => 'question14',
+                'question' => 'Quel est votre rapport à l\'argent ?',
             ],
             [
-                'question' => 'question15',
+                'question' => 'Quand vous avez du temps libre que faites-vous ?',
+            ],
+            [
+                'question' => 'Choisissez un personnage célèbre :',
+            ],
+            [
+                'question' => 'Si j\'étais PDG :',
+            ],
+            [
+                'question' => 'Pour résoudre le problème du réchauffement climatique :',
+            ],
+            [
+                'question' => 'Comment demandez-vous l\'heure à vos collègues ?',
             ],
         ];
 

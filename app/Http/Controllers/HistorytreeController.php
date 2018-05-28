@@ -2,22 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use Request;
 use App\Model\Analyse;
 use App\Model\Classe;
 use App\Model\Intersector;
 use App\Model\Job;
-use Redirect;
+use Auth;
 use DB;
+use Redirect;
+use Request;
 
 class HistorytreeController extends Controller
 {	
+    public function __construct() {
+
+        $this->middleware('auth');
+    }
+    
     public function index() {
 
         $jobs = DB::table('jobs')
                         ->join('intersectors', 'jobs.id', '=', 'intersectors.job_id')
                         ->join('analyses', 'intersectors.sector_id', '=', 'analyses.sector_id')
-                        ->where('analyses.resultprofile' , '=',  '26')
+                        ->where('analyses.resultprofile' , '=', Auth::user()->profilpsy )
                         ->groupBy('name')
                         ->take(15)
                         ->get();

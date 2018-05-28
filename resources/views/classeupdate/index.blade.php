@@ -4,8 +4,25 @@
 
  @if( Auth::user()->role == 'user')
 
-	<p>Vous n'avez pas accès à cette page</p>
-	<a href="/">Retour à l'accueil</a>
+	<div class="container-fluid">
+    
+    	<div class="row justify-content-center text-center" id="welcomename">
+        
+        	<h4>Vous n'avez pas accès à cette page !</h4>
+	
+    	</div> 
+
+		<div id="accessuser">
+
+			<div class="row justify-content-center text-center accessaccueilbtn">
+
+				<a href="/" class="col-md-4 homebtn">Retour à l'accueil</a>
+
+			<div>
+
+		</div>
+
+	</div>
 
  @else
 

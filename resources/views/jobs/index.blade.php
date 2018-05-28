@@ -3,9 +3,26 @@
 @section('content')
 
  @if( Auth::user()->role == 'user')
+	
+	<div class="container-fluid">
+    
+    	<div class="row justify-content-center text-center" id="welcomename">
+        
+        	<h4>Vous n'avez pas accès à cette page !</h4>
+	
+    	</div> 
 
-	<p>Vous n'avez pas accès à cette page</p>
-	<a href="/">Retour à l'accueil</a>
+		<div id="accessuser">
+
+			<div class="row justify-content-center text-center accessaccueilbtn">
+
+				<a href="/" class="col-md-4 homebtn">Retour à l'accueil</a>
+
+			<div>
+
+		</div>
+
+	</div>
 
  @else
 
@@ -39,18 +56,6 @@
 				<input type="text" name="name" class="form form-group form-control {{ $errors->has('name') ? 'border border-danger' : '' }}" value="{{ old('name') }}" placeholder="Nom">
 
 				<textarea name="description" class="form form-group form-control {{ $errors->has('description') ? 'border border-danger' : '' }}" placeholder="Description">{{ old('description') }}</textarea>
-
-				<select name="note" class="form form-group form-control {{ $errors->has('note') ? 'border border-danger' : '' }}">
-					
-					<option>-- Attribuez une note sur 10 --</option>
-
-					@for($i=1; $i<=10; $i++)
-
-						<option value="{{ $i }}">{{ $i }}</option>
-
-					@endfor
-
-				</select>
 
 				<select multiple name="sector_id[]" class="form form-group form-control {{ $errors->has('sector_id') ? 'border border-danger' : '' }}">
 					
