@@ -36,7 +36,7 @@
 }
 
 
-// TEST FOOTER
+// FOOTER
 
 .footer-distributed{
 	background-color: #292c2f;
@@ -91,7 +91,7 @@
 	margin-left: 3px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* Responsive footer */
 
 @media (max-width: 600px) {
 
@@ -394,9 +394,6 @@ bottom: 0;
 	height: 100vh;
 }
 
-.centrage{
-	// margin: auto;
-}
 
 .completed {
 
@@ -408,7 +405,6 @@ bottom: 0;
 	position: relative;
 	top: 0px;
 	left: 0px;
-	// background-color: #FEE494;
 }
 
 .test{
