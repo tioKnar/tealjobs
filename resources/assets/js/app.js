@@ -132,19 +132,19 @@ $(function() {
 
 		// Affichage de l'image de progression du test d'orientation
 
-		if($tab.length >= 1 && $tab.length <= 2) {
+		if($tab.length >= 1 && $tab.length <= 3) {
 			$('#grow').html('<img src="images/grow02.png" alt="grow02">');
 		}
-		else if($tab.length >= 3 && $tab.length <= 5) {
+		else if($tab.length >= 4 && $tab.length <= 8) {
 			$('#grow').html('<img src="images/grow03.png" alt="grow03">');
 		}
-		else if($tab.length >= 6 && $tab.length <= 9) {
+		else if($tab.length >= 9 && $tab.length <= 13) {
 			$('#grow').html('<img src="images/grow04.png" alt="grow04">');
 		}
-		else if($tab.length >= 10 && $tab.length <= 13) {
+		else if($tab.length >= 14 && $tab.length <= 18) {
 			$('#grow').html('<img src="images/grow05.png" alt="grow05">');
 		}
-		else if($tab.length == 14) {
+		else if($tab.length == 19) {
 			$('#grow').html('<img src="images/grow06.png" alt="grow06">');
 		}
 		else {
