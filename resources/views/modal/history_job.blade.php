@@ -18,7 +18,7 @@
 
       <div class="modal-body">
         <p>Ce test est gratuit, il vous permettra de découvrir les métiers et les formations <span class="font-weight-bold">faits pour vous</span>.
-        Évidemment, plus vos reponses seront sincères, mieux nous pourrons vous guider...</p>
+        Il n'y a pas de mauvaise réponse. Choisissez en toute honnêteté celle qui vous paraît la plus juste.</p>
         <br>
         <p>Pour aller plus loin, <span class="font-weight-bold">sauvegarder l'historique de vos résultats et voir votre profil psychologique</span>, pensez à créer un compte avant de commencer ce test !</p>
         
